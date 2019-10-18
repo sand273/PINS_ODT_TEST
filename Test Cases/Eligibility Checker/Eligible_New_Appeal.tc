@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Eligibility Checker - Happy Path</description>
+   <name>Eligible_New_Appeal</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ec98566e-9200-42ac-8518-55546ef620e3</testCaseGuid>
+</TestCaseEntity>
