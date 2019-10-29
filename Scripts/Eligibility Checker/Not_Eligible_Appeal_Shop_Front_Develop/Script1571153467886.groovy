@@ -17,6 +17,8 @@ import org.openqa.selenium.Keys as Keys
 
 def verData = TestDataFactory.findTestData('Data Files/Verification')
 
+WebUI.callTestCase(findTestCase('Generic/Launch_Self_Service_Portal'), [:], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.callTestCase(findTestCase('Eligibility Checker/Appeal_Relate_Decision'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_Appeal a planning decision/input_Option_Shop_Front'))
@@ -25,7 +27,7 @@ WebUI.waitForElementClickable(findTestObject('Page_Appeal a planning decision/bu
 
 WebUI.click(findTestObject('Object Repository/Page_Appeal a planning decision/button_Continue'))
 
-WebUI.waitForElementPresent(findTestObject('Page_Appeal a planning decision/non_Eligible_Message'), 1)
+WebUI.waitForElementVisible(findTestObject('Page_Appeal a planning decision/non_Eligible_Message'), 2)
 
 WebUI.verifyElementText(findTestObject('Page_Appeal a planning decision/non_Eligible_Message'), verData.getValue(1, 10))
 

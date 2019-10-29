@@ -11,16 +11,16 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>49dcf276-33f5-426c-a9c3-b0408673806f</testSuiteGuid>
    <testCaseLink>
+      <guid>f80bc957-d7a3-4821-bb99-1e0f5eb03431</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Generic/Launch_Self_Service_Portal</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>3b3d9ef5-e078-49ec-83b5-fe83f2089aa2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Eligibility Checker/Eligible_New_Appeal</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>697932c6-dec4-4d3b-8bf3-16e274204b1e</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Eligibility Checker/Not_Eligible_Dispute_Local_List_No</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>f8946e90-8032-40da-a311-5361db4b2aee</guid>
@@ -57,5 +57,11 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Eligibility Checker/Not_Eligible_Household_Extension_Yes</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>697932c6-dec4-4d3b-8bf3-16e274204b1e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Eligibility Checker/Not_Eligible_Dispute_Local_List_No</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

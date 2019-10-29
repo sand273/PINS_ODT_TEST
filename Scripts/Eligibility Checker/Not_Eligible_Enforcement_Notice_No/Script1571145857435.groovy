@@ -18,41 +18,45 @@ def verData = TestDataFactory.findTestData('Data Files/Verification')
 
 def testData = TestDataFactory.findTestData('Data Files/Eligibility_Data')
 
+WebUI.callTestCase(findTestCase('Generic/Launch_Self_Service_Portal'), [:], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.callTestCase(findTestCase('Eligibility Checker/Appeal_Relate_Decision'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Page_Appeal a planning decision/endUser_Question'), verData.getValue(1, 4))
+WebUI.verifyElementText(findTestObject('Page_Appeal a planning decision/end_User_Question'), verData.getValue(1, 4))
 
-WebUI.click(findTestObject('Page_Appeal a planning decision/input_Conditions attached to a planning application'))
+WebUI.click(findTestObject('Page_Appeal a planning decision/input_Conditions_Attached'))
 
 WebUI.waitForElementClickable(findTestObject('Page_Appeal a planning decision/button_Continue'), 1)
 
 WebUI.click(findTestObject('Object Repository/Page_Appeal a planning decision/button_Continue'))
 
-WebUI.verifyElementText(findTestObject('Page_Appeal a planning decision/endUser_Question'), verData.getValue(1, 5))
+WebUI.waitForElementVisible(findTestObject('Page_Appeal a planning decision/end_User_Question'), 2)
+
+WebUI.verifyElementText(findTestObject('Page_Appeal a planning decision/end_User_Question'), verData.getValue(1, 5))
 
 WebUI.click(findTestObject('Page_Appeal a planning decision/input_No_option'))
 
 WebUI.click(findTestObject('Object Repository/Page_Appeal a planning decision/button_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Page_Appeal a planning decision/endUser_Question'), 1)
+WebUI.waitForElementVisible(findTestObject('Page_Appeal a planning decision/end_User_Question'), 2)
 
-WebUI.verifyElementText(findTestObject('Page_Appeal a planning decision/endUser_Question'), verData.getValue(1, 6))
+WebUI.verifyElementText(findTestObject('Page_Appeal a planning decision/end_User_Question'), verData.getValue(1, 6))
 
 WebUI.click(findTestObject('Page_Appeal a planning decision/input_Yes_option'))
 
 WebUI.click(findTestObject('Object Repository/Page_Appeal a planning decision/button_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Page_Appeal a planning decision/endUser_Question'), 1)
+WebUI.waitForElementVisible(findTestObject('Page_Appeal a planning decision/end_User_Question'), 2)
 
-WebUI.verifyElementText(findTestObject('Page_Appeal a planning decision/endUser_Question'), verData.getValue(1, 7))
+WebUI.verifyElementText(findTestObject('Page_Appeal a planning decision/end_User_Question'), verData.getValue(1, 7))
 
 WebUI.click(findTestObject('Page_Appeal a planning decision/input_No_option'))
 
 WebUI.click(findTestObject('Object Repository/Page_Appeal a planning decision/button_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Page_Appeal a planning decision/endUser_Question'), 1)
+WebUI.waitForElementVisible(findTestObject('Page_Appeal a planning decision/end_User_Question'), 2)
 
-WebUI.verifyElementText(findTestObject('Page_Appeal a planning decision/endUser_Question'), verData.getValue(1, 8))
+WebUI.verifyElementText(findTestObject('Page_Appeal a planning decision/end_User_Question'), verData.getValue(1, 8))
 
 WebUI.waitForElementClickable(findTestObject('Page_Appeal a planning decision/input_Day'), 1)
 
@@ -62,11 +66,9 @@ WebUI.setText(findTestObject('Page_Appeal a planning decision/input_Month'), tes
 
 WebUI.setText(findTestObject('Page_Appeal a planning decision/input_Year'), testData.getValue(4, 2))
 
-WebUI.waitForElementClickable(findTestObject('Page_Appeal a planning decision/button_Continue'), 1)
-
 WebUI.click(findTestObject('Object Repository/Page_Appeal a planning decision/button_Continue'))
 
-WebUI.waitForElementPresent(findTestObject('Page_Appeal a planning decision/non_Eligible_Message'), 1)
+WebUI.waitForElementVisible(findTestObject('Page_Appeal a planning decision/non_Eligible_Message'), 2)
 
 WebUI.verifyElementText(findTestObject('Page_Appeal a planning decision/non_Eligible_Message'), verData.getValue(1, 11))
 
