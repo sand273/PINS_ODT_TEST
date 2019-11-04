@@ -19,6 +19,11 @@ public class GlobalVariable {
      */
     public static Object element_timeout
      
+    /**
+     * <p></p>
+     */
+    public static Object UploadFilePath
+     
 
     static {
         try {
@@ -28,6 +33,7 @@ public class GlobalVariable {
     
             URL = selectedVariables['URL']
             element_timeout = selectedVariables['element_timeout']
+            UploadFilePath = selectedVariables['UploadFilePath']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

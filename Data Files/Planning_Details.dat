@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description></description>
-   <name>Eligibility_Data</name>
+   <name>Planning_Details</name>
    <tag></tag>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
-   <dataFileGUID>b82c40fb-ed06-4f8e-b653-85f932857cd5</dataFileGUID>
-   <dataSourceUrl>../../../../Katalon/Data-Files/Eligibility_Data.xlsx</dataSourceUrl>
+   <dataFileGUID>5d6e1efd-59a9-4225-b1c2-bbe9e458182f</dataFileGUID>
+   <dataSourceUrl>C:\Katalon\Data-Files\Planning_Application_Details.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
-   <isInternalPath>true</isInternalPath>
+   <isInternalPath>false</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
-   <sheetName>Data</sheetName>
+   <sheetName>Sheet1</sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>

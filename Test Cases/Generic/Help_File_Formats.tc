@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Help_File_Formats</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>db270fd2-e55c-493e-8bbe-d48ee0a87638</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>4fcb4276-60ba-4986-9490-6bb3f0f4e4a2</id>
+      <masked>false</masked>
+      <name>linkHelpFormat</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>fb38cee9-bb05-4c95-8a5c-c8bff9602b99</id>
+      <masked>false</masked>
+      <name>listHelpFormat</name>
+   </variable>
+</TestCaseEntity>

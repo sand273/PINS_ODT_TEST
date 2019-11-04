@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Upload_File</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5c70d4a5-65af-4003-9395-c2a7ae0fe69f</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>31707948-88d9-4a20-9855-946635cade7d</id>
+      <masked>false</masked>
+      <name>exeFileName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>13bebe77-e2c5-44f8-9eec-6369472ff4e3</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
+</TestCaseEntity>
