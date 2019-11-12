@@ -22,25 +22,25 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl(GlobalVariable.URL)
 
-WebUI.click(findTestObject('Page_PINS Test  GoPro/a_Self Service'))
+WebUI.click(findTestObject('PINS Test GoPro/a_Self Service'))
 
-WebUI.click(findTestObject('Page_Frontpage/input'))
+WebUI.click(findTestObject('Frontpage/input'))
 
-WebUI.waitForElementVisible(findTestObject('Page_Frontpage/link_Login'), 1)
+WebUI.waitForElementVisible(findTestObject('Frontpage/link_Login'), 1)
 
-WebUI.click(findTestObject('Page_Frontpage/link_Login'))
+WebUI.click(findTestObject('Frontpage/link_Login'))
 
-WebUI.waitForElementVisible(findTestObject('Page_Frontpage/message_User_Name_Entry'), 2)
+WebUI.waitForElementVisible(findTestObject('Frontpage/message_User_Name_Entry'), 2)
 
-WebUI.verifyElementText(findTestObject('Page_Frontpage/message_User_Name_Entry'), verData.getValue(1, 17))
+WebUI.verifyElementText(findTestObject('Frontpage/message_User_Name_Entry'), verData.getValue(1, 17))
 
-WebUI.setText(findTestObject('Page_Frontpage/input_UserName'), 'Auto_Test1')
+WebUI.setText(findTestObject('Frontpage/input_UserName'), 'Auto_Test1')
 
-WebUI.setEncryptedText(findTestObject('Page_Frontpage/input_Password'), 'KT8JOVzAIqlDwzr433Fv5w==')
+WebUI.setEncryptedText(findTestObject('Frontpage/input_Password'), 'KT8JOVzAIqlDwzr433Fv5w==')
 
-WebUI.click(findTestObject('Page_Frontpage/button_Login'))
+WebUI.click(findTestObject('Frontpage/button_Login'))
 
-WebUI.waitForElementVisible(findTestObject('Page_User_Landing/message_Welcome'), 2)
+WebUI.waitForElementVisible(findTestObject('User Landing/message_Welcome'), 2)
 
-WebUI.verifyElementText(findTestObject('Page_User_Landing/message_Welcome'), verData.getValue(1, 18))
+WebUI.verifyElementText(findTestObject('User Landing/message_Welcome'), verData.getValue(1, 18))
 

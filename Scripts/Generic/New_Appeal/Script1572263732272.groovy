@@ -14,13 +14,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
-WebUI.click(findTestObject('Page_User_Landing/link_Appeals'))
+WebUI.click(findTestObject('User Landing/link_Appeals'))
 
-WebUI.waitForElementVisible(findTestObject('Page_User_Landing/link_Planning_Decision'), 2)
+WebUI.waitForElementVisible(findTestObject('User Landing/link_Planning_Decision'), 2)
 
-WebUI.click(findTestObject('Page_User_Landing/link_Planning_Decision'))
+WebUI.click(findTestObject('User Landing/link_Planning_Decision'))
 
-WebUI.waitForElementVisible(findTestObject('Page_User_Landing/link_Click_To_Start'), 2)
+WebUI.waitForElementVisible(findTestObject('User Landing/link_Click_To_Start'), 2)
 
-WebUI.click(findTestObject('Page_User_Landing/link_Click_To_Start'))
+WebUI.click(findTestObject('User Landing/link_Click_To_Start'))
 

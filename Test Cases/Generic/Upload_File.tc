@@ -12,11 +12,4 @@
       <masked>false</masked>
       <name>exeFileName</name>
    </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>13bebe77-e2c5-44f8-9eec-6369472ff4e3</id>
-      <masked>false</masked>
-      <name>variable</name>
-   </variable>
 </TestCaseEntity>

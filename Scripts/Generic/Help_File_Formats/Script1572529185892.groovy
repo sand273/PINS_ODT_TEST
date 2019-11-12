@@ -16,9 +16,9 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def verData = TestDataFactory.findTestData('Data Files/Verification')
 
-WebUI.click(findTestObject(linkHelpFormat))
+WebUI.click(linkHelpFormat)
 
-WebUI.waitForElementVisible(findTestObject(listHelpFormat), 3)
+WebUI.waitForElementVisible(listHelpFormat, 2)
 
-WebUI.verifyElementText(findTestObject(listHelpFormat), verData.getValue(1, 32))
+WebUI.verifyElementText(listHelpFormat, verData.getValue(1, 32))
 

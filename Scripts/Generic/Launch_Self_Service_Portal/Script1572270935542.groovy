@@ -19,11 +19,11 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl(GlobalVariable.URL)
 
-WebUI.click(findTestObject('Page_PINS Test  GoPro/a_Self Service'))
+WebUI.click(findTestObject('PINS Test GoPro/a_Self Service'))
 
-WebUI.waitForElementVisible(findTestObject('Page_Frontpage/button_Make an appeal - Beta service'), 3)
+WebUI.waitForElementVisible(findTestObject('Frontpage/button_Make an appeal - Beta service'), 3)
 
-WebUI.click(findTestObject('Page_Frontpage/input'))
+WebUI.click(findTestObject('Frontpage/input'))
 
-WebUI.click(findTestObject('Page_Frontpage/button_Make an appeal - Beta service'))
+WebUI.click(findTestObject('Frontpage/button_Make an appeal - Beta service'))
 
