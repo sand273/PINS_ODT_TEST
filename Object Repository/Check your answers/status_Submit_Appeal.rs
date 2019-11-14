@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_No_Ownership</name>
+   <name>status_Submit_Appeal</name>
    <tag></tag>
-   <elementGuidId>dbfa0289-04e9-4627-80ab-538cd7ce71b8</elementGuidId>
+   <elementGuidId>1d34f7af-3f5c-4f94-aeff-4f9c353fdbd6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='radio-Ownership.AgriculturalHolding-2']</value>
+         <value>//p[contains(text(),'You will only be allowed to submit your appeal whe')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

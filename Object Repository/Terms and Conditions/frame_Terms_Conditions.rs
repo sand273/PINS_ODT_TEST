@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_No_Ownership</name>
+   <name>frame_Terms_Conditions</name>
    <tag></tag>
-   <elementGuidId>dbfa0289-04e9-4627-80ab-538cd7ce71b8</elementGuidId>
+   <elementGuidId>17ce924c-307e-4e4c-88f0-3f9f014ab631</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='radio-Ownership.AgriculturalHolding-2']</value>
+         <value>//span[contains(text(),'Terms and conditions')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

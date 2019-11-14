@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_No_Ownership</name>
+   <name>message_Submit_Appeal</name>
    <tag></tag>
-   <elementGuidId>dbfa0289-04e9-4627-80ab-538cd7ce71b8</elementGuidId>
+   <elementGuidId>3076492c-f50f-4589-b1e9-64f168f532c4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='radio-Ownership.AgriculturalHolding-2']</value>
+         <value>//p[contains(text(),'By submitting this appeal you are confirming that,')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

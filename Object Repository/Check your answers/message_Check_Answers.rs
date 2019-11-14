@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_No_Ownership</name>
+   <name>message_Check_Answers</name>
    <tag></tag>
-   <elementGuidId>dbfa0289-04e9-4627-80ab-538cd7ce71b8</elementGuidId>
+   <elementGuidId>036f8c61-367d-4ed3-827d-acf9ed42d867</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='radio-Ownership.AgriculturalHolding-2']</value>
+         <value>//h1[contains(text(),'Check your answers before sending your application')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

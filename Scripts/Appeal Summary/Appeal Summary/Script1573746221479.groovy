@@ -12,10 +12,19 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
-WebUI.delay(2)
+def planData = TestDataFactory.findTestData('Data Files/Planning_Details')
 
-Runtime.runtime.exec(GlobalVariable.UploadFilePath + exeFileName)
+def siteData = TestDataFactory.findTestData('Data Files/Site_Details')
 
-WebUI.delay(2)
+WebUI.waitForElementVisible(findTestObject('Appeal Summary/status_Submitted'), 2)
+
+WebUI.verifyElementText(findTestObject('Appeal Summary/status_Submitted'), 'APPEAL SUBMITTED')
+
+WebUI.verifyElementText(findTestObject('Appeal Summary/label_Site_Address'), siteData.getValue(2,1))
+
+WebUI.verifyElementText(findTestObject('Appeal Summary/label_Appellant_Name'), planData.getValue(1,1))
+
+WebUI.verifyElementText(findTestObject('Appeal Summary/label_Application_Ref'), planData.getValue(2,1))
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_No_Ownership</name>
+   <name>checkBox_Agree</name>
    <tag></tag>
-   <elementGuidId>dbfa0289-04e9-4627-80ab-538cd7ce71b8</elementGuidId>
+   <elementGuidId>18c4a5a4-385a-4673-b620-1cd8d5c66b4c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='radio-Ownership.AgriculturalHolding-2']</value>
+         <value>//input[@id='check-agree']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

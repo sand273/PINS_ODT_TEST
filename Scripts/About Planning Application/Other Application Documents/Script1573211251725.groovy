@@ -58,7 +58,9 @@ WebUI.callTestCase(findTestCase('Generic/Upload_File'), [('exeFileName') : 'Jpeg
 
 WebUI.waitForElementVisible(findTestObject('Other Application Documents/button_Add_Another_File'), 2)
 
-WebUI.click(findTestObject('Supporting Grounds/button_Add_another_document'))
+not_run: WebUI.scrollToElement(findTestObject('Other Application Documents/button_Add_Another_File'), 0)
+
+WebUI.click(findTestObject('Other Application Documents/button_Add_Another_File'))
 
 WebUI.click(findTestObject('Other Application Documents/button_Select_File5'))
 

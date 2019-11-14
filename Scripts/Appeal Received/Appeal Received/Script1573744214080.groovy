@@ -12,10 +12,23 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
-WebUI.delay(2)
+def verData = TestDataFactory.findTestData('Data Files/Verification')
 
-Runtime.runtime.exec(GlobalVariable.UploadFilePath + exeFileName)
+WebUI.waitForElementVisible(findTestObject('Appeal_Received/title_Appeal_Received'), 2)
 
-WebUI.delay(2)
+WebUI.verifyElementText(findTestObject('Appeal_Received/title_Appeal_Received'), 'Appeal received')
+
+WebUI.verifyElementVisible(findTestObject('Appeal_Received/message_Happens_Next'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('Appeal_Received/message_Validate'), verData.getValue(1, 72))
+
+WebUI.verifyElementText(findTestObject('Appeal_Received/message_Sign_In'), verData.getValue(1, 73))
+
+WebUI.verifyElementText(findTestObject('Appeal_Received/message_More_Info'), verData.getValue(1, 74))
+
+WebUI.verifyElementText(findTestObject('Appeal_Received/frame_Thanks_Contents'), verData.getValue(1, 75))
+
+WebUI.click(findTestObject('Appeal_Received/button_Appeal_Summary'))
 

@@ -12,10 +12,15 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
-WebUI.delay(2)
+def verData = TestDataFactory.findTestData('Data Files/Verification')
 
-Runtime.runtime.exec(GlobalVariable.UploadFilePath + exeFileName)
+WebUI.waitForElementVisible(findTestObject('Terms and Conditions/message_Terms_Conditions'), 3)
 
-WebUI.delay(2)
+WebUI.verifyElementText(findTestObject('Terms and Conditions/frame_Terms_Conditions'), verData.getValue(1, 71))
+
+WebUI.click(findTestObject('Terms and Conditions/checkBox_Agree'))
+
+WebUI.click(findTestObject('Terms and Conditions/button_Submit_Appeal'))
 

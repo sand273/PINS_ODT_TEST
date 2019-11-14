@@ -16,11 +16,27 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def verData = TestDataFactory.findTestData('Data Files/Verification')
 
-WebUI.verifyElementText(findTestObject('Ownership/question_Agricultural_Holding'), verData.getValue(1, 66))
+WebUI.waitForElementVisible(findTestObject('Check your answers/link_Check_Answers'), 2)
 
-WebUI.verifyElementText(findTestObject('Ownership/message_Appeal_Site_Forms'), verData.getValue(1, 57))
+WebUI.click(findTestObject('Check your answers/link_Check_Answers'))
 
-WebUI.click(findTestObject('Ownership/input_No_Ownership'))
+WebUI.waitForElementVisible(findTestObject('Check your answers/message_Check_Answers'), 2)
+
+WebUI.verifyElementText(findTestObject('Check your answers/message_Check_Answers'), verData.getValue(1, 67))
+
+WebUI.scrollToElement(findTestObject('Planning Application details/button_Save_Continue'), 3)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
+
+WebUI.waitForElementVisible(findTestObject('Check your answers/message_Check_Progress'), 2)
+
+WebUI.verifyElementText(findTestObject('Check your answers/message_Check_Progress'), 'Check your progress')
+
+WebUI.verifyElementText(findTestObject('Check your answers/status_Submit_Appeal'), verData.getValue(1, 68))
+
+WebUI.verifyElementText(findTestObject('Check your answers/message_Submit_Appeal'), verData.getValue(1, 69))
+
+WebUI.verifyElementText(findTestObject('Check your answers/message_Appeal_Not_Change'), verData.getValue(1, 70))
+
+WebUI.click(findTestObject('Check your answers/button_Ready_to_Submit'))
 

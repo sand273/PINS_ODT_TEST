@@ -14,4 +14,9 @@
       <initValue>60</initValue>
       <name>element_timeout</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'C:\\Katalon\\Data-Files\\'</initValue>
+      <name>UploadFilePath</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

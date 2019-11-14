@@ -37,6 +37,8 @@ WebUI.setText(findTestObject('Site Details/input_SitePostcode'), testData.getVal
 
 WebUI.click(findTestObject('Site Details/button_Find address'))
 
+WebUI.delay(1)
+
 WebUI.selectOptionByValue(findTestObject('Site Details/dropdown_Select address'), testData.getValue(2, 1), false)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
