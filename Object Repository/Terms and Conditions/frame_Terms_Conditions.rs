@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[contains(text(),'Terms and conditions')]</value>
+         <value>//div[@id='terms']//div[@id='terms']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

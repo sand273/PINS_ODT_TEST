@@ -19,4 +19,9 @@
       <initValue>'C:\\Katalon\\Data-Files\\'</initValue>
       <name>UploadFilePath</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>ApplicationRef</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

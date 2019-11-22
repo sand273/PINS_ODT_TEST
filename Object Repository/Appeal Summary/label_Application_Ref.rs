@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//table[@class='govuk-table appeal-table']//tr[1]//td[1]</value>
+         <value>//td[contains(text(),'Automated_Test1')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

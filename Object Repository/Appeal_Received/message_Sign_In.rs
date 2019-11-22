@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//p[contains(text(),&quot;We'll validate your appeal and pass it to an Inspe&quot;)]</value>
+         <value>//p[contains(text(),'You can sign in to your Planning Inspectorate acco')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body//p[5]</value>
+         <value>//a[contains(text(),'More information on appeal timescales')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

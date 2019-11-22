@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//label[@class = 'govuk-label' and @for = 'LPA.FilePlans']</value>
+         <value>//label[@class = 'govuk-label' and @for = 'LPA.FilePlans' and (text() = 'Plan document' or . = 'Plan document')]</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -38,18 +38,11 @@
       <value>LPA.FilePlans</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
       <value>Plan document</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath</name>
-      <type>Main</type>
-      <value>id(&quot;control-d1e909&quot;)/label[@class=&quot;govuk-label&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
