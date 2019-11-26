@@ -17,17 +17,37 @@ import groovy.time.TimeCategory as TimeCategory
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://pins-test.gopro.net/')
+WebUI.click(findTestObject('Complete Questionaire/Page_Local planning authority questionnaire/button_documentwrite_Next page'))
 
-WebUI.switchToWindowTitle('W/4001453 PLANNING INSPECTORATE, TEMPLE QUAY HOUSE, 2, THE SQUARE, TEMPLE QUAY, BRISTOL, BS1 6PN')
+WebUI.click(findTestObject('Complete Questionaire/Page_Local planning authority questionnaire/button_documentwrite_Next page'))
 
-WebUI.click(findTestObject('GoPro UI/Case Summary/link_Processing'))
+WebUI.click(findTestObject('Page_Local planning authority questionnaire/input_Yes_EmergingPolicies'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Complete Questionaire/Page_Local planning authority questionnaire/button_documentwrite_Next page'))
 
-WebUI.doubleClick(findTestObject('GoPro UI/Case Summary/message_Start_Case_Publish'))
+WebUI.click(findTestObject('Page_Local planning authority questionnaire/input_Yes_FiveHousing'))
 
-WebUI.click(findTestObject('GoPro UI/Case Summary/div_Case Officer'))
+WebUI.click(findTestObject('Complete Questionaire/Page_Local planning authority questionnaire/button_documentwrite_Next page'))
+
+WebUI.click(findTestObject('Page_Local planning authority questionnaire/input_Yes_ConditionsSuggestions'))
+
+WebUI.click(findTestObject('Page_Local planning authority questionnaire/input_Yes_ConditionsObligation'))
+
+WebUI.click(findTestObject('Complete Questionaire/Page_Local planning authority questionnaire/button_documentwrite_Next page'))
+
+WebUI.click(findTestObject('Page_Local planning authority questionnaire/input_Yes_ConservationSite'))
+
+WebUI.click(findTestObject('Complete Questionaire/Page_Local planning authority questionnaire/button_documentwrite_Next page'))
+
+WebUI.click(findTestObject('Page_Local planning authority questionnaire/input_Yes_BuildingAffects'))
+
+WebUI.click(findTestObject('Page_Local planning authority questionnaire/input_Yes_BuildingAffectScheduleMonument'))
+
+WebUI.click(findTestObject('Complete Questionaire/Page_Local planning authority questionnaire/button_documentwrite_Next page'))
+
+WebUI.click(findTestObject('Page_Local planning authority questionnaire/input_Yes_ScreeningOpinion'))
+
+WebUI.click(findTestObject('Complete Questionaire/Page_Local planning authority questionnaire/button_documentwrite_Next page'))
 
 WebUI.closeBrowser()
 

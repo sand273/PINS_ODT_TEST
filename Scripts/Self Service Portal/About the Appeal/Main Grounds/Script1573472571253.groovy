@@ -41,7 +41,7 @@ WebUI.verifyElementText(findTestObject('Main grounds of Appeal/message_ submit_g
 
 WebUI.click(findTestObject('Main grounds of Appeal/button_Select_File'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Submit the Appeal/Upload_File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Portal-Generic/Upload_File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Main grounds of Appeal/input_understand_AppealAgreement'))
 

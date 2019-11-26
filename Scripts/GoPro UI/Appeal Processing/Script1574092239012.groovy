@@ -35,6 +35,8 @@ Date decDueDate
 
 Date finalCommDate
 
+Date targetStDate
+
 String todaysDate = today.format('dd/MM/yyyy')
 
 use(groovy.time.TimeCategory, { 
@@ -49,6 +51,8 @@ use(groovy.time.TimeCategory, {
         decDueDate = (today + 14.weeks)
 
         finalCommDate = (today + 7.weeks)
+
+        targetStDate = (stDate - 8.weeks)
     })
 
 WebUI.openBrowser('')
@@ -75,7 +79,7 @@ WebUI.click(findTestObject('Object Repository/GoPro UI/Page_pins My cases/link_H
 
 WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'))
 
-WebUI.sendKeys(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'), '4001531')
+WebUI.sendKeys(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'), '4001539')
 
 WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Search'))
 
@@ -147,13 +151,15 @@ WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Programming/dropdown_
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/button_Save'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/link_Processing'), 3)
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/link_Processing'), 5)
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/link_Processing'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Programming/button_Programming'), 3)
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Programming/button_Programming'), 5)
 
 WebUI.click(findTestObject('GoPro UI/Programming/button_Programming'))
+
+WebUI.switchToWindowIndex(1)
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'), 8)
 
@@ -161,6 +167,9 @@ WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown
     'true', 5)
 
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Programmed'), 'value', todaysDate, 1)
+
+WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Target_Start'), 'value', targetStDate.format(
+        'dd/MM/yyyy').toString(), 1)
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/button_Start_Case'))
 
@@ -170,16 +179,16 @@ WebUI.verifyElementText(findTestObject('GoPro UI/Case Summary/message_Start_Case
 
 WebUI.click(findTestObject('GoPro UI/Programming/button_Publish'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'), 20)
+not_run: WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/label_Processing'), 10)
 
 WebUI.switchToWindowIndex(1)
-
-not_run: WebUI.click(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'))
 
 WebUI.focus(findTestObject('GoPro UI/Case Summary/frame_CaseForm'))
 
 not_run: WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Status_Case_Started'), 'defaultSelected', 
     'true', 2)
+
+WebUI.focus(findTestObject('GoPro UI/Case Summary/date_Case_Start'))
 
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Case_Start'), 'value', todaysDate, 1)
 

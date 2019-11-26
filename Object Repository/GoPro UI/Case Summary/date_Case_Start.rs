@@ -6,11 +6,11 @@
    <elementGuidId>f23e5875-e225-4d27-874f-7f0866c77cc7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='Timeline1.CaseStartDate']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//input[@id='Timeline1.CaseStartDate']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
