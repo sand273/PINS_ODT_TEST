@@ -14,7 +14,7 @@
       <guid>6ba6c4b5-c38f-4c67-a75a-d117b331be18</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Portal-Generic/Launch_Self_Service_Portal</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Generic/Launch_Portal</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>ee288b6f-73ec-48a9-b65b-7c04a21e9c62</guid>
@@ -32,7 +32,7 @@
       <guid>f30d668b-7d91-4b0c-b483-22927e32b285</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Login/Appeal_Now_Login</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Login/Case_Officer_Appeal_Now</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>898d1551-a203-43e4-ab16-15cd20dcb873</guid>

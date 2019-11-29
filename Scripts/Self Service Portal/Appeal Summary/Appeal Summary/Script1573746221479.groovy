@@ -22,8 +22,7 @@ def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 WebUI.waitForElementVisible(findTestObject('Appeal Summary/status_Submitted'), 3)
 
-WebUI.verifyElementAttributeValue(findTestObject('Appeal Summary/heading_Application_Ref'), 'innerText', GlobalVariable.ApplicationRef, 
-    0)
+WebUI.verifyElementAttributeValue(findTestObject('Appeal Summary/heading_Application_Ref'), 'innerText', GlobalVariable.ApplicationRef, 0)
 
 WebUI.verifyElementText(findTestObject('Appeal Summary/status_Submitted'), 'APPEAL SUBMITTED')
 

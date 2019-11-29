@@ -21,7 +21,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
+      <initValue>'4001593'</initValue>
       <name>ApplicationRef</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

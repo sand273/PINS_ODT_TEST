@@ -28,7 +28,7 @@ WebUI.click(findTestObject('Ownership/input_Yes_Option'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Portal-Generic/Agricultural_Holding'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Agricultural_Holding'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('Ownership/status_Complete_Ownership'), 3)
 

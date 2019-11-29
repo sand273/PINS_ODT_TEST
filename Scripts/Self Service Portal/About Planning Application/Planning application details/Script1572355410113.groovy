@@ -98,7 +98,7 @@ WebUI.verifyElementText(findTestObject('Planning Application details/list_Help_F
 
 WebUI.click(findTestObject('Planning Application details/button_Application_Form'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Portal-Generic/Upload_File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementVisible(findTestObject('Planning Application details/button_Remove_File'), FailureHandling.STOP_ON_FAILURE)
 
@@ -117,7 +117,7 @@ WebUI.verifyElementText(findTestObject('Planning Application details/list_Help_F
 
 WebUI.click(findTestObject('Planning Application details/button_LPA_Notice'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Portal-Generic/Upload_File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementVisible(findTestObject('Planning Application details/button_Remove_LPA_Notice'), FailureHandling.STOP_ON_FAILURE)
 

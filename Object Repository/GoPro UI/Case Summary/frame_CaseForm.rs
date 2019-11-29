@@ -6,12 +6,11 @@
    <elementGuidId>68b921c1-f431-4891-af7d-00b302566066</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='caseform']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@id='form-container']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

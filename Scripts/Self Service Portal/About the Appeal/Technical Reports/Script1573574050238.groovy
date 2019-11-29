@@ -34,7 +34,7 @@ WebUI.verifyElementText(findTestObject('Technical Reports/list_Help_File_Formats
 
 WebUI.click(findTestObject('Technical Reports/button_Select_File'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Portal-Generic/Upload_File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('Technical Reports/button_Add_More_Files'), 2)
 
@@ -42,7 +42,7 @@ WebUI.click(findTestObject('Technical Reports/button_Add_More_Files'))
 
 WebUI.click(findTestObject('Technical Reports/button_Select_File2'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Portal-Generic/Upload_File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('Technical Reports/button_Add_More_Files'), 2)
 
@@ -50,7 +50,7 @@ WebUI.click(findTestObject('Technical Reports/button_Add_More_Files'))
 
 WebUI.click(findTestObject('Technical Reports/button_Select_File3'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Portal-Generic/Upload_File'), [('exeFileName') : 'Tiff_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Tiff_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('Technical Reports/button_Add_More_Files'), 2)
 
@@ -58,7 +58,7 @@ WebUI.click(findTestObject('Technical Reports/button_Add_More_Files'))
 
 WebUI.click(findTestObject('Technical Reports/button_Select_File4'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Portal-Generic/Upload_File'), [('exeFileName') : 'Jpeg_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Jpeg_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('Technical Reports/button_Add_More_Files'), 2)
 
@@ -66,7 +66,7 @@ WebUI.click(findTestObject('Technical Reports/button_Add_More_Files'))
 
 WebUI.click(findTestObject('Technical Reports/button_Select_File5'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Portal-Generic/Upload_File'), [('exeFileName') : 'PNG_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'PNG_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 

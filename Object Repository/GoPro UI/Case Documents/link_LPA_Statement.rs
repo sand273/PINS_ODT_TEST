@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>link_LPA_Statement</name>
+   <tag></tag>
+   <elementGuidId>076923c0-fdce-42a5-970f-c8e4f0c59c3d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>/html[1]/body[1]/ng-include[1]/ng-view[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[7]/div[2]/gp-view[1]/div[2]/div[27]/div[2]/button[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>
