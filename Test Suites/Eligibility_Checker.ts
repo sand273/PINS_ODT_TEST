@@ -64,4 +64,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Dispute_Local_List_No</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>1eaeba2a-e798-485c-a710-0bc101478fb5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_OutlinePlanning_Enforcement_Notice_Yes</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
