@@ -68,19 +68,19 @@
       <guid>1eaeba2a-e798-485c-a710-0bc101478fb5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_OutlinePlanning_Enforcement_Notice_Yes</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_Outline_Planning_Enforcement_Notice_Yes</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>c4757124-527f-4ced-8c6f-ff8f8d3a174f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_OutlinePlanning_Enforcement_Notice_No_6_Months_More</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_Outline_Planning_Enforcement_Notice_No_6_Months_More</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>13c9bf33-1764-4966-9549-f62665de856c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Household_OutlinePlanning_Enforcement_Notice_No_6_Months_Less</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Household_Outline_Planning_Enforcement_Notice_No_6_Months_Less</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>8c478194-2a96-4ebb-952c-cb48521458e7</guid>
@@ -99,5 +99,11 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Modification_6_Months_Less_5_Years_Less</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>28122039-53f9-4d60-9dd2-646fba7159ec</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Permitted_Development_Rights_6_Months_More</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
