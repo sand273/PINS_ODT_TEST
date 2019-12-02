@@ -32,7 +32,7 @@ WebUI.click(findTestObject('Object Repository/Appeal a planning decision/button_
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/Appeal a planning decision/end_User_Question'), 2)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Appeal a planning decision/end_User_Question'), verData.getValue(
+not_run: WebUI.verifyElementText(findTestObject('Object Repository/Appeal a planning decision/end_User_Question'), verData.getValue(
         1, 77))
 
 WebUI.waitForElementClickable(findTestObject('Object Repository/Appeal a planning decision/input_Day'), 1)

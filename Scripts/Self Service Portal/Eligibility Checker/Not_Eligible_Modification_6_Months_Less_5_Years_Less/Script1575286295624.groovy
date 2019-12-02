@@ -50,17 +50,14 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/Appeal a planning 
 WebUI.verifyElementText(findTestObject('Object Repository/Appeal a planning decision/end_User_Question'), verData.getValue(
         1, 78))
 
-WebUI.click(findTestObject('Appeal a planning decision/input_More_than_five_years_ago_option'))
+WebUI.click(findTestObject('Appeal a planning decision/input_Less_than_five_years_ago_option'))
 
 WebUI.click(findTestObject('Object Repository/Appeal a planning decision/button_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Appeal a planning decision/eligibility_Confirmed'), 2)
+WebUI.waitForElementVisible(findTestObject('Object Repository/Appeal a planning decision/non_Eligible_Message'), 2)
 
-WebUI.verifyElementText(findTestObject('Appeal a planning decision/eligibility_Confirmed'), verData.getValue(1, 9))
-
-WebUI.verifyElementVisible(findTestObject('Appeal a planning decision/button_Appeal_Now'))
-
-WebUI.verifyElementText(findTestObject('Appeal a planning decision/list_Confirmation'), verData.getValue(1, 16))
+WebUI.verifyElementText(findTestObject('Object Repository/Appeal a planning decision/non_Eligible_Message'), verData.getValue(
+        1, 15))
 
 WebUI.closeBrowser()
 
