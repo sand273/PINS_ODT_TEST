@@ -76,4 +76,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_OutlinePlanning_Enforcement_Notice_No_6_Months_More</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>13c9bf33-1764-4966-9549-f62665de856c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Household_OutlinePlanning_Enforcement_Notice_No_6_Months_Less</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
