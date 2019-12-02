@@ -98,6 +98,6 @@
       <guid>6ed8bf43-e83f-4365-a12b-496d3919e582</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Modification_6_Months_Less_5_Years_More</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Modification_6_Months_Less_5_Years_Less</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
