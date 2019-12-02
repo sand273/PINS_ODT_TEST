@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Less than five years ago_option</name>
+   <name>input_Less_than_five_years_ago_option</name>
    <tag></tag>
    <elementGuidId>9cd5b01a-8d2f-4211-8ecd-a81cab27a8f1</elementGuidId>
    <selectorCollection>
