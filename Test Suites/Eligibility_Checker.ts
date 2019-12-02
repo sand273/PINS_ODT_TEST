@@ -88,4 +88,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Modification_6_Months_More</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>47c70a1c-5260-48ab-8e25-a7ddf94b1402</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Modification_6_Months_Less_5_Years_Less</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
