@@ -112,4 +112,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Permitted_Development_Rights_6_Months_Less</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>8416e5f5-6b20-4f07-8166-d66aead7a3b8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Conditions_Full_Planning_Conditions_Enforcement_Notice_Yes</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
