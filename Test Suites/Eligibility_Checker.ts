@@ -238,4 +238,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Local_Authority_No_Documentation_No_8_Weeks_More_6_Months_More_LPA_Yes_6_Months_More</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>b7c5bf4c-21df-437a-9042-b81bb3c01d3b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Local_Authority_No_Documentation_Yes_8_Weeks_Less</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
