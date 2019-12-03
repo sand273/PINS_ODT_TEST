@@ -30,6 +30,8 @@ WebUI.verifyElementText(findTestObject('Appeal a planning decision/end_User_Ques
 
 WebUI.click(findTestObject('Appeal a planning decision/input_No_option'))
 
+WebUI.delay(1)
+
 WebUI.waitForElementClickable(findTestObject('Appeal a planning decision/button_Continue'), 1)
 
 WebUI.click(findTestObject('Appeal a planning decision/button_Continue'))
@@ -42,6 +44,8 @@ WebUI.back()
 
 WebUI.click(findTestObject('Appeal a planning decision/input_Yes_option'))
 
+WebUI.delay(1)
+
 WebUI.waitForElementClickable(findTestObject('Appeal a planning decision/button_Continue'), 1)
 
 WebUI.click(findTestObject('Appeal a planning decision/button_Continue'))
@@ -50,7 +54,7 @@ WebUI.waitForElementVisible(findTestObject('Appeal a planning decision/end_User_
 
 WebUI.verifyElementText(findTestObject('Appeal a planning decision/end_User_Question'), verData.getValue(1, 19))
 
-WebUI.scrollToElement(findTestObject('Appeal a planning decision/input_Yes_option'), 3)
+WebUI.scrollToElement(findTestObject('Appeal a planning decision/input_No_option'), 3)
 
 WebUI.waitForElementClickable(findTestObject('Appeal a planning decision/input_No_option'), 3)
 
@@ -68,7 +72,11 @@ WebUI.verifyElementText(findTestObject('Appeal a planning decision/non_Eligible_
 
 WebUI.back()
 
+WebUI.scrollToElement(findTestObject('Appeal a planning decision/input_Yes_option'), 3)
+
 WebUI.waitForElementClickable(findTestObject('Appeal a planning decision/input_Yes_option'), 3)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Appeal a planning decision/input_Yes_option'))
 
