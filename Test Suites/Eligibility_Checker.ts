@@ -190,4 +190,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Conditions_Outline_Planning_Conditions_Enforcement_Notice_Yes</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>2c041a28-3193-484d-a915-4e88e3c63567</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Conditions_Outline_Planning_Conditions_Enforcement_Notice_No_6_Months_More</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
