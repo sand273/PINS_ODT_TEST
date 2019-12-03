@@ -155,10 +155,10 @@
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Conditions_Full_Planning_Other_Enforcement_Notice_Yes</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>232a6dcf-8d0c-4e06-b473-56aeee2d77f4</guid>
+      <guid>0cd4b58e-1f41-4a58-804c-31dad7350ca7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Conditions_Full_Planning_Other_Enforcement_Notice_No_6_Months_More</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Conditions_Outline_Planning_Other_Enforcement_Notice_No_6_Months_Less</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>c42708d1-cc23-4e17-a44e-02ee7f9f1520</guid>
@@ -179,10 +179,10 @@
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Conditions_Outline_Planning_Other_Enforcement_Notice_No_6_Months_More</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>0cd4b58e-1f41-4a58-804c-31dad7350ca7</guid>
+      <guid>232a6dcf-8d0c-4e06-b473-56aeee2d77f4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Conditions_Outline_Planning_Other_Enforcement_Notice_No_6_Months_Less</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Conditions_Full_Planning_Other_Enforcement_Notice_No_6_Months_More</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>5925936f-fb51-494d-aa89-8fc4f3c2b255</guid>
@@ -201,5 +201,11 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Conditions_Outline_Planning_Conditions_Enforcement_Notice_No_6_Months_Less</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>361a100a-ad01-4701-95ff-3d53992f2cff</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Local_Authority_No_Documentation_No_8_Weeks_Less</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
