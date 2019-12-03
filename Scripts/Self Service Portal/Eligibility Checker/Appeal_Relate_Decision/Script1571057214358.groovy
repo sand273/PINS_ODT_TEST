@@ -26,6 +26,8 @@ WebUI.verifyElementText(findTestObject('Appeal a planning decision/end_User_Ques
 
 WebUI.click(findTestObject('Appeal a planning decision/input_Yes_option'))
 
+WebUI.delay(1)
+
 WebUI.waitForElementClickable(findTestObject('Appeal a planning decision/button_Continue'), 2)
 
 WebUI.click(findTestObject('Appeal a planning decision/button_Continue'))
