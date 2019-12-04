@@ -50,7 +50,7 @@ WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Documents/link_Upload_P
 
 WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Documents/link_Expand_LPA_Statement'))
 
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/link_Upload_Pdf'), 0)
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/link_Upload_Pdf'), 2)
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/link_Upload_Pdf'))
 

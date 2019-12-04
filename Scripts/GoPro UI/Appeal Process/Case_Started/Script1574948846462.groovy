@@ -145,7 +145,9 @@ WebUI.switchToWindowIndex(1)
 
 WebUI.refresh()
 
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Programming/button_Programming'), 8)
+WebUI.waitForPageLoad(5, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Programming/button_Programming'), 5)
 
 WebUI.click(findTestObject('GoPro UI/Programming/button_Programming'))
 
@@ -172,6 +174,8 @@ WebUI.click(findTestObject('GoPro UI/Programming/button_Publish'))
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/label_Processing'), 10)
 
 WebUI.switchToWindowIndex(1)
+
+WebUI.waitForPageLoad(5)
 
 WebUI.focus(findTestObject('GoPro UI/Case Summary/frame_CaseForm'))
 
