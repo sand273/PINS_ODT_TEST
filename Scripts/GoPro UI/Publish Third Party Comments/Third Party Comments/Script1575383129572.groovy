@@ -42,21 +42,34 @@ WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
 WebUI.scrollToPosition(9999999, 9999999)
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_Folder_LPA_Statement'), 5)
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_Folder_Your_Comments'), 5)
 
-WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'))
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/link_Your_Comments'), 2)
 
-WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Documents/link_Upload_Pdf'))
+WebUI.click(findTestObject('GoPro UI/Case Documents/link_Your_Comments'))
 
-WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Documents/link_Expand_LPA_Statement'))
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_Interested_party_pdf'), 3)
 
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/link_Upload_Pdf'), 2)
+WebUI.click(findTestObject('GoPro UI/Case Documents/link_Interested_party_pdf'))
 
-WebUI.click(findTestObject('GoPro UI/Case Documents/link_Upload_Pdf'))
-
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/button_Ready_for_Publish'), 2)
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/button_Ready_for_Publish'), 3)
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/button_Ready_for_Publish'))
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/label_Processing'), 5)
+
+WebUI.click(findTestObject('GoPro UI/Case Summary/button_Publish_LPA_Statement'))
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/label_Processing'), 5)
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'))
+
+WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Publish_LPA_Statement'), 'defaultSelected', 
+    'true', 5)
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
+
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish LPA Statements - Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/label_Processing'), 5)
 
@@ -72,7 +85,19 @@ WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/link_Expan
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/link_Expand_LPA_Statement'))
 
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/button_Ready_for_Publish'), 2)
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/status_Document_Published'), 2)
 
-WebUI.click(findTestObject('GoPro UI/Case Documents/button_Ready_for_Publish'))
+WebUI.click(findTestObject('GoPro UI/Case Documents/link_Upload_Pdf'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/status_Document_Published'), 2)
+
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/link_Your_Comments'), 2)
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/link_Your_Comments'))
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_Interested_party_pdf'), 3)
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/link_Interested_party_pdf'))
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/status_Document_Published'), 2)
 

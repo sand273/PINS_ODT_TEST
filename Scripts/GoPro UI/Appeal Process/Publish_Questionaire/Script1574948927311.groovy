@@ -25,7 +25,7 @@ WebUI.focus(findTestObject('GoPro UI/Case Summary/link_Case_Forms'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('GoPro UI/Case Summary/link_Case_Forms'))
+WebUI.click(findTestObject('GoPro UI/Case Summary/link_Tab_Case_Forms'))
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/link_Processing'))
 
