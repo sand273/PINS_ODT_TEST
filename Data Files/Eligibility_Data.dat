@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>b82c40fb-ed06-4f8e-b653-85f932857cd5</dataFileGUID>
-   <dataSourceUrl>../../../../Katalon/Data-Files/Eligibility_Data.xlsx</dataSourceUrl>
+   <dataSourceUrl>Data Files/Eligibility_Data.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
    <query></query>
