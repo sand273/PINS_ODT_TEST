@@ -6,12 +6,11 @@
    <elementGuidId>4016a922-e702-4767-a6ad-d3989e23aa54</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//button[@id='programBtn']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//i[@class='far fa-terminal']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

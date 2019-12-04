@@ -19,15 +19,9 @@ String queRefMessage
 
 def verData = TestDataFactory.findTestData('Data Files/Complete_Questionaire')
 
-WebUI.click(findTestObject('Complete Questionaire/link_Search'))
+WebUI.callTestCase(findTestCase('Self Service Portal/Login/LPA_User'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Complete Questionaire/text_Appeal_Ref'), GlobalVariable.ApplicationRef)
-
-WebUI.click(findTestObject('Complete Questionaire/button_Search'))
-
-WebUI.verifyElementText(findTestObject('Complete Questionaire/label_Match_found'), verData.getValue(1, 1))
-
-WebUI.click(findTestObject('Complete Questionaire/link_Appeal_Ref'))
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Search_Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Complete questionnaire'), 3)
 
@@ -105,8 +99,7 @@ WebUI.waitForElementVisible(findTestObject('Complete Questionaire/message_Upload
 
 WebUI.click(findTestObject('Complete Questionaire/button_Select_File'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Pdf_Upload.exe'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(2)
 

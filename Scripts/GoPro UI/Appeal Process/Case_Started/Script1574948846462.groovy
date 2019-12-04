@@ -145,9 +145,9 @@ WebUI.switchToWindowIndex(1)
 
 WebUI.refresh()
 
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Programming/button_Programming'), 3)
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Programming/button_Programming'), 8)
 
-WebUI.doubleClick(findTestObject('GoPro UI/Programming/button_Programming'))
+WebUI.click(findTestObject('GoPro UI/Programming/button_Programming'))
 
 WebUI.switchToWindowIndex(1)
 

@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//main[@id='main-content']/div/div[2]/div/a</value>
+         <value>/html[1]/body[1]/div[1]/main[1]/div[1]/div[2]/div[1]/a[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -58,46 +57,4 @@
       <type>Main</type>
       <value>id(&quot;main-content&quot;)/div[@class=&quot;govuk-grid-row filter-row&quot;]/div[@class=&quot;govuk-grid-column-two-thirds&quot;]/div[@class=&quot;appeal-row&quot;]/a[@class=&quot;govuk-!-font-weight-bold&quot;]</value>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//main[@id='main-content']/div/div[2]/div/a</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Procedure'])[1]/following::a[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Status'])[1]/following::a[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Automation Tester'])[1]/preceding::a[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='PLANNING INSPECTORATE, TEMPLE QUAY HOUSE, 2, THE SQUARE, TEMPLE QUAY, BRISTOL, BS1 6PN'])[1]/preceding::a[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:href</name>
-      <type>Main</type>
-      <value>//a[contains(@href, 'appeal.html?id=2A090971-854E-4209-A1A0-DE31A70DE564&amp;ref=search')]</value>
-   </webElementXpaths>
 </WebElementEntity>

@@ -42,6 +42,8 @@ WebUI.click(findTestObject('Supporting Grounds/button_Add_another_document'))
 
 WebUI.click(findTestObject('Supporting Grounds/button_Select_File3'))
 
+WebUI.delay(1)
+
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Tiff_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('Supporting Grounds/button_Add_another_document'), 3)

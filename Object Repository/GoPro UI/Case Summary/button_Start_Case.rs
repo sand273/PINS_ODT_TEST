@@ -6,12 +6,11 @@
    <elementGuidId>35ed6a5e-b17b-4ed7-b0b0-f8c569d3e58c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//button[@id='startCaseBtn']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

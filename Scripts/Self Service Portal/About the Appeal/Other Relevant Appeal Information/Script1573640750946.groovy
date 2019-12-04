@@ -44,6 +44,8 @@ WebUI.click(findTestObject('Other Appeal Information/button_Add_More_Files'))
 
 WebUI.click(findTestObject('Other Appeal Information/button_Select_File3'))
 
+WebUI.delay(1)
+
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Tiff_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('Other Appeal Information/button_Add_More_Files'), 2)

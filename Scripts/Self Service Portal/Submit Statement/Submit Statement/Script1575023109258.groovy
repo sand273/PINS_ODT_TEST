@@ -16,7 +16,9 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 String statRefMessage
 
-def verData = TestDataFactory.findTestData('Data Files/Submit_Statement')
+def verData = TestDataFactory.findTestData('Data Files/Complete_Questionaire')
+
+WebUI.callTestCase(findTestCase('Self Service Portal/Login/LPA_User'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Complete Questionaire/link_Search'))
 
@@ -42,21 +44,23 @@ WebUI.verifyElementVisible(findTestObject('Submit Statement/button_Start_Now'), 
 
 WebUI.click(findTestObject('Submit Statement/button_Start_Now'))
 
-WebUI.waitForElementVisible(findTestObject('Submit Statement/title_LPA_Statement'), 3)
+WebUI.waitForElementVisible(findTestObject('Submit Statement/message_LPA_Statement'), 3)
 
 WebUI.click(findTestObject('Submit Statement/button_Select_File'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Submit Statement/button_Submit'))
 
 WebUI.waitForElementVisible(findTestObject('Submit Statement/title_Statement_Received'), 3)
 
-WebUI.verifyElementText(findTestObject('Submit Statement/title_Statement_Received'), verData.getValue(1, 1))
+WebUI.verifyElementText(findTestObject('Submit Statement/title_Statement_Received'), verData.getValue(1, 9))
 
 statRefMessage = WebUI.getText(findTestObject('Submit Statement/message_Statement_Ref_Number'))
 
-WebUI.verifyMatch(statRefMessage, verData.getValue(1, 2), true)
+WebUI.verifyMatch(statRefMessage, verData.getValue(1, 10), true)
 
 WebUI.verifyElementText(findTestObject('Submit Statement/message_RefNumber_Value'), 'W/' + GlobalVariable.ApplicationRef)
 

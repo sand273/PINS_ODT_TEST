@@ -17,21 +17,15 @@ Date today = new Date()
 
 String todaysDate = today.format('dd/MM/yyyy')
 
-WebUI.click(findTestObject('GoPro UI/Case Documents Actions/menu_Actions_Icon'))
-
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents Actions/link_Publish_LPA_Questionaire'), 2)
-
-WebUI.click(findTestObject('GoPro UI/Case Documents Actions/link_Publish_LPA_Questionaire'))
-
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents Actions/message_Publish_Questionaire'), 3)
-
-WebUI.click(findTestObject('GoPro UI/Programming/button_Publish'))
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish LPA Questionaire - Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_folder_LPA_Questionaire'), 5)
 
-WebUI.focus(findTestObject('GoPro UI/Case Summary/tab_Case_Form'))
+WebUI.focus(findTestObject('GoPro UI/Case Summary/link_Case_Forms'))
 
-WebUI.doubleClick(findTestObject('GoPro UI/Case Summary/tab_Case_Form'))
+WebUI.delay(1)
+
+WebUI.click(findTestObject('GoPro UI/Case Summary/link_Case_Forms'))
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/link_Processing'))
 

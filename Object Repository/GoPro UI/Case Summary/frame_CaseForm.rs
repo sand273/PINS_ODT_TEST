@@ -6,11 +6,11 @@
    <elementGuidId>68b921c1-f431-4891-af7d-00b302566066</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[@class='form ng-isolate-scope']//li[5]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='form-container']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
