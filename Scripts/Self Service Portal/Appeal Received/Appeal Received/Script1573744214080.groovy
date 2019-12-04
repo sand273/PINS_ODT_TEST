@@ -22,8 +22,6 @@ WebUI.verifyElementText(findTestObject('Appeal_Received/title_Appeal_Received'),
 
 GlobalVariable.ApplicationRef = WebUI.getText(findTestObject('Object Repository/Appeal_Received/label_Appeal_Received'))
 
-println(GlobalVariable.ApplicationRef)
-
 WebUI.verifyElementVisible(findTestObject('Appeal_Received/message_Happens_Next'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Appeal_Received/message_Validate'), verData.getValue(1, 72))
