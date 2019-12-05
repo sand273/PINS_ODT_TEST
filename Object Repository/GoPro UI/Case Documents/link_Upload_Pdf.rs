@@ -3,16 +3,48 @@
    <description></description>
    <name>link_Upload_Pdf</name>
    <tag></tag>
-   <elementGuidId>c081854e-f70b-40bd-862b-b874f2e45647</elementGuidId>
+   <elementGuidId>1bc9c18f-0693-4741-a952-37935b1ae392</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
          <value>//div[@class='gpview-rowmain']//h3[@class='ng-binding'][contains(text(),'Upload_Pdf')]</value>
       </entry>
-      <entry>
-         <key>BASIC</key>
-      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h3</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-bind-html</name>
+      <type>Main</type>
+      <value>row.subject | highlight:query</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ng-binding</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Upload_Pdf</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;0FF27A09-3D47-43CA-88B8-A594B7C16C46&quot;)/ng-include[@class=&quot;ng-scope&quot;]/div[@class=&quot;gpview-template ng-scope&quot;]/div[@class=&quot;gpview-rowmain&quot;]/h3[@class=&quot;ng-binding&quot;]</value>
+   </webElementProperties>
 </WebElementEntity>

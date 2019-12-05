@@ -42,23 +42,26 @@ WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
 WebUI.scrollToPosition(9999999, 9999999)
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_Folder_LPA_Statement'), 5)
+WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/link_Folder_LPA_Statement'), 5)
+
+WebUI.focus(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'))
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'))
 
-WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Documents/link_Upload_Pdf'))
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Documents/Page_pins-test viewscaseresponses/Page_pins-test viewscaseresponses/link_Upload_Pdf'))
 
-WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Documents/link_Expand_LPA_Statement'))
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Documents/Page_pins-test viewscaseresponses/Page_pins-test viewscaseresponses/link_Expand_LPA Statement'))
 
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/link_Upload_Pdf'), 2)
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/Page_pins-test viewscaseresponses/Page_pins-test viewscaseresponses/link_Upload_Pdf'), 
+    2)
 
-WebUI.click(findTestObject('GoPro UI/Case Documents/link_Upload_Pdf'))
+WebUI.click(findTestObject('GoPro UI/Case Documents/Page_pins-test viewscaseresponses/Page_pins-test viewscaseresponses/link_Upload_Pdf'))
 
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/button_Ready_for_Publish'), 2)
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/button_Ready_for_Publish'), 4)
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/button_Ready_for_Publish'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/label_Processing'), 5)
+WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Summary/label_Processing'), 5)
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
@@ -68,11 +71,12 @@ WebUI.scrollToPosition(9999999, 9999999)
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'))
 
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/link_Expand_LPA_Statement'), 2)
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/Page_pins-test viewscaseresponses/Page_pins-test viewscaseresponses/link_Expand_LPA Statement'), 
+    2)
 
-WebUI.click(findTestObject('GoPro UI/Case Documents/link_Expand_LPA_Statement'))
+WebUI.click(findTestObject('GoPro UI/Case Documents/Page_pins-test viewscaseresponses/Page_pins-test viewscaseresponses/link_Expand_LPA Statement'))
 
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/button_Ready_for_Publish'), 2)
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/button_Ready_for_Publish'), 4)
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/button_Ready_for_Publish'))
 

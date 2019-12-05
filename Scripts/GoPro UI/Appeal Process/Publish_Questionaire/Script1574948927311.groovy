@@ -12,6 +12,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
 Date today = new Date()
 
@@ -23,9 +24,9 @@ WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_folder_
 
 WebUI.focus(findTestObject('GoPro UI/Case Summary/link_Case_Forms'))
 
-WebUI.delay(1)
+not_run: WebUI.click(findTestObject('GoPro UI/Case Summary/link_Case_Forms'))
 
-WebUI.click(findTestObject('GoPro UI/Case Summary/link_Tab_Case_Forms'))
+WebUI.sendKeys(findTestObject('GoPro UI/Case Summary/link_Case_Forms'), Keys.chord(Keys.TAB) + Keys.chord(Keys.TAB) + Keys.chord(Keys.TAB) + Keys.chord(Keys.ENTER))
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/link_Processing'))
 

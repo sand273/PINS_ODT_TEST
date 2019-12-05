@@ -15,7 +15,9 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
-def verData = TestDataFactory.findTestData('Data Files/GoPro_UI_Verification')
+String queRefMessage
+
+def verData = TestDataFactory.findTestData('Data Files/Complete_Questionaire')
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Login/Third party'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -25,11 +27,17 @@ WebUI.waitForElementVisible(findTestObject('Third Party Comments/status_Open for
 
 WebUI.click(findTestObject('Third Party Comments/input_Error_agree'))
 
-WebUI.click(findTestObject('Third Party Comments/a_Make a comment'))
+WebUI.click(findTestObject('Third Party Comments/button_Make a comment'))
+
+WebUI.waitForElementVisible(findTestObject('Third Party Comments/message_Which_Statement'), 3)
 
 WebUI.click(findTestObject('Third Party Comments/input_Which statement'))
 
 WebUI.click(findTestObject('Third Party Comments/button_Next page'))
+
+WebUI.waitForElementVisible(findTestObject('Third Party Comments/message_Enter_Comments'), 3)
+
+WebUI.scrollToPosition(9999999, 9999999)
 
 WebUI.setText(findTestObject('Third Party Comments/text_Enter_YourComments'), verData.getValue(1, 3))
 
@@ -38,4 +46,19 @@ WebUI.click(findTestObject('Third Party Comments/button_Save and continue'))
 WebUI.waitForElementVisible(findTestObject('Third Party Comments/message_Comments_Confirmation'), 3)
 
 WebUI.click(findTestObject('Third Party Comments/button_Submit'))
+
+WebUI.waitForElementVisible(findTestObject('Complete Questionaire/title_Questionaire_Received'), 3)
+
+WebUI.verifyElementText(findTestObject('Complete Questionaire/title_Questionaire_Received'), verData.getValue(1, 11))
+
+WebUI.verifyElementVisible(findTestObject('Complete Questionaire/message_Questionaire_Reference_Num'))
+
+queRefMessage = WebUI.getText(findTestObject('Complete Questionaire/message_Questionaire_Reference_Num'))
+
+WebUI.verifyMatch(queRefMessage, verData.getValue(1, 12), true)
+
+WebUI.verifyElementText(findTestObject('Complete Questionaire/message_Ref_Num_Value'), 'W/' + GlobalVariable.ApplicationRef)
+
+WebUI.closeBrowser()
+
 
