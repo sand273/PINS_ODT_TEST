@@ -3,11 +3,11 @@
    <description></description>
    <name>link_LPA_Statement</name>
    <tag></tag>
-   <elementGuidId>c08f3c25-5cc4-401f-a82d-ccb622502e4a</elementGuidId>
+   <elementGuidId>76f7a141-24b5-4123-87ee-d49f90c497d0</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>/html[1]/body[1]/ng-include[1]/ng-view[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[7]/div[2]/gp-view[1]/div[2]/div[31]/div[2]/button[1]/i[1]</value>
+         <value>/html[1]/body[1]/ng-include[1]/ng-view[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[7]/div[2]/gp-view[1]/div[2]/div[32]/div[2]/button[1]/i[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -52,20 +52,20 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Expand'])[31]/preceding::i[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Expand'])[32]/preceding::i[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Collapse'])[31]/preceding::i[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Collapse'])[32]/preceding::i[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[31]/div[2]/button/i</value>
+      <value>//div[32]/div[2]/button/i</value>
    </webElementXpaths>
 </WebElementEntity>

@@ -139,21 +139,19 @@ WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/link_Processin
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/link_Processing'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/label_Processing'), 10)
+WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Summary/label_Processing'), 10)
 
 WebUI.switchToWindowIndex(1)
-
-WebUI.refresh()
 
 WebUI.waitForPageLoad(5, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Programming/button_Programming'), 5)
+not_run: WebUI.waitForElementPresent(findTestObject('GoPro UI/Programming/button_Programming'), 10)
 
-WebUI.click(findTestObject('GoPro UI/Programming/button_Programming'))
+not_run: WebUI.click(findTestObject('GoPro UI/Programming/button_Programming'))
 
-WebUI.switchToWindowIndex(1)
+not_run: WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Summary/label_Processing'), 8)
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/label_Processing'), 8)
+not_run: WebUI.switchToWindowIndex(1)
 
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Status_Programmed'), 'defaultSelected', 
     'true', 5)
@@ -171,11 +169,13 @@ WebUI.verifyElementText(findTestObject('GoPro UI/Case Summary/message_Start_Case
 
 WebUI.click(findTestObject('GoPro UI/Programming/button_Publish'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/label_Processing'), 10)
+WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Summary/label_Processing'), 10)
 
 WebUI.switchToWindowIndex(1)
 
 WebUI.waitForPageLoad(5)
+
+WebUI.refresh()
 
 WebUI.focus(findTestObject('GoPro UI/Case Summary/frame_CaseForm'))
 

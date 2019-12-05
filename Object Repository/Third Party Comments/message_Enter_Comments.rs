@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_Expand_LPA_Statement</name>
+   <name>message_Enter_Comments</name>
    <tag></tag>
-   <elementGuidId>b5527e5d-dcec-45ee-a4cc-58b8e3bd6836</elementGuidId>
+   <elementGuidId>bf04e30a-a25d-40ab-9343-135838979920</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>/html[1]/body[1]/ng-include[1]/ng-view[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[7]/div[2]/gp-view[1]/div[2]/div[22]/ng-include[1]/div[1]/div[2]/h3[1]</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
       </entry>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//label[contains(text(),'Enter your comments')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

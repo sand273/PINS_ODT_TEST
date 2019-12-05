@@ -16,5 +16,17 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.click(findTestObject('null'))
+WebUI.navigateToUrl('https://pins-test.gopro.net/')
+
+WebUI.switchToWindowTitle('pins-test views.caseresponses')
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/Page_pins-test viewscaseresponses/link_LPA_Statement'))
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/Page_pins-test viewscaseresponses/link_Expand_LPA Statement'))
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/Page_pins-test viewscaseresponses/link_Upload_Pdf'))
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/Page_pins-test viewscaseresponses/link_Your_Comments'))
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/Page_pins-test viewscaseresponses/link_Interested_Party_Pdf'))
 
