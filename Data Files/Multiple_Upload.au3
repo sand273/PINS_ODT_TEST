@@ -1,0 +1,4 @@
+Sleep(1000)
+ControlFocus("Open","","Edit1")
+ControlSetText("Open","","Edit1","""C:\Automation\PINS_ODT_TEST\Data Files\Case_Upload_Docs\file_example_PNG_3MB.png"" ""C:\Automation\PINS_ODT_TEST\Data Files\Case_Upload_Docs\file_example_TIFF_10MB.tiff"" ""C:\Automation\PINS_ODT_TEST\Data Files\Case_Upload_Docs\JPEG_example_flower.jpg"" ""C:\Automation\PINS_ODT_TEST\Data Files\Case_Upload_Docs\PDF_1.pdf"" ""C:\Automation\PINS_ODT_TEST\Data Files\Case_Upload_Docs\PDF_2.pdf"" ""C:\Automation\PINS_ODT_TEST\Data Files\Case_Upload_Docs\PDF_3.pdf"" ""C:\Automation\PINS_ODT_TEST\Data Files\Case_Upload_Docs\PDF_4.pdf"" ""C:\Automation\PINS_ODT_TEST\Data Files\Case_Upload_Docs\PDF_5.pdf"" ""C:\Automation\PINS_ODT_TEST\Data Files\Case_Upload_Docs\Word_doc_1.docx"" ""C:\Automation\PINS_ODT_TEST\Data Files\Case_Upload_Docs\Word_doc_2.docx""")
+ControlClick("Open","","Button1")
