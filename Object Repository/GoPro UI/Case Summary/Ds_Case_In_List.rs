@@ -6,12 +6,12 @@
    <elementGuidId>fe354ce6-f1ed-43a1-9601-b453af95bbc5</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//span[contains(text(),'${caseNumber}')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//span[contains(text(),'EN013004')]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
