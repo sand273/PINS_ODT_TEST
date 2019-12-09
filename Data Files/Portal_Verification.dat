@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>8a1daeac-05c0-4591-9a57-844c0ff7fd60</dataFileGUID>
-   <dataSourceUrl>Data Files/Portal_Verification.xlsx</dataSourceUrl>
+   <dataSourceUrl>../../Katalon/Data-Files/Portal_Verification.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
    <query></query>
