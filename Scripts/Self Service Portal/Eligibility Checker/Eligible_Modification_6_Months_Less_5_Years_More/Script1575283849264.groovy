@@ -48,7 +48,7 @@ WebUI.click(findTestObject('Object Repository/Appeal a planning decision/button_
 WebUI.waitForElementVisible(findTestObject('Object Repository/Appeal a planning decision/end_User_Question'), 2)
 
 WebUI.verifyElementText(findTestObject('Object Repository/Appeal a planning decision/end_User_Question'), verData.getValue(
-        1, 78))
+        1, 79))
 
 WebUI.click(findTestObject('Appeal a planning decision/input_More_than_five_years_ago_option'))
 

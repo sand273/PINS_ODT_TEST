@@ -6,11 +6,15 @@
    <elementGuidId>33874bd7-ccf9-4fa7-a3dd-25e6e7a5913e</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>ng-include.ng-scope:nth-child(1) ng-view.ng-scope section.formsection.ng-scope div.maincontent div.tab-content div.tab-pane.ng-scope.active:nth-child(2) div.view div.ng-scope div.viewcontent gp-view.ng-isolate-scope div.gpview-row:nth-child(30) ng-include.ng-scope:nth-child(3) div.gpview-template.ng-scope div.gpview-rowmain > h3.ng-binding:nth-child(1)</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>/html[1]/body[1]/ng-include[1]/ng-view[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[7]/div[2]/gp-view[1]/div[2]/div[34]/ng-include[1]/div[1]/div[2]</value>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -47,39 +51,4 @@
       <type>Main</type>
       <value>id(&quot;0FF27A09-3D47-43CA-88B8-A594B7C16C46&quot;)/ng-include[@class=&quot;ng-scope&quot;]/div[@class=&quot;gpview-template ng-scope&quot;]/div[@class=&quot;gpview-rowmain&quot;]/h3[@class=&quot;ng-binding&quot;]</value>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='File'])[31]/following::h3[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Collapse'])[34]/following::h3[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Key document'])[29]/preceding::h3[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Personal sensitive'])[2]/preceding::h3[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//div[34]/ng-include/div/div[2]/h3</value>
-   </webElementXpaths>
 </WebElementEntity>

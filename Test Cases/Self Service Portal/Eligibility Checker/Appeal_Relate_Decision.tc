@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Steps 18 till Step 22 have been disabled as &quot;Listed Building&quot; question has now been dropped in version 1.2</description>
    <name>Appeal_Relate_Decision</name>
    <tag></tag>
    <comment></comment>

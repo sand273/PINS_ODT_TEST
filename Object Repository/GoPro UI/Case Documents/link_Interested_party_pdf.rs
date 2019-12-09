@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//h3[contains(text(),'Sandeep Ramchandani Interested Party Correspondenc')]</value>
+         <value>//h3[contains(text(),'Interested Party Correspondenc')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

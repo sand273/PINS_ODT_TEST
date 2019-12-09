@@ -22,19 +22,29 @@ WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish LPA Questionaire - Act
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_folder_LPA_Questionaire'), 5)
 
-WebUI.focus(findTestObject('GoPro UI/Case Summary/link_Case_Forms'))
+WebUI.closeWindowIndex(1)
 
-not_run: WebUI.click(findTestObject('GoPro UI/Case Summary/link_Case_Forms'))
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject('GoPro UI/Case Summary/link_Case_Forms'), Keys.chord(Keys.TAB) + Keys.chord(Keys.TAB) + Keys.chord(Keys.TAB) + Keys.chord(Keys.ENTER))
+WebUI.callTestCase(findTestCase('GoPro UI/Login/Case_Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('GoPro UI/Case Summary/link_Processing'))
+WebUI.click(findTestObject('GoPro UI/My cases/link_My events_location_arrow'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/label_Processing'), 5)
+WebUI.click(findTestObject('GoPro UI/My cases/link_Holding_List'))
 
-WebUI.refresh()
+WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'))
+
+WebUI.sendKeys(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'), GlobalVariable.ApplicationRef)
+
+WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Search'))
+
+WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Summary/list_Case_Ref'), 5)
+
+WebUI.doubleClick(findTestObject('GoPro UI/Case Summary/list_Case_Ref'))
 
 WebUI.switchToWindowIndex(1)
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/panel_Left_Processing_Timeline'), 5)
 
 WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'))
 

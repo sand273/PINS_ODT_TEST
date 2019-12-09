@@ -57,9 +57,9 @@ use(groovy.time.TimeCategory, {
 
 WebUI.callTestCase(findTestCase('GoPro UI/Login/Case_Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/GoPro UI/Page_pins My cases/link_My events_location_arrow'))
+WebUI.click(findTestObject('GoPro UI/My cases/link_My events_location_arrow'))
 
-WebUI.click(findTestObject('Object Repository/GoPro UI/Page_pins My cases/link_Holding_List'))
+WebUI.click(findTestObject('GoPro UI/My cases/link_Holding_List'))
 
 WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'))
 
@@ -145,14 +145,6 @@ WebUI.switchToWindowIndex(1)
 
 WebUI.waitForPageLoad(5, FailureHandling.STOP_ON_FAILURE)
 
-not_run: WebUI.waitForElementPresent(findTestObject('GoPro UI/Programming/button_Programming'), 10)
-
-not_run: WebUI.click(findTestObject('GoPro UI/Programming/button_Programming'))
-
-not_run: WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Summary/label_Processing'), 8)
-
-not_run: WebUI.switchToWindowIndex(1)
-
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Status_Programmed'), 'defaultSelected', 
     'true', 5)
 
@@ -174,8 +166,6 @@ WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Summary/label_Processi
 WebUI.switchToWindowIndex(1)
 
 WebUI.waitForPageLoad(5)
-
-WebUI.refresh()
 
 WebUI.focus(findTestObject('GoPro UI/Case Summary/frame_CaseForm'))
 

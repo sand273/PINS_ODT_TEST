@@ -6,12 +6,11 @@
    <elementGuidId>d6fc27a2-434c-459f-ad3b-a82bcd682598</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//h3[contains(text(),'Your comments')]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

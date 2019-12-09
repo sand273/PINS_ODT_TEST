@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>File Upload - Actions Menu</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>70557780-91cd-44d8-8461-5158bbdee9a7</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>1a386337-8eb8-48a7-a420-0e1cb5b26c21</id>
+      <masked>false</masked>
+      <name>docTemplate</name>
+   </variable>
+</TestCaseEntity>

@@ -18,9 +18,9 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 WebUI.callTestCase(findTestCase('GoPro UI/Login/Case_Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/GoPro UI/Page_pins My cases/link_My events_location_arrow'))
+WebUI.click(findTestObject('GoPro UI/My cases/link_My events_location_arrow'))
 
-WebUI.click(findTestObject('Object Repository/GoPro UI/Page_pins My cases/link_Holding_List'))
+WebUI.click(findTestObject('GoPro UI/My cases/link_Holding_List'))
 
 WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'))
 

@@ -9,8 +9,13 @@
          <key>XPATH</key>
          <value>/html[1]/body[1]/ng-include[1]/ng-view[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[7]/div[2]/gp-view[1]/div[2]/div[32]/ng-include[1]/div[1]/div[2]/h3[1]</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>ng-include.ng-scope:nth-child(1) ng-view.ng-scope section.formsection.ng-scope div.maincontent div.tab-content div.tab-pane.ng-scope.active:nth-child(2) div.view div.ng-scope div.viewcontent gp-view.ng-isolate-scope div:nth-child(2) div.gpview-row:nth-child(35) ng-include.ng-scope:nth-child(3) div.gpview-template.ng-scope > div.gpview-rowmain
+</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
