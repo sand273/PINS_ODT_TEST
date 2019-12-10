@@ -19,14 +19,15 @@ WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/GoPro UI/Page_PINS Test  GoPro/a_GoPro UI'))
+WebUI.click(findTestObject('GoPro UI/PINS GoPro/a_GoPro UI'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/GoPro UI/Page_Login/input_User name'), 3)
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Login/input_User name'), 3)
 
-WebUI.setText(findTestObject('Object Repository/GoPro UI/Page_Login/input_User name'), 'Autotest_1')
+WebUI.setText(findTestObject('GoPro UI/Login/input_User name'), 'Autotest_1')
 
-WebUI.focus(findTestObject('Object Repository/GoPro UI/Page_Login/input_Password'))
+WebUI.focus(findTestObject('GoPro UI/Login/input_Password'))
 
-WebUI.setEncryptedText(findTestObject('Object Repository/GoPro UI/Page_Login/input_Password'), '0cU2R0tWEjl49ICU6OTr2A==')
+WebUI.setEncryptedText(findTestObject('GoPro UI/Login/input_Password'), '0cU2R0tWEjl49ICU6OTr2A==')
 
-WebUI.click(findTestObject('Object Repository/GoPro UI/Page_Login/button_Login'))
+WebUI.click(findTestObject('GoPro UI/Login/button_Login'))
+

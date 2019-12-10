@@ -28,5 +28,5 @@ WebUI.click(findTestObject('GoPro UI/Case Documents/Page_pins-test viewscaseresp
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/Page_pins-test viewscaseresponses/link_Your_Comments'))
 
-WebUI.click(findTestObject('GoPro UI/Case Documents/Page_pins-test viewscaseresponses/link_Interested_Party_Pdf'))
+WebUI.click(findTestObject('null'))
 

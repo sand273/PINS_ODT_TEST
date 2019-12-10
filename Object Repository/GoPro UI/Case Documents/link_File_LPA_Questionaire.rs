@@ -6,12 +6,11 @@
    <elementGuidId>01144bc3-a95d-4fcd-b91c-98bdd6122251</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[contains(@class,'gpview-rowmain')]//span[contains(@class,'ng-binding')][contains(text(),'LPA Questionnaire')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
       </entry>
       <entry>
          <key>BASIC</key>

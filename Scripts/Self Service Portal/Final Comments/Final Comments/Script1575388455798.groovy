@@ -17,19 +17,21 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 String queRefMessage
 
+def testData = TestDataFactory.findTestData('Data Files/GoPro_UI_Verification')
+
 def verData = TestDataFactory.findTestData('Data Files/Complete_Questionaire')
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Login/Case_Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Search_Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Third Party Comments/status_Open for comments'), 3)
+WebUI.waitForElementVisible(findTestObject('Final Comments/status_Final_Comments'), 3)
 
-WebUI.verifyElementText(findTestObject('Final Comments/status_Final_Comments'), verData.getValue(1, 2))
+WebUI.verifyElementText(findTestObject('Final Comments/status_Final_Comments'), testData.getValue(1, 2))
 
 WebUI.verifyElementVisible(findTestObject('Final Comments/message_Final_Comments'))
 
-WebUI.verifyElementVisible(findTestObject('Final Comments/status_Days_Left'))
+not_run: WebUI.verifyElementVisible(findTestObject('Final Comments/status_Days_Left'))
 
 WebUI.click(findTestObject('Final Comments/button_Make_Final_Comment'))
 

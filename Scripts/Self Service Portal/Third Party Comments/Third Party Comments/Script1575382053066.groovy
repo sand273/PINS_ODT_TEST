@@ -18,6 +18,7 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 String queRefMessage
 
 def verData = TestDataFactory.findTestData('Data Files/Complete_Questionaire')
+def testData = TestDataFactory.findTestData('Data Files/GoPro_UI_Verification')
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Login/Third party'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -39,7 +40,7 @@ WebUI.waitForElementVisible(findTestObject('Third Party Comments/message_Enter_C
 
 WebUI.scrollToPosition(9999999, 9999999)
 
-WebUI.setText(findTestObject('Third Party Comments/text_Enter_YourComments'), verData.getValue(1, 3))
+WebUI.setText(findTestObject('Third Party Comments/text_Enter_YourComments'), testData.getValue(1, 3))
 
 WebUI.click(findTestObject('Third Party Comments/button_Save and continue'))
 
