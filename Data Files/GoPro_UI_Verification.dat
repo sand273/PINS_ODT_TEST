@@ -6,9 +6,9 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>40f8a365-9436-4db2-ab00-8237a1d71f84</dataFileGUID>
-   <dataSourceUrl>../../../../Katalon/Data-Files/GoPro_UI_Verification.xlsx</dataSourceUrl>
+   <dataSourceUrl>C:\Katalon\Data-Files\GoPro_UI_Verification.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
-   <isInternalPath>true</isInternalPath>
+   <isInternalPath>false</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName>Verifications</sheetName>
