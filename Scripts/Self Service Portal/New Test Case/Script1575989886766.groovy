@@ -12,21 +12,11 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import org.openqa.selenium.Keys as Keys
 
-def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
+WebUI.openBrowser('')
 
-WebUI.delay(1)
+WebUI.navigateToUrl('https://pins-test.gopro.net/selfservice/web/portal/application.html?id=FRUN4C#section-Planning.Details')
 
-WebUI.waitForElementVisible(findTestObject('Appeal a planning decision/button_Appeal_Now'), 20)
-
-WebUI.click(findTestObject('Appeal a planning decision/button_Appeal_Now'))
-
-WebUI.waitForElementVisible(findTestObject('Appeal a planning decision/account_User_Question'), 2)
-
-WebUI.verifyElementText(findTestObject('Appeal a planning decision/account_User_Question'), verData.getValue(1, 20))
-
-WebUI.click(findTestObject('Appeal a planning decision/input_Account_Yes'))
-
-WebUI.click(findTestObject('Appeal a planning decision/button_Account_Continue'))
+WebUI.click(findTestObject('Planning Application details/input_Under_0.1_ha'))
 
