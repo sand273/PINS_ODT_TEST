@@ -6,9 +6,9 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>71a178f5-237e-407a-b37b-8b0a3b63c9fd</dataFileGUID>
-   <dataSourceUrl>../../../../Katalon/Data-Files/Site_Details.xlsx</dataSourceUrl>
+   <dataSourceUrl>C:\Katalon\Data-Files\Site_Details.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
-   <isInternalPath>true</isInternalPath>
+   <isInternalPath>false</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName>Site_Details</sheetName>
