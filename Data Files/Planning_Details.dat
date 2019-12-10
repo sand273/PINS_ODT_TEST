@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description></description>
@@ -15,21 +14,3 @@
    <sheetName>Sheet1</sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<DataFileEntity>
-   <description></description>
-   <name>Planning_Details</name>
-   <tag></tag>
-   <containsHeaders>true</containsHeaders>
-   <csvSeperator></csvSeperator>
-   <dataFileGUID>5d6e1efd-59a9-4225-b1c2-bbe9e458182f</dataFileGUID>
-   <dataSourceUrl>../../Katalon/Data-Files/Planning_Application_Details.xlsx</dataSourceUrl>
-   <driver>ExcelFile</driver>
-   <isInternalPath>true</isInternalPath>
-   <query></query>
-   <secureUserAccount>false</secureUserAccount>
-   <sheetName>Sheet1</sheetName>
-   <usingGlobalDBSetting>false</usingGlobalDBSetting>
-</DataFileEntity>
->>>>>>> branch 'master' of https://github.com/sand273/PINS_ODT_TEST.git
