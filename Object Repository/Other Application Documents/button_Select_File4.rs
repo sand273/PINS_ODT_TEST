@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='File.TechnicalReport:Other.Documents:4']</value>
+         <value>//label[@for='File.TechnicalReport:Other.Documents:4']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

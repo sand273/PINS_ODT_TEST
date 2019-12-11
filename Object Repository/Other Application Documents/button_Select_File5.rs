@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='File.TechnicalReport:Other.Documents:5']</value>
+         <value>//label[@for='File.TechnicalReport:Other.Documents:5']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
