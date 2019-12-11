@@ -13,9 +13,25 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.delay(1)
+Date issueDate
 
-Runtime.runtime.exec(GlobalVariable.UploadFilePath + exeFileName)
+Date today = new Date()
 
-WebUI.delay(1)
+use(groovy.time.TimeCategory, { 
+        issueDate = (today + 11.weeks)
+    })
+
+WebUI.callTestCase(findTestCase('GoPro UI/Login/Case_Officer'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Decision_Issued'), 'defaultSelected', 'true', 
+    5)
+
+WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Decision_Issued'), 'value', issueDate.format(
+        'dd/MM/yyyy').toString(), 1)
+
+WebUI.click(findTestObject('GoPro UI/Case Summary/button_Save'))
+
+WebUI.closeBrowser()
 

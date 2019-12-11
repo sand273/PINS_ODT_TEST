@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>menu_Actions_Holdings</name>
+   <name>button_Clearsearch</name>
    <tag></tag>
-   <elementGuidId>48a04f4e-fb53-4a92-9494-65edcfc2a4b1</elementGuidId>
+   <elementGuidId>7ea4f20f-db37-4eda-99c7-ec47da39304c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class,'dropdown mega-menu')]</value>
+         <value>//button[@id='btnClearSearch']//span[@class='fal fa-times']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -13,9 +13,13 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.delay(1)
+WebUI.click(findTestObject('GoPro UI/Actions Menu/menu_Actions_Holdings'))
 
-Runtime.runtime.exec(GlobalVariable.UploadFilePath + exeFileName)
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Actions Menu/link_Publish_Decision'), 2)
 
-WebUI.delay(1)
+WebUI.click(findTestObject('GoPro UI/Actions Menu/link_Publish_Decision'))
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Actions Menu/message_Publish_Questionaire'), 3)
+
+WebUI.click(findTestObject('GoPro UI/Programming/button_Publish'))
 

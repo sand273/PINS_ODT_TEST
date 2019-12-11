@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>menu_Actions_Holdings</name>
+   <name>link_Publish_Decision</name>
    <tag></tag>
-   <elementGuidId>48a04f4e-fb53-4a92-9494-65edcfc2a4b1</elementGuidId>
+   <elementGuidId>3434b23f-8615-4b1e-8307-31a52f358c40</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class,'dropdown mega-menu')]</value>
+         <value>//span[contains(text(),'Publish Decision')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

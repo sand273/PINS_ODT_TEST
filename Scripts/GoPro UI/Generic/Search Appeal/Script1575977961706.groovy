@@ -12,24 +12,29 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
-import groovy.time.TimeCategory as TimeCategory
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
-WebUI.callTestCase(findTestCase('GoPro UI/Login/Case_Officer'), [:], FailureHandling.STOP_ON_FAILURE)
+def UIData = TestDataFactory.findTestData('Data Files/GoPro_UI_Verification')
 
-WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('GoPro UI/My cases/link_My events_location_arrow'))
 
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Publish_Questionaire'), 'defaultSelected', 
-    'true', 5)
+WebUI.click(findTestObject('GoPro UI/My cases/link_Holding_List'))
 
-WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
+WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_folder_LPA_Questionaire'), 5)
+WebUI.sendKeys(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'), GlobalVariable.ApplicationRef)
 
-WebUI.scrollToPosition(9999999, 9999999)
+WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Search'))
 
-WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Questionaire'))
+WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Summary/list_Case_Ref'), 5)
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_File_LPA_Questionaire'), 5)
+WebUI.doubleClick(findTestObject('GoPro UI/Case Summary/list_Case_Ref'))
+
+WebUI.switchToWindowIndex(1)
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/panel_Left_Processing_Timeline'), 5)
+
+WebUI.verifyElementText(findTestObject('GoPro UI/Case Summary/panel_Left_Processing_Timeline'), UIData.getValue(1, 1))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'))
 

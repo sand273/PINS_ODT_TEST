@@ -13,7 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('GoPro UI/Actions Menu/menu_Actions_Icon'))
+WebUI.click(findTestObject('GoPro UI/Actions Menu/menu_Actions'))
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Actions Menu/link_Publish_LPA_Statements'), 2)
 

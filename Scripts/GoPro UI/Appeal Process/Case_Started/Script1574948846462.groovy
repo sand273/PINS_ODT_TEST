@@ -57,27 +57,7 @@ use(groovy.time.TimeCategory, {
 
 WebUI.callTestCase(findTestCase('GoPro UI/Login/Case_Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('GoPro UI/My cases/link_My events_location_arrow'))
-
-WebUI.click(findTestObject('GoPro UI/My cases/link_Holding_List'))
-
-WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'))
-
-WebUI.sendKeys(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'), GlobalVariable.ApplicationRef)
-
-WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Search'))
-
-WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Summary/list_Case_Ref'), 5)
-
-WebUI.doubleClick(findTestObject('GoPro UI/Case Summary/list_Case_Ref'))
-
-WebUI.switchToWindowIndex(1)
-
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/panel_Left_Processing_Timeline'), 5)
-
-WebUI.verifyElementText(findTestObject('GoPro UI/Case Summary/panel_Left_Processing_Timeline'), verData.getValue(1, 1))
-
-WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'))
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Validation_Required'), 'defaultSelected', 
     'true', 5)
@@ -163,54 +143,9 @@ WebUI.click(findTestObject('GoPro UI/Programming/button_Publish'))
 
 WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Summary/label_Processing'), 10)
 
-WebUI.switchToWindowIndex(1)
+WebUI.refresh()
 
-WebUI.waitForPageLoad(5)
-
-WebUI.focus(findTestObject('GoPro UI/Case Summary/frame_CaseForm'))
-
-not_run: WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Status_Case_Started'), 'defaultSelected', 
-    'true', 2)
-
-WebUI.waitForElementHasAttribute(findTestObject('GoPro UI/Case Summary/date_Case_Start'), 'value', 4)
-
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Case_Start'), 'value', todaysDate, 1)
-
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_LPA_Statement'), 'value', statDate.format('dd/MM/yyyy').toString(), 
-    1)
-
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Decision_Due'), 'value', decDueDate.format(
-        'dd/MM/yyyy').toString(), 1)
-
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_LPA_Questionaire_Due'), 'value', queDueDate.format(
-        'dd/MM/yyyy').toString(), 1)
-
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Final_Comments'), 'value', finalCommDate.format(
-        'dd/MM/yyyy').toString(), 1)
-
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Final_Comments_Publish'), 'value', '', 1)
-
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_LPA_Questionaire_Publish'), 'value', '', 1)
-
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Event'), 'value', '', 1)
-
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_LPA_Published'), 'value', '', 1)
-
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_IP_Published'), 'value', '', 1)
-
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_LPA_Application'), 'value', '', 1)
-
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_LPA_Application_Decision'), 'value', '', 1)
-
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Case_Turned_Away'), 'value', '', 1)
-
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Case_Withdrawn'), 'value', '', 1)
-
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Decision_Issued'), 'value', '', 1)
-
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Abeyance_Start'), 'value', '', 1)
-
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Abeyance_End'), 'value', '', 1)
+WebUI.closeWindowIndex(1)
 
 WebUI.closeBrowser()
 
