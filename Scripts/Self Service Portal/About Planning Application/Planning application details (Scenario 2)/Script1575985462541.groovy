@@ -14,6 +14,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+import org.openqa.selenium.WebElement as WebElement
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
@@ -66,29 +68,80 @@ WebUI.check(findTestObject('Planning Application details/check_Industrial_and_co
 
 WebUI.check(findTestObject('Planning Application details/check_Minerals'))
 
-WebUI.waitForElementVisible(findTestObject('Planning Application details/question_Application_Type'), 2)
-
-WebUI.verifyElementText(findTestObject('Planning Application details/question_Application_Type'), verData.getValue(1, 82))
-
 WebUI.click(findTestObject('Planning Application details/input_Area'))
-
-WebUI.waitForElementVisible(findTestObject('Planning Application details/question_Application_Type'), 2)
-
-WebUI.verifyElementText(findTestObject('Planning Application details/question_Application_Type'), verData.getValue(1, 83))
 
 WebUI.click(findTestObject('Planning Application details/input_Under_0.1_ha'))
 
-WebUI.waitForElementVisible(findTestObject('Planning Application details/question_Application_Type'), 2)
-
-WebUI.verifyElementText(findTestObject('Planning Application details/question_Application_Type'), verData.getValue(1, 84))
-
 WebUI.click(findTestObject('Planning Application details/input_Unde_ 4_ha_50,000_tonnes_or_5_years_duration'))
-
-WebUI.waitForElementVisible(findTestObject('Planning Application details/question_Application_Type'), 2)
-
-WebUI.verifyElementText(findTestObject('Planning Application details/question_Application_Type'), verData.getValue(1, 85))
 
 WebUI.click(findTestObject('Planning Application details/input_Up_to_100,000_tonnes'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
+
+WebUI.waitForElementVisible(findTestObject('Planning Application details/message_Development_Description'), 2)
+
+WebUI.verifyElementText(findTestObject('Planning Application details/message_Development_Description'), verData.getValue(
+        1, 28))
+
+WebUI.setText(findTestObject('Planning Application details/text_Development_Description'), testData.getValue(3, 1))
+
+WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
+
+WebUI.waitForElementVisible(findTestObject('Planning Application details/question_Description_Change'), 2)
+
+WebUI.verifyElementText(findTestObject('Planning Application details/question_Description_Change'), verData.getValue(1, 
+        29))
+
+WebUI.check(findTestObject('Planning Application details/input_Yes_Description_Change'))
+
+WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
+
+WebUI.setText(findTestObject('Planning Application details/Revised_Description_Field'), testData.getValue(4, 1))
+
+WebUI.setText(findTestObject('Planning Application details/Reason_Changed_Description_Field'), testData.getValue(5, 1))
+
+WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
+
+WebUI.waitForElementVisible(findTestObject('Planning Application details/message_Upload_Application_Form'), 2)
+
+WebUI.verifyElementText(findTestObject('Planning Application details/message_Upload_Application_Form'), verData.getValue(
+        1, 30))
+
+WebUI.click(findTestObject('Planning Application details/link_Help_File_Format'))
+
+WebUI.waitForElementVisible(findTestObject('Planning Application details/list_Help_File_Formats'), 2)
+
+WebUI.verifyElementText(findTestObject('Planning Application details/list_Help_File_Formats'), verData.getValue(1, 32))
+
+WebUI.click(findTestObject('Planning Application details/button_Application_Form'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementVisible(findTestObject('Planning Application details/button_Remove_File'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
+
+WebUI.waitForElementVisible(findTestObject('Planning Application details/message_LPA_Decision_Notice'), 3)
+
+WebUI.verifyElementText(findTestObject('Planning Application details/message_LPA_Decision_Notice'), verData.getValue(1, 
+        31))
+
+WebUI.click(findTestObject('Planning Application details/link_Help_Format_LPA'))
+
+WebUI.waitForElementVisible(findTestObject('Planning Application details/list_Help_Formats_LPA_Notice'), 2)
+
+WebUI.verifyElementText(findTestObject('Planning Application details/list_Help_Formats_LPA_Notice'), verData.getValue(1, 
+        32))
+
+WebUI.click(findTestObject('Planning Application details/button_LPA_Notice'))
+
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementVisible(findTestObject('Planning Application details/button_Remove_LPA_Notice'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
+
+WebUI.waitForElementVisible(findTestObject('Planning Application details/status_Complete_App_Details'), 3)
+
+WebUI.verifyElementText(findTestObject('Planning Application details/status_Complete_App_Details'), 'COMPLETED')
 

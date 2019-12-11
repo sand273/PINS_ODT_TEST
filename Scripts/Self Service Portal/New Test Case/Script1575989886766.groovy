@@ -18,5 +18,5 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://pins-test.gopro.net/selfservice/web/portal/application.html?id=FRUN4C#section-Planning.Details')
 
-WebUI.click(findTestObject('Planning Application details/input_Under_0.1_ha'))
+WebUI.click(findTestObject('Planning Application details/input_Yes_Description_Change'))
 

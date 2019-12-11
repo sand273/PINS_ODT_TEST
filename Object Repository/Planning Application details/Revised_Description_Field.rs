@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_LPA_Notice</name>
+   <name>Revised_Description_Field</name>
    <tag></tag>
-   <elementGuidId>457318ab-c141-4c28-934f-41238373892d</elementGuidId>
+   <elementGuidId>07be0a75-8224-4844-b93b-d6adfe4b1e99</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//label[@for='File.LPADecisionNotice']</value>
+         <value>//textarea[@id='Revised.Description']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <type>Main</type>
-      <value></value>
-   </webElementXpaths>
 </WebElementEntity>
