@@ -73,6 +73,8 @@ WebUI.click(findTestObject('Site Details/Health_Yes_Option'))
 
 WebUI.setText(findTestObject('Site Details/Health_Description_Field'), testData.getValue(5, 1))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Site Details/question_Site_Inspector'), 2)
