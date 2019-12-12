@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Select_File</name>
+   <name>Special_Cat_Info_Yes_Option</name>
    <tag></tag>
-   <elementGuidId>aa91f0a3-e1d2-422a-ab69-afe3e6c83d0e</elementGuidId>
+   <elementGuidId>34977eb4-b6c3-4db6-91b6-b436bea74ced</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//label[@for='Appeal.StatementFile']</value>
+         <value>//input[@id='radio-Appeal.SpecialCategory-1']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
