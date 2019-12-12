@@ -55,6 +55,8 @@ WebUI.setText(findTestObject('Site Details/Public_Land_Description_Field'), test
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
+WebUI.delay(1)
+
 WebUI.waitForElementVisible(findTestObject('Site Details/question_Site_Restricted'), 2)
 
 WebUI.verifyElementText(findTestObject('Site Details/question_Site_Restricted'), verData.getValue(1, 44))
@@ -65,6 +67,8 @@ WebUI.setText(findTestObject('Site Details/Site_Restricted_Description_Field'), 
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
+WebUI.delay(1)
+
 WebUI.waitForElementVisible(findTestObject('Site Details/question_Health_Safety'), 2)
 
 WebUI.verifyElementText(findTestObject('Site Details/question_Health_Safety'), verData.getValue(1, 45))
@@ -73,9 +77,9 @@ WebUI.click(findTestObject('Site Details/Health_Yes_Option'))
 
 WebUI.setText(findTestObject('Site Details/Health_Description_Field'), testData.getValue(5, 1))
 
-WebUI.delay(1)
-
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
+
+WebUI.delay(1)
 
 WebUI.waitForElementVisible(findTestObject('Site Details/question_Site_Inspector'), 2)
 
@@ -83,7 +87,7 @@ WebUI.verifyElementText(findTestObject('Site Details/question_Site_Inspector'), 
 
 WebUI.click(findTestObject('Site Details/Site_Visit_Yes_Option'))
 
-WebUI.delay(2)
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
