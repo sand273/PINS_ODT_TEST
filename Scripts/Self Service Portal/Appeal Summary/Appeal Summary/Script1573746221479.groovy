@@ -20,9 +20,12 @@ def siteData = TestDataFactory.findTestData('Data Files/Site_Details')
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
+WebUI.delay(1)
+
 WebUI.waitForElementVisible(findTestObject('Appeal Summary/status_Submitted'), 3)
 
-WebUI.verifyElementAttributeValue(findTestObject('Appeal Summary/heading_Application_Ref'), 'innerText', GlobalVariable.ApplicationRef, 0)
+WebUI.verifyElementAttributeValue(findTestObject('Appeal Summary/heading_Application_Ref'), 'innerText', GlobalVariable.ApplicationRef, 
+    0)
 
 WebUI.verifyElementText(findTestObject('Appeal Summary/status_Submitted'), verData.getValue(1, 77))
 

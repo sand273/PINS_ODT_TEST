@@ -44,5 +44,7 @@ WebUI.verifyElementText(findTestObject('Check your answers/message_Submit_Appeal
 
 WebUI.verifyElementText(findTestObject('Check your answers/message_Appeal_Not_Change'), verData.getValue(1, 70))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Check your answers/button_Ready_to_Submit'))
 
