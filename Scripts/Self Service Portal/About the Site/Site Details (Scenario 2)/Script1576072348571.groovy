@@ -83,6 +83,8 @@ WebUI.verifyElementText(findTestObject('Site Details/question_Site_Inspector'), 
 
 WebUI.click(findTestObject('Site Details/Site_Visit_Yes_Option'))
 
+WebUI.delay(2)
+
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Site Details/status_Completed_Site_Details'), 3)
