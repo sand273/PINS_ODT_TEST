@@ -124,4 +124,16 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/About the Appeal/Technical Reports</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>6c3945ff-146b-43c3-9847-eaf170a27fb6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Other Relevant Appeal Information</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7b98ed89-024b-4b1d-acaa-80030dbb2d11</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/About You/Contact Details</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
