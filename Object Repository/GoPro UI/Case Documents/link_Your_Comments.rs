@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value>ng-include.ng-scope:nth-child(1) ng-view.ng-scope section.formsection.ng-scope div.maincontent div.tab-content div.tab-pane.ng-scope.active:nth-child(2) div.view div.ng-scope div.viewcontent gp-view.ng-isolate-scope div:nth-child(2) div.gpview-row:nth-child(36) div.gpview-rowicon:nth-child(2) button.gpview-rowaction:nth-child(1) > i.fa.fa-chevron-right
+         <value>ng-include.ng-scope:nth-child(1) ng-view.ng-scope section.formsection.ng-scope div.maincontent div.tab-content div.tab-pane.ng-scope.active:nth-child(2) div.view div.ng-scope div.viewcontent gp-view.ng-isolate-scope div:nth-child(2) div.gpview-row:nth-child(35) div.gpview-rowicon:nth-child(2) button.gpview-rowaction:nth-child(1) > i.fa.fa-chevron-right
 </value>
       </entry>
       <entry>

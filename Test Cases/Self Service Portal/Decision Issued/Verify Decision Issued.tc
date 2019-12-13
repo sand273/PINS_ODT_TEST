@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Third Party Comments</name>
+   <name>Verify Decision Issued</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>60ca9ea6-9a5a-4450-bec1-4eb0eab80b0c</testCaseGuid>
+   <testCaseGuid>b1732c54-7e08-4fe5-aaf7-28c8e9509013</testCaseGuid>
 </TestCaseEntity>

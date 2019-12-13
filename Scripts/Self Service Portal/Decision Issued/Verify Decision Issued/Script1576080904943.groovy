@@ -13,15 +13,25 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('GoPro UI/Actions Menu/menu_Actions'))
+Date today = new Date()
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Actions Menu/link_Documents_File'), 3)
+String todaysDate = today.format('EEEE dd MMMMMMMM yyyy')
 
-WebUI.click(findTestObject('GoPro UI/Actions Menu/link_Documents_File'))
+WebUI.callTestCase(findTestCase('Self Service Portal/Login/LPA_User'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/File Upload PopUp/dropdown_Document_Template'), 5)
+WebUI.click(findTestObject('Complete Questionaire/link_Search'))
 
-WebUI.selectOptionByValue(findTestObject('GoPro UI/File Upload PopUp/dropdown_Document_Template'), docTemplate, false)
+WebUI.setText(findTestObject('Complete Questionaire/text_Appeal_Ref'), GlobalVariable.ApplicationRef)
 
-WebUI.click(findTestObject('GoPro UI/File Upload PopUp/button_Create'))
+WebUI.click(findTestObject('Complete Questionaire/button_Search'))
+
+WebUI.waitForElementVisible(findTestObject('Submit Statement/label_Match_Found'), 2)
+
+WebUI.click(findTestObject('Complete Questionaire/link_Appeal_Ref'))
+
+WebUI.waitForElementVisible(findTestObject('Final Comments/status_Decision_Issued'), 3)
+
+WebUI.verifyElementText(findTestObject('Final Comments/date_Decision_Issued'), todaysDate)
+
+WebUI.closeBrowser()
 

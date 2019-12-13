@@ -15,25 +15,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('GoPro UI/Login/Case_Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('GoPro UI/My cases/link_My events_location_arrow'))
-
-WebUI.click(findTestObject('GoPro UI/My cases/link_Holding_List'))
-
-WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'))
-
-WebUI.sendKeys(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'), GlobalVariable.ApplicationRef)
-
-WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Search'))
-
-WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Summary/list_Case_Ref'), 5)
-
-WebUI.doubleClick(findTestObject('GoPro UI/Case Summary/list_Case_Ref'))
-
-WebUI.switchToWindowIndex(1)
-
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/panel_Left_Processing_Timeline'), 5)
-
-WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'))
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Open_Final_Comments'), 'defaultSelected', 
     'true', 5)
@@ -43,6 +25,8 @@ WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 WebUI.scrollToPosition(9999999, 9999999)
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_Folder_Final_Comments'), 5)
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/link_Folder_Final_Comments'))
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/Final Comments/link_Final_Comment'))
 
@@ -63,6 +47,8 @@ WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 WebUI.scrollToPosition(9999999, 9999999)
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_Folder_Final_Comments'), 5)
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/link_Folder_Final_Comments'))
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/Final Comments/link_Final_Comment'))
 
