@@ -43,7 +43,7 @@ WebUI.waitForElementVisible(findTestObject('Final Comments/message_Upload_Final'
 
 WebUI.click(findTestObject('Final Comments/button_Upload_File'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Final_Comments.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Final Comments/button_Submit'))
 

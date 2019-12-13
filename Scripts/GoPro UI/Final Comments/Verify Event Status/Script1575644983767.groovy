@@ -12,6 +12,9 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+
+def testData = TestDataFactory.findTestData('Data Files/GoPro_UI_Verification')
 
 Date today = new Date()
 
@@ -29,27 +32,37 @@ WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Fin
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
-WebUI.scrollToPosition(9999999, 9999999)
+WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/link_Folder_Final_Comments'), 5)
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_Folder_Final_Comments'), 5)
+WebUI.click(findTestObject('GoPro UI/Case Summary/input_Search'))
 
-WebUI.click(findTestObject('GoPro UI/Case Documents/Final Comments/link_Final_Comment'))
+WebUI.sendKeys(findTestObject('GoPro UI/Case Summary/input_Search'), testData.getValue(1, 8))
 
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/link_Upload_Document'), 2)
+WebUI.click(findTestObject('GoPro UI/Case Summary/button_Search'))
 
-WebUI.scrollToPosition(9999999, 9999999)
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), 5)
 
-WebUI.click(findTestObject('GoPro UI/Case Documents/link_Upload_Document'))
+WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'))
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/status_Document_Published'), 2)
+
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/button_Clear_Search'), 3)
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/button_Clear_Search'))
+
+WebUI.sendKeys(findTestObject('GoPro UI/Case Summary/input_Search'), testData.getValue(1, 9))
+
+WebUI.click(findTestObject('GoPro UI/Case Summary/button_Search'))
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), 5)
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'))
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/status_Document_Published'), 2)
 
-WebUI.scrollToPosition(9999999, 9999999)
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/button_Clear_Search'), 3)
 
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/Final Comments/link_Final_Comments_PDF'), 2)
-
-WebUI.click(findTestObject('GoPro UI/Case Documents/Final Comments/link_Final_Comments_PDF'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/status_Document_Published'), 2)
+WebUI.click(findTestObject('GoPro UI/Case Documents/button_Clear_Search'))
 
 WebUI.closeBrowser()
 

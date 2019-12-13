@@ -129,7 +129,7 @@ WebUI.scrollToPosition(9999999, 9999999)
 
 WebUI.click(findTestObject('Complete Questionaire/button_Submit_Final'))
 
-WebUI.waitForElementVisible(findTestObject('Complete Questionaire/title_Questionaire_Received'), 3)
+WebUI.waitForElementVisible(findTestObject('Complete Questionaire/title_Questionaire_Received'), 5)
 
 WebUI.verifyElementText(findTestObject('Complete Questionaire/title_Questionaire_Received'), verData.getValue(1, 5))
 

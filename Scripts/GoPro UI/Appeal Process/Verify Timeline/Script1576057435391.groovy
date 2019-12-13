@@ -60,13 +60,11 @@ WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureH
 
 if (WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Status_Programmed'), 'defaultSelected', 
     'true', 5) == true) {
-    WebUI.click(findTestObject('GoPro UI/Case Summary/button_Start_Case'))
 
-    WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/message_Start_Case_Publish'), 10)
-
-    WebUI.click(findTestObject('GoPro UI/Programming/button_Publish'))
-
-    WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Summary/label_Processing'), 10)
+    
+    WebUI.selectOptionByValue(findTestObject("GoPro UI/Case Summary/select_AbeyanceCase"), "702A622C-E990-473D-B462-751ECE315DCF", true)
+	
+	WebUI.click(findTestObject('GoPro UI/Case Summary/button_Save'))
 }
 
 WebUI.switchToWindowIndex(1)
