@@ -21,12 +21,11 @@ WebUI.click(findTestObject('GoPro UI/Actions Menu/link_Documents_File'))
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/File Upload PopUp/dropdown_Document_Template'), 5)
 
-not_run: WebUI.selectOptionByValue(findTestObject('GoPro UI/File Upload PopUp/dropdown_Document_Template'), docTemplate, 
-    false)
-
 WebUI.click(findTestObject('GoPro UI/Actions Menu/dropdown_File_Upload_Type'))
 
-WebUI.click(findTestObject('GoPro UI/Actions Menu/option_Appeal Decision'))
+WebUI.selectOptionByIndex(findTestObject('GoPro UI/File Upload PopUp/dropdown_Document_Template'), 4, FailureHandling.STOP_ON_FAILURE)
+
+not_run: WebUI.click(findTestObject('GoPro UI/Actions Menu/option_Appeal Decision'))
 
 WebUI.click(findTestObject('GoPro UI/File Upload PopUp/button_Create'))
 

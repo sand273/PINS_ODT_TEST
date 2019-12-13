@@ -16,9 +16,6 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.click(findTestObject('GoPro UI/Actions Menu/dropdown_File_Upload_Type'))
-
-WebUI.click(findTestObject('GoPro UI/Actions Menu/option_Appeal Decision'))
-
-WebUI.closeBrowser()
+WebUI.selectOptionByValue(findTestObject('GoPro UI/Case Documents/dropdown_InReview'), 
+    'object:1561', true)
 
