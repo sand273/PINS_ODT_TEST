@@ -18,25 +18,26 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 String queRefMessage
 
 def verData = TestDataFactory.findTestData('Data Files/Complete_Questionaire')
+
 def testData = TestDataFactory.findTestData('Data Files/GoPro_UI_Verification')
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Login/Third party'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Search_Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Third Party Comments/status_Open for comments'), 3)
+WebUI.waitForElementVisible(findTestObject('Third Party Comments/status_Open for comments'), 5)
 
 WebUI.click(findTestObject('Third Party Comments/input_Error_agree'))
 
 WebUI.click(findTestObject('Third Party Comments/button_Make a comment'))
 
-WebUI.waitForElementVisible(findTestObject('Third Party Comments/message_Which_Statement'), 3)
+WebUI.waitForElementVisible(findTestObject('Third Party Comments/message_Which_Statement'), 5)
 
 WebUI.click(findTestObject('Third Party Comments/input_Which statement'))
 
 WebUI.click(findTestObject('Third Party Comments/button_Next page'))
 
-WebUI.waitForElementVisible(findTestObject('Third Party Comments/message_Enter_Comments'), 3)
+WebUI.waitForElementVisible(findTestObject('Third Party Comments/message_Enter_Comments'), 5)
 
 WebUI.scrollToPosition(9999999, 9999999)
 
@@ -44,11 +45,11 @@ WebUI.setText(findTestObject('Third Party Comments/text_Enter_YourComments'), te
 
 WebUI.click(findTestObject('Third Party Comments/button_Save and continue'))
 
-WebUI.waitForElementVisible(findTestObject('Third Party Comments/message_Comments_Confirmation'), 3)
+WebUI.waitForElementVisible(findTestObject('Third Party Comments/message_Comments_Confirmation'), 5)
 
 WebUI.click(findTestObject('Third Party Comments/button_Submit'))
 
-WebUI.waitForElementVisible(findTestObject('Complete Questionaire/title_Questionaire_Received'), 3)
+WebUI.waitForElementVisible(findTestObject('Complete Questionaire/title_Questionaire_Received'), 5)
 
 WebUI.verifyElementText(findTestObject('Complete Questionaire/title_Questionaire_Received'), verData.getValue(1, 11))
 
@@ -61,5 +62,4 @@ WebUI.verifyMatch(queRefMessage, verData.getValue(1, 12), true)
 WebUI.verifyElementText(findTestObject('Complete Questionaire/message_Ref_Num_Value'), 'W/' + GlobalVariable.ApplicationRef)
 
 WebUI.closeBrowser()
-
 

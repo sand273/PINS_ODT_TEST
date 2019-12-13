@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_LPA_Statement</name>
+   <name>link_Verify_LPA_Statement</name>
    <tag></tag>
-   <elementGuidId>76f7a141-24b5-4123-87ee-d49f90c497d0</elementGuidId>
+   <elementGuidId>7e5a1799-2f4a-44c8-a840-f5fdf21c3cef</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>ng-include.ng-scope:nth-child(1) ng-view.ng-scope section.formsection.ng-scope div.maincontent div.tab-content div.tab-pane.ng-scope.active:nth-child(2) div.view div.ng-scope div.viewcontent gp-view.ng-isolate-scope div:nth-child(2) div.gpview-row:nth-child(28) div.gpview-rowicon:nth-child(2) button.gpview-rowaction:nth-child(1) > i.fa.fa-chevron-right</value>
+         <key>XPATH</key>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value></value>
+         <key>CSS</key>
+         <value>ng-include.ng-scope:nth-child(1) ng-view.ng-scope section.formsection.ng-scope div.maincontent div.tab-content div.tab-pane.ng-scope.active:nth-child(2) div.view div.ng-scope div.viewcontent gp-view.ng-isolate-scope div:nth-child(2) div.gpview-row:nth-child(33) div.gpview-rowicon:nth-child(2) button.gpview-rowaction:nth-child(1) > i.fa.fa-chevron-right</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

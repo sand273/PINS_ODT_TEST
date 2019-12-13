@@ -12,31 +12,6 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
-Date today = new Date()
-
-String todaysDate = today.format('dd/MM/yyyy')
-
-WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish LPA Questionaire - Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_folder_LPA_Questionaire'), 5)
-
-WebUI.closeWindowIndex(1)
-
-WebUI.switchToWindowIndex(0)
-
-WebUI.refresh()
-
-WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Open_for_LPA'), 'defaultSelected', 'true', 
-    5)
-
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_LPA_Questionaire_Publish'), 'value', todaysDate, 
-    1)
-
-WebUI.closeWindowIndex(1)
-
-WebUI.closeBrowser()
+WebUI.delay(300)
 

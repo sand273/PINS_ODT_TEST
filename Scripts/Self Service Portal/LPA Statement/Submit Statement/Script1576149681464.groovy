@@ -48,7 +48,7 @@ WebUI.waitForElementVisible(findTestObject('Submit Statement/message_LPA_Stateme
 
 WebUI.click(findTestObject('Submit Statement/button_Select_File'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Statement_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
 
