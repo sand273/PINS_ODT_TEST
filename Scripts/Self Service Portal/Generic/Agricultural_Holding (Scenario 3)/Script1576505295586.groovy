@@ -22,7 +22,15 @@ WebUI.verifyElementText(findTestObject('Ownership/message_Appeal_Site_Forms'), v
 
 WebUI.click(findTestObject('Ownership/input_Agg_Holding_Yes'))
 
-WebUI.click(findTestObject('Ownership/input_Agg_Sole_Holding_Yes'))
+WebUI.click(findTestObject('Ownership/input_Agg_Sole_Holding_No'))
+
+WebUI.click(findTestObject('Ownership/input_Who_Owns_Holding_Yes'))
+
+WebUI.click(findTestObject('Ownership/link_Modified_Site_Owners'))
+
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementVisible(findTestObject('Ownership/button_Remove_Modified_Site_Owners'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 

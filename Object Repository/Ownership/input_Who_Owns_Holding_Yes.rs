@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Agg_Holding_Yes_Option</name>
+   <name>input_Who_Owns_Holding_Yes</name>
    <tag></tag>
-   <elementGuidId>01c38d9e-5c43-4615-966c-80c9dbf6b80d</elementGuidId>
+   <elementGuidId>537a9482-15dd-4f6f-9469-3b5a613d582e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='radio-Ownership.AgriculturalHolding-1']</value>
+         <value>//input[@id='radio-Ownership.HoldingKnowsTheOwner-1']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
