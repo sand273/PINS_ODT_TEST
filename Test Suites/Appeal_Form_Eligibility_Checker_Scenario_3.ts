@@ -100,4 +100,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/About the Appeal/Other Appeals (Scenario 3)</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>c281d715-aa5a-4fe5-ab0c-7a93c8c1b4dc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Costs (Scenario 3)</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
