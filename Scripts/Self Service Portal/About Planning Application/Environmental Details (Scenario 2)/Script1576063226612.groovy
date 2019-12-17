@@ -27,7 +27,7 @@ WebUI.waitForElementVisible(findTestObject('Environmental details/question_Envir
 WebUI.verifyElementText(findTestObject('Environmental details/question_Environmental_Impact_Assessment'), verData.getValue(
         1, 33))
 
-WebUI.click(findTestObject('Environmental details/Environment_Assessment_Yes_Option'))
+WebUI.click(findTestObject('Environmental details/option_Yes_Environment_Assessment'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
