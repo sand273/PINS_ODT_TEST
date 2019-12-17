@@ -136,4 +136,28 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/About You/Contact Details</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>ec40b5be-94d5-421c-934b-a26498d8e41f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Submit the Appeal/Check your answers</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>64d515e9-3203-48c1-8f5f-fac6a91faf73</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Terms and Conditions/Terms and conditions</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6fed7c32-5fe7-48d4-b3a6-9b46142c4d8f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Appeal Received/Appeal Received</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a9a8e3b6-f29d-43d4-81ba-457cf3c9313a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Appeal Summary/Appeal Summary (Scenario 3)</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
