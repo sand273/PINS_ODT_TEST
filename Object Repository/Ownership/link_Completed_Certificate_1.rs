@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_Copy_Press_Notice</name>
+   <name>link_Completed_Certificate_1</name>
    <tag></tag>
-   <elementGuidId>c0752890-9091-4dcf-b4eb-f292404fa20c</elementGuidId>
+   <elementGuidId>9b51f45c-dbd1-4990-9065-3d978b366d88</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//label[@for='Ownership.PressNoticeFileCertificateD']</value>
+         <value>//label[@for='Ownership.CertificateC']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

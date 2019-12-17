@@ -6,11 +6,11 @@
    <elementGuidId>d9cd3233-bcc8-44c8-9638-9fabc99a32c6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//td[contains(text(),'PLANNING INSPECTORATE, TEMPLE QUAY HOUSE, 2, THE S')] | //span[contains(text(),'BS1 6PN')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//td[contains(text(),'PLANNING INSPECTORATE, TEMPLE QUAY HOUSE, 2, THE S')] | //span[contains(text(),'BS16PN')]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
