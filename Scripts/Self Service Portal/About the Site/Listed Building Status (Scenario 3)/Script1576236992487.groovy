@@ -28,19 +28,19 @@ WebUI.waitForElementVisible(findTestObject('Listed building status/question_List
 
 WebUI.verifyElementText(findTestObject('Listed building status/question_Listed_Building'), verData.getValue(1, 47))
 
-WebUI.click(findTestObject('Listed building status/Listed_Building_Status_Yes_Option'))
+WebUI.click(findTestObject('Listed building status/option_Yes_Listed_Building_Status'))
 
-WebUI.verifyElementAttributeValue(findTestObject('Listed building status/Grade_1_Option'), 'value', 'Grade I', 20)
+WebUI.verifyElementAttributeValue(findTestObject('Listed building status/option_Grade_1'), 'value', 'Grade I', 20)
 
-WebUI.verifyElementAttributeValue(findTestObject('Listed building status/Grade_2_Star_Option'), 'value', 'Grade II*', 20)
+WebUI.verifyElementAttributeValue(findTestObject('Listed building status/option_Grade_2_Star'), 'value', 'Grade II*', 20)
 
-WebUI.verifyElementAttributeValue(findTestObject('Listed building status/Grade_2_Option'), 'value', 'Grade II', 20)
+WebUI.verifyElementAttributeValue(findTestObject('Listed building status/option_Grade_2'), 'value', 'Grade II', 20)
 
-WebUI.click(findTestObject('Listed building status/Grade_2_Option'))
+WebUI.click(findTestObject('Listed building status/option_Grade_2'))
 
-WebUI.setText(findTestObject('Listed building status/Listing_Number_Field'), testData.getValue(1, 1))
+WebUI.setText(findTestObject('Listed building status/input_Listing_Number'), testData.getValue(1, 1))
 
-WebUI.click(findTestObject('Listed building status/Applied_Listed_Consent_Yes_Option'))
+WebUI.click(findTestObject('Listed building status/option_Yes_Applied_Listed_Consent'))
 
 WebUI.click(findTestObject('Listed building status/Outcome_Not_Yet_Determined_Option'))
 

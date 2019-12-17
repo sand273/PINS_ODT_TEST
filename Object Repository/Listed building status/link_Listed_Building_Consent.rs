@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Grade_2_Star_Option</name>
+   <name>link_Listed_Building_Consent</name>
    <tag></tag>
-   <elementGuidId>c6f4cb15-a5e7-44b1-8e4c-315a344d1fd0</elementGuidId>
+   <elementGuidId>b974c08c-0e18-4b96-96c1-c045c50cbc35</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='radio-Site.GradeListing-2']</value>
+         <value>//label[@for='Site.BuildingConsentFile']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

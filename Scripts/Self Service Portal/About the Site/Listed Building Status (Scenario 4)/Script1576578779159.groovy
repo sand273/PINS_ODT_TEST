@@ -36,11 +36,19 @@ WebUI.verifyElementAttributeValue(findTestObject('Listed building status/option_
 
 WebUI.verifyElementAttributeValue(findTestObject('Listed building status/option_Grade_2'), 'value', 'Grade II', 20)
 
-WebUI.click(findTestObject('Listed building status/option_Grade_2_Star'))
+WebUI.click(findTestObject('Listed building status/option_Grade_1'))
 
 WebUI.setText(findTestObject('Listed building status/input_Listing_Number'), testData.getValue(1, 1))
 
-WebUI.click(findTestObject('Listed building status/Applied_Listed_Consent_No_Option'))
+WebUI.click(findTestObject('Listed building status/option_Yes_Applied_Listed_Consent'))
+
+WebUI.click(findTestObject('Listed building status/option_Granted'))
+
+WebUI.click(findTestObject('Listed building status/link_Listed_Building_Consent'))
+
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementVisible(findTestObject('Listed building status/button_Remove_Listed_Consent'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 

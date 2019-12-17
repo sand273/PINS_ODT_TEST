@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Grade_1_Option</name>
+   <name>option_Grade_2</name>
    <tag></tag>
-   <elementGuidId>b15df5fc-8715-4272-a06a-65812f9c8a7f</elementGuidId>
+   <elementGuidId>948cb978-a027-4e17-ad28-33e1218a8560</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//input[@id='radio-Site.GradeListing-3']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='radio-Site.GradeListing-1']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
