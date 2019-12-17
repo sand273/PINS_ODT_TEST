@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Site_Visit_Yes_Option</name>
+   <name>input_Public_Land_Description</name>
    <tag></tag>
-   <elementGuidId>9769754d-d57d-4d6c-8284-04b2af7d558b</elementGuidId>
+   <elementGuidId>e374c443-a4c9-40f8-98ab-bcc1e1ff37fe</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='radio-Site.InspectorVisit-1']</value>
+         <value>//textarea[@id='Site.HowSeenFromLand']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

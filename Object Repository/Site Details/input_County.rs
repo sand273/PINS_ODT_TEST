@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Site_Restricted_Description_Field</name>
+   <name>input_County</name>
    <tag></tag>
-   <elementGuidId>2a14624d-42ce-4686-b65a-2de218f2a018</elementGuidId>
+   <elementGuidId>96affeca-30e8-4dc7-b0cd-b2cc0dae4cfe</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//textarea[@id='Site.HowIsAccessRestricted']</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='Site.CustomCounty']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

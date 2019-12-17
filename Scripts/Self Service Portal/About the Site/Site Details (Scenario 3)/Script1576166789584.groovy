@@ -29,7 +29,7 @@ WebUI.waitForElementVisible(findTestObject('Site Details/question_PostCode'), 2)
 
 WebUI.verifyElementText(findTestObject('Site Details/question_PostCode'), verData.getValue(1, 41))
 
-WebUI.click(findTestObject('Site Details/Postcode_No_Option'))
+WebUI.click(findTestObject('Site Details/option_No_Postcode'))
 
 WebUI.waitForElementVisible(findTestObject('Site Details/Nearest_Postcode_Text'), 2)
 

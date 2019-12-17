@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Health_Yes_Option</name>
+   <name>option_Yes_Site_Visit</name>
    <tag></tag>
-   <elementGuidId>a30472f9-6182-41a4-929c-9a60852508ac</elementGuidId>
+   <elementGuidId>9769754d-d57d-4d6c-8284-04b2af7d558b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='radio-Site.HealthConcerns-1']</value>
+         <value>//input[@id='radio-Site.InspectorVisit-1']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

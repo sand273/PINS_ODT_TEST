@@ -33,6 +33,8 @@ WebUI.click(findTestObject('Additional Plans/Upload_OtherLPA_Doc'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.delay(1)
+
 WebUI.verifyElementPresent(findTestObject('Additional Plans/button_Remove_Doc'), 20)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))

@@ -29,11 +29,7 @@ WebUI.waitForElementVisible(findTestObject('Site Details/question_PostCode'), 2)
 
 WebUI.verifyElementText(findTestObject('Site Details/question_PostCode'), verData.getValue(1, 41))
 
-WebUI.click(findTestObject('Site Details/input_Site_Postcode'))
-
-WebUI.waitForElementVisible(findTestObject('Site Details/question_Site_Address'), 2)
-
-WebUI.verifyElementText(findTestObject('Site Details/question_Site_Address'), verData.getValue(1, 42))
+WebUI.click(findTestObject('Site Details/option_Yes_Postcode'))
 
 WebUI.setText(findTestObject('Site Details/input_SitePostcode'), testData.getValue(1, 1))
 
@@ -41,7 +37,15 @@ WebUI.click(findTestObject('Site Details/button_Find address'))
 
 WebUI.delay(1)
 
-WebUI.selectOptionByValue(findTestObject('Site Details/dropdown_Select address'), testData.getValue(2, 1), false)
+WebUI.click(findTestObject('Site Details/link_Cant_Find_Address'))
+
+WebUI.setText(findTestObject('Site Details/input_BuildingAndStreet'), testData.getValue(7, 1))
+
+WebUI.setText(findTestObject('Site Details/input_Town_Or_City'), testData.getValue(8, 1))
+
+WebUI.setText(findTestObject('Site Details/input_County'), testData.getValue(9, 1))
+
+WebUI.setText(findTestObject('Site Details/input_Postcode'), testData.getValue(1, 1))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -87,9 +91,9 @@ WebUI.verifyElementText(findTestObject('Site Details/question_Site_Inspector'), 
 
 WebUI.click(findTestObject('Site Details/option_Yes_Site_Visit'))
 
-WebUI.delay(1)
-
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
+
+WebUI.delay(1)
 
 WebUI.waitForElementVisible(findTestObject('Site Details/status_Completed_Site_Details'), 3)
 
