@@ -130,4 +130,34 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/About the Appeal/Other Relevant Appeal Information (Scenario 3)</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>e1a0567b-eb05-4171-b7ce-a5bd0a9d7d03</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/About You/Contact Details</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c510a493-fe92-49a9-96df-7da8a81efbb4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Submit the Appeal/Check your answers</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8efe3566-e627-4317-864b-672c4e0848de</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Terms and Conditions/Terms and conditions</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d1f1cdff-40e7-4a70-bb72-3d33b5daedc3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Appeal Received/Appeal Received</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>291c4849-148d-41ce-b10c-d985e6cf5810</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Appeal Summary/Appeal Summary</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
