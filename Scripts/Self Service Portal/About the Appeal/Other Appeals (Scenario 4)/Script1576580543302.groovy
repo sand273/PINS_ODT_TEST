@@ -38,7 +38,7 @@ WebUI.waitForElementVisible(findTestObject('Other Appeals/question_Submit_Anothe
 
 WebUI.verifyElementText(findTestObject('Other Appeals/question_Submit_Another_Appeal'), verData.getValue(1, 53))
 
-WebUI.click(findTestObject('Other Appeals/Submit_Another_Appeal_Yes_Option'))
+WebUI.click(findTestObject('Other Appeals/input_No_Submit_Another'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
