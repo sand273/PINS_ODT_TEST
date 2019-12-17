@@ -118,4 +118,16 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/About the Appeal/Preferred Procedure (Scenario 3)</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>44ae0040-ebbf-42c6-9912-5622c4d70b45</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Technical Reports (Scenario 3)</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>42312f61-860a-4c21-b45c-859c9e920a6e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Other Relevant Appeal Information (Scenario 3)</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
