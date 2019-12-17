@@ -31,7 +31,7 @@ WebUI.click(findTestObject('Additional Plans/input_Yes_DifferentPlans'))
 
 WebUI.click(findTestObject('Additional Plans/Upload_OtherLPA_Doc'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Jpeg_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('Additional Plans/button_Remove_Doc'), 20)
 
@@ -41,7 +41,17 @@ WebUI.waitForElementVisible(findTestObject('Additional Plans/question_Other_Plan
 
 WebUI.verifyElementText(findTestObject('Additional Plans/question_Other_Plans'), verData.getValue(1, 38))
 
-WebUI.click(findTestObject('Additional Plans/input_No_PlansOtherRelevant'))
+WebUI.click(findTestObject('Additional Plans/option_Yes_Other_Relevant_Plans'))
+
+WebUI.click(findTestObject('Additional Plans/Upload_Other_Relevant_Plans_File'))
+
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementVisible(findTestObject('Additional Plans/button_Remove_OtherPlans'))
+
+WebUI.click(findTestObject('Additional Plans/Help_File_Formats_Link'))
+
+WebUI.verifyElementText(findTestObject('Additional Plans/Help_File_Formats_Text'), verData.getValue(1, 32))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 

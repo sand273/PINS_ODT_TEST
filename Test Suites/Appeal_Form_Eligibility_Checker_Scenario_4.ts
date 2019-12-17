@@ -58,4 +58,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/About Planning Application/Plans (Scenario 4)</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>4a938d64-4048-4257-bf45-8d4d6e64da0a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Additional Plans (Scenario 4)</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

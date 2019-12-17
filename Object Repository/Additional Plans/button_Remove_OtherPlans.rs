@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Remove_OtherPlans_Button</name>
+   <name>button_Remove_OtherPlans</name>
    <tag></tag>
    <elementGuidId>c9d7ef9c-ef1f-411d-a35d-568e8a18bb5b</elementGuidId>
    <selectorCollection>
@@ -11,7 +11,6 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

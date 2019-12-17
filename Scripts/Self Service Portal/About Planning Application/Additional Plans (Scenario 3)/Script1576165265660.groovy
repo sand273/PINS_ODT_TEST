@@ -35,13 +35,13 @@ WebUI.waitForElementVisible(findTestObject('Additional Plans/question_Other_Plan
 
 WebUI.verifyElementText(findTestObject('Additional Plans/question_Other_Plans'), verData.getValue(1, 38))
 
-WebUI.click(findTestObject('Additional Plans/Other_Relevant_Plans_Yes_Option'))
+WebUI.click(findTestObject('Additional Plans/option_Yes_Other_Relevant_Plans'))
 
 WebUI.click(findTestObject('Additional Plans/Upload_Other_Relevant_Plans_File'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Tiff_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementVisible(findTestObject('Additional Plans/Remove_OtherPlans_Button'))
+WebUI.verifyElementVisible(findTestObject('Additional Plans/button_Remove_OtherPlans'))
 
 WebUI.click(findTestObject('Additional Plans/Help_File_Formats_Link'))
 
