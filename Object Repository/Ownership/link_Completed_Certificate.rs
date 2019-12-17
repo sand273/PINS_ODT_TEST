@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//label[@for='Ownership.CertificateD']</value>
+         <value>//label[@for='Ownership.CertificateD'] | //label[@for='Ownership.CertificateC']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

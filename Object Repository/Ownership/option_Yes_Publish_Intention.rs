@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_Copy_Press_Notice</name>
+   <name>option_Yes_Publish_Intention</name>
    <tag></tag>
-   <elementGuidId>c0752890-9091-4dcf-b4eb-f292404fa20c</elementGuidId>
+   <elementGuidId>d8670d6a-9800-4b5a-823d-0f08d0e991db</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//label[@for='Ownership.PressNoticeFileCertificateD'] | //label[@for='Ownership.PressNoticeFileCertificateC']</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//input[@id='radio-Ownership.HoldingPublishedIntensions-1']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
