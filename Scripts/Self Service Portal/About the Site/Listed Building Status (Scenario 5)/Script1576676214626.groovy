@@ -42,9 +42,15 @@ WebUI.setText(findTestObject('Listed building status/input_Listing_Number'), tes
 
 WebUI.click(findTestObject('Listed building status/option_Yes_Applied_Listed_Consent'))
 
-WebUI.click(findTestObject('Listed building status/option_Not_Yet_Determined'))
+WebUI.click(findTestObject('Listed building status/option_Not_Granted'))
 
-WebUI.setText(findTestObject('Listed building status/List_Application_Reference_Field'), testData.getValue(2, 1))
+WebUI.click(findTestObject('Listed building status/option_Yes_Appeal_Listed_Consent'))
+
+WebUI.click(findTestObject('Listed building status/link_Listed_Building_Consent_Decision'))
+
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Jpeg_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementVisible(findTestObject('Listed building status/button_Remove_Listed_Consent_Decision'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
