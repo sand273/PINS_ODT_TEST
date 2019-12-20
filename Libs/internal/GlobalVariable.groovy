@@ -29,6 +29,11 @@ public class GlobalVariable {
      */
     public static Object ApplicationRef
      
+    /**
+     * <p></p>
+     */
+    public static Object driverCount
+     
 
     static {
         try {
@@ -40,6 +45,7 @@ public class GlobalVariable {
             element_timeout = selectedVariables['element_timeout']
             UploadFilePath = selectedVariables['UploadFilePath']
             ApplicationRef = selectedVariables['ApplicationRef']
+            driverCount = selectedVariables['driverCount']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

@@ -113,6 +113,8 @@
 	<classpathentry kind="lib" path="C:/Katalon/Katalon_Studio_Windows_64-6.3.3/plugins/com.google.http-client.google-http-client_1.22.0.jar"/>
 	<classpathentry kind="lib" path="C:/Katalon/Katalon_Studio_Windows_64-6.3.3/plugins/ca.juliusdavies.not-yet-commons-ssl_0.3.11.jar"/>
 	<classpathentry kind="lib" path="C:/Katalon/Katalon_Studio_Windows_64-6.3.3/plugins/com.kms.katalon.preferences_1.0.0.201908270734.jar"/>
+	<classpathentry kind="lib" path="C:/Users/AutoTest_1/git/PINS_ODT_TEST/Drivers/ExcelKeywords-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/AutoTest_1/git/PINS_ODT_TEST/Drivers/ExcelKeywords.jar"/>
 	<classpathentry kind="lib" path="C:/Katalon/Katalon_Studio_Windows_64-6.3.3/configuration/plugin/install/33322/1.0.3/calendar-plugin.jar"/>
 	<classpathentry kind="lib" path="C:/Katalon/Katalon_Studio_Windows_64-6.3.3/configuration/plugin/install/30593/1.0.0/katalon-studio-uploadfile-plugin.jar"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_SUPPORT"/>

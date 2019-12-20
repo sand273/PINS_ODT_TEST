@@ -16,7 +16,7 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def testData = TestDataFactory.findTestData('Data Files/GoPro_UI_Verification')
 
-WebUI.callTestCase(findTestCase('GoPro UI/Login/Case_Officer'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -81,20 +81,20 @@ WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/status_Showi
 
 WebUI.closeBrowser()
 
-WebUI.callTestCase(findTestCase('GoPro UI/Login/Case_Officer'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
 
 if (WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Open_Final_Comments'), 'defaultSelected', 
     'true', 5) == true) {
-
-	WebUI.click(findTestObject('GoPro UI/Case Summary/button_Publish_Final_Comment'))
-
+    WebUI.click(findTestObject('GoPro UI/Case Summary/button_Publish_Final_Comment'))
 }
 
-WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Summary/label_Processing'), 5)
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/label_Processing'), 5)
 
 WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'))
+
+WebUI.click(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Publish_Final_Comments'), 'defaultSelected', 
     'true', 5)

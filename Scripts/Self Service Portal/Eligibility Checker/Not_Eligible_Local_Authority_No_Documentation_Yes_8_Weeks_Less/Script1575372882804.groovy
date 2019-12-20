@@ -16,79 +16,79 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Launch_Portal'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Launch Portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Appeal a planning decision/a_Start now'), 1)
+WebUI.waitForElementVisible(findTestObject('Appeal planning decision/a_Start now'), 1)
 
-WebUI.click(findTestObject('Appeal a planning decision/a_Start now'))
+WebUI.click(findTestObject('Appeal planning decision/a_Start now'))
 
-WebUI.waitForElementVisible(findTestObject('Appeal a planning decision/end_User_Question'), 2)
+WebUI.waitForElementVisible(findTestObject('Appeal planning decision/end_User_Question'), 2)
 
-WebUI.verifyElementText(findTestObject('Appeal a planning decision/end_User_Question'), verData.getValue(1, 1))
+WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(1, 1))
 
-WebUI.click(findTestObject('Appeal a planning decision/input_Yes_option'))
-
-WebUI.delay(1)
-
-WebUI.waitForElementClickable(findTestObject('Appeal a planning decision/button_Continue'), 2)
-
-WebUI.click(findTestObject('Appeal a planning decision/button_Continue'))
-
-WebUI.waitForElementVisible(findTestObject('Appeal a planning decision/end_User_Question'), 2)
-
-WebUI.verifyElementText(findTestObject('Appeal a planning decision/end_User_Question'), verData.getValue(1, 19))
-
-WebUI.scrollToElement(findTestObject('Appeal a planning decision/input_Yes_option'), 3)
-
-WebUI.waitForElementClickable(findTestObject('Appeal a planning decision/input_Yes_option'), 3)
+WebUI.click(findTestObject('Appeal planning decision/input_Yes_option'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Appeal a planning decision/input_Yes_option'))
+WebUI.waitForElementClickable(findTestObject('Appeal planning decision/button_Continue'), 2)
 
-WebUI.waitForElementClickable(findTestObject('Appeal a planning decision/button_Continue'), 2)
+WebUI.click(findTestObject('Appeal planning decision/button_Continue'))
 
-WebUI.click(findTestObject('Appeal a planning decision/button_Continue'))
+WebUI.waitForElementVisible(findTestObject('Appeal planning decision/end_User_Question'), 2)
 
-WebUI.waitForElementVisible(findTestObject('Appeal a planning decision/end_User_Question'), 2)
+WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(1, 19))
 
-WebUI.verifyElementText(findTestObject('Appeal a planning decision/end_User_Question'), verData.getValue(1, 2))
+WebUI.scrollToElement(findTestObject('Appeal planning decision/input_Yes_option'), 3)
 
-WebUI.click(findTestObject('Appeal a planning decision/input_No_option'))
+WebUI.waitForElementClickable(findTestObject('Appeal planning decision/input_Yes_option'), 3)
 
-WebUI.waitForElementClickable(findTestObject('Appeal a planning decision/button_Continue'), 2)
+WebUI.delay(1)
 
-WebUI.click(findTestObject('Appeal a planning decision/button_Continue'))
+WebUI.click(findTestObject('Appeal planning decision/input_Yes_option'))
 
-WebUI.waitForElementVisible(findTestObject('Appeal a planning decision/end_User_Question'), 2)
+WebUI.waitForElementClickable(findTestObject('Appeal planning decision/button_Continue'), 2)
 
-WebUI.verifyElementText(findTestObject('Appeal a planning decision/end_User_Question'), verData.getValue(1, 3))
+WebUI.click(findTestObject('Appeal planning decision/button_Continue'))
 
-WebUI.click(findTestObject('Appeal a planning decision/input_No_option'))
+WebUI.waitForElementVisible(findTestObject('Appeal planning decision/end_User_Question'), 2)
 
-WebUI.waitForElementClickable(findTestObject('Appeal a planning decision/button_Continue'), 2)
+WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(1, 2))
 
-WebUI.click(findTestObject('Appeal a planning decision/button_Continue'))
+WebUI.click(findTestObject('Appeal planning decision/input_No_option'))
 
-WebUI.waitForElementVisible(findTestObject('Appeal a planning decision/end_User_Question'), 2)
+WebUI.waitForElementClickable(findTestObject('Appeal planning decision/button_Continue'), 2)
 
-WebUI.verifyElementText(findTestObject('Appeal a planning decision/end_User_Question'), verData.getValue(1, 13))
+WebUI.click(findTestObject('Appeal planning decision/button_Continue'))
 
-WebUI.click(findTestObject('Appeal a planning decision/input_Yes_option'))
+WebUI.waitForElementVisible(findTestObject('Appeal planning decision/end_User_Question'), 2)
 
-WebUI.click(findTestObject('Appeal a planning decision/button_Continue'))
+WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(1, 3))
 
-WebUI.waitForElementVisible(findTestObject('Appeal a planning decision/end_User_Question'), 2)
+WebUI.click(findTestObject('Appeal planning decision/input_No_option'))
 
-WebUI.verifyElementText(findTestObject('Appeal a planning decision/end_User_Question'), verData.getValue(1, 12))
+WebUI.waitForElementClickable(findTestObject('Appeal planning decision/button_Continue'), 2)
 
-WebUI.click(findTestObject('Appeal a planning decision/input_No_option'))
+WebUI.click(findTestObject('Appeal planning decision/button_Continue'))
 
-WebUI.click(findTestObject('Appeal a planning decision/button_Continue'))
+WebUI.waitForElementVisible(findTestObject('Appeal planning decision/end_User_Question'), 2)
 
-WebUI.waitForElementVisible(findTestObject('Appeal a planning decision/non_Eligible_Message'), 2)
+WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(1, 13))
 
-WebUI.verifyElementText(findTestObject('Appeal a planning decision/non_Eligible_Message'), verData.getValue(1, 15))
+WebUI.click(findTestObject('Appeal planning decision/input_Yes_option'))
+
+WebUI.click(findTestObject('Appeal planning decision/button_Continue'))
+
+WebUI.waitForElementVisible(findTestObject('Appeal planning decision/end_User_Question'), 2)
+
+WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(1, 12))
+
+WebUI.click(findTestObject('Appeal planning decision/input_No_option'))
+
+WebUI.click(findTestObject('Appeal planning decision/button_Continue'))
+
+WebUI.waitForElementVisible(findTestObject('Appeal planning decision/non_Eligible_Message'), 2)
+
+WebUI.verifyElementText(findTestObject('Appeal planning decision/non_Eligible_Message'), verData.getValue(1, 15))
 
 WebUI.closeBrowser()
 

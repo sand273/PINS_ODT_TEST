@@ -23,7 +23,7 @@ def testData = TestDataFactory.findTestData('Data Files/GoPro_UI_Verification')
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Login/Third party'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Search_Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('Third Party Comments/status_Open for comments'), 5)
 
@@ -59,7 +59,7 @@ queRefMessage = WebUI.getText(findTestObject('Complete Questionaire/message_Ques
 
 WebUI.verifyMatch(queRefMessage, verData.getValue(1, 12), true)
 
-WebUI.verifyElementText(findTestObject('Complete Questionaire/message_Ref_Num_Value'), 'W/' + GlobalVariable.ApplicationRef)
+WebUI.verifyElementText(findTestObject('Complete Questionaire/message_Ref_Num_Value'), GlobalVariable.ApplicationRef)
 
 WebUI.closeBrowser()
 

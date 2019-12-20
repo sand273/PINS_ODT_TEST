@@ -18,15 +18,15 @@ def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 def testData = TestDataFactory.findTestData('Data Files/Planning_Details')
 
-WebUI.waitForElementClickable(findTestObject('Appeal a planning decision/link_Planning_Application_Details'), 1)
+WebUI.waitForElementClickable(findTestObject('Appeal planning decision/link_Planning_Application_Details'), 1)
 
-WebUI.click(findTestObject('Appeal a planning decision/link_Planning_Application_Details'))
+WebUI.click(findTestObject('Appeal planning decision/link_Planning_Application_Details'))
 
 WebUI.waitForElementVisible(findTestObject('Planning Application details/question_Statement_Applies'), 3)
 
 WebUI.verifyElementText(findTestObject('Planning Application details/question_Statement_Applies'), verData.getValue(1, 23))
 
-WebUI.click(findTestObject('Planning Application details/option_Appeal_Decision_I_Received'))
+WebUI.click(findTestObject('Planning Application details/option_Appeal_Decision_Received'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -98,7 +98,7 @@ WebUI.verifyElementText(findTestObject('Planning Application details/list_Help_F
 
 WebUI.click(findTestObject('Planning Application details/button_Application_Form'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementVisible(findTestObject('Planning Application details/button_Remove_File'), FailureHandling.STOP_ON_FAILURE)
 
@@ -117,7 +117,7 @@ WebUI.verifyElementText(findTestObject('Planning Application details/list_Help_F
 
 WebUI.click(findTestObject('Planning Application details/button_LPA_Notice'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementVisible(findTestObject('Planning Application details/button_Remove_LPA_Notice'), FailureHandling.STOP_ON_FAILURE)
 

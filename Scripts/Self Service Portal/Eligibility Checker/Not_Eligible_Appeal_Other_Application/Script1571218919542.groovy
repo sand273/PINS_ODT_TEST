@@ -17,19 +17,19 @@ import org.openqa.selenium.Keys as Keys
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Launch_Portal'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Launch Portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Eligibility Checker/Appeal_Relate_Decision'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Appeal a planning decision/input_Option_Other_Application'))
+WebUI.click(findTestObject('Appeal planning decision/input_Option_Other_Application'))
 
-WebUI.waitForElementClickable(findTestObject('Appeal a planning decision/button_Continue'), 1)
+WebUI.waitForElementClickable(findTestObject('Appeal planning decision/button_Continue'), 1)
 
-WebUI.click(findTestObject('Appeal a planning decision/button_Continue'))
+WebUI.click(findTestObject('Appeal planning decision/button_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Appeal a planning decision/non_Eligible_Message'), 2)
+WebUI.waitForElementVisible(findTestObject('Appeal planning decision/non_Eligible_Message'), 2)
 
-WebUI.verifyElementText(findTestObject('Appeal a planning decision/non_Eligible_Message'), verData.getValue(1, 10))
+WebUI.verifyElementText(findTestObject('Appeal planning decision/non_Eligible_Message'), verData.getValue(1, 10))
 
 WebUI.closeBrowser()
 
