@@ -16,15 +16,11 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-<<<<<<< HEAD
 WebUI.delay(1)
 
 WebUI.waitForElementVisible(findTestObject('Appeal a planning decision/button_Appeal_Now'), 20)
 
 WebUI.click(findTestObject('Appeal a planning decision/button_Appeal_Now'))
-=======
-WebUI.click(findTestObject('Appeal planning decision/button_Appeal_Now'))
->>>>>>> branch 'master' of https://github.com/sand273/PINS_ODT_TEST.git
 
 WebUI.waitForElementVisible(findTestObject('Appeal planning decision/account_User_Question'), 2)
 

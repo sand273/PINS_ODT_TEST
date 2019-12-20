@@ -16,13 +16,9 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-<<<<<<< HEAD
 WebUI.delay(1)
 
 WebUI.waitForElementVisible(findTestObject('Appeal_Received/title_Appeal_Received'), 3)
-=======
-WebUI.waitForElementVisible(findTestObject('Appeal Received/title_Appeal_Received'), 3)
->>>>>>> branch 'master' of https://github.com/sand273/PINS_ODT_TEST.git
 
 WebUI.verifyElementText(findTestObject('Appeal Received/title_Appeal_Received'), 'Appeal received')
 
