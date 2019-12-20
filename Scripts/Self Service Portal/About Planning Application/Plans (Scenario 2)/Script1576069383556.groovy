@@ -32,7 +32,7 @@ WebUI.verifyElementText(findTestObject('Plans/list_Help_File_Formats'), verData.
 
 WebUI.click(findTestObject('Plans/button_Select_File'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementVisible(findTestObject('Plans/button_Remove_File'), FailureHandling.STOP_ON_FAILURE)
 

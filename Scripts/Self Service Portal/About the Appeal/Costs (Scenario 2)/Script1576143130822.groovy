@@ -42,7 +42,7 @@ WebUI.verifyElementText(findTestObject('Costs/message_Help_File'), verData.getVa
 
 WebUI.click(findTestObject('Costs/Upload_App_Costs_File'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementVisible(findTestObject('Costs/Remove_Button'), FailureHandling.STOP_ON_FAILURE)
 

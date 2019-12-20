@@ -48,7 +48,7 @@ WebUI.click(findTestObject('Listed building status/option_Yes_Appeal_Listed_Cons
 
 WebUI.click(findTestObject('Listed building status/link_Listed_Building_Consent_Decision'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Jpeg_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Jpeg_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementVisible(findTestObject('Listed building status/button_Remove_Listed_Consent_Decision'))
 

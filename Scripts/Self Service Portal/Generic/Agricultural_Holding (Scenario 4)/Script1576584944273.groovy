@@ -30,7 +30,7 @@ WebUI.click(findTestObject('Ownership/option_Yes_Publish_Intention'))
 
 WebUI.click(findTestObject('Ownership/link_Agg_Copy_Press_Notice'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementVisible(findTestObject('Ownership/button_Remove_Agg_Copy_Press_Notice'))
 

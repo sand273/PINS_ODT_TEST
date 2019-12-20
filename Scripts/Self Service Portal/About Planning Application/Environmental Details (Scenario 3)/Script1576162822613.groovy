@@ -39,7 +39,7 @@ WebUI.click(findTestObject('Environmental details/option_Yes_Environment_Stateme
 
 WebUI.click(findTestObject('Environmental details/Upload_Environment_Statement_File'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementVisible(findTestObject('Environmental details/Remove_Button'))
 

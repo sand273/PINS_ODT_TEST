@@ -31,7 +31,7 @@ WebUI.click(findTestObject('Additional Plans/input_Yes_DifferentPlans'))
 
 WebUI.click(findTestObject('Additional Plans/Upload_OtherLPA_Doc'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Jpeg_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Jpeg_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('Additional Plans/button_Remove_Doc'), 20)
 

@@ -38,7 +38,7 @@ WebUI.verifyElementText(findTestObject('Preferred procedure/frame_Which_Option')
 
 WebUI.click(findTestObject('Preferred procedure/link_Draft_Statement'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementVisible(findTestObject('Preferred procedure/button_Remove_Draft_Statement'))
 

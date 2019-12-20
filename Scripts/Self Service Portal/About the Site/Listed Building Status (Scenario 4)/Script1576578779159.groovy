@@ -46,7 +46,7 @@ WebUI.click(findTestObject('Listed building status/option_Granted'))
 
 WebUI.click(findTestObject('Listed building status/link_Listed_Building_Consent'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementVisible(findTestObject('Listed building status/button_Remove_Listed_Consent'))
 

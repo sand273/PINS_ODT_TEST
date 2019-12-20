@@ -34,13 +34,13 @@ WebUI.verifyElementText(findTestObject('Ownership/message_Dont_Know_Owners'), ve
 
 WebUI.click(findTestObject('Ownership/link_Completed_Certificate'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementVisible(findTestObject('Ownership/button_Remove_Completed_Certificate'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Ownership/link_Copy_Press_Notice'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementVisible(findTestObject('Ownership/button_Remove_Copy_Press_Notice'), FailureHandling.STOP_ON_FAILURE)
 

@@ -42,7 +42,7 @@ WebUI.verifyElementText(findTestObject('Ownership/Help_File_Formats_Text'), verD
 
 WebUI.click(findTestObject('Ownership/Upload_Owners_File_Link'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementVisible(findTestObject('Ownership/Remove_Button'), FailureHandling.STOP_ON_FAILURE)
 

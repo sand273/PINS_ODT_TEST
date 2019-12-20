@@ -31,7 +31,7 @@ WebUI.click(findTestObject('Additional Plans/input_Yes_DifferentPlans'))
 
 WebUI.click(findTestObject('Additional Plans/Upload_OtherLPA_Doc'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'PNG_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'PNG_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
 
@@ -47,7 +47,7 @@ WebUI.click(findTestObject('Additional Plans/option_Yes_Other_Relevant_Plans'))
 
 WebUI.click(findTestObject('Additional Plans/Upload_Other_Relevant_Plans_File'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Tiff_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Tiff_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementVisible(findTestObject('Additional Plans/button_Remove_OtherPlans'))
 
