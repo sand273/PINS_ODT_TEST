@@ -16,6 +16,15 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.selectOptionByValue(findTestObject('GoPro UI/Case Documents/dropdown_InReview'), 
-    'object:1561', true)
+WebUI.navigateToUrl('https://pins-test.gopro.net/')
+
+WebUI.switchToWindowTitle('pins-test Case documents')
+
+WebUI.click(findTestObject('Page_pins-test Case documents/span_Enter template name to search'))
+
+WebUI.click(findTestObject('GoPro UI/Actions Menu/option_Appeal Decision'))
+
+WebUI.click(findTestObject('null'))
+
+WebUI.closeBrowser()
 

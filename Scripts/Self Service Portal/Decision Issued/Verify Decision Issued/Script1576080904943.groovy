@@ -17,7 +17,7 @@ Date today = new Date()
 
 String todaysDate = today.format('EEEE dd MMMMMMMM yyyy')
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Login/LPA_User'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Login/LPA User'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Complete Questionaire/link_Search'))
 

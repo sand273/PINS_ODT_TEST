@@ -18,7 +18,7 @@ String statRefMessage
 
 def verData = TestDataFactory.findTestData('Data Files/Complete_Questionaire')
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Login/LPA_User'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Login/LPA User'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Complete Questionaire/link_Search'))
 
@@ -48,7 +48,7 @@ WebUI.waitForElementVisible(findTestObject('Submit Statement/message_LPA_Stateme
 
 WebUI.click(findTestObject('Submit Statement/button_Select_File'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Statement_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Statement_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
 
@@ -62,7 +62,7 @@ statRefMessage = WebUI.getText(findTestObject('Submit Statement/message_Statemen
 
 WebUI.verifyMatch(statRefMessage, verData.getValue(1, 10), true)
 
-WebUI.verifyElementText(findTestObject('Submit Statement/message_RefNumber_Value'), 'W/' + GlobalVariable.ApplicationRef)
+WebUI.verifyElementText(findTestObject('Submit Statement/message_RefNumber_Value'), GlobalVariable.ApplicationRef)
 
 WebUI.closeBrowser()
 

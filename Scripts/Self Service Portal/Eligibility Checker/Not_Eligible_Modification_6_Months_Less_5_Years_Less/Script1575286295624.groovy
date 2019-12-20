@@ -19,44 +19,44 @@ def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 def testData = TestDataFactory.findTestData('Data Files/Eligibility_Data')
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Launch_Portal'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Launch Portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Eligibility Checker/Appeal_Relate_Decision'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Appeal a planning decision/end_User_Question'), verData.getValue(
+WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(
         1, 4))
 
-WebUI.click(findTestObject('Appeal a planning decision/input_Modification_option'))
+WebUI.click(findTestObject('Appeal planning decision/input_Modification_option'))
 
-WebUI.click(findTestObject('Object Repository/Appeal a planning decision/button_Continue'))
+WebUI.click(findTestObject('Appeal planning decision/button_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/Appeal a planning decision/end_User_Question'), 2)
+WebUI.waitForElementVisible(findTestObject('Appeal planning decision/end_User_Question'), 2)
 
-not_run: WebUI.verifyElementText(findTestObject('Object Repository/Appeal a planning decision/end_User_Question'), verData.getValue(
+not_run: WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(
         1, 77))
 
-WebUI.waitForElementClickable(findTestObject('Object Repository/Appeal a planning decision/input_Day'), 1)
+WebUI.waitForElementClickable(findTestObject('Appeal planning decision/input_Day'), 1)
 
-WebUI.setText(findTestObject('Object Repository/Appeal a planning decision/input_Day'), testData.getValue(2, 1))
+WebUI.setText(findTestObject('Appeal planning decision/input_Day'), testData.getValue(2, 1))
 
-WebUI.setText(findTestObject('Object Repository/Appeal a planning decision/input_Month'), testData.getValue(3, 1))
+WebUI.setText(findTestObject('Appeal planning decision/input_Month'), testData.getValue(3, 1))
 
-WebUI.setText(findTestObject('Object Repository/Appeal a planning decision/input_Year'), testData.getValue(4, 1))
+WebUI.setText(findTestObject('Appeal planning decision/input_Year'), testData.getValue(4, 1))
 
-WebUI.click(findTestObject('Object Repository/Appeal a planning decision/button_Continue'))
+WebUI.click(findTestObject('Appeal planning decision/button_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/Appeal a planning decision/end_User_Question'), 2)
+WebUI.waitForElementVisible(findTestObject('Appeal planning decision/end_User_Question'), 2)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Appeal a planning decision/end_User_Question'), verData.getValue(
+WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(
         1, 79))
 
-WebUI.click(findTestObject('Appeal a planning decision/input_Less_than_five_years_ago_option'))
+WebUI.click(findTestObject('Appeal planning decision/input_Less_than_five_years_ago_option'))
 
-WebUI.click(findTestObject('Object Repository/Appeal a planning decision/button_Continue'))
+WebUI.click(findTestObject('Appeal planning decision/button_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/Appeal a planning decision/non_Eligible_Message'), 2)
+WebUI.waitForElementVisible(findTestObject('Appeal planning decision/non_Eligible_Message'), 2)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Appeal a planning decision/non_Eligible_Message'), verData.getValue(
+WebUI.verifyElementText(findTestObject('Appeal planning decision/non_Eligible_Message'), verData.getValue(
         1, 15))
 
 WebUI.closeBrowser()

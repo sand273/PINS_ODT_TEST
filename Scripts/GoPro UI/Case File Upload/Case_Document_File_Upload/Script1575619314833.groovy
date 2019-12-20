@@ -15,7 +15,7 @@ import internal.GlobalVariable as GlobalVariable
 
 def caseNumber = 'BC013001'
 
-WebUI.callTestCase(findTestCase('GoPro UI/Login/Case_Officer'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
 
@@ -54,7 +54,7 @@ for (def i : (1..100)) {
 
     WebUI.click(findTestObject('GoPro UI/Case Documents Actions/Upload_Document_Button'), FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Multiple_Upload.exe'], 
+    WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Multiple_Upload.exe'], 
         FailureHandling.STOP_ON_FAILURE)
 
     WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents Actions/Upload_Button'), 20)

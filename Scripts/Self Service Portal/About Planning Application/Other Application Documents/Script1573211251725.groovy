@@ -34,7 +34,7 @@ WebUI.verifyElementText(findTestObject('Other Application Documents/list_Help_Fi
 
 WebUI.click(findTestObject('Other Application Documents/button_Select_File'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('Other Application Documents/dropdown_Select_Report_Type'), 2)
 
@@ -46,7 +46,7 @@ WebUI.click(findTestObject('Other Application Documents/button_Add_Another_File'
 
 WebUI.click(findTestObject('Other Application Documents/button_Select_File2'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('Other Application Documents/button_Add_Another_File'), 2)
 
@@ -56,7 +56,7 @@ WebUI.click(findTestObject('Other Application Documents/button_Select_File3'))
 
 WebUI.delay(1)
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Tiff_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Tiff_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('Other Application Documents/button_Add_Another_File'), 2)
 
@@ -64,7 +64,7 @@ WebUI.click(findTestObject('Other Application Documents/button_Add_Another_File'
 
 WebUI.click(findTestObject('Other Application Documents/button_Select_File4'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Jpeg_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Jpeg_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('Other Application Documents/button_Add_Another_File'), 2)
 
@@ -74,7 +74,7 @@ WebUI.click(findTestObject('Other Application Documents/button_Add_Another_File'
 
 WebUI.click(findTestObject('Other Application Documents/button_Select_File5'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'PNG_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'PNG_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 

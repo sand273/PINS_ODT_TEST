@@ -27,7 +27,7 @@ WebUI.waitForElementVisible(findTestObject('Planning Refused/question_Planning_R
 
 WebUI.verifyElementText(findTestObject('Planning Refused/frame_Reasons_CheckBoxes'), verData.getValue(1, 36))
 
-WebUI.click(findTestObject('Planning Refused/input_Select all reasons that the LPA gave when refusing planning permission_RefusalReasons'))
+WebUI.click(findTestObject('Planning Refused/input_Select all reasons'))
 
 WebUI.click(findTestObject('Planning Refused/input_Affordable housing_RefusalReasons'))
 

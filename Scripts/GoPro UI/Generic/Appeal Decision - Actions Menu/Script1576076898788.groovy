@@ -23,9 +23,9 @@ WebUI.waitForElementVisible(findTestObject('GoPro UI/File Upload PopUp/dropdown_
 
 WebUI.click(findTestObject('GoPro UI/Actions Menu/dropdown_File_Upload_Type'))
 
-WebUI.selectOptionByIndex(findTestObject('GoPro UI/File Upload PopUp/dropdown_Document_Template'), 4, FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('GoPro UI/Actions Menu/option_Appeal Decision'))
 
-not_run: WebUI.click(findTestObject('GoPro UI/Actions Menu/option_Appeal Decision'))
+WebUI.waitForElementClickable(findTestObject('GoPro UI/File Upload PopUp/button_Create'), 3)
 
 WebUI.click(findTestObject('GoPro UI/File Upload PopUp/button_Create'))
 
