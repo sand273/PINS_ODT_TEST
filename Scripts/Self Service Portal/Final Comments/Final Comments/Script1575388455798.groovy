@@ -21,9 +21,9 @@ def testData = TestDataFactory.findTestData('Data Files/GoPro_UI_Verification')
 
 def verData = TestDataFactory.findTestData('Data Files/Complete_Questionaire')
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Login/Case_Officer'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Search_Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('Final Comments/status_Final_Comments'), 3)
 
@@ -43,21 +43,21 @@ WebUI.waitForElementVisible(findTestObject('Final Comments/message_Upload_Final'
 
 WebUI.click(findTestObject('Final Comments/button_Upload_File'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Final_Comments.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Final_Comments.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Final Comments/button_Submit'))
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/title_Questionaire_Received'), 3)
 
-WebUI.verifyElementText(findTestObject('Complete Questionaire/title_Questionaire_Received'), verData.getValue(1, 7))
+WebUI.verifyElementText(findTestObject('Complete Questionaire/title_Questionaire_Received'), verData.getValue(1, 13))
 
 WebUI.verifyElementVisible(findTestObject('Complete Questionaire/message_Questionaire_Reference_Num'))
 
 queRefMessage = WebUI.getText(findTestObject('Complete Questionaire/message_Questionaire_Reference_Num'))
 
-WebUI.verifyMatch(queRefMessage, verData.getValue(1, 8), true)
+WebUI.verifyMatch(queRefMessage, verData.getValue(1, 14), true)
 
-WebUI.verifyElementText(findTestObject('Complete Questionaire/message_Ref_Num_Value'), 'W/' + GlobalVariable.ApplicationRef)
+WebUI.verifyElementText(findTestObject('Complete Questionaire/message_Ref_Num_Value'), GlobalVariable.ApplicationRef)
 
 WebUI.closeBrowser()
 

@@ -21,7 +21,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'4001932'</initValue>
+      <initValue>'4002064'</initValue>
       <name>ApplicationRef</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>0</initValue>
+      <name>driverCount</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

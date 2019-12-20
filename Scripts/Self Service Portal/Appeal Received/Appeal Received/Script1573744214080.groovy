@@ -16,21 +16,23 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-WebUI.waitForElementVisible(findTestObject('Appeal_Received/title_Appeal_Received'), 3)
+WebUI.waitForElementVisible(findTestObject('Appeal Received/title_Appeal_Received'), 3)
 
-WebUI.verifyElementText(findTestObject('Appeal_Received/title_Appeal_Received'), 'Appeal received')
+WebUI.verifyElementText(findTestObject('Appeal Received/title_Appeal_Received'), 'Appeal received')
 
-GlobalVariable.ApplicationRef = WebUI.getText(findTestObject('Object Repository/Appeal_Received/label_Appeal_Received'))
+GlobalVariable.ApplicationRef = WebUI.getText(findTestObject('Appeal Received/label_Appeal_Received'))
 
-WebUI.verifyElementVisible(findTestObject('Appeal_Received/message_Happens_Next'), FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'custom.WriteExcel.enterValues'(GlobalVariable.ApplicationRef,"C:\\Katalon\\Data-Files\\AppealNumbers.xlsx", "Appeals")
 
-WebUI.verifyElementText(findTestObject('Appeal_Received/message_Validate'), verData.getValue(1, 72))
+WebUI.verifyElementVisible(findTestObject('Appeal Received/message_Happens_Next'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Appeal_Received/message_Sign_In'), verData.getValue(1, 73))
+WebUI.verifyElementText(findTestObject('Appeal Received/message_Validate'), verData.getValue(1, 72))
 
-WebUI.verifyElementVisible(findTestObject('Appeal_Received/message_More_Info'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Appeal Received/message_Sign_In'), verData.getValue(1, 73))
 
-WebUI.verifyElementText(findTestObject('Appeal_Received/frame_Thanks_Contents'), verData.getValue(1, 74))
+WebUI.verifyElementVisible(findTestObject('Appeal Received/message_More_Info'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Appeal_Received/button_Appeal_Summary'))
+WebUI.verifyElementText(findTestObject('Appeal Received/frame_Thanks_Contents'), verData.getValue(1, 74))
+
+WebUI.click(findTestObject('Appeal Received/button_Appeal_Summary'))
 

@@ -19,9 +19,9 @@ String queRefMessage
 
 def verData = TestDataFactory.findTestData('Data Files/Complete_Questionaire')
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Login/LPA_User'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Login/LPA User'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Search_Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Complete questionnaire'), 3)
 
@@ -99,7 +99,7 @@ WebUI.waitForElementVisible(findTestObject('Complete Questionaire/message_Upload
 
 WebUI.click(findTestObject('Complete Questionaire/button_Select_File'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(2)
 
@@ -139,7 +139,7 @@ queRefMessage = WebUI.getText(findTestObject('Complete Questionaire/message_Ques
 
 WebUI.verifyMatch(queRefMessage, verData.getValue(1, 6), true)
 
-WebUI.verifyElementText(findTestObject('Complete Questionaire/message_Ref_Num_Value'), 'W/' + GlobalVariable.ApplicationRef)
+WebUI.verifyElementText(findTestObject('Complete Questionaire/message_Ref_Num_Value'), GlobalVariable.ApplicationRef)
 
 WebUI.closeBrowser()
 

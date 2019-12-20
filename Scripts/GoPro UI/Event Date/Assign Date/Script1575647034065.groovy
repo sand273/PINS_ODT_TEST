@@ -24,7 +24,7 @@ use(groovy.time.TimeCategory, {
         eventDate = (today + 11.weeks)
     })
 
-WebUI.callTestCase(findTestCase('GoPro UI/Login/Case_Officer'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -72,6 +72,8 @@ WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
 WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/link_Appeal_Decision'), 5)
 
+WebUI.refresh()
+
 WebUI.scrollToPosition(9999999, 9999999)
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/link_Appeal_Decision'))
@@ -80,7 +82,7 @@ WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/status_Appea
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/status_Appeal_InDraft'))
 
-WebUI.selectOptionByValue(findTestObject('GoPro UI/Case Documents/dropdown_Status_Change'), 'object:1585', true)
+WebUI.selectOptionByIndex(findTestObject('GoPro UI/Case Documents/dropdown_Status_Change'), 4, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/button_Primary'))
 

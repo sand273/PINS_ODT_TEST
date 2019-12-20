@@ -14,7 +14,7 @@
       <guid>be20db88-d967-464c-bdfb-6df1a4c7df3c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Generic/Launch_Portal</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Generic/Launch Portal</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>7002bdc1-9f52-40c6-8b4a-32664637cbf0</guid>

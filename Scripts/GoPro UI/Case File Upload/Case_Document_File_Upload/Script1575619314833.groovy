@@ -15,7 +15,7 @@ import internal.GlobalVariable as GlobalVariable
 
 def caseNumber = 'EN013004'
 
-WebUI.callTestCase(findTestCase('GoPro UI/Login/Case_Officer'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/GoPro UI/Page_pins My cases/link_My events_location_arrow'))
 
@@ -52,7 +52,7 @@ for (def i : (1..100)) {
 
     WebUI.click(findTestObject('GoPro UI/Case Documents Actions/Upload_Document_Button'), FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload_File'), [('exeFileName') : 'Multiple_Upload.exe'], 
+    WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Multiple_Upload.exe'], 
         FailureHandling.STOP_ON_FAILURE)
 
     WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents Actions/Upload_Button'), 20)
