@@ -82,4 +82,16 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/About the Site/Listed Building Status</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>dbf1ed44-75b6-4328-abed-f801f1ac552a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Main Grounds (Scenario 2)</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3aa299f7-2fb3-4de6-9005-0ba6de8ac410</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Supporting Documents</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
