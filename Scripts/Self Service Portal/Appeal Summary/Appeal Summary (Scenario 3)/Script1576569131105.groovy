@@ -29,7 +29,14 @@ WebUI.verifyElementAttributeValue(findTestObject('Appeal Summary/heading_Applica
 
 WebUI.verifyElementText(findTestObject('Appeal Summary/status_Submitted'), verData.getValue(1, 77))
 
-WebUI.verifyElementText(findTestObject('Appeal Summary/label_Site_Address'), siteData.getValue(1, 1))
+def site = WebUI.getText(findTestObject('Appeal Summary/label_Site_Address'))
+
+if (site.contains("Nearest postcode")){
+	WebUI.verifyElementText(findTestObject('Appeal Summary/label_Site_Address'), "Nearest postcode "+siteData.getValue(1, 1))
+}
+else{
+	WebUI.verifyElementText(findTestObject('Appeal Summary/label_Site_Address'), siteData.getValue(1, 1))
+}
 
 WebUI.verifyElementText(findTestObject('Appeal Summary/label_Appellant_Name'), planData.getValue(1, 1))
 
