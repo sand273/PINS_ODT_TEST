@@ -64,4 +64,16 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/About Planning Application/Additional Plans (Scenario 4)</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>b86d100e-c0cc-4503-ad38-dc613747c12c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Other Application Documents (Scenario 3)</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b54b8983-8950-4a02-87ce-738f40ff53e1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/About the Site/Site Details (Scenario 4)</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
