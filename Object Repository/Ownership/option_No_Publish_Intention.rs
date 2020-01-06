@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>status_Complete_Ownership</name>
+   <name>option_No_Publish_Intention</name>
    <tag></tag>
-   <elementGuidId>cc14f11d-04f7-4414-81fd-3e2986148fc9</elementGuidId>
+   <elementGuidId>bae2360c-3083-41ed-80df-e80829c0067f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//strong[@data-sid='section-Ownership']</value>
+         <value>//input[@id='radio-Ownership.HoldingPublishedIntensions-2']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>status_Complete_Ownership</name>
+   <name>button_Save_Quit</name>
    <tag></tag>
-   <elementGuidId>cc14f11d-04f7-4414-81fd-3e2986148fc9</elementGuidId>
+   <elementGuidId>f64b02ab-9c49-4c4d-a2c2-403215d94666</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//strong[@data-sid='section-Ownership']</value>
+         <value>//*[@id='btn-pins-savequit']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

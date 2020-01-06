@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>status_Complete_Ownership</name>
+   <name>button_Back</name>
    <tag></tag>
-   <elementGuidId>cc14f11d-04f7-4414-81fd-3e2986148fc9</elementGuidId>
+   <elementGuidId>82829f1b-7180-43e6-9394-c382adfa6571</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//strong[@data-sid='section-Ownership']</value>
+         <value>//*[@id='btn-pins-back']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
