@@ -112,4 +112,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/About the Appeal/Ownership (Scenario 6)</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>baaa3d08-99af-4755-af33-e65ff108997a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Preferred Procedure (Scenario 3)</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
