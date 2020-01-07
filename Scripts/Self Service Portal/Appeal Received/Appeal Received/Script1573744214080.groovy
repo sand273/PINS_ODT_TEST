@@ -24,7 +24,7 @@ WebUI.verifyElementText(findTestObject('Appeal Received/title_Appeal_Received'),
 
 GlobalVariable.ApplicationRef = WebUI.getText(findTestObject('Appeal Received/label_Appeal_Received'))
 
-not_run: CustomKeywords.'custom.WriteExcel.enterValues'(GlobalVariable.ApplicationRef, 'C:\\Katalon\\Data-Files\\AppealNumbers.xlsx', 
+CustomKeywords.'custom.WriteExcel.enterValues'(GlobalVariable.ApplicationRef, 'C:\\Katalon\\Data-Files\\AppealNumbers.xlsx', 
     'Appeals')
 
 WebUI.verifyElementVisible(findTestObject('Appeal Received/message_Happens_Next'), FailureHandling.STOP_ON_FAILURE)
