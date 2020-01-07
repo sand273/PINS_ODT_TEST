@@ -22,7 +22,7 @@ WebUI.verifyElementText(findTestObject('Appeal Received/title_Appeal_Received'),
 
 GlobalVariable.ApplicationRef = WebUI.getText(findTestObject('Appeal Received/label_Appeal_Received'))
 
-CustomKeywords.'custom.WriteExcel.enterValues'(GlobalVariable.ApplicationRef,"C:\\Katalon\\Data-Files\\AppealNumbers.xlsx", "Appeals")
+CustomKeywords.'custom.WriteExcel.enterValues'(GlobalVariable.ApplicationRef, GlobalVariable.UploadFilePath + '\\AppealNumbers.xlsx', "Appeals")
 
 WebUI.verifyElementVisible(findTestObject('Appeal Received/message_Happens_Next'), FailureHandling.STOP_ON_FAILURE)
 

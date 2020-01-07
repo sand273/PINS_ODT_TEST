@@ -127,6 +127,8 @@ WebUI.focus(findTestObject('Complete Questionaire/message_Check_Answers'))
 
 WebUI.scrollToPosition(9999999, 9999999)
 
+WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Submit_Final'), 3)
+
 WebUI.click(findTestObject('Complete Questionaire/button_Submit_Final'))
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/title_Questionaire_Received'), 5)

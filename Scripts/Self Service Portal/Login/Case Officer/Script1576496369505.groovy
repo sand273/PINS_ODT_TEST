@@ -36,13 +36,13 @@ WebUI.waitForElementVisible(findTestObject('Frontpage/message_User_Name_Entry'),
 
 WebUI.verifyElementText(findTestObject('Frontpage/message_User_Name_Entry'), verData.getValue(1, 17))
 
-WebUI.setText(findTestObject('Frontpage/input_UserName'), testData.getValue(10,1))
+WebUI.setText(findTestObject('Frontpage/input_UserName'), testData.getValue(10, 1))
 
 WebUI.setEncryptedText(findTestObject('Frontpage/input_Password'), 'KT8JOVzAIqlDwzr433Fv5w==')
 
 WebUI.click(findTestObject('Frontpage/button_Login'))
 
-WebUI.waitForElementVisible(findTestObject('User Landing/message_Welcome'), 2)
+WebUI.waitForElementVisible(findTestObject('User Landing/message_Welcome'), 5)
 
 WebUI.verifyElementText(findTestObject('User Landing/message_Welcome'), verData.getValue(1, 18))
 

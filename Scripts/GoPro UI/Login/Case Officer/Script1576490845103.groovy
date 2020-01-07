@@ -27,6 +27,8 @@ WebUI.setText(findTestObject('GoPro UI/Login/input_User name'), 'Autotest_1')
 
 WebUI.focus(findTestObject('GoPro UI/Login/input_Password'))
 
+WebUI.delay(1)
+
 WebUI.waitForElementClickable(findTestObject('GoPro UI/Login/input_Password'), 2)
 
 WebUI.click(findTestObject('GoPro UI/Login/input_Password'))

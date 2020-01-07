@@ -60,7 +60,6 @@ WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureH
 
 if (WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Status_Programmed'), 'defaultSelected', 
     'true', 5) == true) {
-
     
     WebUI.selectOptionByValue(findTestObject("GoPro UI/Case Summary/select_AbeyanceCase"), "702A622C-E990-473D-B462-751ECE315DCF", true)
 	

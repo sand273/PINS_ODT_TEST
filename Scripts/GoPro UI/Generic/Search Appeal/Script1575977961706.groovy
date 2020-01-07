@@ -14,13 +14,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
-String[] ref;
+String[] ref
 
 def UIData = TestDataFactory.findTestData('Data Files/GoPro_UI_Verification')
 
 WebUI.click(findTestObject('GoPro UI/My cases/link_My events_location_arrow'))
 
+WebUI.waitForElementClickable(findTestObject('GoPro UI/My cases/link_Holding_List'), 2)
+
 WebUI.click(findTestObject('GoPro UI/My cases/link_Holding_List'))
+
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/input_Search'), 2)
 
 WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'))
 
@@ -30,7 +34,7 @@ WebUI.sendKeys(findTestObject('Object Repository/GoPro UI/Case Summary/input_Sea
 
 WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Search'))
 
-WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Summary/list_Case_Ref'), 5)
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/list_Case_Ref'), 5)
 
 WebUI.doubleClick(findTestObject('GoPro UI/Case Summary/list_Case_Ref'))
 

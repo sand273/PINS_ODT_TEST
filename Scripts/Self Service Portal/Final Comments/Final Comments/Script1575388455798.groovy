@@ -49,13 +49,13 @@ WebUI.click(findTestObject('Final Comments/button_Submit'))
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/title_Questionaire_Received'), 3)
 
-WebUI.verifyElementText(findTestObject('Complete Questionaire/title_Questionaire_Received'), verData.getValue(1, 13))
+WebUI.verifyElementText(findTestObject('Complete Questionaire/title_Questionaire_Received'), verData.getValue(1, 7))
 
 WebUI.verifyElementVisible(findTestObject('Complete Questionaire/message_Questionaire_Reference_Num'))
 
 queRefMessage = WebUI.getText(findTestObject('Complete Questionaire/message_Questionaire_Reference_Num'))
 
-WebUI.verifyMatch(queRefMessage, verData.getValue(1, 14), true)
+WebUI.verifyMatch(queRefMessage, verData.getValue(1, 8), true)
 
 WebUI.verifyElementText(findTestObject('Complete Questionaire/message_Ref_Num_Value'), GlobalVariable.ApplicationRef)
 
