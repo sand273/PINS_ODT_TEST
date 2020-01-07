@@ -16,13 +16,16 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
+WebUI.delay(1)
+
 WebUI.waitForElementClickable(findTestObject('Environmental details/link_Environmental_Details'), 1)
 
 WebUI.click(findTestObject('Environmental details/link_Environmental_Details'))
 
 WebUI.waitForElementVisible(findTestObject('Environmental details/question_Environmental_Impact_Assessment'), 3)
 
-WebUI.verifyElementText(findTestObject('Environmental details/question_Environmental_Impact_Assessment'), verData.getValue(1, 33))
+WebUI.verifyElementText(findTestObject('Environmental details/question_Environmental_Impact_Assessment'), verData.getValue(
+        1, 33))
 
 WebUI.click(findTestObject('Environmental details/option_No_Env_Impact_Assessment'))
 

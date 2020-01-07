@@ -6,12 +6,11 @@
    <elementGuidId>d51d5de0-94ad-46e4-aa68-51e67622b8e2</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='Relevant.OtherFiles:Relevant.AppealInformation:2']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//label[@for='Relevant.OtherFiles:Relevant.AppealInformation:2']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

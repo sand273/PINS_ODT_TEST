@@ -16,6 +16,10 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
+WebUI.delay(1)
+
+WebUI.waitForElementVisible(findTestObject('Appeal planning decision/button_Appeal_Now'), 20)
+
 WebUI.click(findTestObject('Appeal planning decision/button_Appeal_Now'))
 
 WebUI.waitForElementVisible(findTestObject('Appeal planning decision/account_User_Question'), 2)

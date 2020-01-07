@@ -16,6 +16,8 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
+WebUI.delay(1)
+
 WebUI.waitForElementVisible(findTestObject('Appeal Received/title_Appeal_Received'), 3)
 
 WebUI.verifyElementText(findTestObject('Appeal Received/title_Appeal_Received'), 'Appeal received')

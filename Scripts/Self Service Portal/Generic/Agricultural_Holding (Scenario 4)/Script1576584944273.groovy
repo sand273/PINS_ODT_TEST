@@ -14,27 +14,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
-def planData = TestDataFactory.findTestData('Data Files/Planning_Details')
-
-def siteData = TestDataFactory.findTestData('Data Files/Site_Details')
-
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-WebUI.waitForElementVisible(findTestObject('Appeal Summary/status_Submitted'), 3)
+WebUI.verifyElementText(findTestObject('Ownership/question_Agricultural_Holding'), verData.getValue(1, 66))
 
-WebUI.verifyElementAttributeValue(findTestObject('Appeal Summary/heading_Application_Ref'), 'innerText', GlobalVariable.ApplicationRef, 0)
+WebUI.verifyElementText(findTestObject('Ownership/message_Appeal_Site_Forms'), verData.getValue(1, 57))
 
-WebUI.verifyElementText(findTestObject('Appeal Summary/status_Submitted'), verData.getValue(1, 77))
+WebUI.click(findTestObject('Ownership/input_Agg_Holding_Yes'))
 
-WebUI.verifyElementText(findTestObject('Appeal Summary/label_Site_Address'), siteData.getValue(2, 1))
+WebUI.click(findTestObject('Ownership/input_Agg_Sole_Holding_No'))
 
-WebUI.verifyElementText(findTestObject('Appeal Summary/label_Appellant_Name'), planData.getValue(1, 1))
+WebUI.click(findTestObject('Ownership/input_No_Who_Owns_Holding'))
 
-WebUI.verifyElementText(findTestObject('Appeal Summary/label_Application_Ref'), planData.getValue(2, 1))
+WebUI.click(findTestObject('Ownership/option_Yes_Publish_Intention'))
 
-WebUI.verifyElementText(findTestObject('Appeal Summary/links_Appeal_Action'), verData.getValue(1, 75))
+WebUI.click(findTestObject('Ownership/link_Agg_Copy_Press_Notice'))
 
-WebUI.verifyElementText(findTestObject('Appeal Summary/links_Appeal_Data'), verData.getValue(1, 76))
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.closeBrowser()
+WebUI.verifyElementVisible(findTestObject('Ownership/button_Remove_Agg_Copy_Press_Notice'))
+
+WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 

@@ -7,15 +7,14 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//input[@id='File.PlanningApplication']</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>#File.PlanningApplication</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//label[@for='File.PlanningApplication']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -24,6 +23,6 @@
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <type>Main</type>
-      <value>//input[@id='File.PlanningApplication']</value>
+      <value></value>
    </webElementXpaths>
 </WebElementEntity>

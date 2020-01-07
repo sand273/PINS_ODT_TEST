@@ -18,6 +18,8 @@ def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 def testData = TestDataFactory.findTestData('Data Files/User_Profile')
 
+WebUI.delay(1)
+
 WebUI.waitForElementVisible(findTestObject('Contact Details/link_Contact_Details'), 2)
 
 WebUI.click(findTestObject('Contact Details/link_Contact_Details'))
@@ -36,7 +38,8 @@ WebUI.verifyElementAttributeValue(findTestObject('Contact Details/text_Landline'
 
 WebUI.verifyElementAttributeValue(findTestObject('Contact Details/text_Mobile'), 'value', testData.getValue(8, 1), 0)
 
-not_run: WebUI.verifyElementAttributeValue(findTestObject('Contact Details/text_PostCode'), 'value', testData.getValue(6, 1), 0)
+not_run: WebUI.verifyElementAttributeValue(findTestObject('Contact Details/text_PostCode'), 'value', testData.getValue(6, 
+        1), 0)
 
 WebUI.verifyElementAttributeValue(findTestObject('Contact Details/text_Town'), 'value', testData.getValue(4, 1), 0)
 
