@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//td[contains(text(),'PLANNING INSPECTORATE, TEMPLE QUAY HOUSE, 2, THE S')]</value>
+         <value>//td[contains(text(),'PLANNING INSPECTORATE, TEMPLE QUAY HOUSE, 2, THE S')] | //span[contains(text(),'BS1 6PN')] | //td[contains(text(),'BS1 6PN')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

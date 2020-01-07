@@ -16,6 +16,8 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
+WebUI.delay(1)
+
 WebUI.waitForElementVisible(findTestObject('Terms and Conditions/message_Terms_Conditions'), 3)
 
 WebUI.verifyElementText(findTestObject('Terms and Conditions/frame_Terms_Conditions'), verData.getValue(1, 71))

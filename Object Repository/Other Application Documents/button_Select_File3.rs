@@ -6,12 +6,11 @@
    <elementGuidId>43cdfbba-29cd-49df-b4a2-02bfb1b8b079</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='File.TechnicalReport:Other.Documents:3']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//label[@for='File.TechnicalReport:Other.Documents:3']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

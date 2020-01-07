@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;File.LPADecisionNotice&quot;]</value>
+         <value>//label[@for='File.LPADecisionNotice']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,6 +19,6 @@
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <type>Main</type>
-      <value>//*[@id=&quot;File.LPADecisionNotice&quot;]</value>
+      <value></value>
    </webElementXpaths>
 </WebElementEntity>

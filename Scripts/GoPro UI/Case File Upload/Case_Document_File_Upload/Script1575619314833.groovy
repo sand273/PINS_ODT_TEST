@@ -13,11 +13,13 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-def caseNumber = 'EN013004'
+def caseNumber = 'BC013001'
 
 WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/GoPro UI/Page_pins My cases/link_My events_location_arrow'))
+WebUI.delay(1)
+
+WebUI.click(findTestObject('GoPro UI/My cases/link_My events_location_arrow'))
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Navigation/Cases_Link'), 20)
 

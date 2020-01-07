@@ -16,13 +16,16 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
+WebUI.delay(1)
+
 WebUI.waitForElementVisible(findTestObject('Appeal Received/title_Appeal_Received'), 3)
 
 WebUI.verifyElementText(findTestObject('Appeal Received/title_Appeal_Received'), 'Appeal received')
 
 GlobalVariable.ApplicationRef = WebUI.getText(findTestObject('Appeal Received/label_Appeal_Received'))
 
-CustomKeywords.'custom.WriteExcel.enterValues'(GlobalVariable.ApplicationRef,"C:\\Katalon\\Data-Files\\AppealNumbers.xlsx", "Appeals")
+CustomKeywords.'custom.WriteExcel.enterValues'(GlobalVariable.ApplicationRef, 'C:\\Katalon\\Data-Files\\AppealNumbers.xlsx', 
+    'Appeals')
 
 WebUI.verifyElementVisible(findTestObject('Appeal Received/message_Happens_Next'), FailureHandling.STOP_ON_FAILURE)
 

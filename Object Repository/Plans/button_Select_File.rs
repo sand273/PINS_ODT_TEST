@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;LPA.FilePlans&quot;]</value>
+         <value>//label[@for='LPA.FilePlans']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,6 +19,6 @@
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <type>Main</type>
-      <value>//*[@id=&quot;LPA.FilePlans&quot;]</value>
+      <value></value>
    </webElementXpaths>
 </WebElementEntity>

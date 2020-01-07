@@ -16,6 +16,8 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
+WebUI.delay(1)
+
 WebUI.waitForElementVisible(findTestObject('Supporting Grounds/link_Supporting_Grounds'), 2)
 
 WebUI.click(findTestObject('Supporting Grounds/link_Supporting_Grounds'))
