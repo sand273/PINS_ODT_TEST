@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Appeal_Form_Eligibilty_Checker_Scenario_1</name>
+   <name>Appeal_Form_Eligibility_Checker_Scenario_1</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
