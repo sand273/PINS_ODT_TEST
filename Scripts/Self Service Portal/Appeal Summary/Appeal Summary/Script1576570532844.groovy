@@ -29,8 +29,6 @@ WebUI.verifyElementAttributeValue(findTestObject('Appeal Summary/heading_Applica
 
 WebUI.verifyElementText(findTestObject('Appeal Summary/status_Submitted'), verData.getValue(1, 77))
 
-WebUI.verifyElementText(findTestObject('Appeal Summary/label_Site_Address'), siteData.getValue(2, 1))
-
 WebUI.verifyElementText(findTestObject('Appeal Summary/label_Appellant_Name'), planData.getValue(1, 1))
 
 WebUI.verifyElementText(findTestObject('Appeal Summary/label_Application_Ref'), planData.getValue(2, 1))
