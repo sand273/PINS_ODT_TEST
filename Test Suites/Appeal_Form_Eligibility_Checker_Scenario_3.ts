@@ -155,9 +155,9 @@
       <testCaseId>Test Cases/Self Service Portal/Appeal Received/Appeal Received</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>a9a8e3b6-f29d-43d4-81ba-457cf3c9313a</guid>
+      <guid>e26e6010-c2ed-4707-82d3-bce873b4d8ab</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Appeal Summary/Appeal Summary (Scenario 3)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Appeal Summary/Appeal Summary</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
