@@ -6,12 +6,11 @@
    <elementGuidId>527965e4-a889-47cc-81a9-747fca42a2c7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='PlanningApplication.ReportFile']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//label[@for='PlanningApplication.ReportFile']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

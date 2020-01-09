@@ -59,6 +59,8 @@ WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Summary/label_Processi
 
 WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'), FailureHandling.STOP_ON_FAILURE)
 
+WebUI.delay(1)
+
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Decision_Pending'), 'defaultSelected', 
     'true', 5)
 

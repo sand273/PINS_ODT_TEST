@@ -20,6 +20,8 @@ WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHand
 
 WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.delay(1)
+
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Open_Final_Comments'), 'defaultSelected', 
     'true', 5)
 
@@ -95,6 +97,8 @@ WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/label_Processi
 WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'))
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(1)
 
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Publish_Final_Comments'), 'defaultSelected', 
     'true', 5)

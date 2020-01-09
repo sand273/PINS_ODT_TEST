@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='Statement.File']</value>
+         <value>//label[@for='Statement.File']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

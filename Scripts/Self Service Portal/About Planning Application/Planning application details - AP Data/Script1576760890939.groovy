@@ -18,6 +18,8 @@ def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 def testData = TestDataFactory.findTestData('Data Files/Planning_Details')
 
+WebUI.delay(1)
+
 WebUI.waitForElementClickable(findTestObject('Appeal planning decision/link_Planning_Application_Details'), 1)
 
 WebUI.click(findTestObject('Appeal planning decision/link_Planning_Application_Details'))
