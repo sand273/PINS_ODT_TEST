@@ -158,6 +158,6 @@
       <guid>52f4bda0-b328-46cc-9e26-3a85b41c6101</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Appeal Summary/Appeal Summary (Scenario 3)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Appeal Summary/Appeal Summary</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
