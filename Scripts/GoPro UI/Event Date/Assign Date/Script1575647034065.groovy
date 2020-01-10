@@ -70,11 +70,13 @@ WebUI.callTestCase(findTestCase('GoPro UI/Generic/Appeal Decision - Actions Menu
 
 WebUI.refresh()
 
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'), 5)
+
 WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
 WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/link_Appeal_Decision'), 5)
 
-WebUI.refresh()
+not_run: WebUI.refresh()
 
 WebUI.scrollToPosition(9999999, 9999999)
 
