@@ -34,6 +34,14 @@ WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Fin
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/button_External_Documents'), 5)
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/button_External_Documents'))
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/check_External_Documents'), 5)
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/check_External_Documents'))
+
 WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/link_Folder_Final_Comments'), 5)
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/input_Search'))
