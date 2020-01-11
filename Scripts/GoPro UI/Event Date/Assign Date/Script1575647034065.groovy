@@ -57,6 +57,8 @@ WebUI.click(findTestObject('GoPro UI/Case Summary/button_Decision_Pending'))
 
 WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Summary/label_Processing'), 5)
 
+WebUI.delay(1, FailureHandling.STOP_ON_FAILURE)
+
 WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)

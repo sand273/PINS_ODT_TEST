@@ -102,6 +102,8 @@ if (WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/drop
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/label_Processing'), 5)
 
+WebUI.delay(1)
+
 WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'))
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'), FailureHandling.STOP_ON_FAILURE)
