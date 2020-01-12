@@ -62,7 +62,7 @@ statRefMessage = WebUI.getText(findTestObject('Submit Statement/message_Statemen
 
 WebUI.verifyMatch(statRefMessage, verData.getValue(1, 10), true)
 
-WebUI.verifyElementText(findTestObject('Submit Statement/message_RefNumber_Value'), GlobalVariable.ApplicationRef)
+WebUI.verifyElementText(findTestObject('Submit Statement/message_RefNumber_Value'), 'W/'+GlobalVariable.ApplicationRef)
 
 WebUI.closeBrowser()
 

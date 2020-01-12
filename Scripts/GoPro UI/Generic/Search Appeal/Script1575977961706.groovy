@@ -18,6 +18,8 @@ def UIData = TestDataFactory.findTestData('Data Files/GoPro_UI_Verification')
 
 WebUI.click(findTestObject('GoPro UI/My cases/link_My events_location_arrow'))
 
+WebUI.delay(1)
+
 WebUI.waitForElementVisible(findTestObject('GoPro UI/My cases/link_Holding_List'), 20)
 
 WebUI.waitForElementClickable(findTestObject('GoPro UI/My cases/link_Holding_List'), 2)

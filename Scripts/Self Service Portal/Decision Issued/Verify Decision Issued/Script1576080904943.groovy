@@ -31,6 +31,8 @@ WebUI.click(findTestObject('Complete Questionaire/link_Appeal_Ref'))
 
 WebUI.waitForElementVisible(findTestObject('Final Comments/status_Decision_Issued'), 3)
 
+WebUI.scrollToElement(findTestObject('Final Comments/date_Decision_Issued'), 5)
+
 WebUI.verifyElementText(findTestObject('Final Comments/date_Decision_Issued'), todaysDate)
 
 WebUI.closeBrowser()

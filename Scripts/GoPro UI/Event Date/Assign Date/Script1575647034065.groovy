@@ -57,7 +57,11 @@ WebUI.click(findTestObject('GoPro UI/Case Summary/button_Decision_Pending'))
 
 WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Summary/label_Processing'), 5)
 
+WebUI.delay(1, FailureHandling.STOP_ON_FAILURE)
+
 WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(1)
 
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Decision_Pending'), 'defaultSelected', 
     'true', 5)
@@ -66,13 +70,25 @@ WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
 WebUI.callTestCase(findTestCase('GoPro UI/Generic/Appeal Decision - Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.delay(1)
+
 WebUI.refresh()
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'), 5)
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/button_External_Documents'), 5)
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/button_External_Documents'))
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/check_External_Documents'), 5)
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/check_External_Documents'))
+
 WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/link_Appeal_Decision'), 5)
 
-WebUI.refresh()
+not_run: WebUI.refresh()
 
 WebUI.scrollToPosition(9999999, 9999999)
 

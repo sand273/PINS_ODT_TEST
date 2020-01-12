@@ -125,6 +125,8 @@ WebUI.waitForElementVisible(findTestObject('Complete Questionaire/message_Check_
 
 WebUI.focus(findTestObject('Complete Questionaire/message_Check_Answers'))
 
+WebUI.delay(1)
+
 WebUI.scrollToPosition(9999999, 9999999)
 
 WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Submit_Final'), 3)
@@ -141,7 +143,7 @@ queRefMessage = WebUI.getText(findTestObject('Complete Questionaire/message_Ques
 
 WebUI.verifyMatch(queRefMessage, verData.getValue(1, 6), true)
 
-WebUI.verifyElementText(findTestObject('Complete Questionaire/message_Ref_Num_Value'), GlobalVariable.ApplicationRef)
+WebUI.verifyElementText(findTestObject('Complete Questionaire/message_Ref_Num_Value'), 'W/' + GlobalVariable.ApplicationRef)
 
 WebUI.closeBrowser()
 
