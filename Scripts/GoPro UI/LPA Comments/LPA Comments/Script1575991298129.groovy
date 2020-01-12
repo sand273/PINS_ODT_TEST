@@ -21,10 +21,20 @@ WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHand
 
 WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.delay(1)
+
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Open_for_LPA'), 'defaultSelected', 'true', 
     5)
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/button_External_Documents'), 5)
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/button_External_Documents'))
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/check_External_Documents'), 5)
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/check_External_Documents'))
 
 WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/link_Folder_Your_Comments'), 5)
 
@@ -65,6 +75,8 @@ if (WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/drop
     WebUI.click(findTestObject('GoPro UI/Case Summary/button_Publish_LPA_Statement'))
 
     WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Summary/label_Processing'), 10)
+
+    WebUI.delay(1)
 }
 
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Publish_LPA_Statement'), 'defaultSelected', 

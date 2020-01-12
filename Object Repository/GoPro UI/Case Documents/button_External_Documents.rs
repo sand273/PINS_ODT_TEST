@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Select_File</name>
+   <name>button_External_Documents</name>
    <tag></tag>
-   <elementGuidId>527965e4-a889-47cc-81a9-747fca42a2c7</elementGuidId>
+   <elementGuidId>4f77e9d2-8dc0-439f-9b99-1564bc964fa0</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//label[@for='PlanningApplication.ReportFile']</value>
+         <value>//button[@id='filterBtn_externalDocument']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

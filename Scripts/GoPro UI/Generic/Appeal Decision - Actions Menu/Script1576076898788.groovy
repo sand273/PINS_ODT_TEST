@@ -13,19 +13,29 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('GoPro UI/Actions Menu/menu_Actions'))
+
+WebUI.delay(1)
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Actions Menu/link_Documents_File'), 3)
 
 WebUI.click(findTestObject('GoPro UI/Actions Menu/link_Documents_File'))
 
+WebUI.delay(1)
+
 WebUI.waitForElementVisible(findTestObject('GoPro UI/File Upload PopUp/dropdown_Document_Template'), 5)
 
 WebUI.click(findTestObject('GoPro UI/Actions Menu/dropdown_File_Upload_Type'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('GoPro UI/Actions Menu/option_Appeal Decision'))
 
 WebUI.waitForElementClickable(findTestObject('GoPro UI/File Upload PopUp/button_Create'), 3)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('GoPro UI/File Upload PopUp/button_Create'))
 

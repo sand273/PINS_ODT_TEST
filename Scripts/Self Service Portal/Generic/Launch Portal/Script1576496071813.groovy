@@ -23,6 +23,8 @@ WebUI.click(findTestObject('PINS Test GoPro/a_Self Service'))
 
 WebUI.waitForElementVisible(findTestObject('Frontpage/button_Make an appeal - Beta service'), 3)
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Frontpage/input'))
 
 WebUI.click(findTestObject('Frontpage/button_Make an appeal - Beta service'))
