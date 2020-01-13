@@ -26,7 +26,7 @@
       <guid>f8946e90-8032-40da-a311-5361db4b2aee</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_Extension_No</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_Extension_No_Full_Planning_Enforcement_Yes</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>2b6bf301-9457-4de2-9e27-59ec65b3e5ed</guid>
@@ -51,12 +51,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Enforcement_Notice_No</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>574c215a-1d81-4b66-a9a1-b84d90abe675</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_Extension_Yes</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>697932c6-dec4-4d3b-8bf3-16e274204b1e</guid>
@@ -273,5 +267,23 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Local_Authority_No_Documentation_Yes_8_Weeks_More_6_Months_More_LPA_Yes_6_Months_More</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9861e1e4-648a-4b84-985a-a0e1eac5aab4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_Extension_Yes_Enforcement_Yes</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>25c19c5a-c9b9-4b0b-a462-cf000396961b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_Extension_Yes_Enforcement_No_12_Weeks_More</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d30f9927-c996-49a4-81e7-d14fee666f90</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Household_Extension_Yes_Enforcement_No_12_Weeks_Less</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

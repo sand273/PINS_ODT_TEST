@@ -16,6 +16,8 @@ import internal.GlobalVariable as GlobalVariable
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
+def testData = TestDataFactory.findTestData('Data Files/Eligibility_Data')
+
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Launch Portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Eligibility Checker/Appeal_Relate_Decision'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -36,9 +38,31 @@ WebUI.click(findTestObject('Appeal planning decision/input_Yes_option'))
 
 WebUI.click(findTestObject('Appeal planning decision/button_Continue'))
 
+WebUI.waitForElementVisible(findTestObject('Appeal planning decision/end_User_Question'), 2)
+
+not_run: WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(1, 7))
+
+WebUI.click(findTestObject('Appeal planning decision/input_No_option'))
+
+WebUI.click(findTestObject('Appeal planning decision/button_Continue'))
+
+WebUI.waitForElementVisible(findTestObject('Appeal planning decision/end_User_Question'), 2)
+
+WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(1, 78))
+
+WebUI.waitForElementClickable(findTestObject('Appeal planning decision/input_Day'), 1)
+
+WebUI.setText(findTestObject('Appeal planning decision/input_Day'), testData.getValue(2, 2))
+
+WebUI.setText(findTestObject('Appeal planning decision/input_Month'), testData.getValue(3, 2))
+
+WebUI.setText(findTestObject('Appeal planning decision/input_Year'), testData.getValue(4, 2))
+
+WebUI.click(findTestObject('Appeal planning decision/button_Continue'))
+
 WebUI.waitForElementVisible(findTestObject('Appeal planning decision/non_Eligible_Message'), 2)
 
-WebUI.verifyElementText(findTestObject('Appeal planning decision/non_Eligible_Message'), verData.getValue(1, 10))
+WebUI.verifyElementText(findTestObject('Appeal planning decision/non_Eligible_Message'), verData.getValue(1, 11))
 
 WebUI.closeBrowser()
 
