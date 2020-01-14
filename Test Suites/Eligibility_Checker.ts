@@ -38,7 +38,7 @@
       <guid>804eaf47-aef9-4821-b7ed-1c81e0a65836</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Enforcement_Notice_No</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Houshold_Extension_No_Enforcement_No_6_Months_More</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>697932c6-dec4-4d3b-8bf3-16e274204b1e</guid>
@@ -50,19 +50,19 @@
       <guid>1eaeba2a-e798-485c-a710-0bc101478fb5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_Outline_Planning_Enforcement_Notice_Yes</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_Extenstion_No_Outline_Planning_Enforcement_Yes</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>c4757124-527f-4ced-8c6f-ff8f8d3a174f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_Outline_Planning_Enforcement_Notice_No_6_Months_More</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_Extension_No_Outline_Planning_Enforcement_No_6_Months_More</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>13c9bf33-1764-4966-9549-f62665de856c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Household_Outline_Planning_Enforcement_Notice_No_6_Months_Less</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Household_Extension_No_Outline_Planning_Enforcement_No_6_Months_Less</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>8c478194-2a96-4ebb-952c-cb48521458e7</guid>
