@@ -86,7 +86,7 @@ WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/check_Extern
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/check_External_Documents'))
 
-WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/link_Appeal_Decision'), 5)
+WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/link_Appeal_Decision'), 20)
 
 not_run: WebUI.refresh()
 
