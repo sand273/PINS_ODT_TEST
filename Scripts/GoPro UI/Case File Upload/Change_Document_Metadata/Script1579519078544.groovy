@@ -13,14 +13,18 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.WebDriver as WebDriver
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.By
 
 def caseNumber = 'EN023012'
 
-def rows = findTestData('Document_Metadata').getRowNumbers()
+def rowsOnSpreadsheet = findTestData('Document_Metadata').getRowNumbers()
 
 def i = 1
 
 WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebDriver driver = DriverFactory.getWebDriver()
 
 WebUI.delay(1)
 
@@ -48,9 +52,15 @@ WebUI.switchToWindowIndex(1)
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
-for (def index : (1..1)) {
-    WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_Documents', [('index') : i]), 20)
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_Documents', [('index') : i]), 20)
 
+def numberOfDocuments = driver.findElements(By.xpath("//div[@class='gpview-template ng-scope']")).size()
+
+if (rowsOnSpreadsheet < numberOfDocuments){
+	numberOfDocuments = rowsOnSpreadsheet
+}
+
+for (def index : (1..numberOfDocuments)) {
     WebUI.click(findTestObject('GoPro UI/Case Documents/link_Documents', [('index') : i]))
 
     WebUI.waitForElementVisible(findTestObject('Object Repository/GoPro UI/Case Documents/link_Document_Name'), 20)
@@ -173,4 +183,3 @@ for (def index : (1..1)) {
 }
 
 WebUI.closeBrowser()
-
