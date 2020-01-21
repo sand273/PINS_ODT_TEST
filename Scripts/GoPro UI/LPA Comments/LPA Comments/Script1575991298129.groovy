@@ -36,7 +36,7 @@ WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/check_Extern
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/check_External_Documents'))
 
-WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/link_Folder_Your_Comments'), 5)
+WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/link_Folder_Your_Comments'), 20)
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/input_Search'))
 

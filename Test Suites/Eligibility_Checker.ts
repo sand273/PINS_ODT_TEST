@@ -11,76 +11,34 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>49dcf276-33f5-426c-a9c3-b0408673806f</testSuiteGuid>
    <testCaseLink>
-      <guid>f80bc957-d7a3-4821-bb99-1e0f5eb03431</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Generic/Launch Portal</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>3b3d9ef5-e078-49ec-83b5-fe83f2089aa2</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_New_Appeal</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>f8946e90-8032-40da-a311-5361db4b2aee</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_Extension_No</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>2b6bf301-9457-4de2-9e27-59ec65b3e5ed</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Appeal_Display_Advertisement</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>91d3fcdf-a6fb-413f-87f3-e017ec0540a7</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Appeal_Other_Application</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>abcf5cee-7778-43d1-94e3-acdc42f69ff5</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Appeal_Shop_Front_Develop</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_Extension_No_Full_Planning_Enforcement_Yes</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>804eaf47-aef9-4821-b7ed-1c81e0a65836</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Enforcement_Notice_No</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>574c215a-1d81-4b66-a9a1-b84d90abe675</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_Extension_Yes</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>697932c6-dec4-4d3b-8bf3-16e274204b1e</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Dispute_Local_List_No</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Houshold_Extension_No_Full_Planning_Enforcement_No_6_Months_More</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>1eaeba2a-e798-485c-a710-0bc101478fb5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_Outline_Planning_Enforcement_Notice_Yes</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_Extenstion_No_Outline_Planning_Enforcement_Yes</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>c4757124-527f-4ced-8c6f-ff8f8d3a174f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_Outline_Planning_Enforcement_Notice_No_6_Months_More</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_Extension_No_Outline_Planning_Enforcement_No_6_Months_More</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>13c9bf33-1764-4966-9549-f62665de856c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Household_Outline_Planning_Enforcement_Notice_No_6_Months_Less</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Household_Extension_No_Outline_Planning_Enforcement_No_6_Months_Less</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>8c478194-2a96-4ebb-952c-cb48521458e7</guid>
@@ -273,5 +231,119 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Local_Authority_No_Documentation_Yes_8_Weeks_More_6_Months_More_LPA_Yes_6_Months_More</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9861e1e4-648a-4b84-985a-a0e1eac5aab4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_Extension_Yes_Enforcement_Yes</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>25c19c5a-c9b9-4b0b-a462-cf000396961b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_Extension_Yes_Enforcement_No_12_Weeks_More</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d30f9927-c996-49a4-81e7-d14fee666f90</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Household_Extension_Yes_Enforcement_No_12_Weeks_Less</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>80f24922-4da0-42aa-ae32-3c91d43d2268</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Shop_Front_Develop_Enforcement_Yes</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>26012da0-e090-45a8-9981-beb6e04e6240</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Shop_Front_Develop_Enforcement_No_12_Weeks_More</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e30bb119-1533-4d80-86e5-419ee9041de3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Shop_Front_Develop_Enforcement_No_12_Weeks_Less</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>16917746-f071-41ce-adc2-123f23fd636c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Display_Advertisement_Condition_Enforcement_Yes</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>06f0f172-eae3-43d2-8fbe-c603ff733c90</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Display_Advertisement_Condition_Enforcement_No_6_Months_More</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>199831cd-583a-4e13-9caf-2d74ac8d2a80</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Display_Advertisement_Condition_Enforcement_No_6_Months_Less</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5bd2c3c1-7927-4681-8c7d-ef465d9f7aa1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Display_Advertisement_Refused_Enforcement_Yes</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>40baa6e3-2cb7-43f5-ab24-1d94a5b0e92f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Display_Advertisement_Refused_Enforcement_No_8_Weeks_More</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1e51f8aa-929a-45e7-85bb-788e9cf61c8c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Display_Advertisement_Refused_Enforcement_No_8_Weeks_Less</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f2c4401b-bbec-4578-b796-8734a9a3e625</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Household_Extension_No_Full_Planning_Enforcement_No_6_Months_Less</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e3c3ca1a-af20-48b1-98c3-c7085a262415</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Happy_Using_Written_Or_Hearing_No</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d8371d51-e64a-4a45-9712-78bcecf769c0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Happy_Using_Witten_Or_Hearing_Yes_Local_Planning_No</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>08676c5b-bd33-41ae-8b7e-63556ee093e5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Refusal_Listed_Building_6_Months_More</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0d3de275-d770-47ce-828c-c9f2a12dfaf7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Refusal_Listed_Building_6_Months_Less</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e0cac425-a50a-4efc-86dc-9ae13f69a819</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Other_Application_6_Months_Less</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>91d3fcdf-a6fb-413f-87f3-e017ec0540a7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Other_Application_6_Months_More</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

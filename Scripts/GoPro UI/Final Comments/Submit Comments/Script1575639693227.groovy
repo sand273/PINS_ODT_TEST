@@ -35,7 +35,7 @@ WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/check_Extern
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/check_External_Documents'))
 
-WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/link_Folder_Final_Comments'), 5)
+WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/link_Folder_Final_Comments'), 20)
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/input_Search'))
 
@@ -43,7 +43,7 @@ WebUI.sendKeys(findTestObject('GoPro UI/Case Summary/input_Search'), testData.ge
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/button_Search'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), 5)
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), 20)
 
 WebUI.verifyElementText(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), testData.getValue(1, 8))
 
@@ -56,6 +56,8 @@ WebUI.click(findTestObject('GoPro UI/Case Documents/status_InReview'))
 WebUI.selectOptionByIndex(findTestObject('GoPro UI/Case Documents/dropdown_InReview'), 4, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/button_Primary'))
+
+WebUI.delay(1)
 
 WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/button_Clear_Search'), 3)
 
@@ -85,6 +87,8 @@ WebUI.click(findTestObject('GoPro UI/Case Documents/status_InReview'))
 WebUI.selectOptionByIndex(findTestObject('GoPro UI/Case Documents/dropdown_InReview'), 4, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/button_Primary'))
+
+WebUI.delay(1)
 
 WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/button_Clear_Search'), 3)
 

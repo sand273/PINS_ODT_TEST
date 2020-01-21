@@ -43,7 +43,7 @@ WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/check_Extern
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/check_External_Documents'))
 
-WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/link_Folder_LPA_Statement'), 5)
+WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/link_Folder_LPA_Statement'), 20)
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/input_Search'))
 
@@ -107,6 +107,8 @@ WebUI.verifyElementText(findTestObject('GoPro UI/Case Documents/link_LPA_Stateme
 WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'))
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/status_Document_Published'), 5)
+
+WebUI.delay(1)
 
 WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/button_Clear_Search'), 3)
 
