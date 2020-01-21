@@ -13,8 +13,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.WebDriver as WebDriver
-import com.kms.katalon.core.webui.driver.DriverFactory
-import org.openqa.selenium.By
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.By as By
 
 def caseNumber = 'EN023012'
 
@@ -54,10 +54,10 @@ WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_Documents', [('index') : i]), 20)
 
-def numberOfDocuments = driver.findElements(By.xpath("//div[@class='gpview-template ng-scope']")).size()
+def numberOfDocuments = driver.findElements(By.xpath('//div[@class=\'gpview-template ng-scope\']')).size()
 
-if (rowsOnSpreadsheet < numberOfDocuments){
-	numberOfDocuments = rowsOnSpreadsheet
+if (rowsOnSpreadsheet < numberOfDocuments) {
+    numberOfDocuments = rowsOnSpreadsheet
 }
 
 for (def index : (1..numberOfDocuments)) {
@@ -180,6 +180,11 @@ for (def index : (1..numberOfDocuments)) {
 
         WebUI.click(findTestObject('GoPro UI/Case Documents/button_Save_Metadata'))
     }
+    
+    i++
+
+    WebUI.click(findTestObject('GoPro UI/Case Documents/button_Document_Details'))
 }
 
 WebUI.closeBrowser()
+
