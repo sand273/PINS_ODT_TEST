@@ -32,7 +32,7 @@ WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search
 
 String[] ref = GlobalVariable.ApplicationRef.split('/')
 
-WebUI.sendKeys(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'), ref[0])
+WebUI.sendKeys(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'), ref[1])
 
 WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Search'))
 

@@ -90,7 +90,7 @@ public class WriteExcel {
 	}
 
 	@Keyword
-	def waitForObject(int timeOut, TestObject object, TestObject clickObj) {
+	def waitForObject(int timeOut, String object, String clickObj) {
 
 		long timestart
 		timestart = (System.currentTimeMillis() / 1000)
