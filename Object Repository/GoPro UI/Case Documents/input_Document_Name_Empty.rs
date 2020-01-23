@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Document_Name_Empty</name>
+   <tag></tag>
+   <elementGuidId>fbb232ee-0cdc-41b1-b325-a0bfc5f7d46e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html[1]/body[1]/ng-include[1]/ng-view[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[7]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[4]/form[1]/div[1]/input[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>
