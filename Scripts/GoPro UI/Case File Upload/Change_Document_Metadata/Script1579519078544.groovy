@@ -15,6 +15,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.WebDriver as WebDriver
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.By as By
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+import org.openqa.selenium.WebElement as WebElement
 
 def caseNumber = 'EN023012'
 
@@ -60,8 +62,11 @@ if (rowsOnSpreadsheet < numberOfDocuments) {
     numberOfDocuments = rowsOnSpreadsheet
 }
 
-for (def index : (1..numberOfDocuments)) {
-    WebUI.click(findTestObject('GoPro UI/Case Documents/link_Documents', [('index') : i]))
+for (def index : (i..numberOfDocuments)) {
+    WebElement element = WebUiCommonHelper.findWebElement(findTestObject('GoPro UI/Case Documents/link_Documents', [('index') : i]), 
+        20)
+
+    WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(element))
 
     WebUI.waitForElementVisible(findTestObject('Object Repository/GoPro UI/Case Documents/link_Document_Name'), 20)
 
@@ -71,7 +76,17 @@ for (def index : (1..numberOfDocuments)) {
 
     WebUI.switchToWindowIndex(1)
 
-    WebUI.setText(findTestObject('GoPro UI/Case Documents/input_Document_Name'), findTestData('Document_Metadata').getValue(
+    WebUI.clearText(findTestObject('GoPro UI/Case Documents/input_Document_Name'))
+
+    WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/input_Document_Name_Empty'), 20)
+
+    WebUI.click(findTestObject('GoPro UI/Case Documents/input_Document_Name_Empty'))
+
+    WebUI.switchToWindowIndex(0)
+
+    WebUI.switchToWindowIndex(1)
+
+    WebUI.setText(findTestObject('GoPro UI/Case Documents/input_Document_Name_Empty'), findTestData('Document_Metadata').getValue(
             'Name', i))
 
     WebUI.click(findTestObject('GoPro UI/Case Documents/button_Save_Metadata'))
@@ -80,26 +95,34 @@ for (def index : (1..numberOfDocuments)) {
 
     if ((findTestData('Document_Metadata').getValue('Document Type', i) != 'NULL') && (findTestData('Document_Metadata').getValue(
         'Document Type', i) != '')) {
-        WebUI.click(findTestObject('GoPro UI/Case Documents/link_Document_Type'))
+        try {
+            WebUI.click(findTestObject('GoPro UI/Case Documents/link_Document_Type'))
 
-        WebUI.switchToWindowIndex(0)
+            def documentType = findTestData('Document_Metadata').getValue('Document Type', i)
 
-        WebUI.switchToWindowIndex(1)
+            WebUI.switchToWindowIndex(0)
 
-        WebUI.selectOptionByLabel(findTestObject('GoPro UI/Case Documents/select_Document_Type'), findTestData('Document_Metadata').getValue(
-                'Document Type', i), false)
+            WebUI.switchToWindowIndex(1)
 
-        WebUI.click(findTestObject('GoPro UI/Case Documents/button_Save_Metadata'))
+            WebUI.selectOptionByLabel(findTestObject('GoPro UI/Case Documents/select_Document_Type'), ('(?i:' + documentType) + 
+                ')', true)
+
+            WebUI.click(findTestObject('GoPro UI/Case Documents/button_Save_Metadata'))
+        }
+        catch (def e) {
+        } 
     }
     
     WebUI.click(findTestObject('GoPro UI/Case Documents/link_Document_Status'))
+
+    def status = findTestData('Document_Metadata').getValue('Status', i)
 
     WebUI.switchToWindowIndex(0)
 
     WebUI.switchToWindowIndex(1)
 
-    WebUI.selectOptionByLabel(findTestObject('GoPro UI/Case Documents/select_Document_Status'), findTestData('Document_Metadata').getValue(
-            'Status', i), false)
+    WebUI.selectOptionByLabel(findTestObject('GoPro UI/Case Documents/select_Document_Status'), ('(?i:' + status) + ')', 
+        true)
 
     WebUI.click(findTestObject('GoPro UI/Case Documents/button_Save_Metadata'))
 
@@ -109,12 +132,14 @@ for (def index : (1..numberOfDocuments)) {
 
         WebUI.click(findTestObject('GoPro UI/Case Documents/link_Document_Category'))
 
+        def category = findTestData('Document_Metadata').getValue('Category', i)
+
         WebUI.switchToWindowIndex(0)
 
         WebUI.switchToWindowIndex(1)
 
-        WebUI.selectOptionByLabel(findTestObject('GoPro UI/Case Documents/select_Document_Category'), findTestData('Document_Metadata').getValue(
-                'Category', i), false)
+        WebUI.selectOptionByLabel(findTestObject('GoPro UI/Case Documents/select_Document_Category'), ('(?i:' + category) + 
+            ')', true)
 
         WebUI.click(findTestObject('GoPro UI/Case Documents/button_Save_Metadata'))
     }
@@ -182,6 +207,8 @@ for (def index : (1..numberOfDocuments)) {
     }
     
     i++
+
+    WebUI.scrollToElement(findTestObject('GoPro UI/Case Documents/button_Document_Details'), 20)
 
     WebUI.click(findTestObject('GoPro UI/Case Documents/button_Document_Details'))
 }
