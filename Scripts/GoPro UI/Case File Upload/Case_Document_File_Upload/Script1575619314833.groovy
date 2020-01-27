@@ -39,7 +39,7 @@ WebUI.doubleClick(findTestObject('GoPro UI/Case Summary/Ds_Case_In_List', [('cas
 
 WebUI.switchToWindowIndex(1)
 
-for (def i : (1..20)) {
+for (def i : (1..279)) {
     WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents Actions/Actions_Link'), 20)
 
     WebUI.click(findTestObject('GoPro UI/Case Documents Actions/Actions_Link'))
