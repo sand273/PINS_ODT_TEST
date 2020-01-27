@@ -20,6 +20,8 @@ def testData = TestDataFactory.findTestData('Data Files/User_Profile')
 
 WebUI.openBrowser('')
 
+WebUI.deleteAllCookies()
+
 WebUI.maximizeWindow()
 
 WebUI.navigateToUrl(GlobalVariable.URL)
@@ -42,7 +44,7 @@ WebUI.setEncryptedText(findTestObject('Frontpage/input_Password'), 'KT8JOVzAIqlD
 
 WebUI.click(findTestObject('Frontpage/button_Login'))
 
-WebUI.waitForElementVisible(findTestObject('User Landing/message_Welcome'), 2)
+WebUI.waitForElementVisible(findTestObject('User Landing/message_Welcome'), 5)
 
 WebUI.verifyElementText(findTestObject('User Landing/message_Welcome'), verData.getValue(1, 18))
 

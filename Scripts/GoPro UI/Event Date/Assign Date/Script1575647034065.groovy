@@ -92,6 +92,8 @@ not_run: WebUI.refresh()
 
 WebUI.scrollToPosition(9999999, 9999999)
 
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/link_Appeal_Decision'), 5)
+
 WebUI.click(findTestObject('GoPro UI/Case Documents/link_Appeal_Decision'))
 
 WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/status_Appeal_InDraft'), 5)

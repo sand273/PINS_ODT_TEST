@@ -30,7 +30,7 @@ WebUI.click(findTestObject('Listed building status/input_No_Listed_Building'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Listed building status/status_Complete_Listed_Building'), 3)
+WebUI.waitForElementVisible(findTestObject('Listed building status/status_Complete_Listed_Building'), 10)
 
 WebUI.verifyElementText(findTestObject('Listed building status/status_Complete_Listed_Building'), 'COMPLETED')
 

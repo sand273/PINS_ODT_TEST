@@ -71,7 +71,10 @@ WebUI.sendKeys(findTestObject('GoPro UI/Case Summary/input_Search'), testData.ge
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/button_Search'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), 20)
+if (WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), 5) == false)
+{
+	CustomKeywords.'custom.WriteExcel.waitForObject'(5000, 'GoPro UI/Case Documents/link_LPA_Statement', 'GoPro UI/Case Summary/button_Search')
+}
 
 WebUI.verifyElementText(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), testData.getValue(1, 9))
 

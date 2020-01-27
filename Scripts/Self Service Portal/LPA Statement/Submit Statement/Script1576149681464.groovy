@@ -32,7 +32,7 @@ WebUI.click(findTestObject('Complete Questionaire/link_Appeal_Ref'))
 
 WebUI.waitForElementVisible(findTestObject('Submit Statement/message_Appeal_Status'), 3)
 
-WebUI.verifyElementText(findTestObject('Submit Statement/title_Appeal_Reference'), 'W/' + GlobalVariable.ApplicationRef)
+WebUI.verifyElementText(findTestObject('Submit Statement/title_Appeal_Reference'), GlobalVariable.ApplicationRef)
 
 WebUI.verifyElementVisible(findTestObject('Submit Statement/button_Make_Statement'))
 
@@ -62,7 +62,7 @@ statRefMessage = WebUI.getText(findTestObject('Submit Statement/message_Statemen
 
 WebUI.verifyMatch(statRefMessage, verData.getValue(1, 10), true)
 
-WebUI.verifyElementText(findTestObject('Submit Statement/message_RefNumber_Value'), 'W/'+GlobalVariable.ApplicationRef)
+WebUI.verifyElementText(findTestObject('Submit Statement/message_RefNumber_Value'), GlobalVariable.ApplicationRef)
 
 WebUI.closeBrowser()
 

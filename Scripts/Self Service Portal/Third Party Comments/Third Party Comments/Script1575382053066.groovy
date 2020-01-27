@@ -59,7 +59,7 @@ queRefMessage = WebUI.getText(findTestObject('Complete Questionaire/message_Ques
 
 WebUI.verifyMatch(queRefMessage, verData.getValue(1, 12), true)
 
-WebUI.verifyElementText(findTestObject('Complete Questionaire/message_Ref_Num_Value'), 'W/'+GlobalVariable.ApplicationRef)
+WebUI.verifyElementText(findTestObject('Complete Questionaire/message_Ref_Num_Value'), GlobalVariable.ApplicationRef)
 
 WebUI.closeBrowser()
 

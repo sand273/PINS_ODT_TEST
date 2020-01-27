@@ -20,25 +20,29 @@ WebUI.click(findTestObject('GoPro UI/My cases/link_My events_location_arrow'))
 
 WebUI.delay(1)
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/My cases/link_Holding_List'), 20)
+WebUI.waitForElementVisible(findTestObject('GoPro UI/My cases/link_Holding_List'), 10)
+
+WebUI.waitForElementClickable(findTestObject('GoPro UI/My cases/link_Holding_List'), 5)
 
 WebUI.click(findTestObject('GoPro UI/My cases/link_Holding_List'))
+
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/input_Search'), 5)
 
 WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'))
 
 String[] ref = GlobalVariable.ApplicationRef.split('/')
 
-WebUI.sendKeys(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'), ref[0])
+WebUI.sendKeys(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'), ref[1])
 
 WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Search'))
 
-WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Summary/list_Case_Ref'), 5)
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/list_Case_Ref'), 10)
 
 WebUI.doubleClick(findTestObject('GoPro UI/Case Summary/list_Case_Ref'))
 
 WebUI.switchToWindowIndex(1)
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/panel_Left_Processing_Timeline'), 5)
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/panel_Left_Processing_Timeline'), 10)
 
 WebUI.verifyElementText(findTestObject('GoPro UI/Case Summary/panel_Left_Processing_Timeline'), UIData.getValue(1, 1))
 

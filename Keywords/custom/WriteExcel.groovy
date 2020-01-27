@@ -61,7 +61,7 @@ public class WriteExcel {
 
 		XSSFSheet sheet = workbook.getSheet(sheetName);
 		GlobalVariable.driverCount = sheet.getLastRowNum()-sheet.getFirstRowNum();
-		
+
 		for(Row row : sheet) {
 			for (Cell cell : row) {
 				values[iRow] = cell.getStringCellValue();
@@ -87,5 +87,25 @@ public class WriteExcel {
 		FileOutputStream fos = new FileOutputStream(fileName);
 		workbook.write(fos);
 		fos.close();
+	}
+
+	@Keyword
+	def waitForObject(int timeOut, String object, String clickObj) {
+
+		long timestart
+		timestart = (System.currentTimeMillis() / 1000)
+
+		while (WebUI.verifyElementNotPresent(object, 5, FailureHandling.OPTIONAL)) {
+
+			long currenttime = System.currentTimeMillis() / 1000
+
+			if (currenttime > (timestart + timeOut)) {
+				WebUI.takeScreenshot()
+				break
+			}
+			WebUI.waitForElementVisible(findTestObject(object), 20)
+			WebUI.click(findTestObject(clickObj))
+			WebUI.delay(1)
+		}
 	}
 }

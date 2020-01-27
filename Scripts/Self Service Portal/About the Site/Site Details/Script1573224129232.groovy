@@ -79,7 +79,7 @@ WebUI.click(findTestObject('Site Details/input_Yes_SiteInspectorVisit'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Site Details/status_Completed_Site_Details'), 3)
+WebUI.waitForElementVisible(findTestObject('Site Details/status_Completed_Site_Details'), 10)
 
 WebUI.verifyElementText(findTestObject('Site Details/status_Completed_Site_Details'), 'COMPLETED')
 

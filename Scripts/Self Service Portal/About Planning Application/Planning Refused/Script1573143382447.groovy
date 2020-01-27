@@ -19,11 +19,11 @@ def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 WebUI.delay(1)
 
-WebUI.waitForElementVisible(findTestObject('Planning Refused/link_Planning_Refused'), 2)
+WebUI.waitForElementVisible(findTestObject('Planning Refused/link_Planning_Refused'), 5)
 
 WebUI.click(findTestObject('Planning Refused/link_Planning_Refused'))
 
-WebUI.waitForElementVisible(findTestObject('Planning Refused/question_Planning_Refused'), 2)
+WebUI.waitForElementVisible(findTestObject('Planning Refused/question_Planning_Refused'), 5)
 
 WebUI.verifyElementText(findTestObject('Planning Refused/frame_Reasons_CheckBoxes'), verData.getValue(1, 36))
 
@@ -35,7 +35,7 @@ WebUI.click(findTestObject('Planning Refused/input_Agricultural need_RefusalReas
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Planning Refused/status_Completed_Refusal'), 3)
+WebUI.waitForElementVisible(findTestObject('Planning Refused/status_Completed_Refusal'), 10)
 
 WebUI.verifyElementText(findTestObject('Planning Refused/status_Completed_Refusal'), 'COMPLETED')
 

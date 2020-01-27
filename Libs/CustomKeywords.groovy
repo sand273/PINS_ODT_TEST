@@ -5,8 +5,6 @@
 
 import java.lang.String
 
-import com.kms.katalon.core.testobject.TestObject
-
 
 def static "custom.WriteExcel.enterValues"(
     	String value	
@@ -38,8 +36,8 @@ def static "custom.WriteExcel.clearValues"(
 
 def static "custom.WriteExcel.waitForObject"(
     	int timeOut	
-     , 	TestObject object	
-     , 	TestObject clickObj	) {
+     , 	String object	
+     , 	String clickObj	) {
     (new custom.WriteExcel()).waitForObject(
         	timeOut
          , 	object

@@ -18,11 +18,11 @@ def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 WebUI.delay(1)
 
-WebUI.waitForElementVisible(findTestObject('Other Appeal Information/link_Other_Appeal_Information'), 2)
+WebUI.waitForElementVisible(findTestObject('Other Appeal Information/link_Other_Appeal_Information'), 5)
 
 WebUI.click(findTestObject('Other Appeal Information/link_Other_Appeal_Information'))
 
-WebUI.waitForElementVisible(findTestObject('Other Appeal Information/message_Upload_documents'), 2)
+WebUI.waitForElementVisible(findTestObject('Other Appeal Information/message_Upload_documents'), 5)
 
 WebUI.verifyElementText(findTestObject('Other Appeal Information/message_Upload_documents'), verData.getValue(1, 63))
 
@@ -32,7 +32,7 @@ WebUI.click(findTestObject('Other Appeal Information/button_Select_File'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Other Appeal Information/button_Add_More_Files'), 2)
+WebUI.waitForElementVisible(findTestObject('Other Appeal Information/button_Add_More_Files'), 5)
 
 WebUI.click(findTestObject('Other Appeal Information/button_Add_More_Files'))
 
@@ -40,7 +40,7 @@ WebUI.click(findTestObject('Other Appeal Information/button_Select_File2'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Other Appeal Information/button_Add_More_Files'), 2)
+WebUI.waitForElementVisible(findTestObject('Other Appeal Information/button_Add_More_Files'), 5)
 
 WebUI.click(findTestObject('Other Appeal Information/button_Add_More_Files'))
 
@@ -50,7 +50,7 @@ WebUI.delay(1)
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Tiff_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Other Appeal Information/button_Add_More_Files'), 2)
+WebUI.waitForElementVisible(findTestObject('Other Appeal Information/button_Add_More_Files'), 5)
 
 WebUI.click(findTestObject('Other Appeal Information/button_Add_More_Files'))
 
@@ -58,7 +58,7 @@ WebUI.click(findTestObject('Other Appeal Information/button_Select_File4'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Jpeg_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Other Appeal Information/button_Add_More_Files'), 2)
+WebUI.waitForElementVisible(findTestObject('Other Appeal Information/button_Add_More_Files'), 5)
 
 WebUI.click(findTestObject('Other Appeal Information/button_Add_More_Files'))
 
@@ -68,7 +68,7 @@ WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('e
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Other Appeal Information/status_Complete_Other_Information'), 3)
+WebUI.waitForElementVisible(findTestObject('Other Appeal Information/status_Complete_Other_Information'), 10)
 
 WebUI.verifyElementText(findTestObject('Other Appeal Information/status_Complete_Other_Information'), 'COMPLETED')
 

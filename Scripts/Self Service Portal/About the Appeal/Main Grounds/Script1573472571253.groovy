@@ -19,18 +19,18 @@ def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 WebUI.delay(1)
 
-WebUI.waitForElementVisible(findTestObject('Main grounds of Appeal/link_Main_grounds'), 2)
+WebUI.waitForElementVisible(findTestObject('Main grounds of Appeal/link_Main_grounds'), 5)
 
 WebUI.click(findTestObject('Main grounds of Appeal/link_Main_grounds'))
 
-WebUI.waitForElementVisible(findTestObject('Main grounds of Appeal/message_special_category_information'), 2)
+WebUI.waitForElementVisible(findTestObject('Main grounds of Appeal/message_special_category_information'), 5)
 
 WebUI.verifyElementText(findTestObject('Main grounds of Appeal/message_special_category_information'), verData.getValue(
         1, 48))
 
 WebUI.click(findTestObject('Main grounds of Appeal/link_Help_with_Preparing'))
 
-WebUI.waitForElementVisible(findTestObject('Main grounds of Appeal/frame_Prepare_Statement'), 2)
+WebUI.waitForElementVisible(findTestObject('Main grounds of Appeal/frame_Prepare_Statement'), 5)
 
 WebUI.verifyElementText(findTestObject('Main grounds of Appeal/frame_Prepare_Statement'), verData.getValue(1, 54))
 
@@ -45,11 +45,13 @@ WebUI.click(findTestObject('Main grounds of Appeal/button_Select_File'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.waitForElementClickable(findTestObject('Main grounds of Appeal/input_understand_AppealAgreement'), 5)
+
 WebUI.click(findTestObject('Main grounds of Appeal/input_understand_AppealAgreement'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Main grounds of Appeal/status_Complete_Grounds'), 3)
+WebUI.waitForElementVisible(findTestObject('Main grounds of Appeal/status_Complete_Grounds'), 10)
 
 WebUI.verifyElementText(findTestObject('Main grounds of Appeal/status_Complete_Grounds'), 'COMPLETED')
 
