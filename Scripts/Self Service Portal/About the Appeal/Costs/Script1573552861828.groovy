@@ -18,17 +18,17 @@ def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 WebUI.delay(1)
 
-WebUI.waitForElementVisible(findTestObject('Costs/link_Costs'), 2)
+WebUI.waitForElementVisible(findTestObject('Costs/link_Costs'), 5)
 
 WebUI.click(findTestObject('Costs/link_Costs'))
 
-WebUI.waitForElementVisible(findTestObject('Costs/question_Costs_Application'), 2)
+WebUI.waitForElementVisible(findTestObject('Costs/question_Costs_Application'), 5)
 
 WebUI.verifyElementText(findTestObject('Costs/question_Costs_Application'), verData.getValue(1, 55))
 
 WebUI.click(findTestObject('Costs/link_Application_Costs'))
 
-WebUI.waitForElementVisible(findTestObject('Costs/frame_Application_Costs'), 2)
+WebUI.waitForElementVisible(findTestObject('Costs/frame_Application_Costs'), 5)
 
 WebUI.verifyElementText(findTestObject('Costs/frame_Application_Costs'), verData.getValue(1, 56))
 
@@ -36,7 +36,7 @@ WebUI.click(findTestObject('Costs/input_No_Costs'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Costs/status_Complete_Costs'), 3)
+WebUI.waitForElementVisible(findTestObject('Costs/status_Complete_Costs'), 10)
 
 WebUI.verifyElementText(findTestObject('Costs/status_Complete_Costs'), 'COMPLETED')
 

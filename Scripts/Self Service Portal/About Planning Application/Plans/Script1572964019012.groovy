@@ -34,7 +34,7 @@ WebUI.click(findTestObject('Plans/button_Select_File'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementVisible(findTestObject('Plans/button_Remove_File'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Plans/button_Remove_File'), 10)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 

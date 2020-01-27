@@ -22,7 +22,7 @@ WebUI.waitForElementVisible(findTestObject('Technical Reports/link_Technical_Rep
 
 WebUI.click(findTestObject('Technical Reports/link_Technical_Reports'))
 
-WebUI.waitForElementVisible(findTestObject('Technical Reports/message_Technical_Reports'), 2)
+WebUI.waitForElementVisible(findTestObject('Technical Reports/message_Technical_Reports'), 5)
 
 WebUI.verifyElementText(findTestObject('Technical Reports/message_Technical_Reports'), verData.getValue(1, 62))
 
@@ -30,7 +30,7 @@ WebUI.verifyElementText(findTestObject('Technical Reports/message_Provide_Docs')
 
 WebUI.click(findTestObject('Technical Reports/link_Help_File_Formats'))
 
-WebUI.waitForElementVisible(findTestObject('Technical Reports/list_Help_File_Formats'), 2)
+WebUI.waitForElementVisible(findTestObject('Technical Reports/list_Help_File_Formats'), 5)
 
 WebUI.verifyElementText(findTestObject('Technical Reports/list_Help_File_Formats'), verData.getValue(1, 32))
 
@@ -38,7 +38,7 @@ WebUI.click(findTestObject('Technical Reports/button_Select_File'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Technical Reports/button_Add_More_Files'), 2)
+WebUI.waitForElementVisible(findTestObject('Technical Reports/button_Add_More_Files'), 5)
 
 WebUI.click(findTestObject('Technical Reports/button_Add_More_Files'))
 
@@ -46,7 +46,7 @@ WebUI.click(findTestObject('Technical Reports/button_Select_File2'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Technical Reports/button_Add_More_Files'), 2)
+WebUI.waitForElementVisible(findTestObject('Technical Reports/button_Add_More_Files'), 5)
 
 WebUI.click(findTestObject('Technical Reports/button_Add_More_Files'))
 
@@ -56,7 +56,7 @@ WebUI.delay(1)
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Tiff_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Technical Reports/button_Add_More_Files'), 2)
+WebUI.waitForElementVisible(findTestObject('Technical Reports/button_Add_More_Files'), 5)
 
 WebUI.click(findTestObject('Technical Reports/button_Add_More_Files'))
 
@@ -64,7 +64,7 @@ WebUI.click(findTestObject('Technical Reports/button_Select_File4'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Jpeg_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Technical Reports/button_Add_More_Files'), 2)
+WebUI.waitForElementVisible(findTestObject('Technical Reports/button_Add_More_Files'), 5)
 
 WebUI.click(findTestObject('Technical Reports/button_Add_More_Files'))
 
@@ -74,7 +74,7 @@ WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('e
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Technical Reports/status_Complete_Technical_Reports'), 5)
+WebUI.waitForElementVisible(findTestObject('Technical Reports/status_Complete_Technical_Reports'), 10)
 
 WebUI.verifyElementText(findTestObject('Technical Reports/status_Complete_Technical_Reports'), 'COMPLETED')
 

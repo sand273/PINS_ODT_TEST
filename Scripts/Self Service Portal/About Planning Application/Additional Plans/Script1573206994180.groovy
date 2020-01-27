@@ -19,11 +19,11 @@ def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 WebUI.delay(1)
 
-WebUI.waitForElementVisible(findTestObject('Additional Plans/link_Additional_Plans'), 2)
+WebUI.waitForElementVisible(findTestObject('Additional Plans/link_Additional_Plans'), 5)
 
 WebUI.click(findTestObject('Additional Plans/link_Additional_Plans'))
 
-WebUI.waitForElementVisible(findTestObject('Additional Plans/question_LPA_Plans'), 2)
+WebUI.waitForElementVisible(findTestObject('Additional Plans/question_LPA_Plans'), 5)
 
 WebUI.verifyElementText(findTestObject('Additional Plans/question_LPA_Plans'), verData.getValue(1, 37))
 
@@ -31,7 +31,7 @@ WebUI.click(findTestObject('Additional Plans/input_No_DifferentPlans'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Additional Plans/question_Other_Plans'), 2)
+WebUI.waitForElementVisible(findTestObject('Additional Plans/question_Other_Plans'), 5)
 
 WebUI.verifyElementText(findTestObject('Additional Plans/question_Other_Plans'), verData.getValue(1, 38))
 
@@ -39,7 +39,7 @@ WebUI.click(findTestObject('Additional Plans/input_No_PlansOtherRelevant'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Additional Plans/status_Complete_Additional_Plans'), 3)
+WebUI.waitForElementVisible(findTestObject('Additional Plans/status_Complete_Additional_Plans'), 10)
 
 WebUI.verifyElementText(findTestObject('Additional Plans/status_Complete_Additional_Plans'), 'COMPLETED')
 

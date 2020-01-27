@@ -16,7 +16,7 @@ import internal.GlobalVariable as GlobalVariable
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-WebUI.waitForElementVisible(findTestObject('Appeal planning decision/a_Start now'), 1)
+WebUI.waitForElementPresent(findTestObject('Appeal planning decision/a_Start now'), 2)
 
 WebUI.click(findTestObject('Appeal planning decision/a_Start now'))
 

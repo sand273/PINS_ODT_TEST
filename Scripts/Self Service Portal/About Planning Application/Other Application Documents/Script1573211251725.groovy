@@ -18,17 +18,17 @@ def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 WebUI.delay(1)
 
-WebUI.waitForElementVisible(findTestObject('Other Application Documents/link_Other_Documents'), 2)
+WebUI.waitForElementVisible(findTestObject('Other Application Documents/link_Other_Documents'), 5)
 
 WebUI.click(findTestObject('Other Application Documents/link_Other_Documents'))
 
-WebUI.waitForElementVisible(findTestObject('Other Application Documents/message_Technical_Reports'), 3)
+WebUI.waitForElementVisible(findTestObject('Other Application Documents/message_Technical_Reports'), 5)
 
 WebUI.verifyElementText(findTestObject('Other Application Documents/message_Technical_Reports'), verData.getValue(1, 39))
 
 WebUI.click(findTestObject('Other Application Documents/link_Help_File_Formats'))
 
-WebUI.waitForElementVisible(findTestObject('Other Application Documents/list_Help_File_Formats'), 2)
+WebUI.waitForElementVisible(findTestObject('Other Application Documents/list_Help_File_Formats'), 5)
 
 WebUI.verifyElementText(findTestObject('Other Application Documents/list_Help_File_Formats'), verData.getValue(1, 32))
 
@@ -36,11 +36,11 @@ WebUI.click(findTestObject('Other Application Documents/button_Select_File'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Other Application Documents/dropdown_Select_Report_Type'), 2)
+WebUI.waitForElementVisible(findTestObject('Other Application Documents/dropdown_Select_Report_Type'), 5)
 
 WebUI.verifyElementText(findTestObject('Other Application Documents/dropdown_Select_Report_Type'), verData.getValue(1, 40))
 
-WebUI.waitForElementVisible(findTestObject('Other Application Documents/button_Add_Another_File'), 2)
+WebUI.waitForElementVisible(findTestObject('Other Application Documents/button_Add_Another_File'), 5)
 
 WebUI.click(findTestObject('Other Application Documents/button_Add_Another_File'))
 
@@ -48,7 +48,7 @@ WebUI.click(findTestObject('Other Application Documents/button_Select_File2'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Other Application Documents/button_Add_Another_File'), 2)
+WebUI.waitForElementVisible(findTestObject('Other Application Documents/button_Add_Another_File'), 5)
 
 WebUI.click(findTestObject('Other Application Documents/button_Add_Another_File'))
 
@@ -58,7 +58,7 @@ WebUI.delay(1)
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Tiff_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Other Application Documents/button_Add_Another_File'), 2)
+WebUI.waitForElementVisible(findTestObject('Other Application Documents/button_Add_Another_File'), 5)
 
 WebUI.click(findTestObject('Other Application Documents/button_Add_Another_File'))
 
@@ -66,9 +66,7 @@ WebUI.click(findTestObject('Other Application Documents/button_Select_File4'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Jpeg_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Other Application Documents/button_Add_Another_File'), 2)
-
-not_run: WebUI.scrollToElement(findTestObject('Other Application Documents/button_Add_Another_File'), 0)
+WebUI.waitForElementVisible(findTestObject('Other Application Documents/button_Add_Another_File'), 5)
 
 WebUI.click(findTestObject('Other Application Documents/button_Add_Another_File'))
 
@@ -76,9 +74,11 @@ WebUI.click(findTestObject('Other Application Documents/button_Select_File5'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'PNG_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.waitForElementClickable(findTestObject('Planning Application details/button_Save_Continue'), 5)
+
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Other Application Documents/status_Complete_Other_Documents'), 5)
+WebUI.waitForElementVisible(findTestObject('Other Application Documents/status_Complete_Other_Documents'), 10)
 
 WebUI.verifyElementText(findTestObject('Other Application Documents/status_Complete_Other_Documents'), 'COMPLETED')
 

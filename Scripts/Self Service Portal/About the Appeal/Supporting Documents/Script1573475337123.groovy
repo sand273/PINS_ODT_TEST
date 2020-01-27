@@ -18,11 +18,11 @@ def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 WebUI.delay(1)
 
-WebUI.waitForElementVisible(findTestObject('Supporting Grounds/link_Supporting_Grounds'), 2)
+WebUI.waitForElementVisible(findTestObject('Supporting Grounds/link_Supporting_Grounds'), 5)
 
 WebUI.click(findTestObject('Supporting Grounds/link_Supporting_Grounds'))
 
-WebUI.waitForElementVisible(findTestObject('Supporting Grounds/message_Upload_File'), 2)
+WebUI.waitForElementVisible(findTestObject('Supporting Grounds/message_Upload_File'), 5)
 
 WebUI.verifyElementText(findTestObject('Supporting Grounds/message_Upload_File'), verData.getValue(1, 51))
 
@@ -30,7 +30,7 @@ WebUI.click(findTestObject('Supporting Grounds/button_Select_File'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Supporting Grounds/button_Add_another_document'), 2)
+WebUI.waitForElementVisible(findTestObject('Supporting Grounds/button_Add_another_document'), 5)
 
 WebUI.click(findTestObject('Supporting Grounds/button_Add_another_document'))
 
@@ -38,7 +38,7 @@ WebUI.click(findTestObject('Supporting Grounds/button_Select_File2'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Supporting Grounds/button_Add_another_document'), 3)
+WebUI.waitForElementVisible(findTestObject('Supporting Grounds/button_Add_another_document'), 5)
 
 WebUI.click(findTestObject('Supporting Grounds/button_Add_another_document'))
 
@@ -48,7 +48,7 @@ WebUI.delay(1)
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Tiff_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Supporting Grounds/button_Add_another_document'), 3)
+WebUI.waitForElementVisible(findTestObject('Supporting Grounds/button_Add_another_document'), 5)
 
 WebUI.click(findTestObject('Supporting Grounds/button_Add_another_document'))
 
@@ -56,7 +56,7 @@ WebUI.click(findTestObject('Supporting Grounds/button_SelectFile4'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Jpeg_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Supporting Grounds/button_Add_another_document'), 3)
+WebUI.waitForElementVisible(findTestObject('Supporting Grounds/button_Add_another_document'), 5)
 
 WebUI.click(findTestObject('Supporting Grounds/button_Add_another_document'))
 
@@ -66,7 +66,7 @@ WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('e
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Supporting Grounds/status_Complete_Supporting_Docs'), 5)
+WebUI.waitForElementVisible(findTestObject('Supporting Grounds/status_Complete_Supporting_Docs'), 10)
 
 WebUI.verifyElementText(findTestObject('Supporting Grounds/status_Complete_Supporting_Docs'), 'COMPLETED')
 

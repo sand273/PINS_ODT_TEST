@@ -15,6 +15,8 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('')
 
+WebUI.deleteAllCookies()
+
 WebUI.maximizeWindow()
 
 WebUI.navigateToUrl(GlobalVariable.URL)

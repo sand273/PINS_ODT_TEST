@@ -29,6 +29,7 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++) {
     WebUI.callTestCase(findTestCase('Self Service Portal/Complete Questionaire/Complete Questionaire'), [:], FailureHandling.STOP_ON_FAILURE)
 }
 
+
 WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
 
 for (int iVal = 1; iVal <= GlobalVariable.driverCount; iVal++) {
@@ -56,6 +57,9 @@ for (int index = 1; index <= GlobalVariable.driverCount; index++) {
 
     WebUI.callTestCase(findTestCase('GoPro UI/LPA Comments/LPA Comments'), [:], FailureHandling.STOP_ON_FAILURE)
 }
+
+
+// runs fine till here
 
 WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
 

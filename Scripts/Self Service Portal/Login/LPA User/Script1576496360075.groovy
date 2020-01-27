@@ -20,6 +20,8 @@ def testData = TestDataFactory.findTestData('Data Files/User_Profile')
 
 WebUI.openBrowser('')
 
+WebUI.deleteAllCookies()
+
 WebUI.maximizeWindow()
 
 WebUI.navigateToUrl(GlobalVariable.URL)

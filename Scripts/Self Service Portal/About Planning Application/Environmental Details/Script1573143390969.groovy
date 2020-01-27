@@ -18,11 +18,11 @@ def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 WebUI.delay(1)
 
-WebUI.waitForElementClickable(findTestObject('Environmental details/link_Environmental_Details'), 1)
+WebUI.waitForElementClickable(findTestObject('Environmental details/link_Environmental_Details'), 5)
 
 WebUI.click(findTestObject('Environmental details/link_Environmental_Details'))
 
-WebUI.waitForElementVisible(findTestObject('Environmental details/question_Environmental_Impact_Assessment'), 3)
+WebUI.waitForElementVisible(findTestObject('Environmental details/question_Environmental_Impact_Assessment'), 5)
 
 WebUI.verifyElementText(findTestObject('Environmental details/question_Environmental_Impact_Assessment'), verData.getValue(
         1, 33))
@@ -31,7 +31,7 @@ WebUI.click(findTestObject('Environmental details/option_No_Env_Impact_Assessmen
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Environmental details/question_Environmental_Statement'), 3)
+WebUI.waitForElementVisible(findTestObject('Environmental details/question_Environmental_Statement'), 5)
 
 WebUI.verifyElementText(findTestObject('Environmental details/question_Environmental_Statement'), verData.getValue(1, 34))
 
@@ -39,7 +39,7 @@ WebUI.click(findTestObject('Environmental details/option_No_Environment_Statemen
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Environmental details/status_Complete_Environment_Details'), 3)
+WebUI.waitForElementVisible(findTestObject('Environmental details/status_Complete_Environment_Details'), 10)
 
 WebUI.verifyElementText(findTestObject('Environmental details/status_Complete_Environment_Details'), 'COMPLETED')
 
