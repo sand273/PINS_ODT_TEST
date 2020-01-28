@@ -22,7 +22,7 @@ def caseNumber = 'EN023012'
 
 def rowsOnSpreadsheet = findTestData('Document_Metadata').getRowNumbers()
 
-def i = 1728
+def i = 1753
 
 WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
