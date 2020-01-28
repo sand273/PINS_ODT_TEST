@@ -3,7 +3,7 @@
    <description></description>
    <name>list_Help_File_Formats</name>
    <tag></tag>
-   <elementGuidId>2d428076-cdf7-4d78-ad06-66aaf2c1409f</elementGuidId>
+   <elementGuidId>a62fadaa-af70-4dbe-921f-7a2f726456b4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -14,7 +14,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>/html[1]/body[1]/div[1]/main[1]/div[1]/div[2]/form[1]/div[1]/div[2]/fieldset[@id='section-Other.Documents']/div[1]/div[1]/div[1]/div[1]/details[1]/div[1]</value>
+         <value>/html[1]/body[1]/div[1]/main[1]/div[1]/div[2]/form[1]/div[1]/div[2]/fieldset[@id='section-Other.SubmittedDocuments']/div[1]/div[1]/div[1]/div[1]/details[1]/div[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
