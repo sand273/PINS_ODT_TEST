@@ -6,12 +6,11 @@
    <elementGuidId>3939ea42-e370-463f-b403-7ca587f0240b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//tr[8]//td[2]//strong[1]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//strong[@data-sid='section-Relevant.AppealInformation']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

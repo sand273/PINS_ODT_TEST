@@ -6,19 +6,19 @@
    <elementGuidId>70045469-2d75-4d05-af38-7df566dd43e9</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>div.govuk-width-container main.govuk-main-wrapper div.govuk-grid-row div.govuk-grid-column-full form.form-horizontal:nth-child(2) div.webform.appform.form-gopro.form-gopro-horizontal:nth-child(1) div.form-page:nth-child(3) fieldset.repeatable.govuk-fieldset:nth-child(3) div.repeatable-container div.repeatable-template div.control-group.govuk-form-group div.controls details.govuk-details.govuk-hint:nth-child(4) > div.govuk-details__text</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
          <value>//*[@className = 'govuk-list govuk-list--bullet' and @tagName = 'UL']</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>div.govuk-width-container main.govuk-main-wrapper div.govuk-grid-row div.govuk-grid-column-full form.form-horizontal:nth-child(2) div.webform.appform.form-gopro.form-gopro-horizontal:nth-child(1) div.form-page:nth-child(3) fieldset.repeatable.govuk-fieldset:nth-child(4) div.repeatable-container div.repeatable-template div.control-group.govuk-form-group div.controls details.govuk-details.govuk-hint:nth-child(4) > div.govuk-details__text</value>
+         <value>/html[1]/body[1]/div[1]/main[1]/div[1]/div[2]/form[1]/div[1]/div[2]/fieldset[@id='section-Plans']/div[1]/div[1]/div[1]/div[1]/details[1]/div[1]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

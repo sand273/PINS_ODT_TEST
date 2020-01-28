@@ -6,18 +6,17 @@
    <elementGuidId>910e38bb-45e3-467f-b7d9-018ece61dbd1</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>CSS</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>div.govuk-width-container main.govuk-main-wrapper div.govuk-grid-row div.govuk-grid-column-full form.form-horizontal:nth-child(2) div.webform.appform.form-gopro.form-gopro-horizontal:nth-child(1) div.form-page:nth-child(3) fieldset.repeatable.govuk-fieldset:nth-child(4) div.repeatable-container div.repeatable-template div.control-group.govuk-form-group div.controls details.govuk-details.govuk-hint:nth-child(4) > summary.govuk-details__summary</value>
+         <value>//fieldset[@id='section-Plans']//span[@class='govuk-details__summary-text'][contains(text(),'Help with file formats')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

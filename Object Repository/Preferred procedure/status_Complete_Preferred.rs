@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//tr[6]//td[2]//strong[1]</value>
+         <value>//strong[@data-sid='section-Preferred.Procedure']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

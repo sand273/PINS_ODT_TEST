@@ -6,12 +6,11 @@
    <elementGuidId>13fb8558-b290-4fb1-9eaa-6acd77765db3</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;overview&quot;]/table[1]/tbody/tr[1]/td[1]/a</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//td[@class='govuk-table__cell']//a[contains(text(),'Planning application details')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,6 +19,6 @@
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <type>Main</type>
-      <value>//*[@id=&quot;overview&quot;]/table[1]/tbody/tr[1]/td[1]/a</value>
+      <value></value>
    </webElementXpaths>
 </WebElementEntity>
