@@ -22,7 +22,7 @@ def caseNumber = 'EN023012'
 
 def rowsOnSpreadsheet = findTestData('Document_Metadata').getRowNumbers()
 
-def i = 1002
+def i = 1728
 
 WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -77,6 +77,8 @@ for (def index : (i..numberOfDocuments)) {
         20)
 
     WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(element))
+
+    WebUI.delay(1)
 
     WebUI.waitForElementVisible(findTestObject('Object Repository/GoPro UI/Case Documents/link_Document_Name'), 20)
 
