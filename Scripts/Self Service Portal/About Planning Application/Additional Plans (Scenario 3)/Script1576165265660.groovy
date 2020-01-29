@@ -41,7 +41,7 @@ WebUI.click(findTestObject('Additional Plans/Upload_Other_Relevant_Plans_File'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Tiff_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementVisible(findTestObject('Additional Plans/button_Remove_OtherPlans'))
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Additional Plans/Help_File_Formats_Link'))
 

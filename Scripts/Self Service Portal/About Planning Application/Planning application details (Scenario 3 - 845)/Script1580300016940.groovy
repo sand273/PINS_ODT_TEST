@@ -33,9 +33,9 @@ WebUI.click(findTestObject('Planning Application details/Appeal_Another_Person_O
 
 WebUI.click(findTestObject('Planning Application details/Not_Sure_Which_Option_Link'))
 
-WebUI.verifyElementText(findTestObject('Planning Application details/Not_Sure_Which_Option_Text'), verData.getValue(1, 84))
+WebUI.verifyElementText(findTestObject('Planning Application details/Not_Sure_Which_Option_Text'), verData.getValue(1, 92))
 
-WebUI.click(findTestObject('Planning Application details/Individual_Option'))
+not_run: WebUI.click(findTestObject('Planning Application details/Individual_Option'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -118,26 +118,6 @@ WebUI.click(findTestObject('Planning Application details/button_Application_Form
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementVisible(findTestObject('Planning Application details/button_Remove_File'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
-
-WebUI.waitForElementVisible(findTestObject('Planning Application details/message_LPA_Decision_Notice'), 20)
-
-WebUI.verifyElementText(findTestObject('Planning Application details/message_LPA_Decision_Notice'), verData.getValue(1, 
-        31))
-
-WebUI.click(findTestObject('Planning Application details/link_Help_Format_LPA'))
-
-WebUI.waitForElementVisible(findTestObject('Planning Application details/list_Help_Formats_LPA_Notice'), 20)
-
-WebUI.verifyElementText(findTestObject('Planning Application details/list_Help_Formats_LPA_Notice'), verData.getValue(1, 
-        32))
-
-WebUI.click(findTestObject('Planning Application details/button_LPA_Notice'))
-
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyElementVisible(findTestObject('Planning Application details/button_Remove_LPA_Notice'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
