@@ -101,10 +101,10 @@
       <testCaseId>Test Cases/Self Service Portal/About the Appeal/Costs</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>06950a45-3499-48df-aa28-b29b4c0911c3</guid>
+      <guid>de4c895e-d246-424f-b836-d77b0fee52d9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Ownership</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Ownership (Scenario 1 - 845)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>8a3db961-5d27-4db9-9853-d73bf0334cf1</guid>
