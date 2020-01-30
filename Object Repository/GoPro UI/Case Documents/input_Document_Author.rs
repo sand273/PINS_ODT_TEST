@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>/html[1]/body[1]/ng-include[1]/ng-view[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[7]/div[4]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[5]/span[2]/input[1]</value>
+         <value>/html/body/ng-include/ng-view/section/div[2]/div/div[2]/div/div[7]/div[4]/div[1]/div/div[2]/div/div/div/div/div[5]/span[2]/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
