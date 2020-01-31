@@ -6,11 +6,11 @@
    <elementGuidId>572a1003-b0f8-4536-92ed-9827ab511f5d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//table[1]//tbody[1]//tr[4]//td[1]//a[1]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//a[@data-key='section-Plans']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -6,19 +6,19 @@
    <elementGuidId>9d09d81d-2997-4337-95cc-928648544a4d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>CSS</key>
-         <value>div.govuk-width-container main.govuk-main-wrapper div.govuk-grid-row div.govuk-grid-column-full table.govuk-table:nth-child(6) tbody.govuk-table__body tr.govuk-table__row:nth-child(4) td.govuk-table__cell.govuk-table__cell--numeric:nth-child(2) > strong.govuk-tag
+         <value>
 </value>
       </entry>
       <entry>
          <key>BASIC</key>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//strong[@data-sid='section-Plans']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementXpaths>
       <isSelected>false</isSelected>

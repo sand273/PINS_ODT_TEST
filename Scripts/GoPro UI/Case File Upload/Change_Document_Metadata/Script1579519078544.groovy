@@ -22,7 +22,7 @@ def caseNumber = 'EN023012'
 
 def rowsOnSpreadsheet = findTestData('Document_Metadata').getRowNumbers()
 
-def i = 1
+def i = 3225
 
 WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -54,7 +54,17 @@ WebUI.switchToWindowIndex(1)
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/button_External_Documents'), 5)
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/button_External_Documents'))
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/check_External_Documents'), 5)
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/check_External_Documents'))
+
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_Documents', [('index') : i]), 20)
+
+WebUI.delay(10)
 
 def numberOfDocuments = driver.findElements(By.xpath('//div[@class=\'gpview-template ng-scope\']')).size()
 
@@ -67,6 +77,8 @@ for (def index : (i..numberOfDocuments)) {
         20)
 
     WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(element))
+
+    WebUI.delay(1)
 
     WebUI.waitForElementVisible(findTestObject('Object Repository/GoPro UI/Case Documents/link_Document_Name'), 20)
 

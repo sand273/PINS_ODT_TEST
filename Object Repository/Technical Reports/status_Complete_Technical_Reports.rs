@@ -6,12 +6,11 @@
    <elementGuidId>92eaa456-0734-4438-aaec-958d3b4f744a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//tr[7]//td[2]//strong[1]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//strong[@data-sid='section-Relevant.Technical']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

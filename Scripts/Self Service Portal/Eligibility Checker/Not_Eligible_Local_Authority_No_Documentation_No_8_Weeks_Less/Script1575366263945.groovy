@@ -78,7 +78,7 @@ WebUI.click(findTestObject('Appeal planning decision/button_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Appeal planning decision/non_Eligible_Message'), 2)
 
-WebUI.verifyElementText(findTestObject('Appeal planning decision/non_Eligible_Message'), verData.getValue(1, 15))
+WebUI.verifyElementText(findTestObject('Appeal planning decision/non_Eligible_Message'), verData.getValue(1, 93))
 
 WebUI.closeBrowser()
 

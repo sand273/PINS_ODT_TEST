@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//table[3]//tbody[1]//tr[1]//td[2]//strong[1]</value>
+         <value>//strong[@data-sid='section-Grounds.Appeal']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

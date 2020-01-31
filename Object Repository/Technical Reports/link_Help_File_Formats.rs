@@ -7,17 +7,16 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value></value>
+         <value>/html[1]/body[1]/div[1]/main[1]/div[1]/div[2]/form[1]/div[1]/div[4]/fieldset[@id='section-Relevant.Technical']/div[1]/div[1]/div[1]/div[1]/details[1]/summary[1]/span[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>div.govuk-width-container main.govuk-main-wrapper div.govuk-grid-row div.govuk-grid-column-full form.form-horizontal:nth-child(2) div.webform.appform.form-gopro.form-gopro-horizontal:nth-child(1) div.form-page:nth-child(5) fieldset.pins-single-section.repeatable.govuk-fieldset:nth-child(7) div.repeatable-container div.repeatable-template div.control-group.govuk-form-group:nth-child(1) div.controls details.govuk-details.govuk-hint:nth-child(4) > summary.govuk-details__summary</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

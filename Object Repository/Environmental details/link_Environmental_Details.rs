@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;overview&quot;]/table[1]/tbody/tr[2]/td[1]/a</value>
+         <value>//td[@class='govuk-table__cell']//a[contains(text(),'Environmental details')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,6 +19,6 @@
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <type>Main</type>
-      <value>//*[@id=&quot;overview&quot;]/table[1]/tbody/tr[2]/td[1]/a</value>
+      <value></value>
    </webElementXpaths>
 </WebElementEntity>
