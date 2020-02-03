@@ -25,13 +25,13 @@ WebUI.callTestCase(findTestCase('Self Service Portal/Login/Case Officer'), [:], 
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Final Comments/status_Final_Comments'), 3)
+WebUI.waitForElementVisible(findTestObject('Final Comments/status_Final_Comments'), 5)
 
 WebUI.verifyElementText(findTestObject('Final Comments/status_Final_Comments'), testData.getValue(1, 2))
 
 WebUI.verifyElementVisible(findTestObject('Final Comments/message_Final_Comments'))
 
-not_run: WebUI.verifyElementVisible(findTestObject('Final Comments/status_Days_Left'))
+WebUI.verifyElementVisible(findTestObject('Final Comments/status_Days_Left'))
 
 WebUI.click(findTestObject('Final Comments/button_Make_Final_Comment'))
 
@@ -39,15 +39,17 @@ WebUI.waitForElementVisible(findTestObject('Submit Statement/button_Start_Now'),
 
 WebUI.click(findTestObject('Submit Statement/button_Start_Now'))
 
-WebUI.waitForElementVisible(findTestObject('Final Comments/message_Upload_Final'), 3)
+WebUI.waitForElementVisible(findTestObject('Final Comments/message_Upload_Final'), 5)
 
 WebUI.click(findTestObject('Final Comments/button_Upload_File'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Final_Comments.exe'], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.delay(2)
+
 WebUI.click(findTestObject('Final Comments/button_Submit'))
 
-WebUI.waitForElementVisible(findTestObject('Complete Questionaire/title_Questionaire_Received'), 3)
+WebUI.waitForElementVisible(findTestObject('Complete Questionaire/title_Questionaire_Received'), 5)
 
 WebUI.verifyElementText(findTestObject('Complete Questionaire/title_Questionaire_Received'), verData.getValue(1, 7))
 

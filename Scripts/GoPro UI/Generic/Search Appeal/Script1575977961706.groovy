@@ -36,9 +36,25 @@ WebUI.sendKeys(findTestObject('Object Repository/GoPro UI/Case Summary/input_Sea
 
 WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Search'))
 
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/list_Case_Ref'), 10)
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/list_Case_Ref'), 20)
 
-WebUI.doubleClick(findTestObject('GoPro UI/Case Summary/list_Case_Ref'))
+try 
+{
+	WebUI.doubleClick(findTestObject('GoPro UI/Case Summary/list_Case_Ref'))
+}
+catch (Exception ex)
+{
+	
+	WebUI.click(findTestObject('GoPro UI/Case Documents/button_Clear_Search'))
+	
+	WebUI.sendKeys(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'), ref[1])
+	
+	WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Search'))
+	
+	WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/list_Case_Ref'), 20)
+	
+	WebUI.doubleClick(findTestObject('GoPro UI/Case Summary/list_Case_Ref'))
+}
 
 WebUI.switchToWindowIndex(1)
 

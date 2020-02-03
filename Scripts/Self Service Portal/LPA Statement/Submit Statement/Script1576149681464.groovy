@@ -26,11 +26,11 @@ WebUI.setText(findTestObject('Complete Questionaire/text_Appeal_Ref'), GlobalVar
 
 WebUI.click(findTestObject('Complete Questionaire/button_Search'))
 
-WebUI.waitForElementVisible(findTestObject('Submit Statement/label_Match_Found'), 2)
+WebUI.waitForElementVisible(findTestObject('Submit Statement/label_Match_Found'), 5)
 
 WebUI.click(findTestObject('Complete Questionaire/link_Appeal_Ref'))
 
-WebUI.waitForElementVisible(findTestObject('Submit Statement/message_Appeal_Status'), 3)
+WebUI.waitForElementVisible(findTestObject('Submit Statement/message_Appeal_Status'), 5)
 
 WebUI.verifyElementText(findTestObject('Submit Statement/title_Appeal_Reference'), GlobalVariable.ApplicationRef)
 
@@ -38,23 +38,24 @@ WebUI.verifyElementVisible(findTestObject('Submit Statement/button_Make_Statemen
 
 WebUI.click(findTestObject('Submit Statement/button_Make_Statement'))
 
-WebUI.waitForElementVisible(findTestObject('Submit Statement/title_Statement_Form'), 3)
+WebUI.waitForElementVisible(findTestObject('Submit Statement/title_Statement_Form'), 5)
 
 WebUI.verifyElementVisible(findTestObject('Submit Statement/button_Start_Now'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Submit Statement/button_Start_Now'))
 
-WebUI.waitForElementVisible(findTestObject('Submit Statement/message_LPA_Statement'), 3)
+WebUI.waitForElementVisible(findTestObject('Submit Statement/message_LPA_Statement'), 5)
 
 WebUI.click(findTestObject('Submit Statement/button_Select_File'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Statement_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Statement_Upload.exe'], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(1)
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Submit Statement/button_Submit'))
 
-WebUI.waitForElementVisible(findTestObject('Submit Statement/title_Statement_Received'), 3)
+WebUI.waitForElementVisible(findTestObject('Submit Statement/title_Statement_Received'), 5)
 
 WebUI.verifyElementText(findTestObject('Submit Statement/title_Statement_Received'), verData.getValue(1, 9))
 

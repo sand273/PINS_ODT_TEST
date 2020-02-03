@@ -71,9 +71,8 @@ WebUI.sendKeys(findTestObject('GoPro UI/Case Summary/input_Search'), testData.ge
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/button_Search'))
 
-if (WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), 5) == false)
-{
-	CustomKeywords.'custom.WriteExcel.waitForObject'(5000, 'GoPro UI/Case Documents/link_LPA_Statement', 'GoPro UI/Case Summary/button_Search')
+if (WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), 5) == false) {
+    CustomKeywords.'custom.WriteExcel.waitForObject'(150, 'GoPro UI/Case Documents/link_LPA_Statement', 'GoPro UI/Case Summary/button_Search')
 }
 
 WebUI.verifyElementText(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), testData.getValue(1, 9))
@@ -90,7 +89,7 @@ WebUI.click(findTestObject('GoPro UI/Case Documents/button_Primary'))
 
 WebUI.delay(1)
 
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/button_Clear_Search'), 3)
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/button_Clear_Search'), 5)
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/button_Clear_Search'))
 
@@ -107,7 +106,7 @@ if (WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/drop
     WebUI.click(findTestObject('GoPro UI/Case Summary/button_Publish_Final_Comment'))
 }
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/label_Processing'), 5)
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/label_Processing'), 10)
 
 WebUI.delay(1)
 

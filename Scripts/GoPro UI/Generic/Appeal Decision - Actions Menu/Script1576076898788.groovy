@@ -19,7 +19,7 @@ WebUI.click(findTestObject('GoPro UI/Actions Menu/menu_Actions'))
 
 WebUI.delay(1)
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Actions Menu/link_Documents_File'), 3)
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Actions Menu/link_Documents_File'), 5)
 
 WebUI.click(findTestObject('GoPro UI/Actions Menu/link_Documents_File'))
 
@@ -33,7 +33,7 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('GoPro UI/Actions Menu/option_Appeal Decision'))
 
-WebUI.waitForElementClickable(findTestObject('GoPro UI/File Upload PopUp/button_Create'), 3)
+WebUI.waitForElementClickable(findTestObject('GoPro UI/File Upload PopUp/button_Create'), 5)
 
 WebUI.delay(1)
 
