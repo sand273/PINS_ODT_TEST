@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>date_Decision_Issued</name>
+   <name>message_User_Login</name>
    <tag></tag>
-   <elementGuidId>7da4bec0-2381-4a39-84db-544ae7dc34e5</elementGuidId>
+   <elementGuidId>6f3490aa-a54f-4259-bb26-77b3a0e12134</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,11 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//table[@id='tbl-appeal-documents']//tr[1]//td[1]</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value></value>
+         <value>//p[contains(text(),'Please enter your username and password to continu')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

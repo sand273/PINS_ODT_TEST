@@ -91,11 +91,10 @@ public class WriteExcel {
 
 	@Keyword
 	def waitForObject(int timeOut, String object, String clickObj) {
-
 		long timestart
 		timestart = (System.currentTimeMillis() / 1000)
 
-		while (WebUI.verifyElementNotPresent(object, 5, FailureHandling.OPTIONAL)) {
+		while (WebUI.verifyElementNotPresent(findTestObject(object), 10, FailureHandling.OPTIONAL)) {
 
 			long currenttime = System.currentTimeMillis() / 1000
 

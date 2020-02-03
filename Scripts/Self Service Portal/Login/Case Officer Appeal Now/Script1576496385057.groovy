@@ -18,7 +18,7 @@ def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 def testData = TestDataFactory.findTestData('Data Files/User_Profile')
 
-WebUI.waitForElementVisible(findTestObject('Frontpage/message_User_Name_Entry'), 2)
+WebUI.waitForElementVisible(findTestObject('Frontpage/message_User_Name_Entry'), 5)
 
 WebUI.verifyElementText(findTestObject('Frontpage/message_User_Name_Entry'), verData.getValue(1, 17))
 
@@ -28,12 +28,12 @@ WebUI.setEncryptedText(findTestObject('Frontpage/input_Password'), 'KT8JOVzAIqlD
 
 WebUI.click(findTestObject('Frontpage/button_Login'))
 
-WebUI.waitForElementVisible(findTestObject('Appeal planning decision/message_Appeal_Planning_Decision'), 4)
+WebUI.waitForElementVisible(findTestObject('Appeal planning decision/message_Appeal_Planning_Decision'), 5)
 
 WebUI.verifyElementText(findTestObject('Appeal planning decision/message_Appeal_Planning_Decision'), verData.getValue(1, 
         21))
 
-WebUI.waitForElementVisible(findTestObject('Appeal planning decision/message_Check_Progress'), 4)
+WebUI.waitForElementVisible(findTestObject('Appeal planning decision/message_Check_Progress'), 5)
 
 WebUI.verifyElementText(findTestObject('Appeal planning decision/message_Check_Progress'), verData.getValue(1, 22))
 

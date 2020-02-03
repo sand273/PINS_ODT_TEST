@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>date_Decision_Issued</name>
+   <name>link_Appeal_Decision_Doc</name>
    <tag></tag>
-   <elementGuidId>7da4bec0-2381-4a39-84db-544ae7dc34e5</elementGuidId>
+   <elementGuidId>7530aca7-01b5-41c7-b800-e6efaf765fbc</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,11 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//table[@id='tbl-appeal-documents']//tr[1]//td[1]</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value></value>
+         <value>//a[contains(text(),'Appeal Decision')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
