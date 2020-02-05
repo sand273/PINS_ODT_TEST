@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Area 5 Lucid chart 1.0 to 1.1 difference</description>
-   <name>Eligible_Local_Authority_No_Documentation_No_8_Weeks_More_6_Months_Less_LPA_Yes</name>
+   <name>Eligible_Local_Authority_No_Documentation_No_8_Weeks_More_6_Months_Less_LPA_No_845</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>ba3c0117-2c3e-4f5d-9373-6f88d1265d3f</testCaseGuid>
+   <testCaseGuid>dfb74276-2a3e-4f82-9d7c-d1d0546ea3fa</testCaseGuid>
 </TestCaseEntity>
