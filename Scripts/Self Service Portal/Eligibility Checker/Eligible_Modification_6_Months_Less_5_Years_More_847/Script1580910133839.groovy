@@ -23,8 +23,7 @@ WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Launch Portal'), [:
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Eligibility Checker/Appeal_Relate_Decision'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(
-        1, 4))
+WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(1, 4))
 
 WebUI.click(findTestObject('Appeal planning decision/input_Modification_option'))
 
@@ -32,8 +31,7 @@ WebUI.click(findTestObject('Appeal planning decision/button_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Appeal planning decision/end_User_Question'), 2)
 
-not_run: WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(
-        1, 77))
+not_run: WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(1, 77))
 
 WebUI.waitForElementClickable(findTestObject('Appeal planning decision/input_Day'), 1)
 
@@ -47,8 +45,7 @@ WebUI.click(findTestObject('Appeal planning decision/button_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Appeal planning decision/end_User_Question'), 2)
 
-WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(
-        1, 79))
+WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(1, 79))
 
 WebUI.click(findTestObject('Appeal planning decision/input_More_than_five_years_ago_option'))
 
@@ -61,6 +58,4 @@ WebUI.verifyElementText(findTestObject('Appeal planning decision/eligibility_Con
 WebUI.verifyElementVisible(findTestObject('Appeal planning decision/button_Appeal_Now'))
 
 WebUI.verifyElementText(findTestObject('Appeal planning decision/list_Confirmation'), verData.getValue(1, 16))
-
-WebUI.closeBrowser()
 
