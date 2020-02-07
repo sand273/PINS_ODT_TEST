@@ -62,6 +62,16 @@ WebUI.click(findTestObject('Appeal planning decision/button_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Appeal planning decision/end_User_Question'), 2)
 
+WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(1, 102))
+
+WebUI.click(findTestObject('Appeal planning decision/option_Neither'))
+
+WebUI.waitForElementClickable(findTestObject('Appeal planning decision/button_Continue'), 2)
+
+WebUI.click(findTestObject('Appeal planning decision/button_Continue'))
+
+WebUI.waitForElementVisible(findTestObject('Appeal planning decision/end_User_Question'), 2)
+
 WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(1, 13))
 
 WebUI.click(findTestObject('Appeal planning decision/input_No_option'))
