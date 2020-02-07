@@ -26,6 +26,8 @@ WebUI.waitForElementVisible(findTestObject('Ownership/message_Sole_Owner'), 5)
 
 WebUI.verifyElementText(findTestObject('Ownership/message_Sole_Owner'), verData.getValue(1, 58))
 
+WebUI.verifyElementText(findTestObject('Ownership/message_Appeal_Site'), verData.getValue(1, 98))
+
 WebUI.click(findTestObject('Ownership/input_Yes_Option'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))

@@ -26,25 +26,25 @@ WebUI.waitForElementVisible(findTestObject('Ownership/message_Sole_Owner'), 2)
 
 WebUI.verifyElementText(findTestObject('Ownership/message_Sole_Owner'), verData.getValue(1, 58))
 
-WebUI.click(findTestObject('Ownership/Own_Site_No_Option'))
+WebUI.click(findTestObject('Ownership/option_Own_Site_No'))
 
-WebUI.click(findTestObject('Ownership/Notified_Owners_Yes_Option'))
+WebUI.click(findTestObject('Ownership/option_Notified_Owners_Yes'))
 
-WebUI.click(findTestObject('Ownership/Help_Serving_Notice_Link'))
+WebUI.click(findTestObject('Ownership/link_Help_Serving_Notice'))
 
-WebUI.verifyElementText(findTestObject('Ownership/Help_Serving_Notice_Text'), verData.getValue(1, 82))
+WebUI.verifyElementText(findTestObject('Ownership/text_Help_Serving_Notice'), verData.getValue(1, 82))
 
-WebUI.verifyElementText(findTestObject('Ownership/Certified_Noticed_Text'), verData.getValue(1, 83))
+WebUI.verifyElementText(findTestObject('Ownership/text_Certified_Noticed'), verData.getValue(1, 83))
 
-WebUI.click(findTestObject('Ownership/Help_File_Formats_Link'))
+WebUI.click(findTestObject('Ownership/link_Help_File_Formats'))
 
-WebUI.verifyElementText(findTestObject('Ownership/Help_File_Formats_Text'), verData.getValue(1, 32))
+WebUI.verifyElementText(findTestObject('Ownership/text_Help_File_Formats'), verData.getValue(1, 32))
 
-WebUI.click(findTestObject('Ownership/Upload_Owners_File_Link'))
+WebUI.click(findTestObject('Ownership/link_Upload_Owners_File'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementVisible(findTestObject('Ownership/Remove_Button'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Ownership/button_Remove'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
