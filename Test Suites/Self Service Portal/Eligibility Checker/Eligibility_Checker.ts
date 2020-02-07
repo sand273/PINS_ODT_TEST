@@ -158,7 +158,7 @@
       <guid>ac911202-25c1-4238-b4c5-41d33199b2a6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Conditions_Outline_Planning_Conditions_Enforcement_Notice_No_6_Months_Less</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Conditions_Outline_Planning_Conditions_Enforcement_Notice_No_6_Months_Less_843</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>361a100a-ad01-4701-95ff-3d53992f2cff</guid>
