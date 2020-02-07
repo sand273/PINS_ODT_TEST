@@ -14,7 +14,7 @@
       <guid>269b695d-f217-44ad-a8a6-a2b817d44919</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Local_Authority_No_Documentation_Yes_8_Weeks_More_6_Months_Less_LPA_Yes</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Local_Authority_No_Documentation_Yes_8_Weeks_More_6_Months_Less_LPA_Yes_846</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>7456ae9e-6f9e-4685-833f-63a9bfd0fe1f</guid>

@@ -7,17 +7,16 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value></value>
+         <value>//label[@for='Preferred.HearingStatement']</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>div.govuk-width-container main.govuk-main-wrapper div.govuk-grid-row div.govuk-grid-column-full form.form-horizontal:nth-child(2) div.webform.appform.form-gopro.form-gopro-horizontal:nth-child(1) div.form-page:nth-child(5) fieldset.govuk-fieldset:nth-child(6) div.control-group.govuk-form-group.default-hidden:nth-child(4) > label.govuk-label</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>
