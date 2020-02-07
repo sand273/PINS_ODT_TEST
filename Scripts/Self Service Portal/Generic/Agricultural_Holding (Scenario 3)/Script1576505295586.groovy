@@ -22,6 +22,10 @@ WebUI.verifyElementText(findTestObject('Ownership/message_Appeal_Site_Forms'), v
 
 WebUI.click(findTestObject('Ownership/input_Agg_Holding_Yes'))
 
+WebUI.waitForElementVisible(findTestObject('Ownership/message_Appellant_Status'), 5)
+
+WebUI.verifyElementText(findTestObject('Ownership/message_Appellant_Status'), verData.getValue(1, 100))
+
 WebUI.click(findTestObject('Ownership/input_Agg_Sole_Holding_No'))
 
 WebUI.click(findTestObject('Ownership/input_Who_Owns_Holding_Yes'))

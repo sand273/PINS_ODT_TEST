@@ -18,11 +18,11 @@ def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 WebUI.delay(1)
 
-WebUI.waitForElementVisible(findTestObject('Listed building status/link_Listed_Building'), 2)
+WebUI.waitForElementVisible(findTestObject('Listed building status/link_Listed_Building'), 5)
 
 WebUI.click(findTestObject('Listed building status/link_Listed_Building'))
 
-WebUI.waitForElementVisible(findTestObject('Listed building status/question_Listed_Building'), 2)
+WebUI.waitForElementVisible(findTestObject('Listed building status/question_Listed_Building'), 5)
 
 WebUI.verifyElementText(findTestObject('Listed building status/question_Listed_Building'), verData.getValue(1, 47))
 

@@ -110,9 +110,6 @@ WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Planning Application details/message_LPA_Decision_Notice'), 5)
 
-WebUI.verifyElementText(findTestObject('Planning Application details/message_LPA_Decision_Notice'), verData.getValue(1, 
-        31))
-
 WebUI.click(findTestObject('Planning Application details/link_Help_Format_LPA'))
 
 WebUI.waitForElementVisible(findTestObject('Planning Application details/list_Help_Formats_LPA_Notice'), 5)
