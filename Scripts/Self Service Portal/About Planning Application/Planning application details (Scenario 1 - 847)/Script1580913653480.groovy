@@ -156,7 +156,7 @@ WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Planning Application details/message_List_Regulation_4'), 5)
 
-WebUI.verifyElementText(findTestObject('Planning Application details/message_List_Regulation_4'), verData.getValue(1, 101))
+WebUI.verifyElementText(findTestObject('Planning Application details/message_List_Regulation_4'), verData.getValue(1, 103))
 
 WebUI.click(findTestObject('Planning Application details/button_List_Regulation_4_Upload'))
 
