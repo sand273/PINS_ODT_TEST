@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Area 5 Lucid chart 1.0 to 1.1 difference</description>
-   <name>Eligible_Local_Authority_No_Documentation_Yes_8_Weeks_More_6_Months_More_LPA_Yes_6_Months_Less</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>387819c9-ccd5-487a-8f10-3ebcafc7f512</testCaseGuid>
-</TestCaseEntity>

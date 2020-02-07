@@ -7,13 +7,16 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html[1]/body[1]/div[1]/main[1]/div[1]/div[2]/form[1]/div[1]/div[4]/fieldset[@id='section-Relevant.Technical']/div[1]/div[@class='repeatable-footer']/button[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>div.govuk-width-container main.govuk-main-wrapper div.govuk-grid-row div.govuk-grid-column-full form.form-horizontal:nth-child(2) div.webform.appform.form-gopro.form-gopro-horizontal:nth-child(1) div.form-page:nth-child(5) fieldset.pins-single-section.repeatable.govuk-fieldset:nth-child(7) div.repeatable-container div.repeatable-footer > button.govuk-button.btn.btn-info.pull-right</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>
