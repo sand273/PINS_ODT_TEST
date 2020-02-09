@@ -18,23 +18,21 @@ def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 WebUI.delay(1)
 
-WebUI.waitForElementVisible(findTestObject('Check your answers/link_Check_Answers'), 2)
+WebUI.waitForElementVisible(findTestObject('Check your answers/link_Check_Answers'), 5)
 
 WebUI.click(findTestObject('Check your answers/link_Check_Answers'))
 
-WebUI.waitForElementVisible(findTestObject('Check your answers/message_Check_Answers'), 2)
+WebUI.waitForElementVisible(findTestObject('Check your answers/message_Check_Answers'), 5)
 
 WebUI.verifyElementText(findTestObject('Check your answers/message_Check_Answers'), verData.getValue(1, 67))
 
-WebUI.scrollToElement(findTestObject('Check your answers/button_Save_Continue'), 2)
+WebUI.scrollToElement(findTestObject('Check your answers/button_Save_Continue'), 5)
 
-WebUI.waitForElementVisible(findTestObject('Check your answers/button_Save_Continue'), 2)
-
-WebUI.delay(1)
+WebUI.waitForElementClickable(findTestObject('Check your answers/button_Save_Continue'), 5)
 
 WebUI.click(findTestObject('Check your answers/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Check your answers/message_Check_Progress'), 2)
+WebUI.waitForElementVisible(findTestObject('Check your answers/message_Check_Progress'), 5)
 
 WebUI.verifyElementText(findTestObject('Check your answers/message_Check_Progress'), 'Check your progress')
 

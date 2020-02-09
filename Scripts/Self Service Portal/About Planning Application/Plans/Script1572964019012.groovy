@@ -18,15 +18,15 @@ def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 WebUI.delay(1)
 
-WebUI.waitForElementVisible(findTestObject('Plans/link_Plans'), 2)
+WebUI.waitForElementVisible(findTestObject('Plans/link_Plans'), 5)
 
 WebUI.click(findTestObject('Plans/link_Plans'))
 
-WebUI.waitForElementVisible(findTestObject('Plans/message_Plan document'), 2)
+WebUI.waitForElementVisible(findTestObject('Plans/message_Plan document'), 5)
 
 WebUI.click(findTestObject('Plans/link_Help_File_Formats'))
 
-WebUI.waitForElementVisible(findTestObject('Plans/list_Help_File_Formats'), 2)
+WebUI.waitForElementVisible(findTestObject('Plans/list_Help_File_Formats'), 5)
 
 WebUI.verifyElementText(findTestObject('Plans/list_Help_File_Formats'), verData.getValue(1, 32))
 
@@ -38,7 +38,7 @@ WebUI.verifyElementPresent(findTestObject('Plans/button_Remove_File'), 10)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Plans/status_Complete_Plan_details'), 3)
+WebUI.waitForElementVisible(findTestObject('Plans/status_Complete_Plan_details'), 5)
 
 WebUI.verifyElementText(findTestObject('Plans/status_Complete_Plan_details'), 'COMPLETED')
 
