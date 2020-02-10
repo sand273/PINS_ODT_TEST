@@ -26,27 +26,27 @@ WebUI.waitForElementVisible(findTestObject('Ownership/message_Sole_Owner'), 5)
 
 WebUI.verifyElementText(findTestObject('Ownership/message_Sole_Owner'), verData.getValue(1, 58))
 
-WebUI.click(findTestObject('Ownership/input_Dont_Know_Owners'))
+WebUI.click(findTestObject('Ownership/option_Some_Owners'))
 
-WebUI.waitForElementVisible(findTestObject('Ownership/message_Dont_Know_Owners'), 5)
+WebUI.waitForElementVisible(findTestObject('Ownership/message_Some_Owners'), 5)
 
-WebUI.verifyElementText(findTestObject('Ownership/message_Dont_Know_Owners'), verData.getValue(1, 88))
+WebUI.verifyElementText(findTestObject('Ownership/message_Some_Owners'), verData.getValue(1, 89))
 
-WebUI.click(findTestObject('Ownership/link_Completed_Certificate'))
-
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyElementVisible(findTestObject('Ownership/button_Remove_Completed_Certificate'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Ownership/link_Copy_Press_Notice'))
+WebUI.click(findTestObject('Ownership/link_Completed_Certificate_1'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementVisible(findTestObject('Ownership/button_Remove_Copy_Press_Notice'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Ownership/button_Remove_Completed_Certificate_1'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Ownership/link_Copy_Press_Notice_1'))
+
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementVisible(findTestObject('Ownership/button_Remove_Copy_Press_Notice_1'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Agricultural_Holding (Scenario 3)'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Agricultural_Holding (Scenario 2)'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('Ownership/status_Complete_Ownership'), 5)
 

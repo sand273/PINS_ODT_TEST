@@ -18,17 +18,17 @@ def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 WebUI.delay(1)
 
-WebUI.waitForElementVisible(findTestObject('Ownership/link_Ownership'), 2)
+WebUI.waitForElementVisible(findTestObject('Ownership/link_Ownership'), 5)
 
 WebUI.click(findTestObject('Ownership/link_Ownership'))
 
-WebUI.waitForElementVisible(findTestObject('Ownership/message_Sole_Owner'), 2)
+WebUI.waitForElementVisible(findTestObject('Ownership/message_Sole_Owner'), 5)
 
 WebUI.verifyElementText(findTestObject('Ownership/message_Sole_Owner'), verData.getValue(1, 58))
 
 WebUI.click(findTestObject('Ownership/input_Dont_Know_Owners'))
 
-WebUI.waitForElementVisible(findTestObject('Ownership/message_Dont_Know_Owners'), 2)
+WebUI.waitForElementVisible(findTestObject('Ownership/message_Dont_Know_Owners'), 5)
 
 WebUI.verifyElementText(findTestObject('Ownership/message_Dont_Know_Owners'), verData.getValue(1, 88))
 
@@ -48,7 +48,7 @@ WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Agricultural_Holding (Scenario 4)'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Ownership/status_Complete_Ownership'), 3)
+WebUI.waitForElementVisible(findTestObject('Ownership/status_Complete_Ownership'), 5)
 
 WebUI.verifyElementText(findTestObject('Ownership/status_Complete_Ownership'), 'COMPLETED')
 

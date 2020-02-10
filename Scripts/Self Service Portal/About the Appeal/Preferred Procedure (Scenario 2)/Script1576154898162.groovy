@@ -26,7 +26,7 @@ WebUI.waitForElementVisible(findTestObject('Preferred procedure/question_Preferr
 
 WebUI.verifyElementText(findTestObject('Preferred procedure/message_Preferred_Procedure'), verData.getValue(1, 59))
 
-WebUI.click(findTestObject('Preferred procedure/No_Preference_Option'))
+WebUI.click(findTestObject('Preferred procedure/option_No_Preference'))
 
 WebUI.click(findTestObject('Preferred procedure/link_Which_Option'))
 
