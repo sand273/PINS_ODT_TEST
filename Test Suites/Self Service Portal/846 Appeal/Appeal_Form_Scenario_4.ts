@@ -110,7 +110,7 @@
       <guid>bc018e69-585a-42e4-a639-7dc80f692ca7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Ownership (Scenario 4 -846)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Ownership (Scenario 4 - 846)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>018c8c59-4c7b-436d-ac6e-14b642194a32</guid>

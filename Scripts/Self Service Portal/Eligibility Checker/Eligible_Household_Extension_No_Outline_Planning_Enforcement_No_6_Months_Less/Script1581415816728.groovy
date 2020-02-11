@@ -42,7 +42,7 @@ WebUI.waitForElementVisible(findTestObject('Appeal planning decision/end_User_Qu
 
 WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(1, 6))
 
-WebUI.click(findTestObject('Appeal planning decision/input_Reserved_Matters'))
+WebUI.click(findTestObject('Appeal planning decision/input_Outline_Planning_option'))
 
 WebUI.click(findTestObject('Appeal planning decision/button_Continue'))
 
