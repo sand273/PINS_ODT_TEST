@@ -14,7 +14,7 @@
       <guid>06381ec2-1ae2-4590-a177-94e1e67c4d76</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Household_Extension_No_Outline_Planning_Enforcement_No_6_Months_Less_842</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Household_Extension_No_Reserved_Enforcement_No_6_Months_Less_842</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>a6cd1c2a-f5d4-4885-92ff-aaf2c6dba800</guid>
