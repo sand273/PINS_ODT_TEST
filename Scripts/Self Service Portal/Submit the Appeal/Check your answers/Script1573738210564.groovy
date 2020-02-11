@@ -28,6 +28,8 @@ WebUI.verifyElementText(findTestObject('Check your answers/message_Check_Answers
 
 WebUI.scrollToElement(findTestObject('Check your answers/button_Save_Continue'), 5)
 
+WebUI.delay(1)
+
 WebUI.waitForElementClickable(findTestObject('Check your answers/button_Save_Continue'), 5)
 
 WebUI.click(findTestObject('Check your answers/button_Save_Continue'))
