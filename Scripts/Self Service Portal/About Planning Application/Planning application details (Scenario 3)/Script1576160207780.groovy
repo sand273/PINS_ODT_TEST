@@ -31,9 +31,9 @@ WebUI.verifyElementText(findTestObject('Planning Application details/question_St
 
 WebUI.click(findTestObject('Planning Application details/Appeal_Another_Person_Option'))
 
-WebUI.click(findTestObject('Planning Application details/Not_Sure_Which_Option_Link'))
+WebUI.click(findTestObject('Planning Application details/link_Not_Sure_Which_Option'))
 
-WebUI.verifyElementText(findTestObject('Planning Application details/Not_Sure_Which_Option_Text'), verData.getValue(1, 84))
+WebUI.verifyElementText(findTestObject('Planning Application details/text_Not_Sure_Which_Option'), verData.getValue(1, 84))
 
 WebUI.click(findTestObject('Planning Application details/Individual_Option'))
 

@@ -48,7 +48,7 @@ WebUI.click(findTestObject('Ownership/link_Help_Serving_Notice'))
 
 WebUI.verifyElementText(findTestObject('Ownership/text_Help_Serving_Notice'), verData.getValue(1, 82))
 
-WebUI.click(findTestObject('Ownership/link_Upload_Owners_File'))
+WebUI.click(findTestObject('Ownership/link_Upload_Known_Owner_File'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
