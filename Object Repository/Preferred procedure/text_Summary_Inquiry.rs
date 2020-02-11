@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>option_Some_Owners</name>
+   <name>text_Summary_Inquiry</name>
    <tag></tag>
-   <elementGuidId>9f3be16e-a0b8-4c17-a8cb-7f5c894ba276</elementGuidId>
+   <elementGuidId>ec1fca4d-a6f3-4e29-a77e-bae49cd3228c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='radio-Ownership.DoYouOwnTheSite-3']</value>
+         <value>//textarea[@id='Preferred.InquirySummary']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
