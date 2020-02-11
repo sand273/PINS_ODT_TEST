@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_Upload_Owners_File</name>
+   <name>question_Brief_Summary_Inquiry</name>
    <tag></tag>
-   <elementGuidId>20ee43ee-b4e6-4248-b490-a2dadb9383d7</elementGuidId>
+   <elementGuidId>839d0d60-2d41-46c3-94e4-a13982df6864</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,11 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='Ownership.OwnersListFile']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value></value>
+         <value>//label[contains(text(),'Provide a brief summary of why you think the inqui')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

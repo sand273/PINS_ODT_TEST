@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_Upload_Owners_File</name>
+   <name>option_Inquiry</name>
    <tag></tag>
-   <elementGuidId>20ee43ee-b4e6-4248-b490-a2dadb9383d7</elementGuidId>
+   <elementGuidId>ca2b95ef-d917-4307-9d7d-8629ce7ac9f7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,11 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='Ownership.OwnersListFile']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value></value>
+         <value>//input[@id='radio-Preferred.Preference-4']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

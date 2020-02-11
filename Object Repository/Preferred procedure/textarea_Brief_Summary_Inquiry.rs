@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_Upload_Owners_File</name>
+   <name>textarea_Brief_Summary_Inquiry</name>
    <tag></tag>
-   <elementGuidId>20ee43ee-b4e6-4248-b490-a2dadb9383d7</elementGuidId>
+   <elementGuidId>25b6d8cc-86de-472d-b18f-b8f6c0c1567e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,11 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='Ownership.OwnersListFile']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value></value>
+         <value>//textarea[@id='Preferred.InquirySummary']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

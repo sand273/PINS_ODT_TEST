@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_Upload_Owners_File</name>
+   <name>button_Remove_Inquiry</name>
    <tag></tag>
-   <elementGuidId>20ee43ee-b4e6-4248-b490-a2dadb9383d7</elementGuidId>
+   <elementGuidId>a1a7ec8d-db50-4f0f-a4c5-a8c670e61e33</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,11 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='Ownership.OwnersListFile']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value></value>
+         <value>/html[1]/body[1]/div[1]/main[1]/div[1]/div[2]/form[1]/div[1]/div[4]/fieldset[@id='section-Preferred.Procedure']/div[5]/div[1]/div[1]/div[1]/a[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

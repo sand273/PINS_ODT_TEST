@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_Upload_Owners_File</name>
+   <name>button_Inquiry_Common_Ground_Upload</name>
    <tag></tag>
-   <elementGuidId>20ee43ee-b4e6-4248-b490-a2dadb9383d7</elementGuidId>
+   <elementGuidId>86b1c4ef-b1e7-4e69-9e2a-d718d5eac2aa</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,11 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='Ownership.OwnersListFile']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value></value>
+         <value>//label[@for='Preferred.InquiryStatement']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -107,10 +107,10 @@
       <testCaseId>Test Cases/Self Service Portal/About the Appeal/Ownership (Scenario 4)</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>018c8c59-4c7b-436d-ac6e-14b642194a32</guid>
+      <guid>c7f945e3-51f3-4291-9ddb-c03258e598fe</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Preferred procedure</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Preferred Procedure (Scenario 4 - 843)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>8b2e9388-d011-4cd2-9ebf-dc595606ef87</guid>
