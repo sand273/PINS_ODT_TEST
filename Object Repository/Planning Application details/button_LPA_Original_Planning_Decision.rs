@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_Upload_Owners_File</name>
+   <name>button_LPA_Original_Planning_Decision</name>
    <tag></tag>
-   <elementGuidId>20ee43ee-b4e6-4248-b490-a2dadb9383d7</elementGuidId>
+   <elementGuidId>437c3cbb-a4e6-4979-9615-1064077831d9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-      </entry>
-      <entry>
-         <key>CSS</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//label[@for='Ownership.OwnersListFile']</value>
+         <value>//label[@for='File.PlanningDecision']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

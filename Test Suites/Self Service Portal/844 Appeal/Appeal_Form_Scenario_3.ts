@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Appeal_Form_Scenario_4</name>
+   <name>Appeal_Form_Scenario_3</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -9,12 +9,12 @@
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
-   <testSuiteGuid>82f00ab8-3e4c-4348-a80e-6045b29cb140</testSuiteGuid>
+   <testSuiteGuid>f849a736-1aa5-4bce-a118-ca53b8ee2f5a</testSuiteGuid>
    <testCaseLink>
-      <guid>52fd1ec0-cf8b-4560-86df-966dfde55693</guid>
+      <guid>c2275b0c-da3e-4768-9793-3ad3f6c7cf49</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Conditions_Outline_Planning_Conditions_Enforcement_Notice_No_6_Months_Less_843</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Conditions_Outline_Planning_Other_Enforcement_Notice_No_6_Months_Less_844</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>119ffaeb-b1b7-4a5d-8f4d-5508a6f26fc0</guid>
@@ -29,127 +29,133 @@
       <testCaseId>Test Cases/Self Service Portal/Login/Case Officer Appeal Now</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>c5ca0c00-09d6-4207-8087-1abb273855b9</guid>
+      <guid>9f9171e5-3f0b-46a1-b596-9ef99d67d8ca</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Planning application details (Scenario 4 - 843)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Planning application details (Scenario 3 - 844)</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>ab123306-fd4b-424c-b591-68a3a3cadd87</guid>
+      <guid>dfed348e-69c5-4c07-baae-605edf0b9c20</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Environmental Details (Scenario 4)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Environmental Details (Scenario 3)</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>284ef655-867e-4cd6-b4f4-fa701fea707f</guid>
+      <guid>3c8b7ef0-339c-4276-a795-c231f84150f0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Plans (Scenario 4)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Planning Refused (Scenario 3)</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>4a938d64-4048-4257-bf45-8d4d6e64da0a</guid>
+      <guid>687fe6fa-4f9d-4eaa-a884-3fdb143a1fdb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Additional Plans (Scenario 4)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Plans (Scenario 3)</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>31973720-06e8-4d8a-84c4-736f1ed88a77</guid>
+      <guid>97529e94-4848-4965-a728-dfe400512bcc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Additional Plans (Scenario 3)</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a00e541c-9ef5-42e7-a0cc-96bb11a3ffc2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/About Planning Application/Other Application Documents (Scenario 3)</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>dd1ce0cc-17bb-4e57-922e-0beb3af492cf</guid>
+      <guid>cb6e0cf8-17ce-4615-af62-d18ed7eb205a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Other Submitted Documents (Scenario 2 - 845)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Other Submitted Documents (Scenario 1 - 845)</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>d90fb273-0376-49d8-8f3b-96de600e519e</guid>
+      <guid>1e5da2bc-378a-42dd-b242-9934b85d3b6c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About the Site/Site Details (Scenario 4)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About the Site/Site Details (Scenario 3)</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>e70c44c8-d443-486a-a800-9374648763f7</guid>
+      <guid>8429288e-179d-4a7c-9cc5-3f042f4b88b6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About the Site/Listed Building Status (Scenario 4)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About the Site/Listed Building Status (Scenario 3)</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>a684e40e-5682-4f46-b156-fc54b878f5ca</guid>
+      <guid>f8aee5b5-7b0c-40f5-bad4-862231e73eb1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/About the Appeal/Main Grounds</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>860cc60e-e782-4eb5-94a3-2bccb4ff5174</guid>
+      <guid>c3b8ea46-26f8-4a75-abe3-0240f475bf21</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/About the Appeal/Supporting Documents (Scenario 3)</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>11484b5f-90b6-4b51-9264-0b84873e1198</guid>
+      <guid>3cab0499-7621-4c6d-9485-041c4f02c9f9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Other Appeals (Scenario 4)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Other Appeals (Scenario 3)</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>7a3b5c54-2d51-4315-b33c-7b2600d91cfc</guid>
+      <guid>c281d715-aa5a-4fe5-ab0c-7a93c8c1b4dc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Costs (Scenario 4)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Costs (Scenario 3)</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>f2616c16-96d6-4046-852a-be22836f71b4</guid>
+      <guid>351ae890-e28b-4280-99f1-5d5a0bb0f56f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Ownership (Scenario 4)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Ownership (Scenario 3)</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>c7f945e3-51f3-4291-9ddb-c03258e598fe</guid>
+      <guid>b5941798-ef03-43a5-aeaa-9ed06c4f449a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Preferred Procedure (Scenario 4)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Preferred Procedure (Scenario 3)</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>8b2e9388-d011-4cd2-9ebf-dc595606ef87</guid>
+      <guid>44ae0040-ebbf-42c6-9912-5622c4d70b45</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/About the Appeal/Technical Reports (Scenario 3)</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>baedd457-d498-4345-b433-ce0eb4657cf4</guid>
+      <guid>42312f61-860a-4c21-b45c-859c9e920a6e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/About the Appeal/Other Relevant Appeal Information (Scenario 3)</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>e1a0567b-eb05-4171-b7ce-a5bd0a9d7d03</guid>
+      <guid>5e6466d2-1581-48a9-8f2e-81fb5421fda1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/About You/Contact Details</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>c510a493-fe92-49a9-96df-7da8a81efbb4</guid>
+      <guid>ec40b5be-94d5-421c-934b-a26498d8e41f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Submit the Appeal/Check your answers</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>8efe3566-e627-4317-864b-672c4e0848de</guid>
+      <guid>64d515e9-3203-48c1-8f5f-fac6a91faf73</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Terms and Conditions/Terms and conditions</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>d1f1cdff-40e7-4a70-bb72-3d33b5daedc3</guid>
+      <guid>6fed7c32-5fe7-48d4-b3a6-9b46142c4d8f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Appeal Received/Appeal Received</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>291c4849-148d-41ce-b10c-d985e6cf5810</guid>
+      <guid>e26e6010-c2ed-4707-82d3-bce873b4d8ab</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Appeal Summary/Appeal Summary</testCaseId>

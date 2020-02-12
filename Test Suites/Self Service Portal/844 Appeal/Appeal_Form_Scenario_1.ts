@@ -29,6 +29,12 @@
       <testCaseId>Test Cases/Self Service Portal/Login/Case Officer Appeal Now</testCaseId>
    </testCaseLink>
    <testCaseLink>
+      <guid>fcdd17b0-4d23-407f-ba0b-e0cf3b9ef00b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Planning application details (Scenario 1 - 844)</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>d1ed75ad-5107-449d-8900-c239ce18c186</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -57,6 +63,12 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/About Planning Application/Other Application Documents</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e6a528fa-fa20-43cf-bbac-d49a7dd1887f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Other Submitted Documents (Scenario 1 - 845)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>e39f9fa8-09e9-4d97-9b33-6a3230eecb41</guid>
