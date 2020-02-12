@@ -110,7 +110,7 @@
       <guid>04bc051a-a99a-44c8-afd5-0e56cb131954</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Preferred Procedure (Scenario 4 - 843)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Preferred Procedure (Scenario 4)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>8b2e9388-d011-4cd2-9ebf-dc595606ef87</guid>
