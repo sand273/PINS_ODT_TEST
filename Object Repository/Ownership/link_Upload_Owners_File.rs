@@ -7,15 +7,13 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//input[@id='Ownership.OwnersListFile']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//label[@for='Ownership.OwnersListFile']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
