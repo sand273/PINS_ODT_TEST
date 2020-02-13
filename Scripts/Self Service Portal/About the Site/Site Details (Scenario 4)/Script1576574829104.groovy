@@ -47,6 +47,8 @@ WebUI.setText(findTestObject('Site Details/input_County'), testData.getValue(9, 
 
 WebUI.setText(findTestObject('Site Details/input_Postcode'), testData.getValue(1, 1))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Site Details/question_Public_Land'), 5)
@@ -56,6 +58,8 @@ WebUI.verifyElementText(findTestObject('Site Details/question_Public_Land'), ver
 WebUI.click(findTestObject('Site Details/option_Yes_Public_Land'))
 
 WebUI.setText(findTestObject('Site Details/input_Public_Land_Description'), testData.getValue(3, 1))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -67,6 +71,8 @@ WebUI.click(findTestObject('Site Details/option_Yes_Site_Restricted'))
 
 WebUI.setText(findTestObject('Site Details/input_Site_Restricted_Description'), testData.getValue(4, 1))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Site Details/question_Health_Safety'), 5)
@@ -77,6 +83,8 @@ WebUI.click(findTestObject('Site Details/option_Yes_Health'))
 
 WebUI.setText(findTestObject('Site Details/input_Health_Description'), testData.getValue(5, 1))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Site Details/question_Site_Inspector'), 5)
@@ -84,6 +92,8 @@ WebUI.waitForElementVisible(findTestObject('Site Details/question_Site_Inspector
 WebUI.verifyElementText(findTestObject('Site Details/question_Site_Inspector'), verData.getValue(1, 46))
 
 WebUI.click(findTestObject('Site Details/option_Yes_Site_Visit'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 

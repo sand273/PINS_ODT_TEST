@@ -110,7 +110,7 @@
       <guid>8228e9d7-8971-4796-9716-2fd52378339a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Conditions_Full_Planning_Refused_Enforcement_Notice_No_6_Months_Less</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Conditions_Full_Planning_Refused_Enforcement_Notice_No_6_Months_Less_834</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>5dd423cd-87ea-4277-ba8e-5cccccf66e95</guid>
