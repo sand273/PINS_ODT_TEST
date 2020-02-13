@@ -29,7 +29,7 @@ WebUI.waitForElementVisible(findTestObject('Planning Application details/questio
 
 WebUI.verifyElementText(findTestObject('Planning Application details/question_Statement_Applies'), verData.getValue(1, 23))
 
-WebUI.click(findTestObject('Planning Application details/Appeal_Another_Person_Option'))
+WebUI.click(findTestObject('Planning Application details/option_Appeal_Another_Person'))
 
 WebUI.click(findTestObject('Planning Application details/link_Not_Sure_Which_Option'))
 
