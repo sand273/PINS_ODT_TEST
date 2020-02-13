@@ -20,11 +20,11 @@ def testData = TestDataFactory.findTestData('Listed_Building_Status')
 
 WebUI.delay(1)
 
-WebUI.waitForElementVisible(findTestObject('Listed building status/link_Listed_Building'), 2)
+WebUI.waitForElementVisible(findTestObject('Listed building status/link_Listed_Building'), 5)
 
 WebUI.click(findTestObject('Listed building status/link_Listed_Building'))
 
-WebUI.waitForElementVisible(findTestObject('Listed building status/question_Listed_Building'), 2)
+WebUI.waitForElementVisible(findTestObject('Listed building status/question_Listed_Building'), 5)
 
 WebUI.verifyElementText(findTestObject('Listed building status/question_Listed_Building'), verData.getValue(1, 47))
 
@@ -48,7 +48,7 @@ WebUI.setText(findTestObject('Listed building status/List_Application_Reference_
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Listed building status/status_Complete_Listed_Building'), 3)
+WebUI.waitForElementVisible(findTestObject('Listed building status/status_Complete_Listed_Building'), 10)
 
 WebUI.verifyElementText(findTestObject('Listed building status/status_Complete_Listed_Building'), 'COMPLETED')
 
