@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Planning application details (Scenario 1 - 834)</name>
+   <name>Planning Refused (Scenario 3 - 834)</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>c7fb5159-b040-4099-8bde-be5ba9b21098</testCaseGuid>
+   <testCaseGuid>c66f9727-a12e-43a0-9955-3a42a619c237</testCaseGuid>
 </TestCaseEntity>

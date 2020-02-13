@@ -96,11 +96,9 @@ WebUI.verifyElementText(findTestObject('Planning Application details/question_De
 
 WebUI.check(findTestObject('Planning Application details/input_Yes_Description_Change'))
 
-WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
+WebUI.setText(findTestObject('Planning Application details/field_Revised_Description'), testData.getValue(4, 1))
 
-WebUI.setText(findTestObject('Planning Application details/Revised_Description_Field'), testData.getValue(4, 1))
-
-WebUI.setText(findTestObject('Planning Application details/Reason_Changed_Description_Field'), testData.getValue(5, 1))
+WebUI.setText(findTestObject('Planning Application details/field_Reason_Changed_Description'), testData.getValue(5, 1))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 

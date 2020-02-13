@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>option_Yes_Publish_Intention</name>
+   <name>button_LPA_Original</name>
    <tag></tag>
-   <elementGuidId>d8670d6a-9800-4b5a-823d-0f08d0e991db</elementGuidId>
+   <elementGuidId>9ae2decb-9169-47be-b728-eb07df72578f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='radio-Ownership.HoldingPublishedIntensions-1']</value>
+         <value>//input[@id='File.LPAOriginalPlanningDecision']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -98,7 +98,7 @@ WebUI.waitForElementVisible(findTestObject('Planning Application details/questio
 WebUI.verifyElementText(findTestObject('Planning Application details/question_Description_Change'), verData.getValue(1, 
         29))
 
-WebUI.check(findTestObject('Planning Application details/Dev_Description_Change_No_Option'))
+WebUI.check(findTestObject('Planning Application details/option_Dev_Description_Change_No'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 

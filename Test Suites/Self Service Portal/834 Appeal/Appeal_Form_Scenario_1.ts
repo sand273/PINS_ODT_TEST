@@ -32,7 +32,7 @@
       <guid>41daa07e-09fb-4637-9d4b-1a5f0fb5a222</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Planning application details (Scenario 1 - 842)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Planning application details (Scenario 1 - 834)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>54888bf3-b5e6-48a4-9bc7-d785274b2bd2</guid>
@@ -44,7 +44,7 @@
       <guid>823fb5bf-1276-4079-a308-2298021a343c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Planning Refused</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Planning Refused (Scenario 1 - 834)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>905e95e1-49c4-4a47-b35e-4f936b20c838</guid>
@@ -110,7 +110,7 @@
       <guid>64121284-8c04-492c-9966-fa70074fce12</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Ownership (Scenario 1 - 842)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Ownership</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>5ab45823-51e7-4234-bbc3-b5680af13980</guid>

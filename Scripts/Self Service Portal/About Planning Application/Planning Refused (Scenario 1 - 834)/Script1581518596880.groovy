@@ -12,31 +12,30 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-WebUI.verifyElementText(findTestObject('Ownership/question_Agricultural_Holding'), verData.getValue(1, 66))
+WebUI.delay(1)
 
-WebUI.verifyElementText(findTestObject('Ownership/message_Appeal_Site_Forms'), verData.getValue(1, 57))
+WebUI.waitForElementVisible(findTestObject('Planning Refused/link_Planning_Refused'), 5)
 
-WebUI.click(findTestObject('Ownership/input_Agg_Holding_Yes'))
+WebUI.click(findTestObject('Planning Refused/link_Planning_Refused'))
 
-WebUI.waitForElementVisible(findTestObject('Ownership/message_Appellant_Status'), 5)
+WebUI.waitForElementVisible(findTestObject('Planning Refused/question_Planning_Refused'), 5)
 
-WebUI.verifyElementText(findTestObject('Ownership/message_Appellant_Status'), verData.getValue(1, 100))
+WebUI.verifyElementText(findTestObject('Planning Refused/frame_Reasons_CheckBoxes'), verData.getValue(1, 107))
 
-WebUI.click(findTestObject('Ownership/input_Agg_Sole_Holding_No'))
+WebUI.click(findTestObject('Planning Refused/input_Select all reasons'))
 
-WebUI.verifyElementPresent(findTestObject('Ownership/message_Owns_Holding'), 5)
+WebUI.click(findTestObject('Planning Refused/input_Affordable housing_RefusalReasons'))
 
-WebUI.click(findTestObject('Ownership/input_Who_Owns_Holding_Yes'))
-
-WebUI.click(findTestObject('Ownership/link_Modified_Site_Owners'))
-
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyElementVisible(findTestObject('Ownership/button_Remove_Modified_Site_Owners'))
+WebUI.click(findTestObject('Planning Refused/input_Agricultural need_RefusalReasons'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
+
+WebUI.waitForElementVisible(findTestObject('Planning Refused/status_Completed_Refusal'), 10)
+
+WebUI.verifyElementText(findTestObject('Planning Refused/status_Completed_Refusal'), 'COMPLETED')
 

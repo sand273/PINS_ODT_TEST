@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>option_Yes_Publish_Intention</name>
+   <name>field_Revised_Description</name>
    <tag></tag>
-   <elementGuidId>d8670d6a-9800-4b5a-823d-0f08d0e991db</elementGuidId>
+   <elementGuidId>07be0a75-8224-4844-b93b-d6adfe4b1e99</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='radio-Ownership.HoldingPublishedIntensions-1']</value>
+         <value>//textarea[@id='Revised.Description']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -61,9 +61,15 @@ WebUI.verifyElementText(findTestObject('Planning Application details/question_Ap
 
 WebUI.check(findTestObject('Planning Application details/check_Change_of_Use'))
 
+WebUI.check(findTestObject('Planning Application details/check_General_Industry'))
+
 WebUI.check(findTestObject('Planning Application details/check_Householder'))
 
 WebUI.click(findTestObject('Appeal planning decision/input_No_residential_dwellings'))
+
+WebUI.click(findTestObject('Appeal planning decision/input_Area_Measurement'))
+
+WebUI.click(findTestObject('Appeal planning decision/input_Area_Development'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -90,7 +96,7 @@ WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 WebUI.waitForElementVisible(findTestObject('Planning Application details/message_Upload_Application_Form'), 5)
 
 WebUI.verifyElementText(findTestObject('Planning Application details/message_Upload_Application_Form'), verData.getValue(
-        1, 30))
+        1, 105))
 
 WebUI.click(findTestObject('Planning Application details/link_Help_File_Format'))
 
@@ -106,9 +112,10 @@ WebUI.verifyElementPresent(findTestObject('Planning Application details/button_R
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Planning Application details/message_LPA_Planning'), 5)
+WebUI.waitForElementVisible(findTestObject('Planning Application details/message_LPA_Original_Planning'), 5)
 
-WebUI.verifyElementText(findTestObject('Planning Application details/message_LPA_Planning'), verData.getValue(1, 95))
+WebUI.verifyElementText(findTestObject('Planning Application details/message_LPA_Original_Planning'), verData.getValue(1, 
+        106))
 
 WebUI.click(findTestObject('Planning Application details/link_Help_Format_LPA'))
 
@@ -117,7 +124,7 @@ WebUI.waitForElementVisible(findTestObject('Planning Application details/list_He
 WebUI.verifyElementText(findTestObject('Planning Application details/list_Help_Formats_LPA_Notice'), verData.getValue(1, 
         32))
 
-WebUI.click(findTestObject('Planning Application details/button_LPA_Planning'))
+WebUI.click(findTestObject('Planning Application details/button_LPA_Original'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
