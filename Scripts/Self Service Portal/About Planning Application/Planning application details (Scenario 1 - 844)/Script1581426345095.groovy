@@ -115,7 +115,7 @@ WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 WebUI.waitForElementVisible(findTestObject('Planning Application details/message_LPA_Original_Planning_Decision'), 5)
 
 WebUI.verifyElementText(findTestObject('Planning Application details/message_LPA_Original_Planning_Decision'), verData.getValue(
-        1, 108))
+        1, 106))
 
 WebUI.click(findTestObject('Planning Application details/link_Help_Format_LPA'))
 
