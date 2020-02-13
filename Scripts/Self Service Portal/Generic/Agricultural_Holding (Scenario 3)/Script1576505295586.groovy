@@ -28,6 +28,8 @@ WebUI.verifyElementText(findTestObject('Ownership/message_Appellant_Status'), ve
 
 WebUI.click(findTestObject('Ownership/input_Agg_Sole_Holding_No'))
 
+WebUI.verifyElementPresent(findTestObject('Ownership/message_Owns_Holding'), 5)
+
 WebUI.click(findTestObject('Ownership/input_Who_Owns_Holding_Yes'))
 
 WebUI.click(findTestObject('Ownership/link_Modified_Site_Owners'))

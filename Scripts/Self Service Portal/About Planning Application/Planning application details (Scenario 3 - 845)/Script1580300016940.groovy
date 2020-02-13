@@ -31,9 +31,9 @@ WebUI.verifyElementText(findTestObject('Planning Application details/question_St
 
 WebUI.click(findTestObject('Planning Application details/Appeal_Another_Person_Option'))
 
-WebUI.click(findTestObject('Planning Application details/Not_Sure_Which_Option_Link'))
+WebUI.click(findTestObject('Planning Application details/link_Not_Sure_Which_Option'))
 
-WebUI.verifyElementText(findTestObject('Planning Application details/Not_Sure_Which_Option_Text'), verData.getValue(1, 92))
+WebUI.verifyElementText(findTestObject('Planning Application details/text_Not_Sure_Which_Option'), verData.getValue(1, 92))
 
 WebUI.click(findTestObject('Planning Application details/Individual_Option'))
 
@@ -98,7 +98,7 @@ WebUI.waitForElementVisible(findTestObject('Planning Application details/questio
 WebUI.verifyElementText(findTestObject('Planning Application details/question_Description_Change'), verData.getValue(1, 
         29))
 
-WebUI.check(findTestObject('Planning Application details/Dev_Description_Change_No_Option'))
+WebUI.check(findTestObject('Planning Application details/option_Dev_Description_Change_No'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
