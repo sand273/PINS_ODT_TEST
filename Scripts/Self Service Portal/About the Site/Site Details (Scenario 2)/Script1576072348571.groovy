@@ -21,17 +21,17 @@ def testData = TestDataFactory.findTestData('Data Files/Site_Details')
 
 WebUI.delay(1)
 
-WebUI.waitForElementVisible(findTestObject('Site Details/link_Site details'), 2)
+WebUI.waitForElementVisible(findTestObject('Site Details/link_Site details'), 5)
 
 WebUI.click(findTestObject('Site Details/link_Site details'))
 
-WebUI.waitForElementVisible(findTestObject('Site Details/question_PostCode'), 2)
+WebUI.waitForElementVisible(findTestObject('Site Details/question_PostCode'), 5)
 
 WebUI.verifyElementText(findTestObject('Site Details/question_PostCode'), verData.getValue(1, 41))
 
 WebUI.click(findTestObject('Site Details/input_Site_Postcode'))
 
-WebUI.waitForElementVisible(findTestObject('Site Details/question_Site_Address'), 2)
+WebUI.waitForElementVisible(findTestObject('Site Details/question_Site_Address'), 5)
 
 WebUI.verifyElementText(findTestObject('Site Details/question_Site_Address'), verData.getValue(1, 42))
 
@@ -45,7 +45,7 @@ WebUI.selectOptionByValue(findTestObject('Site Details/dropdown_Select address')
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Site Details/question_Public_Land'), 2)
+WebUI.waitForElementVisible(findTestObject('Site Details/question_Public_Land'), 5)
 
 WebUI.verifyElementText(findTestObject('Site Details/question_Public_Land'), verData.getValue(1, 43))
 
@@ -55,9 +55,7 @@ WebUI.setText(findTestObject('Site Details/input_Public_Land_Description'), test
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.delay(1)
-
-WebUI.waitForElementVisible(findTestObject('Site Details/question_Site_Restricted'), 2)
+WebUI.waitForElementVisible(findTestObject('Site Details/question_Site_Restricted'), 5)
 
 WebUI.verifyElementText(findTestObject('Site Details/question_Site_Restricted'), verData.getValue(1, 44))
 
@@ -67,9 +65,7 @@ WebUI.setText(findTestObject('Site Details/input_Site_Restricted_Description'), 
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.delay(1)
-
-WebUI.waitForElementVisible(findTestObject('Site Details/question_Health_Safety'), 2)
+WebUI.waitForElementVisible(findTestObject('Site Details/question_Health_Safety'), 5)
 
 WebUI.verifyElementText(findTestObject('Site Details/question_Health_Safety'), verData.getValue(1, 45))
 
@@ -79,9 +75,7 @@ WebUI.setText(findTestObject('Site Details/input_Health_Description'), testData.
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.delay(1)
-
-WebUI.waitForElementVisible(findTestObject('Site Details/question_Site_Inspector'), 2)
+WebUI.waitForElementVisible(findTestObject('Site Details/question_Site_Inspector'), 5)
 
 WebUI.verifyElementText(findTestObject('Site Details/question_Site_Inspector'), verData.getValue(1, 46))
 
@@ -91,7 +85,7 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Site Details/status_Completed_Site_Details'), 3)
+WebUI.waitForElementVisible(findTestObject('Site Details/status_Completed_Site_Details'), 10)
 
 WebUI.verifyElementText(findTestObject('Site Details/status_Completed_Site_Details'), 'COMPLETED')
 

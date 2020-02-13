@@ -26,7 +26,7 @@ WebUI.waitForElementVisible(findTestObject('Planning Application details/questio
 
 WebUI.verifyElementText(findTestObject('Planning Application details/question_Statement_Applies'), verData.getValue(1, 23))
 
-WebUI.click(findTestObject('Planning Application details/option_Appeal_Decision_Received'))
+WebUI.click(findTestObject('Planning Application details/option_Appeal_Company_Received'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
