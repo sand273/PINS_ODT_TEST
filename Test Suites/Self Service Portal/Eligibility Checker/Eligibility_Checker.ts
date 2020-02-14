@@ -74,7 +74,7 @@
       <guid>71f7f27f-74f8-4e7d-8840-d8f8dce82ff0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Permitted_Development_Rights_6_Months_Less_841</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Permitted_Development_Rights_6_Months_Less</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>8416e5f5-6b20-4f07-8166-d66aead7a3b8</guid>

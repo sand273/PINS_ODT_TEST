@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='File.LPADecisionOutlineApproval']</value>
+         <value>//label[@for='File.LPADecisionOutlineApproval']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

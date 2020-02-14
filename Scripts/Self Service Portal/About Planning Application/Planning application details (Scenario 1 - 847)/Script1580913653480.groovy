@@ -67,9 +67,9 @@ WebUI.check(findTestObject('Planning Application details/check_Householder'))
 
 WebUI.click(findTestObject('Appeal planning decision/input_No_residential_dwellings'))
 
-WebUI.click(findTestObject('Appeal planning decision/input_Area_Measurement'))
+not_run: WebUI.click(findTestObject('Appeal planning decision/input_Area_Measurement'))
 
-WebUI.click(findTestObject('Appeal planning decision/input_Area_Development'))
+not_run: WebUI.click(findTestObject('Appeal planning decision/input_Area_Development'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 

@@ -6,12 +6,11 @@
    <elementGuidId>78f59f06-ee43-44b1-83a3-d7af2b93477c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='Ownership.CopyOfPressNoticeFile']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//label[@for='Ownership.CopyOfPressNoticeFile']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
