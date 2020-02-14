@@ -92,7 +92,7 @@
       <guid>22ab344c-7604-4017-bb17-ed62002fcb6a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Conditions_Full_Planning_Conditions_Enforcement_Notice_No_6_Months_Less</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Conditions_Full_Planning_Conditions_Enforcement_Notice_No_6_Months_Less_840</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>f4248363-8f88-4ceb-8f28-f282156f6747</guid>
