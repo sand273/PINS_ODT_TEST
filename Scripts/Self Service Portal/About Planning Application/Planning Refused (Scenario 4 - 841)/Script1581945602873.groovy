@@ -15,27 +15,25 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
+def testData = TestDataFactory.findTestData('Data Files/Planning_Refused')
+
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-WebUI.delay(1)
-
-WebUI.waitForElementVisible(findTestObject('Planning Refused/link_Planning_Refused'), 20)
+WebUI.waitForElementVisible(findTestObject('Planning Refused/link_Planning_Refused'), 5)
 
 WebUI.click(findTestObject('Planning Refused/link_Planning_Refused'))
 
-WebUI.waitForElementVisible(findTestObject('Planning Refused/question_Planning_Refused'), 20)
+WebUI.waitForElementVisible(findTestObject('Planning Refused/question_Planning_Refused'), 5)
 
-WebUI.verifyElementText(findTestObject('Planning Refused/frame_Reasons_CheckBoxes'), verData.getValue(1, 107))
+WebUI.verifyElementText(findTestObject('Planning Refused/frame_Reasons_CheckBoxes'), verData.getValue(1, 109))
 
-WebUI.click(findTestObject('Planning Refused/option_Flooding'))
+WebUI.click(findTestObject('Planning Refused/check_Other_Reason'))
 
-WebUI.click(findTestObject('Planning Refused/option_Highway_Safety'))
-
-WebUI.click(findTestObject('Planning Refused/option_Human_Rights'))
+WebUI.setText(findTestObject('Planning Refused/input_Refusal_Reason'), testData.getValue(1, 1))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Planning Refused/status_Completed_Refusal'), 20)
+WebUI.waitForElementVisible(findTestObject('Planning Refused/status_Completed_Refusal'), 10)
 
 WebUI.verifyElementText(findTestObject('Planning Refused/status_Completed_Refusal'), 'COMPLETED')
 

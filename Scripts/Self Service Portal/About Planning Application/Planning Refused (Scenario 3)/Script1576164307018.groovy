@@ -27,11 +27,11 @@ WebUI.waitForElementVisible(findTestObject('Planning Refused/question_Planning_R
 
 WebUI.verifyElementText(findTestObject('Planning Refused/frame_Reasons_CheckBoxes'), verData.getValue(1, 36))
 
-WebUI.click(findTestObject('Planning Refused/Flooding_Option'))
+WebUI.click(findTestObject('Planning Refused/option_Flooding'))
 
-WebUI.click(findTestObject('Planning Refused/Highway_Safety_Option'))
+WebUI.click(findTestObject('Planning Refused/option_Highway_Safety'))
 
-WebUI.click(findTestObject('Planning Refused/Human_Rights_Option'))
+WebUI.click(findTestObject('Planning Refused/option_Human_Rights'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
