@@ -358,4 +358,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Conditions_Technical_Design_Conditions_Enforcement_Notice_Yes</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>b6da11c5-a144-46ef-81f6-2082bdc8db8f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Conditions_Technical_Design_Conditions_Enforcement_Notice_No_6_Months_More</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
