@@ -388,4 +388,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Conditions_Technical_Design_Refused_Enforcement_Notice_No_6_Months_Less_2948</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>63c25688-de73-4f55-95ad-16f1de36ba1f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Permission_In_Principle_6_Months_More</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
