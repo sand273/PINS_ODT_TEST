@@ -364,4 +364,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Conditions_Technical_Design_Conditions_Enforcement_Notice_No_6_Months_More</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>25170367-f553-4d10-b57a-e6f83f0b31e7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Conditions_Technical_Design_Conditions_Enforcement_Notice_No_6_Months_Less_2949</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
