@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@value='Technical Design Consent']</value>
+         <value>//input[@value='Technical Design Consent'] | //input[@value='Technical design consent']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
