@@ -27,11 +27,11 @@ WebUI.waitForElementVisible(findTestObject('Planning Refused/question_Planning_R
 
 WebUI.verifyElementText(findTestObject('Planning Refused/frame_Reasons_CheckBoxes'), verData.getValue(1, 107))
 
-WebUI.click(findTestObject('Planning Refused/Character_and_appearance_of_a_conservation_area_input'))
+WebUI.click(findTestObject('Planning Refused/input_Character_and_appearance_conservation_area'))
 
-WebUI.click(findTestObject('Planning Refused/Other_character_and_appearance_and_visual_impact_input'))
+WebUI.click(findTestObject('Planning Refused/input_Other_character_and_appearance'))
 
-WebUI.click(findTestObject('Planning Refused/Drainage_input'))
+WebUI.click(findTestObject('Planning Refused/input_Drainage'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 

@@ -12,30 +12,31 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 WebUI.delay(1)
 
-WebUI.waitForElementVisible(findTestObject('Planning Refused/link_Planning_Refused'), 20)
+WebUI.waitForElementVisible(findTestObject('Costs/link_Costs'), 5)
 
-WebUI.click(findTestObject('Planning Refused/link_Planning_Refused'))
+WebUI.click(findTestObject('Costs/link_Costs'))
 
-WebUI.waitForElementVisible(findTestObject('Planning Refused/question_Planning_Refused'), 20)
+WebUI.waitForElementVisible(findTestObject('Costs/question_Costs_Application'), 5)
 
-WebUI.verifyElementText(findTestObject('Planning Refused/frame_Reasons_CheckBoxes'), verData.getValue(1, 107))
+WebUI.verifyElementText(findTestObject('Costs/question_Costs_Application'), verData.getValue(1, 111))
 
-WebUI.click(findTestObject('Planning Refused/option_Flooding'))
+not_run: WebUI.click(findTestObject('Costs/link_Application_Costs'))
 
-WebUI.click(findTestObject('Planning Refused/option_Highway_Safety'))
+not_run: WebUI.waitForElementVisible(findTestObject('Costs/frame_Application_Costs'), 5)
 
-WebUI.click(findTestObject('Planning Refused/option_Human_Rights'))
+not_run: WebUI.verifyElementText(findTestObject('Costs/frame_Application_Costs'), verData.getValue(1, 56))
+
+WebUI.click(findTestObject('Costs/input_No_Costs'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Planning Refused/status_Completed_Refusal'), 20)
+WebUI.waitForElementVisible(findTestObject('Costs/status_Complete_Costs'), 10)
 
-WebUI.verifyElementText(findTestObject('Planning Refused/status_Completed_Refusal'), 'COMPLETED')
+WebUI.verifyElementText(findTestObject('Costs/status_Complete_Costs'), 'COMPLETED')
 
