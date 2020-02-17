@@ -406,4 +406,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Technical_Design_6_Months_More</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>6b71dece-6d4b-4aeb-9393-a7362290c12e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Technical_Design_6_Months_Less_2826</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
