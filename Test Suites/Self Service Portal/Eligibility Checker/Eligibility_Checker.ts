@@ -394,4 +394,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Permission_In_Principle_6_Months_More</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>9bd56c92-2f9b-4acf-b003-4e63ae0b8519</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Permission_In_Principle_6_Months_Less_2827</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
