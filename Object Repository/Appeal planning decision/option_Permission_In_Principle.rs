@@ -6,12 +6,11 @@
    <elementGuidId>e6081e45-168c-468c-b237-1fe599ed2bae</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//input[@value='Permission in principle'] | //input[@value='Permission in Principle']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@value='Permission in principle']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

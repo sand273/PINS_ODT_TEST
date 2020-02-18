@@ -412,4 +412,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Technical_Design_6_Months_Less_2826</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>1fa7035b-0cff-42c5-8341-7a6e593676c2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Local_Authority_No_Permission_In_Priciple_Documentation_No_5_Weeks_Less</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
