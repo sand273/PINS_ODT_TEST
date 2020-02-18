@@ -442,4 +442,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Local_Authority_No_Permission_In_Principle_5_Weeks_More_6_Months_More_LPA_Yes_6_Months_Less_2941</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>aa9eabbe-01fb-4c51-a2d5-4141f1389eee</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Local_Authority_No_Permission_In_Principle_5_Weeks_More_6_Months_More_LPA_Yes_6_Months_More</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
