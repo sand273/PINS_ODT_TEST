@@ -21,7 +21,7 @@ def testData = TestDataFactory.findTestData('Data Files/Eligibility_Data')
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Eligibility Checker/Appeal_Relate_Decision'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Appeal planning decision/input_Conditions_Attached'))
+WebUI.click(findTestObject('Appeal planning decision/input_Planning_Application'))
 
 WebUI.waitForElementClickable(findTestObject('Appeal planning decision/button_Continue'), 1)
 

@@ -42,7 +42,7 @@ WebUI.waitForElementVisible(findTestObject('Appeal planning decision/end_User_Qu
 
 WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(1, 6))
 
-WebUI.click(findTestObject('Appeal planning decision/input_Outline_Planning_option'))
+WebUI.click(findTestObject('Appeal planning decision/input_Reserved_Matters'))
 
 WebUI.click(findTestObject('Appeal planning decision/button_Continue'))
 
@@ -60,19 +60,17 @@ WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Questi
 
 WebUI.waitForElementClickable(findTestObject('Appeal planning decision/input_Day'), 1)
 
-WebUI.setText(findTestObject('Appeal planning decision/input_Day'), testData.getValue(2, 1))
+WebUI.setText(findTestObject('Appeal planning decision/input_Day'), testData.getValue(2, 2))
 
-WebUI.setText(findTestObject('Appeal planning decision/input_Month'), testData.getValue(3, 1))
+WebUI.setText(findTestObject('Appeal planning decision/input_Month'), testData.getValue(3, 2))
 
-WebUI.setText(findTestObject('Appeal planning decision/input_Year'), testData.getValue(4, 1))
+WebUI.setText(findTestObject('Appeal planning decision/input_Year'), testData.getValue(4, 2))
 
 WebUI.click(findTestObject('Appeal planning decision/button_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Appeal planning decision/eligibility_Confirmed'), 2)
+WebUI.waitForElementVisible(findTestObject('Appeal planning decision/non_Eligible_Message'), 2)
 
-WebUI.verifyElementText(findTestObject('Appeal planning decision/eligibility_Confirmed'), verData.getValue(1, 9))
+WebUI.verifyElementText(findTestObject('Appeal planning decision/non_Eligible_Message'), verData.getValue(1, 11))
 
-WebUI.verifyElementVisible(findTestObject('Appeal planning decision/button_Appeal_Now'))
-
-WebUI.verifyElementText(findTestObject('Appeal planning decision/list_Confirmation'), verData.getValue(1, 16))
+WebUI.closeBrowser()
 

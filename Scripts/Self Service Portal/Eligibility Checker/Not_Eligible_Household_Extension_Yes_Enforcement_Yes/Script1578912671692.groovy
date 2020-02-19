@@ -22,7 +22,7 @@ WebUI.callTestCase(findTestCase('Self Service Portal/Eligibility Checker/Appeal_
 
 WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(1, 4))
 
-WebUI.click(findTestObject('Appeal planning decision/input_Conditions_Attached'))
+WebUI.click(findTestObject('Appeal planning decision/input_Planning_Application'))
 
 WebUI.waitForElementClickable(findTestObject('Appeal planning decision/button_Continue'), 1)
 

@@ -490,4 +490,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_Extenstion_No_Reserved_Enforcement_Yes</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>e217c33b-f963-4100-8352-4205c5031c34</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_Extension_No_Reserved_Enforcement_No_6_Months_More</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
