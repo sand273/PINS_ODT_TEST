@@ -29,10 +29,10 @@
       <testCaseId>Test Cases/Self Service Portal/Login/Case Officer Appeal Now</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>508c66e1-3c68-48df-9480-819321cf72d2</guid>
+      <guid>ff755bab-f3fd-4c6c-91e3-659216bdf761</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Planning application details (Scenario 3 - 845)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Planning application details (Scenario 3 - 846)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>dfed348e-69c5-4c07-baae-605edf0b9c20</guid>
