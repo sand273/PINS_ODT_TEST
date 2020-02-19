@@ -484,4 +484,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Local_Authority_No_Technical_Design_5_Weeks_More_6_Months_More_LPA_Yes_6_Months_More</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>c3c02d01-a729-43c1-b4a1-671447e3030b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_Extenstion_No_Reserved_Enforcement_Yes</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
