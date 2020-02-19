@@ -454,4 +454,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Local_Authority_No_Technical_Design_5_Weeks_Less</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>e020388d-8f78-4ad5-9005-c236bdafd0d9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Local_Authority_No_Technical_Design_5_Weeks_More_6_Months_Less_LPA_No_2945</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
