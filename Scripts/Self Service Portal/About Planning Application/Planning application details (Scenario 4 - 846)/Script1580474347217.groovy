@@ -64,11 +64,28 @@ WebUI.verifyElementText(findTestObject('Planning Application details/question_Ap
 
 WebUI.check(findTestObject('Planning Application details/check_Change_of_Use'))
 
+WebUI.waitForElementVisible(findTestObject('Planning Application details/question_Any_Residential_Dwellings'), 2)
+
+WebUI.verifyElementText(findTestObject('Planning Application details/question_Any_Residential_Dwellings'), verData.getValue(
+        1, 113))
+
 WebUI.click(findTestObject('Planning Application details/option_Yes_Residential_Dwellings'))
 
-WebUI.click(findTestObject('Planning Application details/option_Yes_Proposed_Amount_Of_Dwellings'))
+WebUI.waitForElementVisible(findTestObject('Planning Application details/question_Proposed_Number_Dwellings'), 2)
 
-WebUI.setText(findTestObject('Planning Application details/input_Number_Of_Dwellings'), '1')
+WebUI.verifyElementText(findTestObject('Planning Application details/question_Proposed_Number_Dwellings'), verData.getValue(
+        1, 114))
+
+WebUI.click(findTestObject('Planning Application details/option_No_Proposed_Amount_Of_Dwellings'))
+
+WebUI.waitForElementVisible(findTestObject('Planning Application details/message_Development_Description_1'), 2)
+
+WebUI.verifyElementText(findTestObject('Planning Application details/message_Development_Description_1'), verData.getValue(
+        1, 28))
+
+WebUI.setText(findTestObject('Planning Application details/text_Development_Description_1'), testData.getValue(3, 1))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -88,9 +105,19 @@ WebUI.waitForElementVisible(findTestObject('Planning Application details/questio
 WebUI.verifyElementText(findTestObject('Planning Application details/question_Description_Change'), verData.getValue(1, 
         29))
 
-WebUI.check(findTestObject('Planning Application details/input_Yes_Description_Change'))
+WebUI.click(findTestObject('Planning Application details/input_Yes_Description_Change'))
+
+WebUI.waitForElementVisible(findTestObject('Planning Application details/message_Revised_Description'), 20)
+
+WebUI.verifyElementText(findTestObject('Planning Application details/message_Revised_Description'), verData.getValue(1, 
+        115))
 
 WebUI.setText(findTestObject('Planning Application details/field_Revised_Description'), testData.getValue(4, 1))
+
+WebUI.waitForElementVisible(findTestObject('Planning Application details/message_Changed_Description'), 20)
+
+WebUI.verifyElementText(findTestObject('Planning Application details/message_Changed_Description'), verData.getValue(1, 
+        116))
 
 WebUI.setText(findTestObject('Planning Application details/field_Reason_Changed_Description'), testData.getValue(5, 1))
 

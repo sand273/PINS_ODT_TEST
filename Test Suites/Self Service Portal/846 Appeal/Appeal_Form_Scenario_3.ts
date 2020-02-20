@@ -14,7 +14,7 @@
       <guid>2f9cce5b-afd8-4830-ab8d-76b84558c772</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Local_Authority_No_Documentation_Yes_8_Weeks_More_6_Months_More_LPA_Yes_6_Months_Less_846</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Local_Authority_No_Neither_Documentation_Yes_8_Weeks_More_6_Months_More_LPA_Yes_6_Months_Less_846</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>119ffaeb-b1b7-4a5d-8f4d-5508a6f26fc0</guid>
@@ -29,10 +29,10 @@
       <testCaseId>Test Cases/Self Service Portal/Login/Case Officer Appeal Now</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>508c66e1-3c68-48df-9480-819321cf72d2</guid>
+      <guid>ff755bab-f3fd-4c6c-91e3-659216bdf761</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Planning application details (Scenario 3 - 845)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Planning application details (Scenario 3 - 846)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>dfed348e-69c5-4c07-baae-605edf0b9c20</guid>
