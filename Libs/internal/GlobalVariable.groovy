@@ -34,6 +34,11 @@ public class GlobalVariable {
      */
     public static Object driverCount
      
+    /**
+     * <p></p>
+     */
+    public static Object AdminUrl
+     
 
     static {
         try {
@@ -46,6 +51,7 @@ public class GlobalVariable {
             UploadFilePath = selectedVariables['UploadFilePath']
             ApplicationRef = selectedVariables['ApplicationRef']
             driverCount = selectedVariables['driverCount']
+            AdminUrl = selectedVariables['AdminUrl']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

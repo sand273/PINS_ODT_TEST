@@ -1,0 +1,23 @@
+[0117/102955.299:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[0127/130518.484:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[0127/141129.266:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[0128/132530.060:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0131/141918.919:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[0213/181417.143:ERROR:process_info.cc(359)] UncheckedAllocate
+[0213/181602.431:ERROR:process_info.cc(359)] UncheckedAllocate
+[0213/181643.943:ERROR:process_info.cc(359)] UncheckedAllocate
+[0217/144325.127:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[0219/170104.932:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0219/170104.934:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0219/170104.934:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0219/170104.934:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0219/170104.934:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0219/170104.934:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0219/170104.934:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0219/170104.934:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0219/170104.934:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0219/170104.934:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0219/170104.934:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0219/170104.934:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0219/170104.934:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0219/170104.934:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)

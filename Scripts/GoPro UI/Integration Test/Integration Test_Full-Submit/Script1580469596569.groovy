@@ -29,6 +29,8 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++)
 
     WebUI.callTestCase(findTestCase('Self Service Portal/Complete Questionaire/Complete Questionaire'), [:], FailureHandling.STOP_ON_FAILURE)
 
+	WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Portal_Run_GoPro_DataStore'), [:], FailureHandling.STOP_ON_FAILURE)
+	
 	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Verify Publish Questionaire'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -37,22 +39,30 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++)
 
     WebUI.callTestCase(findTestCase('Self Service Portal/LPA Statement/Submit Statement'), [:], FailureHandling.STOP_ON_FAILURE)
 
+	WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Portal_Run_GoPro_DataStore'), [:], FailureHandling.STOP_ON_FAILURE)
+	
 	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('GoPro UI/IP Comments/IP Comments'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('Self Service Portal/Third Party Comments/Third Party Comments'), [:], FailureHandling.STOP_ON_FAILURE)
 
+	WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Portal_Run_GoPro_DataStore'), [:], FailureHandling.STOP_ON_FAILURE)
+	
 	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('GoPro UI/LPA Comments/LPA Comments'), [:], FailureHandling.STOP_ON_FAILURE)
 
+	WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Portal_Run_GoPro_DataStore'), [:], FailureHandling.STOP_ON_FAILURE)
+	
 	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('GoPro UI/Final Comments/Verify Comments'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('Self Service Portal/Final Comments/Final Comments'), [:], FailureHandling.STOP_ON_FAILURE)
 
+	WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Portal_Run_GoPro_DataStore'), [:], FailureHandling.STOP_ON_FAILURE)
+	
 	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('GoPro UI/Final Comments/Submit Comments'), [:], FailureHandling.STOP_ON_FAILURE)
