@@ -59,7 +59,7 @@ WebUI.click(findTestObject('GoPro UI/Case Documents/button_Primary'))
 
 WebUI.delay(1)
 
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/button_Clear_Search'), 3)
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/button_Clear_Search'), 5)
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/button_Clear_Search'))
 
@@ -106,7 +106,7 @@ if (WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/drop
     WebUI.click(findTestObject('GoPro UI/Case Summary/button_Publish_Final_Comment'))
 }
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/label_Processing'), 10)
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/label_Processing'), 20)
 
 WebUI.delay(1)
 

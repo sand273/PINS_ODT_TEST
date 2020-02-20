@@ -104,7 +104,7 @@
       <guid>3bbe0fdc-d23f-48c3-88bc-2a55a8190e56</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Costs - 841</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Costs</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>64121284-8c04-492c-9966-fa70074fce12</guid>

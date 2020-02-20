@@ -46,14 +46,17 @@ WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/check_Extern
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/check_External_Documents'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_folder_LPA_Questionaire'), 20)
+//WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_folder_LPA_Questionaire'), 20)
 
-WebUI.scrollToPosition(9999999, 9999999)
+//WebUI.scrollToPosition(9999999, 9999999)
 
-WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Questionaire'))
+//WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Questionaire'))
 
-if (WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_File_LPA_Questionaire'), 20)==false)
-{
+//if (WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_File_LPA_Questionaire'), 20)==false)
+//{
+	
+	WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/input_Search'), 10)
+
 	WebUI.click(findTestObject('GoPro UI/Case Summary/input_Search'))
 	
 	WebUI.sendKeys(findTestObject('GoPro UI/Case Summary/input_Search'), testData.getValue(1, 11))
@@ -67,5 +70,5 @@ if (WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_Fil
 	
 	WebUI.verifyElementText(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), testData.getValue(1, 11))
 			
-}
+//}
 

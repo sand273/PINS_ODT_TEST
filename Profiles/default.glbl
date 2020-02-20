@@ -29,4 +29,9 @@
       <initValue>0</initValue>
       <name>driverCount</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://pins-test.gopro.net/selfservice/web/admin/bird_index.html'</initValue>
+      <name>AdminUrl</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
