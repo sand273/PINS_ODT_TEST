@@ -75,7 +75,7 @@ WebUI.delay(1)
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Status_Case_Started'), 'defaultSelected', 
     'true', 2)
 
-WebUI.waitForElementHasAttribute(findTestObject('GoPro UI/Case Summary/date_Case_Start'), 'value', 4)
+WebUI.waitForElementHasAttribute(findTestObject('GoPro UI/Case Summary/date_Case_Start'), 'value', 5)
 
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Case_Start'), 'value', todaysDate, 1)
 

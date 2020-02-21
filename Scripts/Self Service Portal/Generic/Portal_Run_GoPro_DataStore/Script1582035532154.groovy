@@ -44,20 +44,18 @@ WebUI.click(findTestObject('GoPro Self Service/node_Connections'))
 
 WebUI.click(findTestObject('GoPro Self Service/link_Schedule_Manager'))
 
-WebUI.waitForElementClickable(findTestObject('GoPro Self Service/link_Start'), 5)
+WebUI.delay(1)
 
 WebUI.click(findTestObject('GoPro Self Service/link_Start'))
 
-if (WebUI.waitForElementVisible(findTestObject('GoPro Self Service/link_Start'), 5) == false)
-{
-	CustomKeywords.'custom.WriteExcel.waitForObject'(150, 'GoPro Self Service/link_Start', 'GoPro Self Service/link_Schedule_Manager')
+if (WebUI.waitForElementVisible(findTestObject('GoPro Self Service/link_Start'), 5) == false) {
+    CustomKeywords.'custom.WriteExcel.waitForObject'(150, 'GoPro Self Service/link_Start', 'GoPro Self Service/link_Schedule_Manager')
 }
 
 WebUI.click(findTestObject('GoPro Self Service/link_Start'))
 
-if (WebUI.waitForElementVisible(findTestObject('GoPro Self Service/link_Start'), 5) == false)
-{
-	CustomKeywords.'custom.WriteExcel.waitForObject'(150, 'GoPro Self Service/link_Start', 'GoPro Self Service/link_Schedule_Manager')
+if (WebUI.waitForElementVisible(findTestObject('GoPro Self Service/link_Start'), 5) == false) {
+    CustomKeywords.'custom.WriteExcel.waitForObject'(150, 'GoPro Self Service/link_Start', 'GoPro Self Service/link_Schedule_Manager')
 }
 
 not_run: WebUI.click(findTestObject('GoPro Self Service/link_Logout'))

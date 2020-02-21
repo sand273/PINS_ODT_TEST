@@ -106,7 +106,7 @@ if (WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/drop
     WebUI.click(findTestObject('GoPro UI/Case Summary/button_Publish_Final_Comment'))
 }
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/label_Processing'), 20)
+WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Summary/label_Processing'), 10)
 
 WebUI.delay(1)
 

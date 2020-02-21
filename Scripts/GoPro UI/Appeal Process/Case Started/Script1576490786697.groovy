@@ -164,7 +164,7 @@ WebUI.verifyElementText(findTestObject('GoPro UI/Case Summary/message_Start_Case
 
 WebUI.click(findTestObject('GoPro UI/Programming/button_Publish'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/label_Processing'), 10)
+WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Summary/label_Processing'), 10)
 
 WebUI.delay(2)
 

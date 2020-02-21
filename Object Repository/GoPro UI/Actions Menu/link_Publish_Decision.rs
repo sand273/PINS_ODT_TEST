@@ -6,12 +6,11 @@
    <elementGuidId>3434b23f-8615-4b1e-8307-31a52f358c40</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@class='col-sm-3']//button[@id='actionmenu.publishDecision']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//span[contains(text(),'Publish Decision')]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[contains(text(),'Publish LPA Statement and IP Comments')]</value>
+         <value>//div[@id='documents-l']//li[contains(@class,'ng-scope')]//li[1]//button[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

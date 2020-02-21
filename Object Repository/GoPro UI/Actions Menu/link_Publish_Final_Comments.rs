@@ -6,12 +6,11 @@
    <elementGuidId>eb1331e3-14b3-47e5-b150-3232d8728830</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@class='col-sm-4']//button[@id='actionmenu.publishFinalComments']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//span[contains(text(),'Publish Final Comments')]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

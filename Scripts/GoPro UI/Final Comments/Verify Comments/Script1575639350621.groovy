@@ -26,8 +26,25 @@ WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureH
 
 WebUI.delay(1)
 
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Open_Final_Comments'), 'defaultSelected', 
+try
+{
+	WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Open_Final_Comments'), 'defaultSelected', 
     'true', 5)
+}
+catch (Exception ex)
+{
+	WebUI.selectOptionByValue(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'), '9BB1233C-FC41-4926-AF53-7B00BFE6247D', true)
+
+	WebUI.click(findTestObject('GoPro UI/Case Summary/button_Save'))
+}
+
+WebUI.switchToWindowIndex(1)
+
+WebUI.refresh()
+
+WebUI.delay(1)
+
+WebUI.waitForElementHasAttribute(findTestObject('GoPro UI/Case Summary/date_LPA_Published'), 'value', 5)
 
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_LPA_Published'), 'value', todaysDate, 1)
 

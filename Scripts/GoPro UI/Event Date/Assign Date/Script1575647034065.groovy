@@ -30,7 +30,7 @@ WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureH
 
 WebUI.click(findTestObject('GoPro UI/Programming/link_Programming'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Programming/title_Programming'), 2)
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Programming/title_Programming'), 5)
 
 WebUI.verifyElementVisible(findTestObject('GoPro UI/Programming/dropdown_Event'))
 
@@ -44,7 +44,7 @@ WebUI.click(findTestObject('GoPro UI/Case Summary/button_Save'))
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/link_Timeline'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/title_Timeline'), 3)
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/title_Timeline'), 5)
 
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Programming/date_Event'), 'value', eventDate.format('dd/MM/yyyy').toString(), 
     1)
@@ -87,8 +87,6 @@ WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/check_Extern
 WebUI.click(findTestObject('GoPro UI/Case Documents/check_External_Documents'))
 
 WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/link_Appeal_Decision'), 20)
-
-not_run: WebUI.refresh()
 
 WebUI.scrollToPosition(9999999, 9999999)
 

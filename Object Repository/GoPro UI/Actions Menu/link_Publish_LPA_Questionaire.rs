@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[contains(text(),'Publish LPA Questionnaire')]</value>
+         <value>//div[@class='col-sm-3']//button[@id='actionmenu.publishLpaQuestionnaire']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

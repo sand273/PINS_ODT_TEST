@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='col-sm-3']//span[@class='ng-binding ng-isolate-scope'][contains(text(),'File')]</value>
+         <value>//div[@class='col-sm-4']//span[@class='ng-binding ng-isolate-scope'][contains(text(),'File')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
