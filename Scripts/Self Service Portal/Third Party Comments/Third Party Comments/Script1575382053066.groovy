@@ -47,7 +47,19 @@ WebUI.click(findTestObject('Third Party Comments/button_Save and continue'))
 
 WebUI.waitForElementVisible(findTestObject('Third Party Comments/message_Comments_Confirmation'), 5)
 
-WebUI.click(findTestObject('Third Party Comments/button_Submit'))
+WebUI.waitForElementClickable(findTestObject('Third Party Comments/button_Submit'), 5)
+
+try {
+    WebUI.scrollToPosition(9999999, 9999999)
+
+    WebUI.click(findTestObject('Third Party Comments/button_Submit'))
+}
+catch (Exception ex) 
+{
+    WebUI.refresh()
+
+	WebUI.click(findTestObject('Third Party Comments/button_Submit'))
+} 
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/title_Questionaire_Received'), 5)
 

@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_Publish_Final_Comments</name>
+   <name>span_Publish Final Comments</name>
    <tag></tag>
-   <elementGuidId>0750070a-48bf-4d81-b97d-8193ae952c86</elementGuidId>
+   <elementGuidId>2146130e-1466-4f28-a622-143634e53fc7</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'Publish Final Comments' or . = 'Publish Final Comments')]</value>
-      </entry>
       <entry>
          <key>XPATH</key>
          <value>//button[@id='actionmenu.publishFinalComments']/span</value>

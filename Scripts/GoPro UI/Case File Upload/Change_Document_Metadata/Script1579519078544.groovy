@@ -46,9 +46,9 @@ WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Searc
 
 WebUI.delay(1)
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/Ds_Case_In_List', [('caseNumber') : caseNumber]), 20)
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/list_Ds_Case_In', [('caseNumber') : caseNumber]), 20)
 
-WebUI.doubleClick(findTestObject('GoPro UI/Case Summary/Ds_Case_In_List', [('caseNumber') : caseNumber]))
+WebUI.doubleClick(findTestObject('GoPro UI/Case Summary/list_Ds_Case_In', [('caseNumber') : caseNumber]))
 
 WebUI.switchToWindowIndex(1)
 
