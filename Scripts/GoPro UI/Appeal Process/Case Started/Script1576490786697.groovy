@@ -61,19 +61,16 @@ WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureH
 
 WebUI.delay(1)
 
-try 
- {
-	WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Validation_Required'), 'defaultSelected',
-		 'true', 5)
- }
- catch (Exception ex)
- {		 
-    if (WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Status_Ready_Programming'), 'defaultSelected', 
-     'true', 5) == true) 
-	{
-        continue res; //goto label res
-    }
+try {
+    WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Validation_Required'), 'defaultSelected', 
+        'true', 5)
 }
+catch (Exception ex) {
+    if (WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Status_Ready_Programming'), 'defaultSelected', 
+        'true', 5) == true) {
+        res: continue //goto label res
+    }
+} 
 
 WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Summary/input_Case Officer'))
 
@@ -85,7 +82,7 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(1)
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/dropdown_Validation_InProgress'), 5)
 
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Validation_InProgress'), 'defaultSelected', 
     'true', 5)
@@ -105,9 +102,8 @@ WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/input_Ca
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Status_Ready_Programming'), 'defaultSelected', 
     'true', 5)
 
-res: //label res
-
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Validation'), 'value', todaysDate, 1)
+//label res
+res: WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Validation'), 'value', todaysDate, 1)
 
 WebUI.click(findTestObject('GoPro UI/Programming/link_Programming'))
 

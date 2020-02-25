@@ -254,7 +254,7 @@
       <guid>d30f9927-c996-49a4-81e7-d14fee666f90</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Household_Extension_Yes_Enforcement_No_12_Weeks_Less_848</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Household_Extension_Yes_Enforcement_No_12_Weeks_Less</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>80f24922-4da0-42aa-ae32-3c91d43d2268</guid>

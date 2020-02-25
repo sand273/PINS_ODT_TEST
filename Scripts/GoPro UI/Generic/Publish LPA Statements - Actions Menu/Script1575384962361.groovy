@@ -15,11 +15,11 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.click(findTestObject('GoPro UI/Actions Menu/menu_Actions'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Actions Menu/link_Publish_LPA_Statements'), 5)
+WebUI.waitForElementPresent(findTestObject('GoPro UI/Actions Menu/link_Publish_LPA_Statements'), 5)
 
 WebUI.click(findTestObject('GoPro UI/Actions Menu/link_Publish_LPA_Statements'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Actions Menu/message_Publish_LPA_Statements'), 5)
+WebUI.waitForElementPresent(findTestObject('GoPro UI/Actions Menu/message_Publish_LPA_Statements'), 5)
 
 WebUI.click(findTestObject('GoPro UI/Programming/button_Publish'))
 

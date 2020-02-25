@@ -16,15 +16,9 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://pins-test.gopro.net/selfservice/web/admin/bird_index.html')
+WebUI.navigateToUrl('https://pins-test.gopro.net/ui/#!/case/open?id=31AFB5FF-0903-4F34-B75E-57D9EC7B38E8')
 
-WebUI.click(findTestObject('GoPro Self Service/link_Stop'))
+WebUI.click(findTestObject('Object Repository/GoPro UI/Actions Menu/Page_W4004347 PLANNING INSPECTORATE TEMPLE QUAY HOUSE 2 THE SQUARE TEMPLE QUAY BRISTOL BS1 6PN/span_Publish Final Comments'))
 
-WebUI.click(findTestObject('GoPro Self Service/link_Schedule_Manager'))
-
-WebUI.click(findTestObject('GoPro Self Service/link_Start'))
-
-WebUI.click(findTestObject('GoPro Self Service/link_Stop'))
-
-WebUI.click(findTestObject('GoPro Self Service/link_Stop'))
+WebUI.closeBrowser()
 
