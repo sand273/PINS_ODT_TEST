@@ -43,9 +43,9 @@ WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('e
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Additional Plans/Help_File_Formats_Link'))
+WebUI.click(findTestObject('Additional Plans/link_Help_File_Formats'))
 
-WebUI.verifyElementText(findTestObject('Additional Plans/Help_File_Formats_Text'), verData.getValue(1, 32))
+WebUI.verifyElementText(findTestObject('Additional Plans/text_Help_File_Formats'), verData.getValue(1, 32))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 

@@ -37,7 +37,7 @@ WebUI.verifyElementText(findTestObject('Environmental details/question_Environme
 
 WebUI.click(findTestObject('Environmental details/option_Yes_Environment_Statement'))
 
-WebUI.click(findTestObject('Environmental details/Upload_Environment_Statement_File'))
+WebUI.click(findTestObject('Environmental details/file_Upload_Environment_Statement'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 

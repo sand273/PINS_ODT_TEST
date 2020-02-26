@@ -35,7 +35,7 @@ WebUI.click(findTestObject('Planning Application details/link_Not_Sure_Which_Opt
 
 WebUI.verifyElementText(findTestObject('Planning Application details/text_Not_Sure_Which_Option'), verData.getValue(1, 92))
 
-WebUI.click(findTestObject('Planning Application details/Individual_Option'))
+WebUI.click(findTestObject('Planning Application details/option_Individual'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 

@@ -21,9 +21,9 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('GoPro UI/My cases/link_My events_location_arrow'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Navigation/Cases_Link'), 20)
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Navigation/link_Cases'), 20)
 
-WebUI.click(findTestObject('GoPro UI/Navigation/Cases_Link'))
+WebUI.click(findTestObject('GoPro UI/Navigation/link_Cases'))
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/input_Search'), 20)
 
@@ -40,26 +40,26 @@ WebUI.doubleClick(findTestObject('GoPro UI/Case Summary/list_Ds_Case_In', [('cas
 WebUI.switchToWindowIndex(1)
 
 for (def i : (1..279)) {
-    WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents Actions/Actions_Link'), 20)
+    WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents Actions/link_Actions'), 20)
 
-    WebUI.click(findTestObject('GoPro UI/Case Documents Actions/Actions_Link'))
+    WebUI.click(findTestObject('GoPro UI/Case Documents Actions/link_Actions'))
 
-    WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents Actions/Upload_Documents_Link'), 20)
+    WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents Actions/link_Upload_Documents'), 20)
 
-    WebUI.click(findTestObject('GoPro UI/Case Documents Actions/Upload_Documents_Link'))
+    WebUI.click(findTestObject('GoPro UI/Case Documents Actions/link_Upload_Documents'))
 
     WebUI.delay(1)
 
-    WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents Actions/Upload_Document_Button'), 20)
+    WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents Actions/button_Upload_Document'), 20)
 
-    WebUI.click(findTestObject('GoPro UI/Case Documents Actions/Upload_Document_Button'), FailureHandling.STOP_ON_FAILURE)
+    WebUI.click(findTestObject('GoPro UI/Case Documents Actions/button_Upload_Document'), FailureHandling.STOP_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Multiple_Upload.exe'], 
         FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents Actions/Upload_Button'), 20)
+    WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents Actions/button_Upload'), 20)
 
-    WebUI.click(findTestObject('GoPro UI/Case Documents Actions/Upload_Button'), FailureHandling.STOP_ON_FAILURE)
+    WebUI.click(findTestObject('GoPro UI/Case Documents Actions/button_Upload'), FailureHandling.STOP_ON_FAILURE)
 
     WebUI.comment(i.toString())
 }

@@ -31,21 +31,21 @@ WebUI.verifyElementText(findTestObject('Site Details/question_PostCode'), verDat
 
 WebUI.click(findTestObject('Site Details/option_No_Postcode'))
 
-WebUI.waitForElementVisible(findTestObject('Site Details/Nearest_Postcode_Text'), 5)
+WebUI.waitForElementVisible(findTestObject('Site Details/text_Nearest_Postcode'), 5)
 
-WebUI.verifyElementText(findTestObject('Site Details/Nearest_Postcode_Text'), verData.getValue(1, 85))
+WebUI.verifyElementText(findTestObject('Site Details/text_Nearest_Postcode'), verData.getValue(1, 85))
 
-WebUI.setText(findTestObject('Site Details/Nearest_Postcode_Field'), testData.getValue(1, 1))
+WebUI.setText(findTestObject('Site Details/field_Nearest_Postcode'), testData.getValue(1, 1))
 
-WebUI.waitForElementVisible(findTestObject('Site Details/Grid_Reference_Text'), 5)
+WebUI.waitForElementVisible(findTestObject('Site Details/text_Grid_Reference'), 5)
 
-WebUI.verifyElementText(findTestObject('Site Details/Grid_Reference_Text'), verData.getValue(1, 86))
+WebUI.verifyElementText(findTestObject('Site Details/text_Grid_Reference'), verData.getValue(1, 86))
 
-WebUI.setText(findTestObject('Site Details/Grid_Reference_Field'), testData.getValue(6, 1))
+WebUI.setText(findTestObject('Site Details/field_Grid_Reference'), testData.getValue(6, 1))
 
-WebUI.click(findTestObject('Site Details/Help_Easting_Northings_Link'))
+WebUI.click(findTestObject('Site Details/link_Help_Easting_Northings'))
 
-WebUI.verifyElementText(findTestObject('Site Details/Help_Easting_Northings_Text'), verData.getValue(1, 87))
+WebUI.verifyElementText(findTestObject('Site Details/text_Help_Easting_Northings'), verData.getValue(1, 87))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -53,7 +53,7 @@ WebUI.waitForElementVisible(findTestObject('Site Details/question_Public_Land'),
 
 WebUI.verifyElementText(findTestObject('Site Details/question_Public_Land'), verData.getValue(1, 43))
 
-WebUI.click(findTestObject('Site Details/Public_Land_No_Option'))
+WebUI.click(findTestObject('Site Details/option_Public_Land_No'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -61,7 +61,7 @@ WebUI.waitForElementVisible(findTestObject('Site Details/question_Site_Restricte
 
 WebUI.verifyElementText(findTestObject('Site Details/question_Site_Restricted'), verData.getValue(1, 44))
 
-WebUI.click(findTestObject('Site Details/Site_Restricted_No_Option'))
+WebUI.click(findTestObject('Site Details/option_Site_Restricted_No'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -69,7 +69,7 @@ WebUI.waitForElementVisible(findTestObject('Site Details/question_Health_Safety'
 
 WebUI.verifyElementText(findTestObject('Site Details/question_Health_Safety'), verData.getValue(1, 45))
 
-WebUI.click(findTestObject('Site Details/Health_No_Option'))
+WebUI.click(findTestObject('Site Details/option_Health_No'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -77,7 +77,7 @@ WebUI.waitForElementVisible(findTestObject('Site Details/question_Site_Inspector
 
 WebUI.verifyElementText(findTestObject('Site Details/question_Site_Inspector'), verData.getValue(1, 46))
 
-WebUI.click(findTestObject('Site Details/Site_Visit_No_Option'))
+WebUI.click(findTestObject('Site Details/option_Site_Visit_No'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
