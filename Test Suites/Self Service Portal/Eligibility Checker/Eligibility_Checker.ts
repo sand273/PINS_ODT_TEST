@@ -254,7 +254,7 @@
       <guid>d30f9927-c996-49a4-81e7-d14fee666f90</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Household_Extension_Yes_Enforcement_No_12_Weeks_Less</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Household_Extension_Yes_Enforcement_No_12_Weeks_Less_848</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>80f24922-4da0-42aa-ae32-3c91d43d2268</guid>
@@ -272,7 +272,7 @@
       <guid>e30bb119-1533-4d80-86e5-419ee9041de3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Shop_Front_Develop_Enforcement_No_12_Weeks_Less</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Shop_Front_Develop_Enforcement_No_12_Weeks_Less_849</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>16917746-f071-41ce-adc2-123f23fd636c</guid>
