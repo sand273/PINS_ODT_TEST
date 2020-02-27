@@ -13,8 +13,12 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
+
+WebUI.delay(1)
 
 WebUI.waitForElementVisible(findTestObject('The Advertisement/link_Advertisement'), 5)
 
