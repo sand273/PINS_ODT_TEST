@@ -35,7 +35,7 @@ WebUI.click(findTestObject('Planning Application details/link_Not_Sure_Which_Opt
 
 WebUI.verifyElementText(findTestObject('Planning Application details/text_Not_Sure_Which_Option'), verData.getValue(1, 84))
 
-WebUI.click(findTestObject('Planning Application details/Individual_Option'))
+WebUI.click(findTestObject('Planning Application details/option_Individual'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -171,7 +171,7 @@ WebUI.waitForElementVisible(findTestObject('Planning Application details/message
 
 WebUI.verifyElementText(findTestObject('Planning Application details/message_List_Regulation_4'), verData.getValue(1, 103))
 
-WebUI.click(findTestObject('Planning Application details/button_List_Regulation_4_Upload'))
+WebUI.click(findTestObject('Planning Application details/button_List_Regulation_Upload'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'PNG_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 

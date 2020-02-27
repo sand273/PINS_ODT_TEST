@@ -34,7 +34,7 @@ WebUI.waitForElementVisible(findTestObject('Main grounds of Appeal/frame_Prepare
 
 WebUI.verifyElementText(findTestObject('Main grounds of Appeal/frame_Prepare_Statement'), verData.getValue(1, 54))
 
-WebUI.click(findTestObject('Main grounds of Appeal/Special_Cat_Info_Yes_Option'))
+WebUI.click(findTestObject('Main grounds of Appeal/option_Special_Cat_Info_Yes'))
 
 WebUI.verifyElementText(findTestObject('Main grounds of Appeal/frame_Grounds_of_Appeal'), verData.getValue(1, 50))
 

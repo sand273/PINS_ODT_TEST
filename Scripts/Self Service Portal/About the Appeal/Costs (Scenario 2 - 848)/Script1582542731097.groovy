@@ -36,11 +36,11 @@ WebUI.waitForElementVisible(findTestObject('Costs/message_Help_File'), 20)
 
 WebUI.verifyElementText(findTestObject('Costs/message_Help_File'), verData.getValue(1, 32))
 
-WebUI.click(findTestObject('Costs/Upload_App_Costs_File'))
+WebUI.click(findTestObject('Costs/file_Upload_App_Costs'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementVisible(findTestObject('Costs/Remove_Button'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Costs/button_Remove'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 

@@ -308,7 +308,7 @@
       <guid>1e51f8aa-929a-45e7-85bb-788e9cf61c8c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Display_Advertisement_Refused_Enforcement_No_8_Weeks_Less</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Display_Advertisement_Refused_Enforcement_No_8_Weeks_Less_850</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>f2c4401b-bbec-4578-b796-8734a9a3e625</guid>

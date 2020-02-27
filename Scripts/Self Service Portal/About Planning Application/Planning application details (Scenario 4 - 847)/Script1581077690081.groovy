@@ -169,7 +169,7 @@ WebUI.waitForElementVisible(findTestObject('Planning Application details/message
 
 WebUI.verifyElementText(findTestObject('Planning Application details/message_List_Regulation_4'), verData.getValue(1, 103))
 
-WebUI.click(findTestObject('Planning Application details/button_List_Regulation_4_Upload'))
+WebUI.click(findTestObject('Planning Application details/button_List_Regulation_Upload'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'PNG_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 

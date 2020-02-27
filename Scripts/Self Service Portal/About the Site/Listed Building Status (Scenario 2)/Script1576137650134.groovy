@@ -40,7 +40,7 @@ WebUI.click(findTestObject('Listed building status/option_Grade_2_Star'))
 
 WebUI.setText(findTestObject('Listed building status/input_Listing_Number'), testData.getValue(1, 1))
 
-WebUI.click(findTestObject('Listed building status/Applied_Listed_Consent_No_Option'))
+WebUI.click(findTestObject('Listed building status/option_Applied_Listed_Consent_No'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
