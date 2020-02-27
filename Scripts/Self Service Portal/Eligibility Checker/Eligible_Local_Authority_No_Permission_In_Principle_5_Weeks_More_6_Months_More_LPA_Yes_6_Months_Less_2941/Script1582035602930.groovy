@@ -24,6 +24,8 @@ WebUI.waitForElementVisible(findTestObject('Appeal planning decision/a_Start now
 
 WebUI.click(findTestObject('Appeal planning decision/a_Start now'))
 
+WebUI.delay(1)
+
 WebUI.waitForElementVisible(findTestObject('Appeal planning decision/end_User_Question'), 2)
 
 WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(1, 1))
