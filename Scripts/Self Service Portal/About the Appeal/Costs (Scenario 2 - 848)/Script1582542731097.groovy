@@ -26,7 +26,7 @@ WebUI.waitForElementVisible(findTestObject('Costs/question_Costs_Application'), 
 
 WebUI.verifyElementText(findTestObject('Costs/question_Costs_Application'), verData.getValue(1, 111))
 
-WebUI.verifyElementText(findTestObject('Costs/message_HAS_CAS_Appeals'), verData.getValue(1, 117))
+not_run: WebUI.verifyElementText(findTestObject('Costs/message_HAS_CAS_Appeals'), verData.getValue(1, 117))
 
 WebUI.click(findTestObject('Costs/option_Yes_Application_Costs'))
 
