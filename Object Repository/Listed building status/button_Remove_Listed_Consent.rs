@@ -6,17 +6,17 @@
    <elementGuidId>9a4557d6-9449-4445-b534-d2acfae3ecac</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
          <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='fileupload fileupload-exists']//a[@class='govuk-button btn fileupload-exists'][contains(text(),'Remove')]</value>
+         <key>CSS</key>
+         <value>div.govuk-width-container main.govuk-main-wrapper div.govuk-grid-row div.govuk-grid-column-full form.form-horizontal:nth-child(2) div.webform.appform.form-gopro.form-gopro-horizontal:nth-child(1) div.form-page:nth-child(4) fieldset.govuk-fieldset:nth-child(2) div.control-group.govuk-form-group.default-hidden:nth-child(7) div.controls div.fileupload.fileupload-exists:nth-child(2) div.input-append > a.govuk-button.btn.fileupload-exists</value>
       </entry>
       <entry>
          <key>BASIC</key>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>
