@@ -17,14 +17,13 @@ WebUI.click(findTestObject('GoPro UI/Actions Menu/menu_Actions'))
 
 WebUI.waitForElementPresent(findTestObject('GoPro UI/Actions Menu/link_Publish_Final_Comments'), 5)
 
-try 
-{
+try {
     WebUI.click(findTestObject('GoPro UI/Actions Menu/link_Publish_Final_Comments'))
 }
 catch (Exception ex) {
-	
     WebUI.focus(findTestObject('GoPro UI/Actions Menu/link_Publish_Final_Comments'))
-	WebUI.click(findTestObject('GoPro UI/Actions Menu/link_Publish_Final_Comments'))
+
+    WebUI.click(findTestObject('GoPro UI/Actions Menu/link_Publish_Final_Comments'))
 } 
 
 WebUI.waitForElementPresent(findTestObject('GoPro UI/Actions Menu/message_Publish_Questionaire'), 5)

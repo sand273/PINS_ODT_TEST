@@ -78,15 +78,6 @@ WebUI.verifyElementText(findTestObject('Planning Application details/question_Pr
 
 WebUI.click(findTestObject('Planning Application details/option_No_Proposed_Amount_Of_Dwellings'))
 
-WebUI.waitForElementVisible(findTestObject('Planning Application details/message_Development_Description_1'), 2)
-
-WebUI.verifyElementText(findTestObject('Planning Application details/message_Development_Description_1'), verData.getValue(
-        1, 28))
-
-WebUI.setText(findTestObject('Planning Application details/text_Development_Description_1'), testData.getValue(3, 1))
-
-WebUI.delay(1)
-
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Planning Application details/message_Development_Description'), 2)

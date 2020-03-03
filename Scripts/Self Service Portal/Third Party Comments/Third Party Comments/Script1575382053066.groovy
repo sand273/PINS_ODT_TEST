@@ -50,13 +50,13 @@ WebUI.waitForElementVisible(findTestObject('Third Party Comments/message_Comment
 WebUI.waitForElementClickable(findTestObject('Third Party Comments/button_Submit'), 5)
 
 try {
-    WebUI.scrollToPosition(9999999, 9999999)
-
     WebUI.click(findTestObject('Third Party Comments/button_Submit'))
 }
 catch (Exception ex) 
 {
     WebUI.refresh()
+	
+	WebUI.delay(2)
 
 	WebUI.click(findTestObject('Third Party Comments/button_Submit'))
 } 
