@@ -38,7 +38,9 @@ WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('e
 
 WebUI.waitForElementVisible(findTestObject('Other Application Documents/dropdown_Select_Report_Type'), 5)
 
-WebUI.verifyElementText(findTestObject('Other Application Documents/dropdown_Select_Report_Type'), verData.getValue(1, 40))
+def data = WebUI.getText(findTestObject('Other Application Documents/dropdown_Select_Report_Type')).replaceAll('\\s+', '').trim()
+
+WebUI.verifyMatch(data, verData.getValue(1, 40).replaceAll('\\s+', '').trim(), false, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('Other Application Documents/button_Add_Another_File'), 5)
 
