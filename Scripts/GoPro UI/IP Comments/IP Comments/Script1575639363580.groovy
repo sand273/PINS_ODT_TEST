@@ -28,14 +28,6 @@ WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
-not_run: WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/button_External_Documents'), 5)
-
-not_run: WebUI.click(findTestObject('GoPro UI/Case Documents/button_External_Documents'))
-
-not_run: WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/check_External_Documents'), 5)
-
-not_run: WebUI.click(findTestObject('GoPro UI/Case Documents/check_External_Documents'))
-
 WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/link_Folder_LPA_Statement'), 20)
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/input_Search'))

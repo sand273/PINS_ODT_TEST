@@ -62,7 +62,7 @@
       <guid>821eb78d-c5b1-466e-8d4e-9e7e54f7f3e8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About the Site/Listed Building Status (Scenario 4)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About the Site/Listed Building Status (Scenario 4 - 850)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>6a747eca-f9d3-48ba-a130-5d946ec5d051</guid>
