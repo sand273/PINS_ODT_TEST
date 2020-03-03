@@ -290,7 +290,7 @@
       <guid>199831cd-583a-4e13-9caf-2d74ac8d2a80</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Display_Advertisement_Condition_Enforcement_No_6_Months_Less</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Display_Advertisement_Condition_Enforcement_No_6_Months_Less_840</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>5bd2c3c1-7927-4681-8c7d-ef465d9f7aa1</guid>

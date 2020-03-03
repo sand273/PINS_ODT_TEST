@@ -26,7 +26,9 @@ WebUI.waitForElementVisible(findTestObject('Technical Reports/message_Technical_
 
 WebUI.verifyElementText(findTestObject('Technical Reports/message_Technical_Reports'), verData.getValue(1, 62))
 
-WebUI.verifyElementText(findTestObject('Technical Reports/message_Provide_Docs'), verData.getValue(1, 61))
+def data = WebUI.getText(findTestObject('Technical Reports/message_Provide_Docs')).replaceAll('\\s+', '').trim()
+
+WebUI.verifyMatch(data, verData.getValue(1, 61).replaceAll('\\s+', '').trim(), false, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Technical Reports/link_Help_File_Formats'))
 
