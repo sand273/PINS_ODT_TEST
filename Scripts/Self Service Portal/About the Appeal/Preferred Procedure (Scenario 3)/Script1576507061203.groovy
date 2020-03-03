@@ -26,7 +26,9 @@ WebUI.click(findTestObject('Preferred procedure/link_Preferred_Procedure'))
 
 WebUI.waitForElementVisible(findTestObject('Preferred procedure/question_Preferred_Procedure'), 2)
 
-WebUI.verifyElementText(findTestObject('Preferred procedure/message_Preferred_Procedure'), verData.getValue(1, 59))
+def data = WebUI.getText(findTestObject('Preferred procedure/message_Preferred_Procedure')).replaceAll('\\s+', '').trim()
+
+WebUI.verifyMatch(data, verData.getValue(1, 59).replaceAll('\\s+', '').trim(), false, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Preferred procedure/input_Hearing'))
 

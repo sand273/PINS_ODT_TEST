@@ -42,7 +42,9 @@ WebUI.verifyElementText(findTestObject('Check your answers/status_Submit_Appeal'
 
 WebUI.verifyElementText(findTestObject('Check your answers/message_Submit_Appeal'), verData.getValue(1, 69))
 
-WebUI.verifyElementText(findTestObject('Check your answers/message_Appeal_Not_Change'), verData.getValue(1, 70))
+def data = WebUI.getText(findTestObject('Check your answers/message_Appeal_Not_Change')).replaceAll('\\s+', '').trim()
+
+WebUI.verifyMatch(data, verData.getValue(1, 70).replaceAll('\\s+', '').trim(), false, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
 
