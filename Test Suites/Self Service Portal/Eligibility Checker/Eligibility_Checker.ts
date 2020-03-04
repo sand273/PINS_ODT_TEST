@@ -344,7 +344,7 @@
       <guid>e0cac425-a50a-4efc-86dc-9ae13f69a819</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Other_Application_6_Months_Less_852</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Other_Application_6_Months_Less</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>91d3fcdf-a6fb-413f-87f3-e017ec0540a7</guid>
