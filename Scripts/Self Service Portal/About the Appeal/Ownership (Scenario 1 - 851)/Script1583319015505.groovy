@@ -12,11 +12,27 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
-WebUI.openBrowser('')
+def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-WebUI.click(findTestObject('Object Repository/Third Party Comments/Page_Your comments/button_Submit'))
+WebUI.delay(1)
 
-WebUI.closeBrowser()
+WebUI.waitForElementVisible(findTestObject('Ownership/link_Ownership'), 5)
+
+WebUI.click(findTestObject('Ownership/link_Ownership'))
+
+WebUI.waitForElementVisible(findTestObject('Ownership/message_Sole_Owner'), 5)
+
+WebUI.verifyElementText(findTestObject('Ownership/message_Sole_Owner'), verData.getValue(1, 58))
+
+WebUI.verifyElementText(findTestObject('Ownership/message_Appeal_Site'), verData.getValue(1, 98))
+
+WebUI.click(findTestObject('Ownership/input_Yes_Option'))
+
+WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
+
+WebUI.waitForElementVisible(findTestObject('Ownership/status_Complete_Ownership'), 10)
+
+WebUI.verifyElementText(findTestObject('Ownership/status_Complete_Ownership'), 'COMPLETED')
 

@@ -52,5 +52,3 @@ WebUI.verifyElementVisible(findTestObject('Appeal planning decision/button_Appea
 
 WebUI.verifyElementText(findTestObject('Appeal planning decision/list_Confirmation'), verData.getValue(1, 16))
 
-WebUI.closeBrowser()
-
