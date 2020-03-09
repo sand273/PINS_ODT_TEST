@@ -41,12 +41,6 @@
       <testCaseId>Test Cases/Self Service Portal/About Planning Application/Environmental Details</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>499e56bc-49df-494b-a43b-c8af06c9f312</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Planning Refused</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>924fd37e-c316-4e95-8db6-ed18748f0c92</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
