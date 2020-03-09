@@ -65,11 +65,15 @@ WebUI.check(findTestObject('Planning Application details/check_General_Industry'
 
 WebUI.check(findTestObject('Planning Application details/check_Householder'))
 
-WebUI.click(findTestObject('Appeal planning decision/input_No_residential_dwellings'))
+WebUI.click(findTestObject('Planning Application details/option_Yes_Residential_Dwellings'))
 
 WebUI.click(findTestObject('Appeal planning decision/input_Area_Measurement'))
 
 WebUI.click(findTestObject('Appeal planning decision/input_Area_Development'))
+
+WebUI.click(findTestObject('Planning Application details/option_Yes_Proposed_Amount_Of_Dwellings'))
+
+WebUI.setText(findTestObject('Planning Application details/input_Number_Of_Dwellings'), '1')
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 

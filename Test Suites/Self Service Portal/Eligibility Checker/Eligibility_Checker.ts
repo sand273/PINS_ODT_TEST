@@ -338,13 +338,13 @@
       <guid>0d3de275-d770-47ce-828c-c9f2a12dfaf7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Refusal_Listed_Building_6_Months_Less</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Refusal_Listed_Building_6_Months_Less_851</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>e0cac425-a50a-4efc-86dc-9ae13f69a819</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Other_Application_6_Months_Less</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Other_Application_6_Months_Less_852</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>91d3fcdf-a6fb-413f-87f3-e017ec0540a7</guid>
