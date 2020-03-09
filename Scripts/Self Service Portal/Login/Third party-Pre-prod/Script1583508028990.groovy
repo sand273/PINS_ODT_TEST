@@ -16,29 +16,35 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-WebUI.delay(1)
+def testData = TestDataFactory.findTestData('Data Files/User_Profile')
 
-WebUI.waitForElementVisible(findTestObject('The Advertisement/link_Advertisement'), 5)
+WebUI.openBrowser('')
 
-WebUI.click(findTestObject('The Advertisement/link_Advertisement'))
+WebUI.deleteAllCookies()
 
-WebUI.waitForElementVisible(findTestObject('The Advertisement/question_Advertisement'), 5)
+WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('The Advertisement/option_Advert_Yes_Place'))
+WebUI.navigateToUrl(GlobalVariable.URL)
 
-WebUI.waitForElementVisible(findTestObject('The Advertisement/question_Public_Land'), 5)
+WebUI.click(findTestObject('PINS Test GoPro/a_Self Service'))
 
-WebUI.click(findTestObject('The Advertisement/option_Advert_Yes_Land'))
+WebUI.click(findTestObject('Frontpage/input'))
 
-WebUI.waitForElementVisible(findTestObject('The Advertisement/question_Consent'), 5)
+WebUI.waitForElementVisible(findTestObject('Frontpage/link_Login'), 1)
 
-WebUI.verifyElementText(findTestObject('The Advertisement/question_Consent'), verData.getValue(1, 118))
+WebUI.click(findTestObject('Frontpage/link_Login'))
 
-WebUI.click(findTestObject('The Advertisement/option_Advert_Yes_Consent'))
+WebUI.waitForElementVisible(findTestObject('Frontpage/message_User_Name_Entry'), 5)
 
-WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
+WebUI.verifyElementText(findTestObject('Frontpage/message_User_Name_Entry'), verData.getValue(1, 17))
 
-WebUI.waitForElementVisible(findTestObject('The Advertisement/status_Complete'), 10)
+WebUI.setText(findTestObject('Frontpage/input_UserName'), testData.getValue(15, 1))
 
-WebUI.verifyElementText(findTestObject('The Advertisement/status_Complete'), 'COMPLETED')
+WebUI.setEncryptedText(findTestObject('Frontpage/input_Password'), '0cU2R0tWEjl49ICU6OTr2A==')
+
+WebUI.click(findTestObject('Frontpage/button_Login'))
+
+WebUI.waitForElementVisible(findTestObject('User Landing/message_Welcome'), 10)
+
+WebUI.verifyElementText(findTestObject('User Landing/message_Welcome'), verData.getValue(1, 18))
 

@@ -13,5 +13,29 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.delay(50)
+Date today = new Date()
+
+String todaysDate = today.format('dd.MM.yyyy')
+
+WebUI.callTestCase(findTestCase('Self Service Portal/Login/LPA User-Pre-prod'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Complete Questionaire/link_Search'))
+
+WebUI.setText(findTestObject('Complete Questionaire/text_Appeal_Ref'), GlobalVariable.ApplicationRef)
+
+WebUI.click(findTestObject('Complete Questionaire/button_Search'))
+
+WebUI.waitForElementVisible(findTestObject('Submit Statement/label_Match_Found'), 5)
+
+WebUI.click(findTestObject('Complete Questionaire/link_Appeal_Ref'))
+
+WebUI.waitForElementVisible(findTestObject('Final Comments/status_Decision_Issued'), 5)
+
+WebUI.waitForElementVisible(findTestObject('Final Comments/date_Decision_Issued'), 5)
+
+WebUI.verifyElementText(findTestObject('Final Comments/date_Decision_Issued'), todaysDate)
+
+WebUI.verifyElementVisible(findTestObject('Final Comments/link_Appeal_Decision_Doc'))
+
+WebUI.closeBrowser()
 

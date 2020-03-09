@@ -21,7 +21,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'W/4000512'</initValue>
+      <initValue>0</initValue>
+      <name>driverCount</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'W/4001254'</initValue>
       <name>ApplicationRef</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

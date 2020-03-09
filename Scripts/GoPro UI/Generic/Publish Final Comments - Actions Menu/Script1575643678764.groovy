@@ -15,15 +15,15 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.click(findTestObject('GoPro UI/Actions Menu/menu_Actions'))
 
-WebUI.waitForElementPresent(findTestObject('GoPro UI/Actions Menu/link_Publish_Final_Comments'), 5)
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Actions Menu/button_Publish Final Comments'), 10)
 
 try {
-    WebUI.click(findTestObject('GoPro UI/Actions Menu/link_Publish_Final_Comments'))
+    WebUI.click(findTestObject('GoPro UI/Actions Menu/button_Publish Final Comments'))
 }
 catch (Exception ex) {
-    WebUI.focus(findTestObject('GoPro UI/Actions Menu/link_Publish_Final_Comments'))
+    WebUI.focus(findTestObject('GoPro UI/Actions Menu/button_Publish Final Comments'))
 
-    WebUI.click(findTestObject('GoPro UI/Actions Menu/link_Publish_Final_Comments'))
+    WebUI.click(findTestObject('GoPro UI/Actions Menu/button_Publish Final Comments'))
 } 
 
 WebUI.waitForElementPresent(findTestObject('GoPro UI/Actions Menu/message_Publish_Questionaire'), 5)

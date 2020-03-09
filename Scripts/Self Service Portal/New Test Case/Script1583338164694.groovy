@@ -12,6 +12,13 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
-WebUI.delay(50)
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://pins-test.gopro.net/ui/#!/case/open?id=51E788CF-995E-4964-AC17-49E3E19CCAF6')
+
+WebUI.click(findTestObject('null'))
+
+WebUI.closeBrowser()
 
