@@ -14,7 +14,7 @@
       <guid>db615e4d-d7a1-450d-adb0-bea28f8d9cfc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Local_Authority_No_Permission_In_Principle_5_Weeks_More_6_Months_Less_LPA_Yes_2941</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Local_Authority_No_Permission_In_Principle_5_Weeks_More_6_Months_More_LPA_Yes_6_Months_Less_2941</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>119ffaeb-b1b7-4a5d-8f4d-5508a6f26fc0</guid>
