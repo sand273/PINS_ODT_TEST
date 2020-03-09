@@ -64,15 +64,19 @@ WebUI.verifyElementText(findTestObject('Planning Application details/question_Ap
 
 WebUI.check(findTestObject('Planning Application details/check_Change_of_Use'))
 
-WebUI.check(findTestObject('Planning Application details/check_General_Industry'))
+WebUI.waitForElementVisible(findTestObject('Planning Application details/question_Any_Residential_Dwellings'), 2)
 
-WebUI.check(findTestObject('Planning Application details/check_Householder'))
+WebUI.verifyElementText(findTestObject('Planning Application details/question_Any_Residential_Dwellings'), verData.getValue(
+        1, 113))
 
-WebUI.click(findTestObject('Appeal planning decision/input_No_residential_dwellings'))
+WebUI.click(findTestObject('Planning Application details/option_Yes_Residential_Dwellings'))
 
-WebUI.click(findTestObject('Appeal planning decision/input_Area_Measurement'))
+WebUI.waitForElementVisible(findTestObject('Planning Application details/question_Proposed_Number_Dwellings'), 2)
 
-WebUI.click(findTestObject('Appeal planning decision/input_Area_Development'))
+WebUI.verifyElementText(findTestObject('Planning Application details/question_Proposed_Number_Dwellings'), verData.getValue(
+        1, 114))
+
+WebUI.click(findTestObject('Planning Application details/option_No_Proposed_Amount_Of_Dwellings'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
