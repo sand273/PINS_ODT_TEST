@@ -18,8 +18,6 @@ def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 def testData = TestDataFactory.findTestData('Data Files/Preferred_Procedure')
 
-WebUI.delay(1)
-
 WebUI.waitForElementVisible(findTestObject('Preferred procedure/link_Preferred_Procedure'), 5)
 
 WebUI.click(findTestObject('Preferred procedure/link_Preferred_Procedure'))
@@ -46,7 +44,7 @@ WebUI.verifyElementVisible(findTestObject('Preferred procedure/button_Remove_Dra
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Preferred procedure/status_Complete_Preferred'), 5)
+WebUI.waitForElementVisible(findTestObject('Preferred procedure/status_Complete_Preferred'), 10)
 
 WebUI.verifyElementText(findTestObject('Preferred procedure/status_Complete_Preferred'), 'COMPLETED')
 

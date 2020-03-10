@@ -16,25 +16,23 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-WebUI.delay(1)
-
-WebUI.waitForElementVisible(findTestObject('Other Application Documents/link_Other_Documents'), 2)
+WebUI.waitForElementVisible(findTestObject('Other Application Documents/link_Other_Documents'), 5)
 
 WebUI.click(findTestObject('Other Application Documents/link_Other_Documents'))
 
-WebUI.waitForElementVisible(findTestObject('Other Application Documents/message_Technical_Reports'), 3)
+WebUI.waitForElementVisible(findTestObject('Other Application Documents/message_Technical_Reports'), 5)
 
 WebUI.verifyElementText(findTestObject('Other Application Documents/message_Technical_Reports'), verData.getValue(1, 39))
 
 WebUI.click(findTestObject('Other Application Documents/link_Help_File_Formats'))
 
-WebUI.waitForElementVisible(findTestObject('Other Application Documents/list_Help_File_Formats'), 2)
+WebUI.waitForElementVisible(findTestObject('Other Application Documents/list_Help_File_Formats'), 5)
 
 WebUI.verifyElementText(findTestObject('Other Application Documents/list_Help_File_Formats'), verData.getValue(1, 32))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Other Application Documents/status_Complete_Other_Documents'), 5)
+WebUI.waitForElementVisible(findTestObject('Other Application Documents/status_Complete_Other_Documents'), 10)
 
 WebUI.verifyElementText(findTestObject('Other Application Documents/status_Complete_Other_Documents'), 'COMPLETED')
 

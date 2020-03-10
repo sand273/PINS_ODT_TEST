@@ -16,8 +16,6 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-WebUI.delay(1)
-
 WebUI.waitForElementVisible(findTestObject('Ownership/link_Ownership'), 5)
 
 WebUI.click(findTestObject('Ownership/link_Ownership'))
@@ -60,13 +58,13 @@ WebUI.click(findTestObject('Ownership/link_Upload_Notice_File'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Ownership/button_Remove_State_Appeal'), 2)
+WebUI.verifyElementPresent(findTestObject('Ownership/button_Remove_State_Appeal'), 5)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Agricultural_Holding (Scenario 3)'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Ownership/status_Complete_Ownership'), 5)
+WebUI.waitForElementVisible(findTestObject('Ownership/status_Complete_Ownership'), 10)
 
 WebUI.verifyElementText(findTestObject('Ownership/status_Complete_Ownership'), 'COMPLETED')
 

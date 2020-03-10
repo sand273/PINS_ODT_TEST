@@ -28,11 +28,11 @@ WebUI.setText(findTestObject('Complete Questionaire/text_Appeal_Ref'), GlobalVar
 
 WebUI.click(findTestObject('Complete Questionaire/button_Search'))
 
-WebUI.waitForElementVisible(findTestObject('Submit Statement/label_Match_Found'), 2)
+WebUI.waitForElementVisible(findTestObject('Submit Statement/label_Match_Found'), 5)
 
 WebUI.click(findTestObject('Complete Questionaire/link_Appeal_Ref'))
 
-WebUI.waitForElementVisible(findTestObject('Final Comments/status_Final_Comments'), 3)
+WebUI.waitForElementVisible(findTestObject('Final Comments/status_Final_Comments'), 5)
 
 WebUI.verifyElementText(findTestObject('Final Comments/status_Final_Comments'), testData.getValue(1, 10))
 

@@ -16,13 +16,11 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-WebUI.delay(1)
-
-WebUI.waitForElementVisible(findTestObject('Preferred procedure/link_Preferred_Procedure'), 2)
+WebUI.waitForElementVisible(findTestObject('Preferred procedure/link_Preferred_Procedure'), 5)
 
 WebUI.click(findTestObject('Preferred procedure/link_Preferred_Procedure'))
 
-WebUI.waitForElementVisible(findTestObject('Preferred procedure/question_Preferred_Procedure'), 2)
+WebUI.waitForElementVisible(findTestObject('Preferred procedure/question_Preferred_Procedure'), 5)
 
 def data = WebUI.getText(findTestObject('Preferred procedure/message_Preferred_Procedure')).replaceAll('\\s+', '').trim()
 
@@ -32,13 +30,13 @@ WebUI.click(findTestObject('Preferred procedure/option_No_Preference'))
 
 WebUI.click(findTestObject('Preferred procedure/link_Which_Option'))
 
-WebUI.waitForElementVisible(findTestObject('Preferred procedure/frame_Which_Option'), 2)
+WebUI.waitForElementVisible(findTestObject('Preferred procedure/frame_Which_Option'), 5)
 
 WebUI.verifyElementText(findTestObject('Preferred procedure/frame_Which_Option'), verData.getValue(1, 60))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Preferred procedure/status_Complete_Preferred'), 3)
+WebUI.waitForElementVisible(findTestObject('Preferred procedure/status_Complete_Preferred'), 10)
 
 WebUI.verifyElementText(findTestObject('Preferred procedure/status_Complete_Preferred'), 'COMPLETED')
 

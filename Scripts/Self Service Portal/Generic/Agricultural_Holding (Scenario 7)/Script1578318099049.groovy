@@ -44,5 +44,7 @@ WebUI.verifyElementVisible(findTestObject('Planning Application details/button_B
 
 WebUI.verifyElementVisible(findTestObject('Planning Application details/button_Save_Quit'))
 
+WebUI.verifyElementVisible(findTestObject('Ownership/message_Appeal_Alert'))
+
 WebUI.click(findTestObject('Planning Application details/button_Save_Quit'))
 
