@@ -16,8 +16,6 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-WebUI.delay(1)
-
 WebUI.waitForElementVisible(findTestObject('Plans/link_Plans'), 5)
 
 WebUI.click(findTestObject('Plans/link_Plans'))
@@ -38,7 +36,7 @@ WebUI.verifyElementPresent(findTestObject('Plans/button_Remove_File'), 10)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Plans/status_Complete_Plan_details'), 5)
+WebUI.waitForElementVisible(findTestObject('Plans/status_Complete_Plan_details'), 10)
 
 WebUI.verifyElementText(findTestObject('Plans/status_Complete_Plan_details'), 'COMPLETED')
 

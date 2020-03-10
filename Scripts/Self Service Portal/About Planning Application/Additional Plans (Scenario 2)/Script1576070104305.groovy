@@ -17,8 +17,6 @@ import org.openqa.selenium.Keys as Keys
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-WebUI.delay(1)
-
 WebUI.waitForElementVisible(findTestObject('Additional Plans/link_Additional_Plans'), 20)
 
 WebUI.click(findTestObject('Additional Plans/link_Additional_Plans'))

@@ -16,8 +16,6 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-WebUI.delay(1)
-
 WebUI.waitForElementVisible(findTestObject('Check your answers/link_Check_Answers'), 5)
 
 WebUI.click(findTestObject('Check your answers/link_Check_Answers'))
@@ -29,4 +27,6 @@ WebUI.verifyElementText(findTestObject('Check your answers/message_Check_Answers
 WebUI.verifyElementNotVisible(findTestObject('Check your answers/button_Save_Continue'))
 
 WebUI.verifyElementVisible(findTestObject('Check your answers/button_Save_Quit'))
+
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 

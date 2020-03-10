@@ -18,13 +18,11 @@ def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 def testData = TestDataFactory.findTestData('Data Files/Other_Appeals')
 
-WebUI.delay(1)
-
-WebUI.waitForElementVisible(findTestObject('Other Appeals/link_Other_Appeals'), 2)
+WebUI.waitForElementVisible(findTestObject('Other Appeals/link_Other_Appeals'), 5)
 
 WebUI.click(findTestObject('Other Appeals/link_Other_Appeals'))
 
-WebUI.waitForElementVisible(findTestObject('Other Appeals/question_Another_Appeal'), 3)
+WebUI.waitForElementVisible(findTestObject('Other Appeals/question_Another_Appeal'), 5)
 
 WebUI.verifyElementText(findTestObject('Other Appeals/question_Another_Appeal'), verData.getValue(1, 52))
 
@@ -34,7 +32,7 @@ WebUI.setText(findTestObject('Other Appeals/input_Appeal_Reference'), testData.g
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Other Appeals/question_Submit_Another_Appeal'), 3)
+WebUI.waitForElementVisible(findTestObject('Other Appeals/question_Submit_Another_Appeal'), 5)
 
 WebUI.verifyElementText(findTestObject('Other Appeals/question_Submit_Another_Appeal'), verData.getValue(1, 53))
 
@@ -42,7 +40,7 @@ WebUI.click(findTestObject('Other Appeals/option_Submit_Another_Appeal_Yes'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Other Appeals/status_Complete_Another_Appeal'), 3)
+WebUI.waitForElementVisible(findTestObject('Other Appeals/status_Complete_Another_Appeal'), 10)
 
 WebUI.verifyElementText(findTestObject('Other Appeals/status_Complete_Another_Appeal'), 'COMPLETED')
 

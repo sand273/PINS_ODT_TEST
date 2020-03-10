@@ -16,13 +16,11 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-WebUI.delay(1)
-
-WebUI.waitForElementVisible(findTestObject('Other Appeal Information/link_Other_Appeal_Information'), 2)
+WebUI.waitForElementVisible(findTestObject('Other Appeal Information/link_Other_Appeal_Information'), 5)
 
 WebUI.click(findTestObject('Other Appeal Information/link_Other_Appeal_Information'))
 
-WebUI.waitForElementVisible(findTestObject('Other Appeal Information/message_Upload_documents'), 2)
+WebUI.waitForElementVisible(findTestObject('Other Appeal Information/message_Upload_documents'), 5)
 
 WebUI.verifyElementText(findTestObject('Other Appeal Information/message_Upload_documents'), verData.getValue(1, 63))
 
@@ -30,7 +28,7 @@ WebUI.verifyElementText(findTestObject('Other Appeal Information/message_provide
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Other Appeal Information/status_Complete_Other_Information'), 3)
+WebUI.waitForElementVisible(findTestObject('Other Appeal Information/status_Complete_Other_Information'), 10)
 
 WebUI.verifyElementText(findTestObject('Other Appeal Information/status_Complete_Other_Information'), 'COMPLETED')
 

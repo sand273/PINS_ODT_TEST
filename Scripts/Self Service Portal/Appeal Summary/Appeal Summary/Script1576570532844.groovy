@@ -20,8 +20,6 @@ def siteData = TestDataFactory.findTestData('Data Files/Site_Details')
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-WebUI.delay(1)
-
 WebUI.waitForElementVisible(findTestObject('Appeal Summary/status_Submitted'), 5)
 
 WebUI.verifyElementAttributeValue(findTestObject('Appeal Summary/heading_Application_Ref'), 'innerText', GlobalVariable.ApplicationRef, 
@@ -37,11 +35,5 @@ WebUI.verifyElementText(findTestObject('Appeal Summary/links_Appeal_Action'), ve
 
 WebUI.verifyElementText(findTestObject('Appeal Summary/links_Appeal_Data'), verData.getValue(1, 76))
 
-WebUI.waitForElementClickable(findTestObject('Appeal Summary/link_Logout'), 5)
-
-WebUI.click(findTestObject('Appeal Summary/link_Logout'))
-
-WebUI.waitForElementVisible(findTestObject('Frontpage/message_User_Login'), 5)
-
-WebUI.closeBrowser()
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 

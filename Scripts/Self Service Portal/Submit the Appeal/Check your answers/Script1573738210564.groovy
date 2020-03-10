@@ -16,8 +16,6 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-WebUI.delay(1)
-
 WebUI.waitForElementVisible(findTestObject('Check your answers/link_Check_Answers'), 5)
 
 WebUI.click(findTestObject('Check your answers/link_Check_Answers'))
@@ -46,7 +44,7 @@ def data = WebUI.getText(findTestObject('Check your answers/message_Appeal_Not_C
 
 WebUI.verifyMatch(data, verData.getValue(1, 70).replaceAll('\\s+', '').trim(), false, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(1)
+WebUI.waitForElementClickable(findTestObject('Check your answers/button_Ready_to_Submit'), 5)
 
 WebUI.click(findTestObject('Check your answers/button_Ready_to_Submit'))
 

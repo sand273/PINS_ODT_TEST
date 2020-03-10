@@ -99,7 +99,7 @@ WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Appeal planning decision/msessage_grant_Permission'), 5)
 
-WebUI.verifyElementText(findTestObject('Appeal planning decision/msessage_grant_Permission'), verData.getValue(1, 119))
+WebUI.verifyElementText(findTestObject('Appeal planning decision/msessage_grant_Permission'), verData.getValue(1, 120))
 
 WebUI.click(findTestObject('Planning Application details/button_Permission_Principle'))
 

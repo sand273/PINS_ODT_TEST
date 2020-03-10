@@ -16,8 +16,6 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-WebUI.delay(1)
-
 WebUI.waitForElementVisible(findTestObject('Plans/link_Plans'), 20)
 
 WebUI.click(findTestObject('Plans/link_Plans'))
@@ -42,7 +40,7 @@ WebUI.click(findTestObject('Plans/button_Select_File_1'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Jpeg_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Plans/button_Add_Plan_Document'), 2)
+WebUI.waitForElementVisible(findTestObject('Plans/button_Add_Plan_Document'), 5)
 
 WebUI.click(findTestObject('Plans/button_Add_Plan_Document'))
 
@@ -50,7 +48,7 @@ WebUI.click(findTestObject('Plans/button_Select_File_2'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Jpeg_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Plans/button_Add_Plan_Document'), 2)
+WebUI.waitForElementVisible(findTestObject('Plans/button_Add_Plan_Document'), 5)
 
 WebUI.click(findTestObject('Plans/button_Add_Plan_Document'))
 
@@ -58,7 +56,7 @@ WebUI.click(findTestObject('Plans/button_Select_File_3'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Plans/button_Add_Plan_Document'), 2)
+WebUI.waitForElementVisible(findTestObject('Plans/button_Add_Plan_Document'), 5)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
