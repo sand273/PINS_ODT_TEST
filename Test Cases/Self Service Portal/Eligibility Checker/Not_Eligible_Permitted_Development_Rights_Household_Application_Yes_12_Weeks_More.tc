@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Area 3 Lucid chart 1.0 to 1.1 difference</description>
-   <name>Not_Eligible_Permitted_Development_Rights_6_Months_More</name>
+   <name>Not_Eligible_Permitted_Development_Rights_Household_Application_Yes_12_Weeks_More</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>40fdb4d8-7828-4502-b8bb-86b78e414e58</testCaseGuid>
+   <testCaseGuid>86d5f3be-856d-4eb9-b932-d470df1126aa</testCaseGuid>
 </TestCaseEntity>
