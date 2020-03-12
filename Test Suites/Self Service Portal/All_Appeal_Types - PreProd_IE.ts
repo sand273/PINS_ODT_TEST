@@ -726,5 +726,41 @@
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Self Service Portal/2945 Appeal/Appeal_Form_Scenario_7</testSuiteEntity>
       </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Web Desktop</groupName>
+            <profileName>pre-prod</profileName>
+            <runConfigurationId>IE</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Self Service Portal/2826 Appeal/Appeal_Form_Scenario_1</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Web Desktop</groupName>
+            <profileName>pre-prod</profileName>
+            <runConfigurationId>IE</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Self Service Portal/2826 Appeal/Appeal_Form_Scenario_2</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Web Desktop</groupName>
+            <profileName>pre-prod</profileName>
+            <runConfigurationId>IE</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Self Service Portal/2826 Appeal/Appeal_Form_Scenario_3</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Web Desktop</groupName>
+            <profileName>pre-prod</profileName>
+            <runConfigurationId>IE</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Self Service Portal/2826 Appeal/Appeal_Form_Scenario_4</testSuiteEntity>
+      </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>

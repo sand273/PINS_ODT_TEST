@@ -19,8 +19,6 @@ def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 def testData = TestDataFactory.findTestData('Data Files/Planning_Refused')
 
-WebUI.delay(1)
-
 WebUI.waitForElementVisible(findTestObject('Planning Refused/link_Planning_Refused'), 20)
 
 WebUI.click(findTestObject('Planning Refused/link_Planning_Refused'))
