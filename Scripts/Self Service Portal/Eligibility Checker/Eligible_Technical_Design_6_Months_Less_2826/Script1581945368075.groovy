@@ -32,7 +32,7 @@ WebUI.click(findTestObject('Appeal planning decision/button_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Appeal planning decision/end_User_Question'), 2)
 
-not_run: WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(1, 78))
+WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(1, 121))
 
 WebUI.waitForElementClickable(findTestObject('Appeal planning decision/input_Day'), 1)
 
@@ -51,6 +51,4 @@ WebUI.verifyElementText(findTestObject('Appeal planning decision/eligibility_Con
 WebUI.verifyElementVisible(findTestObject('Appeal planning decision/button_Appeal_Now'))
 
 WebUI.verifyElementText(findTestObject('Appeal planning decision/list_Confirmation'), verData.getValue(1, 16))
-
-WebUI.closeBrowser()
 
