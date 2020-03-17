@@ -31,7 +31,7 @@ WebUI.click(findTestObject('Appeal planning decision/button_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Appeal planning decision/end_User_Question'), 2)
 
-not_run: WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(1, 90))
+WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(1, 90))
 
 WebUI.click(findTestObject('Appeal planning decision/option_Refused_Permission_To_Display_An_Advert'))
 

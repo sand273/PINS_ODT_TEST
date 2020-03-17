@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_LPA_Original</name>
+   <name>link_Help_Format</name>
    <tag></tag>
-   <elementGuidId>9ae2decb-9169-47be-b728-eb07df72578f</elementGuidId>
+   <elementGuidId>5385dc05-46d9-484b-8cc5-e0c42bfc2ae3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='File.LPAOriginalPlanningDecision']</value>
+         <value>/html[1]/body[1]/div[1]/main[1]/div[1]/div[2]/form[1]/div[1]/div[2]/fieldset[1]/div[10]/div[1]/details[1]/summary[1]/span[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

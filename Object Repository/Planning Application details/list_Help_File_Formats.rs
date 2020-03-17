@@ -6,12 +6,13 @@
    <elementGuidId>60b468b3-f19d-45cb-a035-5fda7e9961ad</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@class = 'govuk-details__text']</value>
+         <key>XPATH</key>
+         <value>/html[1]/body[1]/div[1]/main[1]/div[1]/div[2]/form[1]/div[1]/div[2]/fieldset[@id='section-Planning.Details']/div[contains(@style,'block')]/div[1]/details[1]/div[1]
+</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>/html[1]/body[1]/div[1]/main[1]/div[1]/div[2]/form[1]/div[1]/div[2]/fieldset[@id='section-Planning.Details']/div[contains(@style,'block')]/div[1]/details[1]/div[1]</value>
+         <key>BASIC</key>
+         <value>//*[@class = 'govuk-details__text']</value>
       </entry>
       <entry>
          <key>CSS</key>

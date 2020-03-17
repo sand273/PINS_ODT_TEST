@@ -13,6 +13,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
@@ -32,7 +34,8 @@ WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Planning Application details/question_Name_Original_Application'), 5)
 
-WebUI.verifyElementText(findTestObject('Planning Application details/question_Name_Original_Application'), verData.getValue(1, 24))
+WebUI.verifyElementText(findTestObject('Planning Application details/question_Name_Original_Application'), verData.getValue(
+        1, 24))
 
 WebUI.setText(findTestObject('Planning Application details/text_Name_Application'), testData.getValue(1, 1))
 
@@ -96,11 +99,11 @@ WebUI.check(findTestObject('Planning Application details/option_No_Description_C
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Appeal planning decision/msessage_grant_Permission'), 5)
+WebUI.waitForElementVisible(findTestObject('Appeal planning decision/message_Grant_Permission'), 5)
 
-WebUI.verifyElementText(findTestObject('Appeal planning decision/msessage_grant_Permission'), verData.getValue(1, 120))
+WebUI.verifyElementText(findTestObject('Appeal planning decision/message_Grant_Permission'), verData.getValue(1, 120))
 
-WebUI.click(findTestObject('Planning Application details/button_Permission_Principle'))
+WebUI.click(findTestObject('Planning Application details/label_Permission_Principle'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 

@@ -6,17 +6,17 @@
    <elementGuidId>48299fed-77ad-466f-8a96-e48eadb7eb1d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>
-
-</value>
+         <key>XPATH</key>
+         <value>/html[1]/body[1]/div[1]/main[1]/div[1]/div[2]/form[1]/div[1]/div[2]/fieldset[1]/div[51]/div[1]/details[1]/summary[1]/span[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//fieldset[@id='section-Planning.Details']//span[@class='govuk-details__summary-text'][contains(text(),'Help with file formats')]</value>
+         <key>CSS</key>
+         <value>
+
+</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

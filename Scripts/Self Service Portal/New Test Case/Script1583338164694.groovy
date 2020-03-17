@@ -13,12 +13,14 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://pins-test.gopro.net/ui/#!/case/open?id=51E788CF-995E-4964-AC17-49E3E19CCAF6')
+WebUI.navigateToUrl('https://pins-test.gopro.net/')
+
+WebUI.click(findTestObject('Page_Appeal a planning decision/span_Help with file formats'))
 
 WebUI.click(findTestObject('null'))
-
-WebUI.closeBrowser()
 
