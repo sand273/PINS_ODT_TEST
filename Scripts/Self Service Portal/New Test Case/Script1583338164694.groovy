@@ -18,9 +18,3 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://pins-test.gopro.net/')
-
-WebUI.click(findTestObject('Page_Appeal a planning decision/span_Help with file formats'))
-
-WebUI.click(findTestObject('null'))
-

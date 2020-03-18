@@ -34,7 +34,7 @@ import com.kms.katalon.core.annotation.TearDownTestCase
 @SetUp(skipped = false) // Please change skipped to be false to activate this method.
 def setUp() {
 	// Put your code here.
-	CustomKeywords.'custom.WriteExcel.clearValues'("C:\\Katalon\\Data-Files\\AppealNumbers.xlsx", "Appeals")
+	//CustomKeywords.'custom.WriteExcel.clearValues'("C:\\Katalon\\Data-Files\\AppealNumbers.xlsx", "Appeals")
 }
 
 /**
