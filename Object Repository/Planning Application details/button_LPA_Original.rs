@@ -6,11 +6,11 @@
    <elementGuidId>9ae2decb-9169-47be-b728-eb07df72578f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='File.LPAOriginalPlanningDecision']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
