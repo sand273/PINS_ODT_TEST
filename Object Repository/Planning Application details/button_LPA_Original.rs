@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='File.LPAOriginalPlanningDecision']</value>
+         <value>//label[@for='File.LPAOriginalPlanningDecision']</value>
       </entry>
       <entry>
          <key>BASIC</key>
