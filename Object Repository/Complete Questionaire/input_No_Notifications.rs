@@ -6,12 +6,11 @@
    <elementGuidId>f4b1663d-f320-474e-abc2-c382d9853840</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='radio-Notifications.Actions-2']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[12]//fieldset[1]//div[1]//div[1]//div[1]//div[2]//input[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

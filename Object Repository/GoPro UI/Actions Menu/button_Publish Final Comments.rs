@@ -6,22 +6,16 @@
    <elementGuidId>1215a74c-acfb-4618-a048-da0a12e4f09e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[contains(@class,'tab-pane ng-scope active')]//li[10]//button[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'actionmenu.publishFinalComments' and (text() = '
-            Publish Final Comments
-              
-            ' or . = '
-            Publish Final Comments
-              
-            ')]</value>
+         <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//span[contains(text(),'Publish Final Comments')]</value>
+         <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

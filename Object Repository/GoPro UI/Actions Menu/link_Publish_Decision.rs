@@ -6,11 +6,16 @@
    <elementGuidId>3434b23f-8615-4b1e-8307-31a52f358c40</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[contains(@class,'tab-pane ng-scope active')]//li[10]//button[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='col-sm-4']//button[@id='actionmenu.publishDecision']</value>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

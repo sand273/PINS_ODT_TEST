@@ -18,3 +18,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 WebUI.openBrowser('')
 
+WebUI.click(findTestObject('null'))
+
+WebUI.closeBrowser()
+
