@@ -6,12 +6,11 @@
    <elementGuidId>08d737c3-cecd-41c1-acfc-11b797f1da21</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//label[@for='File.Evidence']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='File.Evidence']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -121,7 +121,7 @@ WebUI.waitForElementVisible(findTestObject('Planning Application details/message
 WebUI.verifyElementText(findTestObject('Planning Application details/message_Upload_Application_Form'), verData.getValue(
         1, 30))
 
-WebUI.click(findTestObject('Planning Application details/link_Help_Format_Planning'))
+WebUI.click(findTestObject('Planning Application details/link_Help_File_Format'))
 
 WebUI.waitForElementVisible(findTestObject('Planning Application details/list_Help_Format_Planning'), 5)
 
