@@ -65,12 +65,6 @@
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Conditions_Outline_Planning_Conditions_Enforcement_Notice_No_6_Months_Less_843</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>f8946e90-8032-40da-a311-5361db4b2aee</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_Extension_No_Full_Planning_Enforcement_Yes</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>900e558a-e795-421d-85ee-73ae6df85421</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -213,6 +207,12 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Permitted_Development_Rights_Household_Application_Yes_12_Weeks_Less_3567</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f8946e90-8032-40da-a311-5361db4b2aee</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Household_Extension_No_Full_Planning_Enforcement_Yes</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>804eaf47-aef9-4821-b7ed-1c81e0a65836</guid>
