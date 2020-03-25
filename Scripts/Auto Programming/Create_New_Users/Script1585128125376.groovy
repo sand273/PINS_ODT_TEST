@@ -15,6 +15,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+def rowsOnSpreadsheet = findTestData('Auto_Programming_Data').getRowNumbers()
+
+def testData = findTestData('Auto_Programming_Data')
+
+def i = 1
+
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.URL)
@@ -45,53 +51,59 @@ WebUI.waitForElementVisible(findTestObject('Auto Programming/tab_Setup'), 5)
 
 WebUI.click(findTestObject('Auto Programming/tab_Setup'))
 
-WebUI.waitForElementVisible(findTestObject('Auto Programming/td_Auto_Programming'), 5)
+for (def index : (i..rowsOnSpreadsheet)) {
+    WebUI.switchToWindowIndex(0)
 
-WebUI.click(findTestObject('Auto Programming/td_Auto_Programming'))
+    WebUI.waitForElementVisible(findTestObject('Auto Programming/td_Auto_Programming'), 5)
 
-WebUI.waitForElementVisible(findTestObject('Auto Programming/button_Create'), 5)
+    WebUI.click(findTestObject('Auto Programming/td_Auto_Programming'))
 
-WebUI.click(findTestObject('Auto Programming/button_Create'))
+    WebUI.waitForElementVisible(findTestObject('Auto Programming/button_Create'), 5)
 
-WebUI.waitForElementVisible(findTestObject('Auto Programming/button_New_User'), 5)
+    WebUI.click(findTestObject('Auto Programming/button_Create'))
 
-WebUI.click(findTestObject('Auto Programming/button_New_User'))
+    WebUI.waitForElementVisible(findTestObject('Auto Programming/button_New_User'), 5)
 
-WebUI.switchToWindowIndex(1)
+    WebUI.click(findTestObject('Auto Programming/button_New_User'))
 
-WebUI.waitForElementVisible(findTestObject('Auto Programming/input_Full_Name'), 5)
+    WebUI.switchToWindowIndex(1)
 
-WebUI.setText(findTestObject('Auto Programming/input_Full_Name'), 'DarrenTest2')
+    WebUI.waitForElementVisible(findTestObject('Auto Programming/input_Full_Name'), 5)
 
-WebUI.setText(findTestObject('Auto Programming/input_Username'), 'DarrenTest2')
+    WebUI.setText(findTestObject('Auto Programming/input_Full_Name'), testData.getValue('Full name', i))
 
-WebUI.setText(findTestObject('Auto Programming/input_Password'), '17Farmlees')
+    WebUI.setText(findTestObject('Auto Programming/input_Username'), testData.getValue('Username', i))
 
-WebUI.setText(findTestObject('Auto Programming/input_Email'), 'Test1@test1.com')
+    WebUI.setEncryptedText(findTestObject('Auto Programming/input_Password'), '0cU2R0tWEjl49ICU6OTr2A==')
 
-WebUI.setText(findTestObject('Auto Programming/input_Postion'), 'APTest3')
+    WebUI.setText(findTestObject('Auto Programming/input_Email'), testData.getValue('Email', i))
 
-WebUI.click(findTestObject('Auto Programming/button_Search_Roles'), FailureHandling.STOP_ON_FAILURE)
+    WebUI.setText(findTestObject('Auto Programming/input_Postion'), testData.getValue('Position', i))
 
-WebUI.waitForElementVisible(findTestObject('Auto Programming/table_Roles'), 5)
+    WebUI.click(findTestObject('Auto Programming/button_Search_Roles'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('Auto Programming/table_Roles'), 'Inspector', false)
+    WebUI.waitForElementVisible(findTestObject('Auto Programming/table_Roles'), 5)
 
-WebUI.click(findTestObject('Auto Programming/button_Roles_OK'), FailureHandling.STOP_ON_FAILURE)
+    WebUI.selectOptionByLabel(findTestObject('Auto Programming/table_Roles'), 'Inspector', false)
 
-WebUI.waitForElementVisible(findTestObject('Auto Programming/tab_Allocation'), 5)
+    WebUI.click(findTestObject('Auto Programming/button_Roles_OK'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Auto Programming/tab_Allocation'), FailureHandling.STOP_ON_FAILURE)
+    WebUI.waitForElementVisible(findTestObject('Auto Programming/tab_Allocation'), 5)
 
-WebUI.waitForElementVisible(findTestObject('Auto Programming/input_Postcode'), 5)
+    WebUI.click(findTestObject('Auto Programming/tab_Allocation'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Auto Programming/input_Postcode'), 'GL12 8JA')
+    WebUI.waitForElementVisible(findTestObject('Auto Programming/input_Postcode'), 5)
 
-WebUI.setText(findTestObject('Auto Programming/input_Band'), '1')
+    WebUI.setText(findTestObject('Auto Programming/input_Postcode'), testData.getValue('Postcode', i))
 
-WebUI.setText(findTestObject('Auto Programming/input_Grade'), 'F')
+    WebUI.setText(findTestObject('Auto Programming/input_Band'), testData.getValue('Band', i))
 
-WebUI.click(findTestObject('Auto Programming/button_Save_And_Close'))
+    WebUI.setText(findTestObject('Auto Programming/input_Grade'), testData.getValue('Grade', i))
+
+    WebUI.click(findTestObject('Auto Programming/button_Save_And_Close'))
+
+    i++
+}
 
 WebUI.closeBrowser()
 
