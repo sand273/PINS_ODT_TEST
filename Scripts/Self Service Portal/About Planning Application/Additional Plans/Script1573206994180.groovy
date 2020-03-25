@@ -14,6 +14,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
@@ -25,15 +27,11 @@ WebUI.waitForElementVisible(findTestObject('Additional Plans/question_LPA_Plans'
 
 WebUI.verifyElementText(findTestObject('Additional Plans/question_LPA_Plans'), verData.getValue(1, 37))
 
-WebUI.click(findTestObject('Additional Plans/input_No_DifferentPlans'))
+WebUI.click(findTestObject('Additional Plans/question_LPA_Plans'))
 
-WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Additional Plans/question_Other_Plans'), 5)
-
-WebUI.verifyElementText(findTestObject('Additional Plans/question_Other_Plans'), verData.getValue(1, 38))
-
-WebUI.click(findTestObject('Additional Plans/input_No_PlansOtherRelevant'))
+WebUI.waitForElementVisible(findTestObject('Additional Plans/button_Remove_Doc'), 5)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 

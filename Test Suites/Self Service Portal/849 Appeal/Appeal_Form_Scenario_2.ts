@@ -44,7 +44,7 @@
       <guid>9f78aac2-54d3-48c6-bd32-0c66f73a0a66</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Other Submitted Documents (Scenario 2 - 845)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Other Submitted Documents (Scenario 2)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>c03f1db7-0f6f-4440-88a2-101ee0b29d8a</guid>

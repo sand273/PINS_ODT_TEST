@@ -17,10 +17,6 @@ Date issueDate
 
 Date today = new Date()
 
-use(groovy.time.TimeCategory, { 
-        issueDate = (today + 11.weeks)
-    })
-
 WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -28,7 +24,7 @@ WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureH
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Decision_Issued'), 'defaultSelected', 'true', 
     5)
 
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Decision_Issued'), 'value', issueDate.format(
+WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Decision_Issued'), 'value', today.format(
         'dd/MM/yyyy').toString(), 1)
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/button_Save'))

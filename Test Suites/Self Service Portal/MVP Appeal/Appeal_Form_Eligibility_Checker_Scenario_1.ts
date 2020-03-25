@@ -65,10 +65,16 @@
       <testCaseId>Test Cases/Self Service Portal/About Planning Application/Additional Plans</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>755fe63e-1c33-4de1-a2b2-fd0f837db1bb</guid>
+      <guid>b12442af-f9e3-40fe-8f0e-98088eb47f5d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Other Application Documents</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Application Technical Reports</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1d9eaf6d-424f-48d1-9ab5-0e8f3e64d730</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Other Submitted Documents (Scenario 1)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>e39f9fa8-09e9-4d97-9b33-6a3230eecb41</guid>
@@ -119,16 +125,10 @@
       <testCaseId>Test Cases/Self Service Portal/About the Appeal/Preferred procedure</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>b12442af-f9e3-40fe-8f0e-98088eb47f5d</guid>
+      <guid>755fe63e-1c33-4de1-a2b2-fd0f837db1bb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Technical Reports</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>446f6a05-a0e4-46f2-a2a8-aa297850994c</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Other Relevant Appeal Information</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Technical Reports Post Decision</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>91efdf24-a119-4d8c-95b8-58134be24c86</guid>
@@ -159,5 +159,11 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Appeal Summary/Appeal Summary</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>00a451ff-9641-4b81-a72a-682b75dee741</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Other Relevant Appeal Information</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

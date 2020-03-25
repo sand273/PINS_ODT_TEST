@@ -14,13 +14,13 @@
       <guid>aa0ae59b-59be-4bd0-9b71-4f03c0948699</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/GoPro UI/Appeal Process/Case Started</testCaseId>
+      <testCaseId>Test Cases/GoPro UI/Appeal Process/Case Start - Hearing</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>961af669-3408-42e6-90ea-a92c9a9810a7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/GoPro UI/Appeal Process/Verify Timeline</testCaseId>
+      <testCaseId>Test Cases/GoPro UI/Appeal Process/Verify Timeline - Hearing</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>8d8ff628-4847-4052-89c3-51b4c75b99ac</guid>
