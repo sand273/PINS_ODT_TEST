@@ -15,3 +15,26 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+def planData = TestDataFactory.findTestData('Data Files/Planning_Details')
+
+def siteData = TestDataFactory.findTestData('Data Files/Site_Details')
+
+def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
+
+WebUI.waitForElementVisible(findTestObject('Appeal Summary/status_Submitted'), 5)
+
+WebUI.verifyElementAttributeValue(findTestObject('Appeal Summary/heading_Application_Ref'), 'innerText', GlobalVariable.ApplicationRef, 
+    0)
+
+WebUI.verifyElementText(findTestObject('Appeal Summary/status_Submitted'), verData.getValue(1, 77))
+
+WebUI.verifyElementText(findTestObject('Appeal Summary/label_Appellant_Name'), planData.getValue(1, 1))
+
+WebUI.verifyElementText(findTestObject('Appeal Summary/label_Application_Ref'), planData.getValue(2, 1))
+
+WebUI.verifyElementText(findTestObject('Appeal Summary/links_Appeal_Action'), verData.getValue(1, 75))
+
+WebUI.verifyElementText(findTestObject('Appeal Summary/links_Appeal_Data'), verData.getValue(1, 76))
+
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+
