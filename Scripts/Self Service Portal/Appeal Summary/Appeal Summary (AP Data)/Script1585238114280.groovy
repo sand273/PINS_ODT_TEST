@@ -22,5 +22,7 @@ def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 WebUI.waitForElementVisible(findTestObject('Appeal Summary/status_Submitted'), 5)
 
+WebUI.verifyElementText(findTestObject('Appeal Summary/status_Submitted'), verData.getValue(1, 77))
+
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 

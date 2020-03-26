@@ -22,10 +22,6 @@ WebUI.click(findTestObject('Plans/link_Plans'))
 
 WebUI.waitForElementVisible(findTestObject('Plans/message_Plan document'), 5)
 
-WebUI.click(findTestObject('Plans/link_Help_File_Formats'))
-
-WebUI.waitForElementVisible(findTestObject('Plans/list_Help_File_Formats'), 5)
-
 WebUI.click(findTestObject('Plans/button_Select_File'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)

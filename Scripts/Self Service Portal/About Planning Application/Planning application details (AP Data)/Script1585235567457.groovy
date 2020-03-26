@@ -68,10 +68,6 @@ WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Planning Application details/message_Upload_Application_Form'), 2)
 
-WebUI.click(findTestObject('Planning Application details/link_Help_File_Format'))
-
-WebUI.waitForElementVisible(findTestObject('Planning Application details/list_Help_File_Formats'), 2)
-
 WebUI.click(findTestObject('Planning Application details/button_Application_Form'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
@@ -79,10 +75,6 @@ WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('e
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Planning Application details/message_LPA_Decision_Notice'), 3)
-
-WebUI.click(findTestObject('Planning Application details/link_Help_Format_LPA'))
-
-WebUI.waitForElementVisible(findTestObject('Planning Application details/list_Help_Formats_LPA_Notice'), 2)
 
 WebUI.click(findTestObject('Planning Application details/button_LPA_Notice'))
 

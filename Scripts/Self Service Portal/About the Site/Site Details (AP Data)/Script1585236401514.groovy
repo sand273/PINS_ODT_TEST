@@ -37,7 +37,7 @@ WebUI.delay(1)
 
 WebUI.waitForElementClickable(findTestObject('Site Details/dropdown_Select address'), 5)
 
-WebUI.selectOptionByIndex(findTestObject('Site Details/dropdown_Select address'), 0, FailureHandling.STOP_ON_FAILURE)
+WebUI.selectOptionByIndex(findTestObject('Site Details/dropdown_Select address'), 1, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
