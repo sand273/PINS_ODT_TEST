@@ -12,28 +12,27 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-WebUI.waitForElementVisible(findTestObject('Planning Refused/link_Planning_Refused'), 2)
+WebUI.waitForElementVisible(findTestObject('Check your answers/link_Check_Answers'), 5)
 
-WebUI.click(findTestObject('Planning Refused/link_Planning_Refused'))
+WebUI.click(findTestObject('Check your answers/link_Check_Answers'))
 
-WebUI.waitForElementVisible(findTestObject('Planning Refused/question_Planning_Refused'), 2)
+WebUI.waitForElementVisible(findTestObject('Check your answers/message_Check_Answers'), 5)
 
-WebUI.verifyElementText(findTestObject('Planning Refused/frame_Reasons_CheckBoxes'), verData.getValue(1, 36))
+WebUI.scrollToElement(findTestObject('Check your answers/button_Save_Continue'), 5)
 
-WebUI.click(findTestObject('Planning Refused/input_Select all reasons'))
+WebUI.delay(1)
 
-WebUI.click(findTestObject('Planning Refused/input_Affordable housing_RefusalReasons'))
+WebUI.waitForElementClickable(findTestObject('Check your answers/button_Save_Continue'), 5)
 
-not_run: WebUI.click(findTestObject('Planning Refused/input_Agricultural need_RefusalReasons'))
+WebUI.click(findTestObject('Check your answers/button_Save_Continue'))
 
-WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
+WebUI.waitForElementVisible(findTestObject('Check your answers/message_Check_Progress'), 5)
 
-WebUI.waitForElementVisible(findTestObject('Planning Refused/status_Completed_Refusal'), 10)
+WebUI.waitForElementClickable(findTestObject('Check your answers/button_Ready_to_Submit'), 5)
 
-WebUI.verifyElementText(findTestObject('Planning Refused/status_Completed_Refusal'), 'COMPLETED')
+WebUI.click(findTestObject('Check your answers/button_Ready_to_Submit'))
 

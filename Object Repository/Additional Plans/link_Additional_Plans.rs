@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//td[@class='govuk-table__cell']//a[contains(text(),'Additional Plans')]</value>
+         <value>//td[@class='govuk-table__cell']//a[contains(text(),'Additional plans')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
