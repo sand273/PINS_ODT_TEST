@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>question_LPA_Plans</name>
+   <name>link_Application_Technical_Reports</name>
    <tag></tag>
-   <elementGuidId>ec4939cb-cf66-47f8-aa74-8c0f7dfffc8c</elementGuidId>
+   <elementGuidId>a1af906e-4e6e-48a2-baf9-f003f106c063</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//label[contains(text(),'Did you submit any plans to the LPA that are diffe')] | //label[contains(text(),'If you submitted any plans that differ from those')]</value>
+         <value>//td[@class='govuk-table__cell']//a[contains(text(),'Application technical reports')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

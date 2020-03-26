@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>question_LPA_Plans</name>
+   <name>status_Complete_Technical_Reports_Post_Decision</name>
    <tag></tag>
-   <elementGuidId>ec4939cb-cf66-47f8-aa74-8c0f7dfffc8c</elementGuidId>
+   <elementGuidId>78fb5579-58cf-45e0-b5c7-3989d36ac013</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//label[contains(text(),'Did you submit any plans to the LPA that are diffe')] | //label[contains(text(),'If you submitted any plans that differ from those')]</value>
+         <value>//strong[@data-sid='section-Other.Documents']</value>
       </entry>
       <entry>
          <key>BASIC</key>
