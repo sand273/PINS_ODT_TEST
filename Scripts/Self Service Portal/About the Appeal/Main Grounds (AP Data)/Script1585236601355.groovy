@@ -23,10 +23,6 @@ WebUI.click(findTestObject('Main grounds of Appeal/link_Main_grounds'))
 
 WebUI.waitForElementVisible(findTestObject('Main grounds of Appeal/message_special_category_information'), 5)
 
-WebUI.click(findTestObject('Main grounds of Appeal/link_Help_with_Preparing'))
-
-WebUI.waitForElementVisible(findTestObject('Main grounds of Appeal/frame_Prepare_Statement'), 5)
-
 WebUI.click(findTestObject('Main grounds of Appeal/input_Yes_AppealSpecialCategory'))
 
 WebUI.click(findTestObject('Main grounds of Appeal/button_Select_File'))

@@ -24,10 +24,6 @@ WebUI.waitForElementVisible(findTestObject('Preferred procedure/question_Preferr
 
 WebUI.click(findTestObject('Preferred procedure/input_Written_Representation'))
 
-WebUI.click(findTestObject('Preferred procedure/link_Which_Option'))
-
-WebUI.waitForElementVisible(findTestObject('Preferred procedure/frame_Which_Option'), 5)
-
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Preferred procedure/status_Complete_Preferred'), 10)
