@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Select_File</name>
+   <name>button_Select_File2</name>
    <tag></tag>
-   <elementGuidId>f71e5b71-65b0-4d8a-b1be-468e8c4370a3</elementGuidId>
+   <elementGuidId>43739252-53f6-4dd1-9664-341d84ad51c2</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='Plans.OtherFiles']</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//input[@id='File.TechnicalReport:Other.Documents:2']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -65,6 +65,12 @@
       <testCaseId>Test Cases/Self Service Portal/About Planning Application/Additional Plans</testCaseId>
    </testCaseLink>
    <testCaseLink>
+      <guid>0761ec28-52d9-4afd-816b-deae82e1cc59</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Relevant Plans</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>b12442af-f9e3-40fe-8f0e-98088eb47f5d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -131,6 +137,12 @@
       <testCaseId>Test Cases/Self Service Portal/About the Appeal/Technical Reports Post Decision</testCaseId>
    </testCaseLink>
    <testCaseLink>
+      <guid>00a451ff-9641-4b81-a72a-682b75dee741</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Other Relevant Appeal Information</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>91efdf24-a119-4d8c-95b8-58134be24c86</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -159,11 +171,5 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Appeal Summary/Appeal Summary</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>00a451ff-9641-4b81-a72a-682b75dee741</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Other Relevant Appeal Information</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

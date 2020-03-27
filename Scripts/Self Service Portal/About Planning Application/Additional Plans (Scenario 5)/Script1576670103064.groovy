@@ -14,48 +14,30 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-WebUI.waitForElementVisible(findTestObject('Additional Plans/link_Additional_Plans'), 20)
+WebUI.waitForElementVisible(findTestObject('Additional Plans/link_Additional_Plans'), 5)
 
 WebUI.click(findTestObject('Additional Plans/link_Additional_Plans'))
 
-WebUI.waitForElementVisible(findTestObject('Additional Plans/question_LPA_Plans'), 20)
+WebUI.waitForElementVisible(findTestObject('Additional Plans/question_LPA_Plans'), 5)
 
-WebUI.verifyElementText(findTestObject('Additional Plans/question_LPA_Plans'), verData.getValue(1, 37))
-
-WebUI.click(findTestObject('Additional Plans/input_Yes_DifferentPlans'))
-
-WebUI.click(findTestObject('Additional Plans/Upload_OtherLPA_Doc'))
-
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'PNG_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.delay(1)
-
-WebUI.verifyElementPresent(findTestObject('Additional Plans/button_Remove_Doc'), 20)
-
-WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
-
-WebUI.waitForElementVisible(findTestObject('Additional Plans/question_Other_Plans'), 20)
-
-WebUI.verifyElementText(findTestObject('Additional Plans/question_Other_Plans'), verData.getValue(1, 38))
-
-WebUI.click(findTestObject('Additional Plans/option_Yes_Other_Relevant_Plans'))
-
-WebUI.click(findTestObject('Additional Plans/Upload_Other_Relevant_Plans_File'))
-
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Tiff_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyElementVisible(findTestObject('Additional Plans/button_Remove_OtherPlans'))
+WebUI.verifyElementText(findTestObject('Additional Plans/question_LPA_Plans'), verData.getValue(1, 144))
 
 WebUI.click(findTestObject('Additional Plans/link_Help_File_Formats'))
 
-WebUI.verifyElementText(findTestObject('Additional Plans/text_Help_File_Formats'), verData.getValue(1, 32))
+WebUI.waitForElementVisible(findTestObject('Additional Plans/list_Help_File_Formats'), 5)
+
+WebUI.verifyElementText(findTestObject('Additional Plans/list_Help_File_Formats'), verData.getValue(1, 32))
+
+WebUI.waitForElementClickable(findTestObject('Planning Application details/button_Save_Continue'), 5)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Additional Plans/status_Complete_Additional_Plans'), 20)
+WebUI.waitForElementVisible(findTestObject('Additional Plans/status_Complete_Additional_Plans'), 10)
 
 WebUI.verifyElementText(findTestObject('Additional Plans/status_Complete_Additional_Plans'), 'COMPLETED')
 

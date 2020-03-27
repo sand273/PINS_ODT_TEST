@@ -3,14 +3,14 @@
    <description></description>
    <name>button_Select_File3</name>
    <tag></tag>
-   <elementGuidId>43cdfbba-29cd-49df-b4a2-02bfb1b8b079</elementGuidId>
+   <elementGuidId>c25e50d8-6d97-4c5c-945e-b244ab2a526a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='Relevant.TechnicalFile:Relevant.Technical:3']</value>
+         <value>//label[@for='Relevant.TechnicalFile:Relevant.Technical:3']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

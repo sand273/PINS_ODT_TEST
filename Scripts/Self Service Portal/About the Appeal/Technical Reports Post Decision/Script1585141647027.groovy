@@ -13,74 +13,118 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-WebUI.waitForElementVisible(findTestObject('Technical Reports post decision/link_Technical_Reports'), 5)
+WebUI.waitForElementVisible(findTestObject('Application Technical Reports/link_Technical_Reports'), 5)
 
-WebUI.click(findTestObject('Technical Reports post decision/link_Technical_Reports'))
+WebUI.click(findTestObject('Application Technical Reports/link_Technical_Reports'))
 
-WebUI.waitForElementVisible(findTestObject('Technical Reports post decision/message_Technical_Reports'), 5)
+WebUI.waitForElementVisible(findTestObject('Application Technical Reports/message_Technical_Reports'), 5)
 
-WebUI.verifyElementText(findTestObject('Technical Reports post decision/message_Technical_Reports'), verData.getValue(1, 
-        62))
+WebUI.verifyElementText(findTestObject('Application Technical Reports/message_Technical_Reports'), verData.getValue(1, 62))
 
-WebUI.click(findTestObject('Application Technical Reports/link_Help_File_Formats'))
+WebUI.click(findTestObject('Technical Reports Post Decision/link_Help_File_Formats'))
 
-WebUI.waitForElementVisible(findTestObject('Application Technical Reports/list_Help_File_Formats'), 5)
+WebUI.waitForElementVisible(findTestObject('Technical Reports Post Decision/list_Help_File_Formats'), 5)
 
-WebUI.verifyElementText(findTestObject('Application Technical Reports/list_Help_File_Formats'), verData.getValue(1, 32))
+WebUI.verifyElementText(findTestObject('Technical Reports Post Decision/list_Help_File_Formats'), verData.getValue(1, 32))
 
 WebUI.click(findTestObject('Application Technical Reports/message_Technical_Reports'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Application Technical Reports/dropdown_Select_Report_Type'), 5)
+WebUI.waitForElementClickable(findTestObject('Technical Reports Post Decision/button_Add_Another_File'), 5)
 
-def data = WebUI.getText(findTestObject('Application Technical Reports/dropdown_Select_Report_Type')).replaceAll('\\s+', 
-    '').trim()
+WebUI.waitForElementVisible(findTestObject('Technical Reports Post Decision/dropdown_Select_Report_Type'), 5)
 
-WebUI.verifyMatch(data, verData.getValue(1, 40).replaceAll('\\s+', '').trim(), false, FailureHandling.STOP_ON_FAILURE)
+not_run: def data = WebUI.getText(findTestObject('Technical Reports Post Decision/dropdown_Select_Report_Type')).replaceAll(
+    '\\s+', '').trim()
 
-WebUI.waitForElementVisible(findTestObject('Application Technical Reports/button_Add_Another_File'), 5)
+not_run: WebUI.verifyMatch(data, verData.getValue(1, 40).replaceAll('\\s+', '').trim(), false, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Application Technical Reports/button_Add_Another_File'))
+WebUI.selectOptionByValue(findTestObject('Technical Reports Post Decision/dropdown_Select_Report_Type'), 'Other reports', 
+    false)
 
-WebUI.click(findTestObject('Application Technical Reports/button_Select_File2'))
+not_run: WebUI.click(findTestObject('Technical Reports Post Decision/button_Add_Another_File'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.waitForElementClickable(findTestObject('Technical Reports Post Decision/button_Select_File2'), 5)
 
-WebUI.waitForElementVisible(findTestObject('Application Technical Reports/button_Add_Another_File'), 5)
+not_run: WebUI.doubleClick(findTestObject('Technical Reports Post Decision/button_Select_File2'))
 
-WebUI.click(findTestObject('Application Technical Reports/button_Add_Another_File'))
+not_run: WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Application Technical Reports/button_Select_File3'))
+not_run: WebUI.delay(1)
 
-WebUI.delay(1)
+not_run: WebUI.waitForElementClickable(findTestObject('Technical Reports Post Decision/button_Add_Another_File'), 5)
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Tiff_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.waitForElementVisible(findTestObject('Technical Reports Post Decision/dropdown_Select_Report2'), 5)
 
-WebUI.waitForElementVisible(findTestObject('Application Technical Reports/button_Add_Another_File'), 5)
+not_run: WebUI.click(findTestObject('Technical Reports Post Decision/dropdown_Select_Report2'))
 
-WebUI.click(findTestObject('Application Technical Reports/button_Add_Another_File'))
+not_run: WebUI.selectOptionByValue(findTestObject('Technical Reports Post Decision/dropdown_Select_Report2'), 'Other reports', 
+    false)
 
-WebUI.click(findTestObject('Application Technical Reports/button_Select_File4'))
+not_run: WebUI.click(findTestObject('Technical Reports Post Decision/button_Add_Another_File'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Jpeg_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.waitForElementClickable(findTestObject('Technical Reports Post Decision/button_Select_File3'), 5)
 
-WebUI.waitForElementVisible(findTestObject('Application Technical Reports/button_Add_Another_File'), 5)
+not_run: WebUI.doubleClick(findTestObject('Technical Reports Post Decision/button_Select_File3'))
 
-WebUI.click(findTestObject('Application Technical Reports/button_Add_Another_File'))
+not_run: WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Tiff_Upload.exe'], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Application Technical Reports/button_Select_File5'))
+not_run: WebUI.waitForElementClickable(findTestObject('Technical Reports Post Decision/button_Add_Another_File'), 5)
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'PNG_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.waitForElementVisible(findTestObject('Technical Reports Post Decision/dropdown_Select_Report3'), 5)
+
+not_run: WebUI.click(findTestObject('Technical Reports Post Decision/dropdown_Select_Report3'))
+
+not_run: WebUI.selectOptionByValue(findTestObject('Technical Reports Post Decision/dropdown_Select_Report3'), 'Other reports', 
+    false)
+
+not_run: WebUI.click(findTestObject('Technical Reports Post Decision/button_Add_Another_File'))
+
+not_run: WebUI.waitForElementClickable(findTestObject('Technical Reports Post Decision/button_Select_File4'), 5)
+
+not_run: WebUI.doubleClick(findTestObject('Technical Reports Post Decision/button_Select_File4'))
+
+not_run: WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Jpeg_Upload.exe'], 
+    FailureHandling.STOP_ON_FAILURE)
+
+not_run: WebUI.waitForElementClickable(findTestObject('Technical Reports Post Decision/button_Add_Another_File'), 5)
+
+not_run: WebUI.waitForElementVisible(findTestObject('Technical Reports Post Decision/dropdown_Select_Report4'), 5)
+
+not_run: WebUI.click(findTestObject('Technical Reports Post Decision/dropdown_Select_Report4'))
+
+not_run: WebUI.selectOptionByValue(findTestObject('Technical Reports Post Decision/dropdown_Select_Report4'), 'Other reports', 
+    false)
+
+not_run: WebUI.click(findTestObject('Technical Reports Post Decision/button_Add_Another_File'))
+
+not_run: WebUI.waitForElementClickable(findTestObject('Technical Reports Post Decision/button_Select_File5'), 5)
+
+not_run: WebUI.doubleClick(findTestObject('Technical Reports Post Decision/button_Select_File5'))
+
+not_run: WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'PNG_Upload.exe'], 
+    FailureHandling.STOP_ON_FAILURE)
+
+not_run: WebUI.waitForElementVisible(findTestObject('Technical Reports Post Decision/dropdown_Select_Report5'), 5)
+
+not_run: WebUI.click(findTestObject('Technical Reports Post Decision/dropdown_Select_Report5'))
+
+not_run: WebUI.selectOptionByValue(findTestObject('Technical Reports Post Decision/dropdown_Select_Report5'), 'Other reports', 
+    false)
 
 WebUI.waitForElementClickable(findTestObject('Planning Application details/button_Save_Continue'), 5)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Application Technical Reports/status_Complete_Other_Documents'), 10)
+WebUI.waitForElementVisible(findTestObject('Technical Reports Post Decision/status_Complete_Other_Documents'), 10)
 
-WebUI.verifyElementText(findTestObject('Application Technical Reports/status_Complete_Other_Documents'), 'COMPLETED')
+WebUI.verifyElementText(findTestObject('Technical Reports Post Decision/status_Complete_Other_Documents'), 'COMPLETED')
 

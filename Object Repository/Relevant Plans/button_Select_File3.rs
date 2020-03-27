@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Add_Another_File</name>
+   <name>button_Select_File3</name>
    <tag></tag>
-   <elementGuidId>e8661fb9-8788-41d9-8597-8fe57b7ed276</elementGuidId>
+   <elementGuidId>1ff8fcc4-ab9f-4914-bf14-af9403ae65e3</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//button[contains(text(),'Add another file')]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//fieldset[6]//div[1]//div[3]//div[1]//label[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

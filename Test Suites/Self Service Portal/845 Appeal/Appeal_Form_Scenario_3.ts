@@ -56,7 +56,7 @@
       <guid>41626764-562d-4f63-9f6e-bada81523bdc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Technical Reports Post Decision (Scenario 2 - 845)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Technical Reports Post Decision (Scenario 2)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>a9b48d72-e88d-4a86-b1c7-f0dc5887c659</guid>

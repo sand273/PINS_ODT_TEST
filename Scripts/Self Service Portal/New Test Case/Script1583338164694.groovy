@@ -18,7 +18,15 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 WebUI.openBrowser('')
 
+WebUI.navigateToUrl('https://pins-test.gopro.net/selfservice/web/portal/application.html?id=79C9336D490075B5000001711B25F449#section-Additional.Plans')
+
 WebUI.click(findTestObject('null'))
 
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Additional Plans/button_Add_Plan_Doc'))
+
+WebUI.click(findTestObject('null'))
+
+WebUI.click(findTestObject('Additional Plans/button_Add_Plan_Doc'))
+
+WebUI.click(findTestObject('null'))
 

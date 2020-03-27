@@ -13,6 +13,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
@@ -28,7 +30,7 @@ WebUI.click(findTestObject('Supporting Grounds/button_Select_File'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Supporting Grounds/button_Add_another_document'), 5)
+WebUI.waitForElementClickable(findTestObject('Supporting Grounds/button_Add_another_document'), 5)
 
 WebUI.click(findTestObject('Supporting Grounds/button_Add_another_document'))
 
@@ -36,17 +38,15 @@ WebUI.click(findTestObject('Supporting Grounds/button_Select_File2'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Supporting Grounds/button_Add_another_document'), 5)
+WebUI.waitForElementClickable(findTestObject('Supporting Grounds/button_Add_another_document'), 5)
 
 WebUI.click(findTestObject('Supporting Grounds/button_Add_another_document'))
 
 WebUI.click(findTestObject('Supporting Grounds/button_Select_File3'))
 
-WebUI.delay(1)
-
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Tiff_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Supporting Grounds/button_Add_another_document'), 5)
+WebUI.waitForElementClickable(findTestObject('Supporting Grounds/button_Add_another_document'), 5)
 
 WebUI.click(findTestObject('Supporting Grounds/button_Add_another_document'))
 
@@ -54,13 +54,15 @@ WebUI.click(findTestObject('Supporting Grounds/button_SelectFile4'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Jpeg_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Supporting Grounds/button_Add_another_document'), 5)
+WebUI.waitForElementClickable(findTestObject('Supporting Grounds/button_Add_another_document'), 5)
 
 WebUI.click(findTestObject('Supporting Grounds/button_Add_another_document'))
 
 WebUI.click(findTestObject('Supporting Grounds/button_Select_File5'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'PNG_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForElementClickable(findTestObject('Planning Application details/button_Save_Continue'), 5)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 

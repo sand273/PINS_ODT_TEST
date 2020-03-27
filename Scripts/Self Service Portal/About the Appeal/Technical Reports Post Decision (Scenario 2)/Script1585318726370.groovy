@@ -16,15 +16,15 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-WebUI.waitForElementVisible(findTestObject('Application Technical Reports/link_Application_Technical_Reports'), 5)
+WebUI.waitForElementVisible(findTestObject('Application Technical Reports/link_Technical_Reports'), 5)
 
-WebUI.click(findTestObject('Application Technical Reports/link_Application_Technical_Reports'))
+WebUI.click(findTestObject('Application Technical Reports/link_Technical_Reports'))
 
 WebUI.waitForElementVisible(findTestObject('Planning Application details/button_Save_Continue'), 5)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Application Technical Reports/status_Complete_Other_Documents'), 10)
+WebUI.waitForElementVisible(findTestObject('Technical Reports Post Decision/status_Complete_Other_Documents'), 10)
 
-WebUI.verifyElementText(findTestObject('Application Technical Reports/status_Complete_Other_Documents'), 'COMPLETED')
+WebUI.verifyElementText(findTestObject('Technical Reports Post Decision/status_Complete_Other_Documents'), 'COMPLETED')
 
