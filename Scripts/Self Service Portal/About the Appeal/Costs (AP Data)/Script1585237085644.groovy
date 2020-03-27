@@ -22,10 +22,6 @@ WebUI.click(findTestObject('Costs/link_Costs'))
 
 WebUI.waitForElementVisible(findTestObject('Costs/question_Costs_Application'), 5)
 
-WebUI.click(findTestObject('Costs/link_Application_Costs'))
-
-WebUI.waitForElementVisible(findTestObject('Costs/frame_Application_Costs'), 5)
-
 WebUI.click(findTestObject('Costs/input_No_Costs'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))

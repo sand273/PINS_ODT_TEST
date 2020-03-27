@@ -24,9 +24,9 @@ WebUI.click(findTestObject('Contact Details/link_Contact_Details'))
 
 WebUI.waitForElementVisible(findTestObject('Contact Details/message_Contact_Details'), 5)
 
-WebUI.setText(findTestObject('Contact Details/text_County'), testData.getValue(5, 1))
+not_run: WebUI.setText(findTestObject('Contact Details/text_County'), testData.getValue(5, 1))
 
-WebUI.setText(findTestObject('Contact Details/text_PostCode'), testData.getValue(6, 1))
+not_run: WebUI.setText(findTestObject('Contact Details/text_PostCode'), testData.getValue(6, 1))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
