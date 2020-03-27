@@ -16,9 +16,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
-def rowsOnSpreadsheet = findTestData('Cases_Data_AP').getRowNumbers()
+def rowsOnSpreadsheet = findTestData('Auto_Programming_Data/Cases_Data_AP').getRowNumbers()
 
-def excelData = findTestData('Cases_Data_AP')
+def excelData = findTestData('Auto_Programming_Data/Cases_Data_AP')
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
@@ -160,7 +160,7 @@ for (def index : (i..rowsOnSpreadsheet)) {
 
     WebUI.waitForElementVisible(findTestObject('Planning Application details/question_Application_Ref'), 2)
 
-    WebUI.setText(findTestObject('Planning Application details/text_Application_Ref'), 'Bulk_'+testData.getValue(2, 1))
+    WebUI.setText(findTestObject('Planning Application details/text_Application_Ref'), 'Bulk_' + testData.getValue(2, 1))
 
     WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 

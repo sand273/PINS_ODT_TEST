@@ -15,9 +15,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-def rowsOnSpreadsheet = findTestData('Inspector_Data_AP').getRowNumbers()
+def rowsOnSpreadsheet = findTestData('Auto_Programming_Data/Inspector_Data_AP').getRowNumbers()
 
-def testData = findTestData('Inspector_Data_AP')
+def testData = findTestData('Auto_Programming_Data/Inspector_Data_AP')
 
 def i = 1
 
