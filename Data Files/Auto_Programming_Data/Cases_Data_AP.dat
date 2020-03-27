@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description></description>
-   <name>Auto_Programming_Data</name>
+   <name>Cases_Data_AP</name>
    <tag></tag>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
-   <dataFileGUID>c9d5e001-784f-4685-968c-fffcc50c534d</dataFileGUID>
-   <dataSourceUrl>C:\Katalon\Data-Files\Inspector Data for Autoprogramming.xlsx</dataSourceUrl>
+   <dataFileGUID>0612a367-15cb-41fb-b07d-2787289f9308</dataFileGUID>
+   <dataSourceUrl>C:\Katalon\Data-Files\Cases_Data_AP.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
-   <sheetName>Sheet1</sheetName>
+   <sheetName>Cases_Data_AP</sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>
