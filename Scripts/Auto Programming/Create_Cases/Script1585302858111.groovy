@@ -148,7 +148,7 @@ for (def index : (i..rowsOnSpreadsheet)) {
 
     WebUI.waitForElementVisible(findTestObject('Planning Application details/question_Name_Original_Application'), 2)
 
-    WebUI.setText(findTestObject('Planning Application details/text_Name_Application'), 'Bulk ' + testData.getValue(1, 1))
+    WebUI.setText(findTestObject('Planning Application details/text_Name_Application'), 'Bulk_' + testData.getValue(1, 1))
 
     WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -197,6 +197,12 @@ for (def index : (i..rowsOnSpreadsheet)) {
     WebUI.click(findTestObject('Planning Application details/button_LPA_Notice'))
 
     WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+
+    WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
+
+    WebUI.waitForElementVisible(findTestObject('Planning Application details/message_Application'), 3)
+
+    WebUI.click(findTestObject('Planning Application details/button_Outline_Planning'))
 
     WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -327,6 +333,12 @@ for (def index : (i..rowsOnSpreadsheet)) {
     WebUI.waitForElementClickable(findTestObject('Site Details/dropdown_Select address'), 5)
 
     WebUI.selectOptionByIndex(findTestObject('Site Details/dropdown_Select address'), 1, FailureHandling.STOP_ON_FAILURE)
+
+    WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
+
+    WebUI.waitForElementVisible(findTestObject('Site Details/message_Green_Belt'), 5)
+
+    WebUI.click(findTestObject('Site Details/button_No'))
 
     WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
