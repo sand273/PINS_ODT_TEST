@@ -52,11 +52,9 @@ WebUI.click(findTestObject('Technical Reports Post Decision/button_Add_Another_F
 
 WebUI.waitForElementClickable(findTestObject('Technical Reports Post Decision/button_Select_File2'), 5)
 
-WebUI.doubleClick(findTestObject('Technical Reports Post Decision/button_Select_File2'))
+WebUI.click(findTestObject('Technical Reports Post Decision/button_Select_File2'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.delay(1)
 
 WebUI.waitForElementClickable(findTestObject('Technical Reports Post Decision/button_Add_Another_File'), 5)
 
@@ -70,7 +68,7 @@ WebUI.click(findTestObject('Technical Reports Post Decision/button_Add_Another_F
 
 WebUI.waitForElementClickable(findTestObject('Technical Reports Post Decision/button_Select_File3'), 5)
 
-WebUI.doubleClick(findTestObject('Technical Reports Post Decision/button_Select_File3'))
+WebUI.click(findTestObject('Technical Reports Post Decision/button_Select_File3'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Tiff_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
@@ -86,7 +84,7 @@ WebUI.click(findTestObject('Technical Reports Post Decision/button_Add_Another_F
 
 WebUI.waitForElementClickable(findTestObject('Technical Reports Post Decision/button_Select_File4'), 5)
 
-WebUI.doubleClick(findTestObject('Technical Reports Post Decision/button_Select_File4'))
+WebUI.click(findTestObject('Technical Reports Post Decision/button_Select_File4'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Jpeg_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
@@ -102,7 +100,7 @@ WebUI.click(findTestObject('Technical Reports Post Decision/button_Add_Another_F
 
 WebUI.waitForElementClickable(findTestObject('Technical Reports Post Decision/button_Select_File5'), 5)
 
-WebUI.doubleClick(findTestObject('Technical Reports Post Decision/button_Select_File5'))
+WebUI.click(findTestObject('Technical Reports Post Decision/button_Select_File5'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'PNG_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 

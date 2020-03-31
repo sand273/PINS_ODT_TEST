@@ -45,6 +45,12 @@ WebUI.selectOptionByValue(findTestObject('Site Details/dropdown_Select address')
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
+WebUI.waitForElementVisible(findTestObject('Site Details/question_Green_Belt'), 5)
+
+WebUI.click(findTestObject('Site Details/option_Green_Belt_No'))
+
+WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
+
 WebUI.waitForElementVisible(findTestObject('Site Details/question_Public_Land'), 5)
 
 WebUI.verifyElementText(findTestObject('Site Details/question_Public_Land'), verData.getValue(1, 43))

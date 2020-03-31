@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>dropdown_Select_Report4</name>
+   <name>option_Green_Belt_Yes</name>
    <tag></tag>
-   <elementGuidId>e1467795-7c82-469f-92ea-7cf5e44f6925</elementGuidId>
+   <elementGuidId>ceb27a73-37e3-432b-b8b7-8c23bc6517fb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//select[@name='TechnicalReport.Type:Other.Documents:4']</value>
+         <value>//input[@id='radio-Site.GreenBelt-1']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

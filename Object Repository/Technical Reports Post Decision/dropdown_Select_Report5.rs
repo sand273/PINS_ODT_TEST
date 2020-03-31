@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//select[@id='TechnicalReport.Type:Other.Documents:5']</value>
+         <value>//select[@name='TechnicalReport.Type:Other.Documents:5']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

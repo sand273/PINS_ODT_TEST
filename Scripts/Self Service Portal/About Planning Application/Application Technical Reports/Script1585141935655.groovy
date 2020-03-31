@@ -13,6 +13,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
@@ -22,7 +24,8 @@ WebUI.click(findTestObject('Technical Reports Post Decision/link_Application_Tec
 
 WebUI.waitForElementVisible(findTestObject('Technical Reports Post Decision/message_Technical_Reports'), 5)
 
-WebUI.verifyElementText(findTestObject('Technical Reports Post Decision/message_Technical_Reports'), verData.getValue(1, 39))
+WebUI.verifyElementText(findTestObject('Technical Reports Post Decision/message_Technical_Reports'), verData.getValue(1, 
+        39))
 
 not_run: def data = WebUI.getText(findTestObject('Application Technical Reports/message_Provide_Docs')).replaceAll('\\s+', 
     '').trim()
@@ -53,8 +56,6 @@ WebUI.click(findTestObject('Application Technical Reports/button_Add_Files'))
 
 WebUI.click(findTestObject('Application Technical Reports/button_Select_File3'))
 
-WebUI.delay(1)
-
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Tiff_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementClickable(findTestObject('Application Technical Reports/button_Add_Files2'), 5)
@@ -72,6 +73,8 @@ WebUI.click(findTestObject('Application Technical Reports/button_Add_Files3'))
 WebUI.click(findTestObject('Application Technical Reports/button_Select_File5'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'PNG_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForElementClickable(findTestObject('Planning Application details/button_Save_Continue'), 5)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 

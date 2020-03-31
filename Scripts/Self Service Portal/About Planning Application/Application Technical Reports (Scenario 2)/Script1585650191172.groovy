@@ -36,6 +36,10 @@ WebUI.waitForElementVisible(findTestObject('Application Technical Reports/list_H
 
 WebUI.verifyElementText(findTestObject('Application Technical Reports/list_Help_File_Formats'), verData.getValue(1, 32))
 
+WebUI.click(findTestObject('Application Technical Reports/button_Select_File'))
+
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.waitForElementClickable(findTestObject('Planning Application details/button_Save_Continue'), 5)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
