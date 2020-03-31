@@ -57,10 +57,10 @@ WebUI.waitForElementVisible(findTestObject('Appeal planning decision/eligibility
 
 WebUI.verifyElementText(findTestObject('Appeal planning decision/eligibility_Confirmed'), verData.getValue(1, 9))
 
-WebUI.verifyElementText(findTestObject('Appeal planning decision/text_Appeal_Form_Name'), verData.getValue(1, 143))
+not_run: WebUI.verifyElementText(findTestObject('Appeal planning decision/text_Appeal_Form_Name'), verData.getValue(1, 143))
 
-WebUI.verifyMatch(WebUI.getText(findTestObject('Appeal planning decision/text_Appeal_Form_Days')), ('.*You have ' + testData.getValue(
-        '12 Weeks', 1)) + ' days left to submit your appeal.*', true, FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.verifyMatch(WebUI.getText(findTestObject('Appeal planning decision/text_Appeal_Form_Days')), ('.*You have ' + 
+    testData.getValue('12 Weeks', 1)) + ' days left to submit your appeal.*', true, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementVisible(findTestObject('Appeal planning decision/button_Appeal_Now'))
 
