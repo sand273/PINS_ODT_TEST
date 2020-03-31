@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Select_File5</name>
+   <name>input_Full_Planning_Permission</name>
    <tag></tag>
-   <elementGuidId>c176adc0-402a-42ff-8eac-f446dd844716</elementGuidId>
+   <elementGuidId>7bb39da1-1846-4d90-a905-130bec02b623</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>/html[1]/body[1]/div[1]/main[1]/div[1]/div[2]/form[1]/div[1]/div[4]/fieldset[7]/div[1]/div[5]/div[1]/label[1]</value>
+         <value>//input[@id='radio-Ownership.Permission-1']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -37,11 +37,6 @@ catch (Exception ex) {
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
-//WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_folder_LPA_Questionaire'), 20)
-//WebUI.scrollToPosition(9999999, 9999999)
-//WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Questionaire'))
-//if (WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_File_LPA_Questionaire'), 20)==false)
-//{
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/input_Search'), 10)
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/input_Search'))

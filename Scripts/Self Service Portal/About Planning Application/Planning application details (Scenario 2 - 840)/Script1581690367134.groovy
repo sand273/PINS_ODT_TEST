@@ -143,6 +143,8 @@ WebUI.verifyElementVisible(findTestObject('Planning Application details/button_R
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Application_Permission'), [('planOption') : 'Outline'], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.waitForElementVisible(findTestObject('Planning Application details/status_Complete_App_Details'), 20)
 
 WebUI.verifyElementText(findTestObject('Planning Application details/status_Complete_App_Details'), 'COMPLETED')

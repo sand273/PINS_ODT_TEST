@@ -13,6 +13,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
@@ -132,6 +134,8 @@ WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('e
 WebUI.verifyElementPresent(findTestObject('Planning Application details/button_Remove_LPA_Notice'), 5)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
+
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Application_Permission'), [('planOption') : 'Full'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('Planning Application details/status_Complete_App_Details'), 10)
 

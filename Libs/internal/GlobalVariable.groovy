@@ -39,6 +39,11 @@ public class GlobalVariable {
      */
     public static Object AdminUrl
      
+    /**
+     * <p></p>
+     */
+    public static Object planOption
+     
 
     static {
         try {
@@ -52,6 +57,7 @@ public class GlobalVariable {
             ApplicationRef = selectedVariables['ApplicationRef']
             driverCount = selectedVariables['driverCount']
             AdminUrl = selectedVariables['AdminUrl']
+            planOption = selectedVariables['planOption']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)
