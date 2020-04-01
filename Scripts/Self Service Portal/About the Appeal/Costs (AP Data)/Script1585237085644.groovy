@@ -14,26 +14,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
-def planData = TestDataFactory.findTestData('Data Files/Planning_Details')
-
-def siteData = TestDataFactory.findTestData('Data Files/Site_Details')
-
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-WebUI.waitForElementVisible(findTestObject('Appeal Summary/status_Submitted'), 5)
+WebUI.waitForElementVisible(findTestObject('Costs/link_Costs'), 5)
 
-WebUI.verifyElementAttributeValue(findTestObject('Appeal Summary/heading_Application_Ref'), 'innerText', GlobalVariable.ApplicationRef, 
-    0)
+WebUI.click(findTestObject('Costs/link_Costs'))
 
-WebUI.verifyElementText(findTestObject('Appeal Summary/status_Submitted'), verData.getValue(1, 77))
+WebUI.waitForElementVisible(findTestObject('Costs/question_Costs_Application'), 5)
 
-WebUI.verifyElementText(findTestObject('Appeal Summary/label_Appellant_Name'), planData.getValue(1, 1))
+WebUI.click(findTestObject('Costs/input_No_Costs'))
 
-WebUI.verifyElementText(findTestObject('Appeal Summary/label_Application_Ref'), planData.getValue(2, 1))
+WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.verifyElementText(findTestObject('Appeal Summary/links_Appeal_Action'), verData.getValue(1, 75))
+WebUI.waitForElementVisible(findTestObject('Costs/status_Complete_Costs'), 10)
 
-WebUI.verifyElementText(findTestObject('Appeal Summary/links_Appeal_Data'), verData.getValue(1, 76))
-
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Costs/status_Complete_Costs'), 'COMPLETED')
 
