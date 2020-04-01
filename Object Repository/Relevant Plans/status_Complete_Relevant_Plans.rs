@@ -6,12 +6,11 @@
    <elementGuidId>80daf521-5d72-449b-822f-00245c91dc51</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//strong[@data-sid='section-Relevant.Plans']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@class='govuk-grid-row']//div[1]//table[1]//tbody[1]//tr[6]//td[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

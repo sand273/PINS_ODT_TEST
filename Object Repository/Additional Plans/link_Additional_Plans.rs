@@ -55,4 +55,3 @@
       <value>id(&quot;overview&quot;)/table[@class=&quot;govuk-table&quot;]/tbody[@class=&quot;govuk-table__body&quot;]/tr[@class=&quot;govuk-table__row&quot;]/td[@class=&quot;govuk-table__cell&quot;]/a[1]</value>
    </webElementProperties>
 </WebElementEntity>
->>>>>>> branch 'master' of https://github.com/sand273/PINS_ODT_TEST
