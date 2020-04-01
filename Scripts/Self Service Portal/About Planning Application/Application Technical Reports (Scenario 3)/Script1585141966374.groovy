@@ -40,7 +40,8 @@ WebUI.waitForElementClickable(findTestObject('Planning Application details/butto
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Application Technical Reports/status_Complete_Technical_Reports'), 10)
+WebUI.waitForElementVisible(findTestObject('Application Technical Reports/status_Complete_Application_Technical_Reports'), 
+    10)
 
-WebUI.verifyElementText(findTestObject('Application Technical Reports/status_Complete_Technical_Reports'), 'COMPLETED')
+WebUI.verifyElementText(findTestObject('Application Technical Reports/status_Complete_Application_Technical_Reports'), 'COMPLETED')
 
