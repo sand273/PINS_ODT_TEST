@@ -37,7 +37,7 @@ WebUI.waitForElementClickable(findTestObject('Planning Application details/butto
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Additional Plans/status_Complete_Additional_Plans'), 10)
+WebUI.waitForElementVisible(findTestObject('Relevant Plans/status_Complete_Relevant_Plans'), 10)
 
-WebUI.verifyElementText(findTestObject('Additional Plans/status_Complete_Additional_Plans'), 'COMPLETED')
+WebUI.verifyElementText(findTestObject('Relevant Plans/status_Complete_Relevant_Plans'), 'COMPLETED')
 
