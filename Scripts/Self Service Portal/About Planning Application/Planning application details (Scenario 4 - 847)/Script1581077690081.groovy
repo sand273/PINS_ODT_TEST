@@ -70,9 +70,9 @@ WebUI.check(findTestObject('Planning Application details/check_Householder'))
 
 WebUI.click(findTestObject('Appeal planning decision/input_No_residential_dwellings'))
 
-not_run: WebUI.click(findTestObject('Appeal planning decision/input_Area_Measurement'))
+WebUI.click(findTestObject('Appeal planning decision/input_Area_Measurement'))
 
-not_run: WebUI.click(findTestObject('Appeal planning decision/input_Area_Development'))
+WebUI.click(findTestObject('Appeal planning decision/input_Area_Development'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -176,8 +176,6 @@ WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('e
 WebUI.verifyElementPresent(findTestObject('Planning Application details/button_Remove_Regulation_4'), 5)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
-
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Application_Permission'), [('planOption') : 'Outline'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('Planning Application details/status_Complete_App_Details'), 20)
 
