@@ -116,9 +116,6 @@ WebUI.verifyElementText(findTestObject('Appeal planning decision/eligibility_Con
 
 WebUI.verifyElementText(findTestObject('Appeal planning decision/text_Appeal_Form_Name'), verData.getValue(1, 141))
 
-WebUI.verifyMatch(WebUI.getText(findTestObject('Appeal planning decision/text_Appeal_Form_Days')), ('.*You have ' + testData.getValue(
-        '6 Months', 1)) + ' days left to submit your appeal.*', true, FailureHandling.STOP_ON_FAILURE)
-
 WebUI.verifyElementVisible(findTestObject('Appeal planning decision/button_Appeal_Now'))
 
 WebUI.verifyElementText(findTestObject('Appeal planning decision/list_Confirmation'), verData.getValue(1, 16))
