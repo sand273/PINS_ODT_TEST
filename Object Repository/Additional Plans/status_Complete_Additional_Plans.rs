@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//strong[@data-sid='section-Additional.Plans']</value>
+         <value>//strong[@data-sid='section-Additional.Plans'] | //strong[@data-sid='section-Different.Plans']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='govuk-grid-row']//div[1]//table[1]//tbody[1]//tr[6]//td[2]</value>
+         <value>//strong[@data-sid='section-Relevant.Plans']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
