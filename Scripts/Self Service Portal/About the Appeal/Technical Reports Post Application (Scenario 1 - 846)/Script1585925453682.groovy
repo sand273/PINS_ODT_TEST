@@ -18,9 +18,10 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-WebUI.waitForElementVisible(findTestObject('Application Technical Reports/link_Technical_Reports'), 5)
+WebUI.waitForElementVisible(findTestObject('Technical Reports Post Decision/link_Non_Determination_Technical_Reports'), 
+    5)
 
-WebUI.click(findTestObject('Application Technical Reports/link_Technical_Reports'))
+WebUI.click(findTestObject('Technical Reports Post Decision/link_Non_Determination_Technical_Reports'))
 
 WebUI.waitForElementVisible(findTestObject('Technical Reports Post Decision/message_Non_determination_Technical_Report'), 
     5)

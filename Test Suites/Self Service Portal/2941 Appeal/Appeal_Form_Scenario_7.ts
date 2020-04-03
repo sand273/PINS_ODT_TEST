@@ -50,7 +50,7 @@
       <guid>9b34f1da-a740-43cc-930c-35cd88debd95</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Additional Plans (Scenario 4)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Additional Plans (Scenario 4 - 846)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>f3f50193-fe5d-41dd-a1ce-1fc10c4702d7</guid>
@@ -116,7 +116,7 @@
       <guid>b86d100e-c0cc-4503-ad38-dc613747c12c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Technical Reports Post Decision (Scenario 3)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Technical Reports Post Application (Scenario 3 - 846)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>c6eaeee7-ab88-430c-929c-ca4379529dd9</guid>

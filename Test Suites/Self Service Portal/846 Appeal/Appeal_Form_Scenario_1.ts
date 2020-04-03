@@ -128,7 +128,7 @@
       <guid>755fe63e-1c33-4de1-a2b2-fd0f837db1bb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Technical Reports Post Decision (Scenario 1 - 846)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Technical Reports Post Application (Scenario 1 - 846)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>446f6a05-a0e4-46f2-a2a8-aa297850994c</guid>
