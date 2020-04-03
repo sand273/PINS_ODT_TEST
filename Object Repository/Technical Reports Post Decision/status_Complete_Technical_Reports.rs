@@ -6,11 +6,11 @@
    <elementGuidId>9b0f103a-96bb-4064-a39f-b4ae33b4d8f3</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//table[3]//tbody[1]//tr[7]//td[2]//strong[1]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//strong[@data-sid='section-Other.Documents']</value>
       </entry>
       <entry>
          <key>CSS</key>
