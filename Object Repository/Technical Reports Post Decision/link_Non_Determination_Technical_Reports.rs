@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_Technical_Reports</name>
+   <name>link_Non_Determination_Technical_Reports</name>
    <tag></tag>
-   <elementGuidId>b21af895-c7d1-47bb-8759-6b2d2dddc116</elementGuidId>
+   <elementGuidId>0d5e8115-a46c-412e-9f39-ea5540a4a977</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//td[@class='govuk-table__cell']//a[contains(text(),'Technical reports post decision')]</value>
+         <value>//td[@class='govuk-table__cell']//a[contains(text(),'Technical reports post application')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

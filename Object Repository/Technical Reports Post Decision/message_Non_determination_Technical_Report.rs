@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_Technical_Reports</name>
+   <name>message_Non_determination_Technical_Report</name>
    <tag></tag>
-   <elementGuidId>b21af895-c7d1-47bb-8759-6b2d2dddc116</elementGuidId>
+   <elementGuidId>c97684c1-4b9a-4e10-bca2-1b3c7a936b18</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//td[@class='govuk-table__cell']//a[contains(text(),'Technical reports post decision')]</value>
+         <value>//label[contains(text(),'Upload any technical reports you have produced sin')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
