@@ -6,11 +6,11 @@
    <elementGuidId>ec4939cb-cf66-47f8-aa74-8c0f7dfffc8c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//label[contains(text(),'Did you submit any plans to the LPA that are diffe')] | //label[contains(text(),'If you submitted any plans that differ from those')]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//label[contains(text(),'If you submitted any plans that differ from those')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

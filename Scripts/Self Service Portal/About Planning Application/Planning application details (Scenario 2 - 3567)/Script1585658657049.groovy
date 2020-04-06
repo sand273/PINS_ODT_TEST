@@ -123,14 +123,6 @@ WebUI.verifyElementVisible(findTestObject('Planning Application details/button_R
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Planning Application details/message_Application'), 3)
-
-WebUI.verifyElementText(findTestObject('Planning Application details/message_Application'), verData.getValue(1, 147))
-
-WebUI.click(findTestObject('Planning Application details/button_Outline_Planning'))
-
-WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
-
 WebUI.waitForElementVisible(findTestObject('Planning Application details/status_Complete_App_Details'), 20)
 
 WebUI.verifyElementText(findTestObject('Planning Application details/status_Complete_App_Details'), 'COMPLETED')
