@@ -32,7 +32,7 @@
       <guid>6c7af94c-9c89-4aab-8689-e7810e0bb73b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Planning application details (Scenario 1 - 846)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Planning application details (Scenario 1 - 2941)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>60bd6dd6-aab0-4680-a384-749864fb5398</guid>
