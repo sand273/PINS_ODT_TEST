@@ -40,7 +40,7 @@ WebUI.waitForElementClickable(findTestObject('Planning Application details/butto
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Technical Reports Post Decision/status_Complete_Technical_Reports'), 10)
+WebUI.waitForElementVisible(findTestObject('LPA Notification/status_LPA_Notification'), 10)
 
-WebUI.verifyElementText(findTestObject('Technical Reports Post Decision/status_Complete_Technical_Reports'), 'COMPLETED')
+WebUI.verifyElementText(findTestObject('LPA Notification/status_LPA_Notification'), 'COMPLETED')
 
