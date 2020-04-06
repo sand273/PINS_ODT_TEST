@@ -13,6 +13,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
@@ -52,6 +54,28 @@ WebUI.waitForElementVisible(findTestObject('Planning Application details/questio
 WebUI.verifyElementText(findTestObject('Planning Application details/question_Application_Ref'), verData.getValue(1, 26))
 
 WebUI.setText(findTestObject('Planning Application details/text_Application_Ref'), testData.getValue(2, 1))
+
+WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
+
+WebUI.waitForElementVisible(findTestObject('Planning Application details/question_Application_Type'), 5)
+
+WebUI.verifyElementText(findTestObject('Planning Application details/question_Application_Type'), verData.getValue(1, 27))
+
+WebUI.check(findTestObject('Planning Application details/check_Change_of_Use'))
+
+WebUI.check(findTestObject('Planning Application details/check_General_Industry'))
+
+WebUI.check(findTestObject('Planning Application details/check_Householder'))
+
+WebUI.click(findTestObject('Planning Application details/option_Yes_Residential_Dwellings'))
+
+WebUI.click(findTestObject('Appeal planning decision/input_Area_Measurement'))
+
+WebUI.click(findTestObject('Appeal planning decision/input_Area_Development'))
+
+WebUI.click(findTestObject('Planning Application details/option_Yes_Proposed_Amount_Of_Dwellings'))
+
+WebUI.setText(findTestObject('Planning Application details/input_Number_Of_Dwellings'), '1')
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
