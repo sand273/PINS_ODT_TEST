@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//fieldset[@id='section-Additional.Plans']//div[1]//div[1]//div[1]//div[1]//details[1]//div[1]</value>
+         <value>//fieldset[@id='section-Additional.Plans']//div[1]//div[1]//div[1]//div[1]//details[1]//div[1] | //fieldset[@id='section-Different.Plans']//div[1]//div[1]//div[1]//div[1]//details[1]//div[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
