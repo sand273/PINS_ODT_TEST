@@ -86,7 +86,7 @@
       <guid>89e870e6-d630-4da3-b6ba-959c32088ab2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/GoPro UI/LPA Comments/LPA Comments</testCaseId>
+      <testCaseId>Test Cases/GoPro UI/LPA Statement/LPA Statement</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>b9053069-90a5-494b-9139-256cdd328f3b</guid>
