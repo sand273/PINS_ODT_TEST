@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//label[contains(text(),'Upload any technical reports that you have produce')]</value>
+         <value>(//label[contains(text(),'Upload any technical reports that you have produce')])[${index}]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
