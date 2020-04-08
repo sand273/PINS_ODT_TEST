@@ -30,16 +30,6 @@ WebUI.click(findTestObject('Ownership/option_Own_Site_No'))
 
 WebUI.click(findTestObject('Ownership/option_Notified_Owners_Yes'))
 
-WebUI.click(findTestObject('Ownership/link_Help_Serving_Notice'))
-
-WebUI.verifyElementText(findTestObject('Ownership/text_Help_Serving_Notice'), verData.getValue(1, 82))
-
-WebUI.verifyElementText(findTestObject('Ownership/text_Certified_Noticed'), verData.getValue(1, 83))
-
-WebUI.click(findTestObject('Ownership/link_Help_File_Formats'))
-
-WebUI.verifyElementText(findTestObject('Ownership/text_Help_File_Formats'), verData.getValue(1, 32))
-
 WebUI.click(findTestObject('Ownership/link_Upload_Owners_File'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)

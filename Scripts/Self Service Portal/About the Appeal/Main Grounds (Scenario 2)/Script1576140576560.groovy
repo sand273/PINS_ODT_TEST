@@ -26,15 +26,7 @@ WebUI.waitForElementVisible(findTestObject('Main grounds of Appeal/message_speci
 WebUI.verifyElementText(findTestObject('Main grounds of Appeal/message_special_category_information'), verData.getValue(
         1, 48))
 
-WebUI.click(findTestObject('Main grounds of Appeal/link_Help_with_Preparing'))
-
-WebUI.waitForElementVisible(findTestObject('Main grounds of Appeal/frame_Prepare_Statement'), 5)
-
-WebUI.verifyElementText(findTestObject('Main grounds of Appeal/frame_Prepare_Statement'), verData.getValue(1, 54))
-
 WebUI.click(findTestObject('Main grounds of Appeal/option_Special_Cat_Info_Yes'))
-
-WebUI.verifyElementText(findTestObject('Main grounds of Appeal/frame_Grounds_of_Appeal'), verData.getValue(1, 50))
 
 WebUI.verifyElementText(findTestObject('Main grounds of Appeal/message_ submit_grounds_of_appeal'), verData.getValue(1, 
         49))
