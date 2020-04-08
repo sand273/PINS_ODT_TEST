@@ -23,11 +23,11 @@ WebUI.waitForElementVisible(findTestObject('Relevant Plans/link_Relevant_Plans')
 
 WebUI.click(findTestObject('Relevant Plans/link_Relevant_Plans'))
 
-WebUI.waitForElementVisible(findTestObject('Relevant Plans/message_Relevant_Plans'), 5)
+WebUI.waitForElementVisible(findTestObject('Relevant Plans/message_Relevant_Plans', [('index') : 1]), 5)
 
-WebUI.verifyElementText(findTestObject('Relevant Plans/message_Relevant_Plans'), verData.getValue(1, 145))
+WebUI.verifyElementText(findTestObject('Relevant Plans/message_Relevant_Plans', [('index') : 1]), verData.getValue(1, 145))
 
-WebUI.click(findTestObject('Relevant Plans/message_Relevant_Plans'))
+WebUI.click(findTestObject('Relevant Plans/message_Relevant_Plans', [('index') : 1]))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
@@ -35,9 +35,9 @@ WebUI.waitForElementClickable(findTestObject('Relevant Plans/button_Add_Plan_Doc
 
 WebUI.click(findTestObject('Relevant Plans/button_Add_Plan_Doc'))
 
-WebUI.waitForElementVisible(findTestObject('Relevant Plans/button_Select_File2'), 5)
+WebUI.waitForElementVisible(findTestObject('Relevant Plans/message_Relevant_Plans', [('index') : 2]), 5)
 
-WebUI.click(findTestObject('Relevant Plans/button_Select_File2'))
+WebUI.click(findTestObject('Relevant Plans/message_Relevant_Plans', [('index') : 2]))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//fieldset[5]//div[1]//div[1]//div[1]//div[1]//details[1]//summary[1]//span[1]</value>
+         <value>//fieldset[@id='section-Additional.Plans']//div[1]//div[1]//div[1]//div[1]//details[1]//summary[1]//span[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
