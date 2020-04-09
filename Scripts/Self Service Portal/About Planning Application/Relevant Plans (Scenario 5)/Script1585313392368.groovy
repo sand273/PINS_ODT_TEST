@@ -23,9 +23,9 @@ WebUI.waitForElementVisible(findTestObject('Relevant Plans/link_Relevant_Plans')
 
 WebUI.click(findTestObject('Relevant Plans/link_Relevant_Plans'))
 
-WebUI.waitForElementVisible(findTestObject('Relevant Plans/message_Relevant_Plans'), 5)
+WebUI.waitForElementVisible(findTestObject('Relevant Plans/message_Relevant_Plans', [('index') : 1]), 5)
 
-WebUI.verifyElementText(findTestObject('Relevant Plans/message_Relevant_Plans'), verData.getValue(1, 145))
+WebUI.verifyElementText(findTestObject('Relevant Plans/message_Relevant_Plans', [('index') : 1]), verData.getValue(1, 145))
 
 WebUI.waitForElementClickable(findTestObject('Planning Application details/button_Save_Continue'), 5)
 

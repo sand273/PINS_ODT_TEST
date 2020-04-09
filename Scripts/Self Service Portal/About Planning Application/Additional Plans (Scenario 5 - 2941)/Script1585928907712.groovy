@@ -27,12 +27,6 @@ WebUI.waitForElementVisible(findTestObject('Additional Plans/question_Non_Determ
 
 WebUI.verifyElementText(findTestObject('Additional Plans/question_Non_Determination_LPA_Plans'), verData.getValue(1, 149))
 
-WebUI.click(findTestObject('Additional Plans/link_Help_File_Formats'))
-
-WebUI.waitForElementVisible(findTestObject('Additional Plans/list_Help_File_Formats'), 5)
-
-WebUI.verifyElementText(findTestObject('Additional Plans/list_Help_File_Formats'), verData.getValue(1, 32))
-
 WebUI.waitForElementClickable(findTestObject('Planning Application details/button_Save_Continue'), 5)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
