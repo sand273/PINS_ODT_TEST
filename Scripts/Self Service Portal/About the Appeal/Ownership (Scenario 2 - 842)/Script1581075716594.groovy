@@ -36,16 +36,6 @@ WebUI.waitForElementVisible(findTestObject('Ownership/message_Any_Site_Owners'),
 
 WebUI.click(findTestObject('Ownership/option_Any_Site_Owner_Yes'))
 
-WebUI.click(findTestObject('Ownership/link_Help_Formats'))
-
-WebUI.verifyElementText(findTestObject('Ownership/text_File_Formats'), verData.getValue(1, 32))
-
-WebUI.verifyElementText(findTestObject('Ownership/text_Certified_Noticed'), verData.getValue(1, 83))
-
-WebUI.click(findTestObject('Ownership/link_Help_Serving_Notice'))
-
-WebUI.verifyElementText(findTestObject('Ownership/text_Help_Serving_Notice'), verData.getValue(1, 82))
-
 WebUI.click(findTestObject('Ownership/link_Upload_Known_Owner_File'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
