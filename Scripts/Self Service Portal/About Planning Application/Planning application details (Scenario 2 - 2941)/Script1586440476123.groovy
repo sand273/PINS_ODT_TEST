@@ -29,9 +29,7 @@ WebUI.waitForElementVisible(findTestObject('Planning Application details/questio
 
 WebUI.verifyElementText(findTestObject('Planning Application details/question_Statement_Applies'), verData.getValue(1, 23))
 
-WebUI.click(findTestObject('Planning Application details/option_Appeal_Another_Person'))
-
-WebUI.click(findTestObject('Planning Application details/option_Individual'))
+WebUI.click(findTestObject('Planning Application details/option_Appeal_Company_Received'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -64,9 +62,19 @@ WebUI.waitForElementVisible(findTestObject('Planning Application details/questio
 
 WebUI.verifyElementText(findTestObject('Planning Application details/question_Application_Type'), verData.getValue(1, 27))
 
-WebUI.check(findTestObject('Planning Application details/check_Change_of_Use'))
+WebUI.check(findTestObject('Planning Application details/check_Incineration'))
 
-WebUI.click(findTestObject('Appeal planning decision/input_No_residential_dwellings'))
+WebUI.check(findTestObject('Planning Application details/check_Industrial_and_community'))
+
+WebUI.check(findTestObject('Planning Application details/check_Minerals'))
+
+WebUI.click(findTestObject('Planning Application details/input_Area'))
+
+WebUI.click(findTestObject('Planning Application details/input_Under_0.1_ha'))
+
+WebUI.click(findTestObject('Planning Application details/input_Unde_ 4_ha_50,000_tonnes_or_5_years_duration'))
+
+WebUI.click(findTestObject('Planning Application details/input_Up_to_100,000_tonnes'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -86,7 +94,11 @@ WebUI.waitForElementVisible(findTestObject('Planning Application details/questio
 WebUI.verifyElementText(findTestObject('Planning Application details/question_Description_Change'), verData.getValue(1, 
         29))
 
-WebUI.check(findTestObject('Planning Application details/option_Dev_Description_Change_No'))
+WebUI.check(findTestObject('Planning Application details/input_Yes_Description_Change'))
+
+WebUI.setText(findTestObject('Planning Application details/field_Revised_Description'), testData.getValue(4, 1))
+
+WebUI.setText(findTestObject('Planning Application details/field_Reason_Changed_Description'), testData.getValue(5, 1))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
