@@ -60,7 +60,7 @@ for (int index = 1; index <= GlobalVariable.driverCount; index++)
 {
     GlobalVariable.ApplicationRef = values[index].toString()
 
-    WebUI.callTestCase(findTestCase('GoPro UI/LPA Comments/LPA Comments'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('GoPro UI/LPA Statement/LPA Statement'), [:], FailureHandling.STOP_ON_FAILURE)
 }
 
 WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)

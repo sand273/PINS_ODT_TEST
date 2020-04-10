@@ -51,7 +51,7 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++)
 	
 	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('GoPro UI/LPA Comments/LPA Comments'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('GoPro UI/LPA Statement/LPA Statement'), [:], FailureHandling.STOP_ON_FAILURE)
 
 	//WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Portal_Run_GoPro_DataStore'), [:], FailureHandling.STOP_ON_FAILURE)
 	
