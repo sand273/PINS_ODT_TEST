@@ -20,7 +20,7 @@ WebUI.waitForElementVisible(findTestObject('Plans/link_Plans'), 5)
 
 WebUI.click(findTestObject('Plans/link_Plans'))
 
-WebUI.waitForElementVisible(findTestObject('Plans/message_Plan document'), 5)
+WebUI.waitForElementVisible(findTestObject('Plans/button_Select_File'), 5)
 
 WebUI.click(findTestObject('Plans/link_Help_File_Formats'))
 

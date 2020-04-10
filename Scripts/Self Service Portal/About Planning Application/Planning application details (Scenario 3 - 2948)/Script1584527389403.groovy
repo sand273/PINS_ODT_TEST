@@ -31,10 +31,6 @@ WebUI.verifyElementText(findTestObject('Planning Application details/question_St
 
 WebUI.click(findTestObject('Planning Application details/option_Appeal_Another_Person'))
 
-WebUI.click(findTestObject('Planning Application details/link_Not_Sure_Which_Option'))
-
-WebUI.verifyElementText(findTestObject('Planning Application details/text_Not_Sure_Which_Option'), verData.getValue(1, 84))
-
 WebUI.click(findTestObject('Planning Application details/option_Individual'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
@@ -111,12 +107,6 @@ WebUI.waitForElementVisible(findTestObject('Planning Application details/message
 WebUI.verifyElementText(findTestObject('Planning Application details/message_Upload_Application_Form'), verData.getValue(
         1, 105))
 
-WebUI.click(findTestObject('Planning Application details/link_Help_Format_Planning'))
-
-WebUI.waitForElementVisible(findTestObject('Planning Application details/list_Help_Format_Planning'), 5)
-
-WebUI.verifyElementText(findTestObject('Planning Application details/list_Help_Format_Planning'), verData.getValue(1, 32))
-
 WebUI.click(findTestObject('Planning Application details/button_Application_Form'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
@@ -129,13 +119,6 @@ WebUI.waitForElementVisible(findTestObject('Planning Application details/message
 
 WebUI.verifyElementText(findTestObject('Planning Application details/message_LPA_Original_Planning_Decision'), verData.getValue(
         1, 106))
-
-WebUI.click(findTestObject('Planning Application details/link_Help_Format_LPA'))
-
-WebUI.waitForElementVisible(findTestObject('Planning Application details/list_Help_Formats_LPA_Notice'), 5)
-
-WebUI.verifyElementText(findTestObject('Planning Application details/list_Help_Formats_LPA_Notice'), verData.getValue(1, 
-        32))
 
 WebUI.click(findTestObject('Planning Application details/message_LPA_Original_Planning_Decision'))
 

@@ -28,12 +28,6 @@ WebUI.verifyMatch(data, verData.getValue(1, 59).replaceAll('\\s+', '').trim(), f
 
 WebUI.click(findTestObject('Preferred procedure/option_No_Preference'))
 
-WebUI.click(findTestObject('Preferred procedure/link_Which_Option'))
-
-WebUI.waitForElementVisible(findTestObject('Preferred procedure/frame_Which_Option'), 5)
-
-WebUI.verifyElementText(findTestObject('Preferred procedure/frame_Which_Option'), verData.getValue(1, 60))
-
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Preferred procedure/status_Complete_Preferred'), 10)

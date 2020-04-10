@@ -41,10 +41,6 @@ WebUI.verifyElementText(findTestObject('Site Details/text_Grid_Reference'), verD
 
 WebUI.setText(findTestObject('Site Details/field_Grid_Reference'), testData.getValue(6, 1))
 
-WebUI.click(findTestObject('Site Details/link_Help_Easting_Northings'))
-
-WebUI.verifyElementText(findTestObject('Site Details/text_Help_Easting_Northings'), verData.getValue(1, 87))
-
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Site Details/question_Green_Belt'), 5)

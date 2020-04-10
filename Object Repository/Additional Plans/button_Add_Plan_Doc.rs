@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[2]</value>
+         <value>//fieldset[@id='section-Different.Plans']//div[1]//div[@class='repeatable-footer']//button[1] | //fieldset[@id='section-Additional.Plans']//div[1]//div[@class='repeatable-footer']//button[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

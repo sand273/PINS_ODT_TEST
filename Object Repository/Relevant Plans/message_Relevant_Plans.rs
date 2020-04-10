@@ -6,12 +6,11 @@
    <elementGuidId>b25a8ad6-fb26-4cc4-b70e-3ac1241465f2</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//label[contains(text(),&quot;Upload any other plans you haven't yet submitted,&quot;)]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//label[@class='govuk-label'][contains(text(),&quot;Upload any other plans you haven't yet submitted,&quot;)])[${index}]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

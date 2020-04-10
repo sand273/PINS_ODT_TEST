@@ -32,10 +32,6 @@ WebUI.click(findTestObject('Preferred procedure/input_Hearing'))
 
 WebUI.setText(findTestObject('Preferred procedure/text_Summary_Hearing'), testData.getValue(1, 1))
 
-WebUI.waitForElementVisible(findTestObject('Preferred procedure/frame_Which_Option'), 5)
-
-WebUI.verifyElementText(findTestObject('Preferred procedure/frame_Which_Option'), verData.getValue(1, 60))
-
 WebUI.click(findTestObject('Preferred procedure/link_Draft_Statement'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)

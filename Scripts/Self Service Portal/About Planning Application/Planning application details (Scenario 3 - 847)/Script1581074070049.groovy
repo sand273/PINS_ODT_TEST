@@ -31,10 +31,6 @@ WebUI.verifyElementText(findTestObject('Planning Application details/question_St
 
 WebUI.click(findTestObject('Planning Application details/option_Appeal_Another_Person'))
 
-WebUI.click(findTestObject('Planning Application details/link_Not_Sure_Which_Option'))
-
-WebUI.verifyElementText(findTestObject('Planning Application details/text_Not_Sure_Which_Option'), verData.getValue(1, 84))
-
 WebUI.click(findTestObject('Planning Application details/option_Individual'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
@@ -107,12 +103,6 @@ WebUI.waitForElementVisible(findTestObject('Planning Application details/message
 WebUI.verifyElementText(findTestObject('Planning Application details/message_Upload_Application_Form'), verData.getValue(
         1, 30))
 
-WebUI.click(findTestObject('Planning Application details/link_Help_File_Format'))
-
-WebUI.waitForElementVisible(findTestObject('Planning Application details/list_Help_File_Formats'), 20)
-
-WebUI.verifyElementText(findTestObject('Planning Application details/list_Help_File_Formats'), verData.getValue(1, 32))
-
 WebUI.click(findTestObject('Planning Application details/button_Application_Form'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
@@ -125,13 +115,6 @@ WebUI.waitForElementVisible(findTestObject('Planning Application details/message
 
 WebUI.verifyElementText(findTestObject('Planning Application details/message_LPA_Decision_Notice'), verData.getValue(1, 
         31))
-
-WebUI.click(findTestObject('Planning Application details/link_Help_Format_LPA'))
-
-WebUI.waitForElementVisible(findTestObject('Planning Application details/list_Help_Formats_LPA_Notice'), 20)
-
-WebUI.verifyElementText(findTestObject('Planning Application details/list_Help_Formats_LPA_Notice'), verData.getValue(1, 
-        32))
 
 WebUI.click(findTestObject('Planning Application details/button_LPA_Notice'))
 

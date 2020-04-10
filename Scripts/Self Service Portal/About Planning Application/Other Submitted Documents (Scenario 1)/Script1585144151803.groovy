@@ -25,12 +25,6 @@ WebUI.waitForElementVisible(findTestObject('Other Submitted Documents/message_Up
 WebUI.verifyElementText(findTestObject('Other Submitted Documents/message_Upload_Other_Submitted_Docs'), verData.getValue(
         1, 91))
 
-WebUI.click(findTestObject('Other Submitted Documents/link_Help_File_Formats'))
-
-WebUI.waitForElementVisible(findTestObject('Other Submitted Documents/list_Help_File_Formats'), 5)
-
-WebUI.verifyElementText(findTestObject('Other Submitted Documents/list_Help_File_Formats'), verData.getValue(1, 32))
-
 WebUI.click(findTestObject('Other Submitted Documents/button_Select_File'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)

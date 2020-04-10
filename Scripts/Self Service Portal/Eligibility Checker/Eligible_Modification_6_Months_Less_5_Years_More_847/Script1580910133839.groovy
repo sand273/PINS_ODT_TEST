@@ -55,7 +55,7 @@ WebUI.waitForElementVisible(findTestObject('Appeal planning decision/eligibility
 
 WebUI.verifyElementText(findTestObject('Appeal planning decision/eligibility_Confirmed'), verData.getValue(1, 9))
 
-WebUI.verifyElementText(findTestObject('Appeal planning decision/text_Appeal_Form_Name'), verData.getValue(1, 124))
+WebUI.verifyElementText(findTestObject('Appeal planning decision/text_Appeal_Form_Name'), verData.getValue(1, 124), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementVisible(findTestObject('Appeal planning decision/button_Appeal_Now'))
 

@@ -26,19 +26,7 @@ WebUI.waitForElementVisible(findTestObject('Costs/question_Costs_Application'), 
 
 WebUI.verifyElementText(findTestObject('Costs/question_Costs_Application'), verData.getValue(1, 55))
 
-WebUI.click(findTestObject('Costs/link_Application_Costs'))
-
-WebUI.waitForElementVisible(findTestObject('Costs/frame_Application_Costs'), 2)
-
-WebUI.verifyElementText(findTestObject('Costs/frame_Application_Costs'), verData.getValue(1, 56))
-
 WebUI.click(findTestObject('Costs/option_Yes_Application_Costs'))
-
-WebUI.click(findTestObject('Costs/link_Help_Formats'))
-
-WebUI.waitForElementVisible(findTestObject('Costs/message_Help_File'), 20)
-
-WebUI.verifyElementText(findTestObject('Costs/message_Help_File'), verData.getValue(1, 32))
 
 WebUI.click(findTestObject('Costs/file_Upload_App_Costs'))
 

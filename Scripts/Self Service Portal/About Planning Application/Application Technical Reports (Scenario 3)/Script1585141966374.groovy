@@ -30,12 +30,6 @@ not_run: def data = WebUI.getText(findTestObject('Application Technical Reports/
 
 not_run: WebUI.verifyMatch(data, verData.getValue(1, 61).replaceAll('\\s+', '').trim(), false, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Application Technical Reports/link_Help_File_Formats'))
-
-WebUI.waitForElementVisible(findTestObject('Application Technical Reports/list_Help_File_Formats'), 5)
-
-WebUI.verifyElementText(findTestObject('Application Technical Reports/list_Help_File_Formats'), verData.getValue(1, 32))
-
 WebUI.waitForElementClickable(findTestObject('Planning Application details/button_Save_Continue'), 5)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
