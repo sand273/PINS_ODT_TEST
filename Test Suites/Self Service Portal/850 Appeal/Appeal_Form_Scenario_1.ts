@@ -41,6 +41,18 @@
       <testCaseId>Test Cases/Self Service Portal/About Planning Application/Plans</testCaseId>
    </testCaseLink>
    <testCaseLink>
+      <guid>dbe4c470-1a4f-4238-b4f2-2dd055bb91a3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Additional Plans</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2c6193c2-2771-40e1-9003-4b7c5bcf5a9d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/About Planning Application/Relevant Plans</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>218935cf-a106-4c8b-868c-bb3f4ff6934a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

@@ -20,14 +20,6 @@ WebUI.waitForElementVisible(findTestObject('Plans/link_Plans'), 20)
 
 WebUI.click(findTestObject('Plans/link_Plans'))
 
-WebUI.waitForElementVisible(findTestObject('Plans/link_Help_File_Formats'), 20)
-
-WebUI.click(findTestObject('Plans/link_Help_File_Formats'))
-
-WebUI.waitForElementVisible(findTestObject('Plans/list_Help_File_Formats'), 20)
-
-WebUI.verifyElementText(findTestObject('Plans/list_Help_File_Formats'), verData.getValue(1, 32))
-
 WebUI.click(findTestObject('Plans/button_Select_File'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)

@@ -29,9 +29,7 @@ WebUI.waitForElementVisible(findTestObject('Planning Application details/questio
 
 WebUI.verifyElementText(findTestObject('Planning Application details/question_Statement_Applies'), verData.getValue(1, 23))
 
-WebUI.click(findTestObject('Planning Application details/option_Appeal_Another_Person'))
-
-WebUI.click(findTestObject('Planning Application details/option_Individual'))
+WebUI.click(findTestObject('Planning Application details/option_Appeal_Company_Received'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -64,17 +62,19 @@ WebUI.waitForElementVisible(findTestObject('Planning Application details/questio
 
 WebUI.verifyElementText(findTestObject('Planning Application details/question_Application_Type'), verData.getValue(1, 27))
 
-WebUI.check(findTestObject('Planning Application details/check_Change_of_Use'))
+WebUI.check(findTestObject('Planning Application details/check_Incineration'))
 
-WebUI.check(findTestObject('Planning Application details/check_General_Industry'))
+WebUI.check(findTestObject('Planning Application details/check_Industrial_and_community'))
 
-WebUI.check(findTestObject('Planning Application details/check_Householder'))
+WebUI.check(findTestObject('Planning Application details/check_Minerals'))
 
-WebUI.click(findTestObject('Appeal planning decision/input_No_residential_dwellings'))
+WebUI.click(findTestObject('Planning Application details/input_Area'))
 
-WebUI.click(findTestObject('Appeal planning decision/input_Area_Measurement'))
+WebUI.click(findTestObject('Planning Application details/input_Under_0.1_ha'))
 
-WebUI.click(findTestObject('Appeal planning decision/input_Area_Development'))
+WebUI.click(findTestObject('Planning Application details/input_Unde_ 4_ha_50,000_tonnes_or_5_years_duration'))
+
+WebUI.click(findTestObject('Planning Application details/input_Up_to_100,000_tonnes'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -94,44 +94,24 @@ WebUI.waitForElementVisible(findTestObject('Planning Application details/questio
 WebUI.verifyElementText(findTestObject('Planning Application details/question_Description_Change'), verData.getValue(1, 
         29))
 
-WebUI.check(findTestObject('Planning Application details/option_Dev_Description_Change_No'))
+WebUI.check(findTestObject('Planning Application details/input_Yes_Description_Change'))
+
+WebUI.setText(findTestObject('Planning Application details/field_Revised_Description'), testData.getValue(4, 1))
+
+WebUI.setText(findTestObject('Planning Application details/field_Reason_Changed_Description'), testData.getValue(5, 1))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Planning Application details/message_Upload_Application_Form'), 5)
+WebUI.waitForElementVisible(findTestObject('Planning Application details/message_Upload_Application_Form'), 20)
 
 WebUI.verifyElementText(findTestObject('Planning Application details/message_Upload_Application_Form'), verData.getValue(
-        1, 105))
+        1, 30))
 
-WebUI.click(findTestObject('Planning Application details/button_Application_Form'))
+WebUI.click(findTestObject('Planning Application details/button_Application_Form'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Planning Application details/button_Remove_File'), 5)
-
-WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
-
-WebUI.waitForElementVisible(findTestObject('Planning Application details/message_LPA_Original_Planning_Decision'), 5)
-
-WebUI.verifyElementText(findTestObject('Planning Application details/message_LPA_Original_Planning_Decision'), verData.getValue(
-        1, 106))
-
-WebUI.click(findTestObject('Planning Application details/button_LPA_Original_Planning_Decision'))
-
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyElementPresent(findTestObject('Planning Application details/button_Remove_LPA_Original_Planning_Decision'), 
-    5)
-
-WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
-
-WebUI.waitForElementVisible(findTestObject('Planning Application details/message_LPA_Decision_Notice'), 5)
-
-WebUI.click(findTestObject('Planning Application details/button_LPA_Notice'))
-
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyElementPresent(findTestObject('Planning Application details/button_Remove_LPA_Notice'), 5)
+WebUI.verifyElementVisible(findTestObject('Planning Application details/button_Remove_File'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 

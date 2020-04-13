@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//fieldset[6]//div[1]//div[2]//button[1]</value>
+         <value>//fieldset[@id='section-Relevant.Plans']//div[1]//div[@class='repeatable-footer']//button[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

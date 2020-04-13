@@ -22,15 +22,10 @@ WebUI.waitForElementVisible(findTestObject('Application Technical Reports/link_T
 
 WebUI.click(findTestObject('Application Technical Reports/link_Technical_Reports'))
 
-WebUI.waitForElementVisible(findTestObject('Application Technical Reports/message_Technical_Reports'), 5)
+WebUI.waitForElementVisible(findTestObject('Application Technical Reports/message_Technical_Reports', [('index') : 1]), 
+    5)
 
-WebUI.verifyElementText(findTestObject('Application Technical Reports/message_Technical_Reports'), verData.getValue(1, 62))
-
-WebUI.click(findTestObject('Technical Reports Post Decision/link_Help_File_Formats'))
-
-WebUI.waitForElementVisible(findTestObject('Technical Reports Post Decision/list_Help_File_Formats'), 5)
-
-WebUI.verifyElementText(findTestObject('Technical Reports Post Decision/list_Help_File_Formats'), verData.getValue(1, 32))
+WebUI.verifyElementText(findTestObject('Application Technical Reports/message_Technical_Reports', [('index') : 1]), verData.getValue(1, 62))
 
 WebUI.waitForElementClickable(findTestObject('Planning Application details/button_Save_Continue'), 5)
 

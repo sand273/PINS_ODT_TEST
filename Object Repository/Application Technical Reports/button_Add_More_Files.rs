@@ -6,11 +6,11 @@
    <elementGuidId>e71550a6-9d44-431e-9c7c-6b8a99f6b9e0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//fieldset[@id='section-Relevant.Technical']//div[1]//div[@class='repeatable-footer']//button[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='govuk-grid-column-full']//div[2]//fieldset[7]//div[1]//div[2]//button[1]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
          <key>CSS</key>
