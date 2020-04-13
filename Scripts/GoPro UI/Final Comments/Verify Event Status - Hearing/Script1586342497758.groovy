@@ -32,9 +32,9 @@ WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Final_Comments_Publish'), 'value', todaysDate, 
     1)
 
-not_run: WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
+WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
-not_run: WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/link_Folder_Final_Comments'), 20)
+WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/link_Folder_Final_Comments'), 20)
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/input_Search'))
 

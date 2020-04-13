@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>date_LPA_Published</name>
+   <name>date_LPA_Published_Hearing</name>
    <tag></tag>
-   <elementGuidId>d1fca85d-459c-4a21-a91f-b5a7fa30f1dd</elementGuidId>
+   <elementGuidId>0ff47911-23d6-4754-9afb-727b570158ea</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='Timeline2.LpaStatPublDate']</value>
+         <value>//input[@id='Timeline2.LpaQuestPublDate']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
