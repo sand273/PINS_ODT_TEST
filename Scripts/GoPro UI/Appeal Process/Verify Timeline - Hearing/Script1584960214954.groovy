@@ -96,11 +96,6 @@ WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Dec
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_LPA_Questionaire_Due'), 'value', queDueDate.format(
         'dd/MM/yyyy').toString(), 1)
 
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Final_Comments'), 'value', finalCommDate.format(
-        'dd/MM/yyyy').toString(), 1)
-
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Final_Comments_Publish'), 'value', '', 1)
-
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_LPA_Questionaire_Publish'), 'value', '', 1)
 
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Event'), 'value', '', 1)

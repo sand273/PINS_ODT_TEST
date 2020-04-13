@@ -92,7 +92,7 @@ WebUI.verifyElementText(findTestObject('GoPro UI/Case Documents/link_LPA_Stateme
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'))
 
-WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish LPA Statements - Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish LPA Statements Hearing - Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.refresh()
 

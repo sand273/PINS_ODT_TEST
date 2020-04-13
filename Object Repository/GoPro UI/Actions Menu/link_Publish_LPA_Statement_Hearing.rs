@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>date_LPA_Published</name>
+   <name>link_Publish_LPA_Statement_Hearing</name>
    <tag></tag>
-   <elementGuidId>d1fca85d-459c-4a21-a91f-b5a7fa30f1dd</elementGuidId>
+   <elementGuidId>b1c76353-43b9-412b-95bf-8f23999afd75</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='Timeline2.LpaStatPublDate']</value>
+         <value>//div[@id='documents-l']//li[@class='ng-scope']//li[3]//button[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
