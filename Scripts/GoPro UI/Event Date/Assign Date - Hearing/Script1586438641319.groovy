@@ -102,6 +102,10 @@ WebUI.selectOptionByIndex(findTestObject('GoPro UI/Case Documents/dropdown_Statu
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/button_Primary'))
 
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'), 5)
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
+
 WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish Decision - Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()

@@ -29,46 +29,46 @@ WebUI.delay(1)
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Event_Status'), 'defaultSelected', 'true', 
     5)
 
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Final_Comments_Publish'), 'value', todaysDate, 
-    1)
+not_run: WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Final_Comments_Publish'), 'value', 
+    todaysDate, 1)
 
-WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
+not_run: WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
-WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/link_Folder_Final_Comments'), 20)
+not_run: WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/input_Search'), 10)
 
-WebUI.click(findTestObject('GoPro UI/Case Summary/input_Search'))
+not_run: WebUI.click(findTestObject('GoPro UI/Case Summary/input_Search'))
 
-WebUI.sendKeys(findTestObject('GoPro UI/Case Summary/input_Search'), testData.getValue(1, 8))
+not_run: WebUI.sendKeys(findTestObject('GoPro UI/Case Summary/input_Search'), testData.getValue(1, 8))
 
-WebUI.click(findTestObject('GoPro UI/Case Summary/button_Search'))
+not_run: WebUI.click(findTestObject('GoPro UI/Case Summary/button_Search'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), 20)
+not_run: WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), 20)
 
-WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'))
+not_run: WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/status_Document_Published'), 2)
+not_run: WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/status_Document_Published'), 2)
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/button_Clear_Search'), 3)
+not_run: WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/button_Clear_Search'), 3)
 
-WebUI.click(findTestObject('GoPro UI/Case Documents/button_Clear_Search'))
+not_run: WebUI.click(findTestObject('GoPro UI/Case Documents/button_Clear_Search'))
 
-WebUI.sendKeys(findTestObject('GoPro UI/Case Summary/input_Search'), testData.getValue(1, 9))
+not_run: WebUI.sendKeys(findTestObject('GoPro UI/Case Summary/input_Search'), testData.getValue(1, 9))
 
-WebUI.click(findTestObject('GoPro UI/Case Summary/button_Search'))
+not_run: WebUI.click(findTestObject('GoPro UI/Case Summary/button_Search'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), 20)
+not_run: WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), 20)
 
-WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'))
+not_run: WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/status_Document_Published'), 2)
+not_run: WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/status_Document_Published'), 2)
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/button_Clear_Search'), 3)
+not_run: WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/button_Clear_Search'), 3)
 
-WebUI.click(findTestObject('GoPro UI/Case Documents/button_Clear_Search'))
+not_run: WebUI.click(findTestObject('GoPro UI/Case Documents/button_Clear_Search'))
 
 WebUI.closeBrowser()
 

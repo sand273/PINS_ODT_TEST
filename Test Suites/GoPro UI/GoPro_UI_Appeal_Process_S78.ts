@@ -131,6 +131,12 @@
       <testCaseId>Test Cases/GoPro UI/Event Date/Assign Date</testCaseId>
    </testCaseLink>
    <testCaseLink>
+      <guid>6c513cab-ffaa-426c-8f1d-e125a59300d9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/GoPro UI/Decision Issued/Verify Decision Issued</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>bea5af93-2e18-449b-ac77-c112738a64c2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
