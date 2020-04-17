@@ -12,22 +12,14 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
-def testData = TestDataFactory.findTestData('Data Files/GoPro_UI_Verification')
+WebUI.click(findTestObject('GoPro UI/Actions Menu/menu_Actions_Icon'))
 
-Date today = new Date()
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Actions Menu/link_Publish_Decision_Hearing'), 10)
 
-String todaysDate = today.format('dd/MM/yyyy')
+WebUI.click(findTestObject('GoPro UI/Actions Menu/link_Publish_Decision_Hearing'))
 
-WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForElementPresent(findTestObject('GoPro UI/Actions Menu/message_Publish_Questionaire'), 10)
 
-WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal - Hearing'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.delay(1)
-
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Event_Status'), 'defaultSelected', 'true', 
-    5)
-
-WebUI.closeBrowser()
+WebUI.click(findTestObject('GoPro UI/Programming/button_Publish'))
 

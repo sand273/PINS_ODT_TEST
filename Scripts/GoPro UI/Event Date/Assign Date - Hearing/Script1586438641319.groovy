@@ -106,7 +106,15 @@ WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/tab_Case_Doc
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
-WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish Decision - Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.closeWindowIndex(1)
+
+WebUI.closeBrowser()
+
+WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal - Hearing'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish Decision - Hearing Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
 

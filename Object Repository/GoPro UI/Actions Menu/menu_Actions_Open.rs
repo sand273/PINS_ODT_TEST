@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_Publish_Decision</name>
+   <name>menu_Actions_Open</name>
    <tag></tag>
-   <elementGuidId>3434b23f-8615-4b1e-8307-31a52f358c40</elementGuidId>
+   <elementGuidId>c9ae3d55-a175-439d-914a-f3fe86993eae</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[contains(@class,'tab-pane ng-scope active')]//li[10]//button[1]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//div[contains(@class,'open')]//button[@id='mega-menu-button']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

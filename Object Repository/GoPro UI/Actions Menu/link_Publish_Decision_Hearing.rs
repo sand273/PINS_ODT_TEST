@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_Publish_Decision</name>
+   <name>link_Publish_Decision_Hearing</name>
    <tag></tag>
-   <elementGuidId>3434b23f-8615-4b1e-8307-31a52f358c40</elementGuidId>
+   <elementGuidId>966c9ad9-1ddd-4382-8dfe-aa178fb53307</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[contains(@class,'tab-pane ng-scope active')]//li[10]//button[1]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//div[@class='col-sm-4']//button[@id='actionmenu.publishDecision']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

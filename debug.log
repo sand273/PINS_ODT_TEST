@@ -509,3 +509,26 @@
 [0409/150829.496:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
 [0409/150829.496:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
 [0409/150829.496:ERROR:exception_snapshot_win.cc(98)] thread ID 4420 not found in process
+[0417/114815.012:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0417/114815.014:ERROR:exception_snapshot_win.cc(98)] thread ID 15812 not found in process
+[0417/120223.007:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0417/120223.007:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0417/120223.008:ERROR:exception_snapshot_win.cc(98)] thread ID 16708 not found in process
+[0417/121623.271:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0417/121623.272:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0417/121623.272:ERROR:exception_snapshot_win.cc(98)] thread ID 16440 not found in process
+[0417/121734.167:ERROR:process_reader_win.cc(182)] ResumeThread: The parameter is incorrect. (0x57)
+[0417/121734.168:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0417/121734.168:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0417/121734.168:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0417/121734.168:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0417/121734.168:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0417/121734.168:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0417/121734.168:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0417/121734.168:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0417/121734.168:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0417/121734.168:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0417/121734.168:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0417/121734.168:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0417/121734.168:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0417/121734.168:ERROR:exception_snapshot_win.cc(98)] thread ID 12336 not found in process
