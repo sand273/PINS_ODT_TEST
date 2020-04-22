@@ -94,7 +94,7 @@
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Self Service Portal/842 Appeal/Appeal_Form_Scenario_4</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Self Service Portal/842 Appeal/Appeal_Form_Scenario_3</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -103,7 +103,7 @@
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Self Service Portal/842 Appeal/Appeal_Form_Scenario_3</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Self Service Portal/842 Appeal/Appeal_Form_Scenario_4</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>

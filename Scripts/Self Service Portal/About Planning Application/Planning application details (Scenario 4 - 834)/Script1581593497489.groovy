@@ -115,9 +115,6 @@ WebUI.waitForElementVisible(findTestObject('Planning Application details/message
 WebUI.verifyElementText(findTestObject('Planning Application details/message_LPA_Original_Planning'), verData.getValue(1, 
         106))
 
-WebUI.verifyElementText(findTestObject('Planning Application details/list_Help_Formats_LPA_Notice'), verData.getValue(1, 
-        32))
-
 WebUI.click(findTestObject('Planning Application details/button_LPA_Original'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
