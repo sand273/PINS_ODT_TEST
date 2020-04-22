@@ -102,6 +102,18 @@ WebUI.selectOptionByIndex(findTestObject('GoPro UI/Case Documents/dropdown_Statu
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/button_Primary'))
 
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'), 5)
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
+
+WebUI.closeWindowIndex(1)
+
+WebUI.closeBrowser()
+
+WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish Decision - Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()

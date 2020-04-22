@@ -26,15 +26,23 @@ WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureH
 
 WebUI.delay(1)
 
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Event_Status'), 'defaultSelected', 'true', 
-    5)
+try {
+    WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Event_Status'), 'defaultSelected', 
+        'true', 5)
+}
+catch (Exception ex) {
+    WebUI.selectOptionByValue(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'), '36309884-B777-4465-9146-3691A39739A7', 
+        true)
+
+    WebUI.click(findTestObject('GoPro UI/Case Summary/button_Save'))
+} 
 
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Final_Comments_Publish'), 'value', todaysDate, 
     1)
 
-not_run: WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
+WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
-not_run: WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/link_Folder_Final_Comments'), 20)
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/input_Search'), 10)
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/input_Search'))
 
