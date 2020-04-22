@@ -30,10 +30,6 @@ WebUI.click(findTestObject('Costs/link_Application_Costs'))
 
 WebUI.click(findTestObject('Costs/option_Yes_Application_Costs'))
 
-WebUI.waitForElementVisible(findTestObject('Costs/message_Help_File'), 20)
-
-WebUI.verifyElementText(findTestObject('Costs/message_Help_File'), verData.getValue(1, 32))
-
 WebUI.click(findTestObject('Costs/file_Upload_App_Costs'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Tiff_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
