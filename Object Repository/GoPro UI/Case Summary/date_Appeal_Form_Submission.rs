@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Conditions_Next_Page</name>
+   <name>date_Appeal_Form_Submission</name>
    <tag></tag>
-   <elementGuidId>74b516c2-1936-42a2-99d3-7b7038da85af</elementGuidId>
+   <elementGuidId>25927d03-168a-4e4e-85dc-16b5bcc0bcff</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//input[@id='caseCreationDate']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='form-page-page6']//a[@class='govuk-button'][contains(text(),'Next page')]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
