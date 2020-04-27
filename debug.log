@@ -1226,3 +1226,13 @@
 [0424/121819.827:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
 [0424/121819.828:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
 [0424/121819.828:ERROR:exception_snapshot_win.cc(98)] thread ID 9568 not found in process
+[0427/092242.709:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0427/093134.645:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0427/093134.646:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0427/093134.646:ERROR:exception_snapshot_win.cc(98)] thread ID 3108 not found in process
+[0427/101003.478:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0427/101003.479:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0427/101003.479:ERROR:exception_snapshot_win.cc(98)] thread ID 2564 not found in process
+[0427/103450.467:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0427/103450.468:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0427/103450.468:ERROR:exception_snapshot_win.cc(98)] thread ID 7828 not found in process
