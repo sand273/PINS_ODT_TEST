@@ -96,6 +96,45 @@ WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish LPA Statements - Actio
 
 WebUI.refresh()
 
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
+
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/input_Search'), 5)
+
+WebUI.click(findTestObject('GoPro UI/Case Summary/input_Search'))
+
+WebUI.sendKeys(findTestObject('GoPro UI/Case Summary/input_Search'), testData.getValue(1, 6))
+
+WebUI.click(findTestObject('GoPro UI/Case Summary/button_Search'))
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), 10)
+
+WebUI.verifyElementText(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), testData.getValue(1, 6))
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'))
+
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish LPA Statements Hearing - Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.refresh()
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
+
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/input_Search'), 5)
+
+WebUI.click(findTestObject('GoPro UI/Case Summary/input_Search'))
+
+WebUI.sendKeys(findTestObject('GoPro UI/Case Summary/input_Search'), testData.getValue(1, 7))
+
+WebUI.click(findTestObject('GoPro UI/Case Summary/button_Search'))
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), 10)
+
+WebUI.verifyElementText(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), testData.getValue(1, 7))
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'))
+
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish LPA Statements Hearing - Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.closeWindowIndex(1)
 
 WebUI.closeBrowser()
