@@ -14,6 +14,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
@@ -24,6 +26,8 @@ WebUI.click(findTestObject('Main grounds of Appeal/link_Main_grounds'))
 WebUI.waitForElementVisible(findTestObject('Main grounds of Appeal/message_special_category_information'), 5)
 
 WebUI.click(findTestObject('Main grounds of Appeal/input_Yes_AppealSpecialCategory'))
+
+WebUI.waitForElementClickable(findTestObject('Main grounds of Appeal/button_Select_File'), 5)
 
 WebUI.click(findTestObject('Main grounds of Appeal/button_Select_File'))
 
