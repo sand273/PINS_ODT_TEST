@@ -30,10 +30,16 @@ WebUI.refresh()
 
 WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(1)
-
+try
+{
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Open_for_LPA'), 'defaultSelected', 'true', 
     5)
+}
+catch (exception ex)
+{
+	WebUI.selectOptionByValue(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'), 'A26CF54F-19EB-45A7-BCE3-F9DBAE8A075E', true)
+	WebUI.click(findTestObject('GoPro UI/Case Summary/button_Save'))
+}
 
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_LPA_Questionaire_Publish'), 'value', todaysDate, 
     1)

@@ -2,29 +2,35 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import internal.GlobalVariable as GlobalVariable
 
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Actions Menu/menu_Actions_Icon'), 10)
+WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('GoPro UI/Actions Menu/menu_Actions_Icon'))
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Actions Menu/link_Publish_Decision'), 10)
+WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Decision_Pending'), 'defaultSelected', 
+    'true', 5)
 
-WebUI.click(findTestObject('GoPro UI/Actions Menu/link_Publish_Decision'))
+WebUI.selectOptionByValue(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'), 'B8A5B9F7-CF16-45B2-BD35-C6058C78B37E', 
+    true)
 
-WebUI.waitForElementPresent(findTestObject('GoPro UI/Actions Menu/message_Publish_Questionaire'), 10)
+WebUI.click(findTestObject('GoPro UI/Case Summary/button_Save'))
 
-WebUI.click(findTestObject('GoPro UI/Programming/button_Publish'))
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish Decision - Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.closeWindowIndex(1)
+
+WebUI.closeBrowser()
 

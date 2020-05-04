@@ -49,7 +49,7 @@ WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_IP_
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
-WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/link_Folder_LPA_Statement'), 20)
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/input_Search'), 20)
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/input_Search'))
 

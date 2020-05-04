@@ -96,7 +96,6 @@ WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish LPA Statements - Actio
 
 WebUI.refresh()
 
-
 WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
 WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/input_Search'), 5)
@@ -113,7 +112,7 @@ WebUI.verifyElementText(findTestObject('GoPro UI/Case Documents/link_LPA_Stateme
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'))
 
-WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish LPA Statements Hearing - Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish LPA Statements - Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.refresh()
 
@@ -133,7 +132,7 @@ WebUI.verifyElementText(findTestObject('GoPro UI/Case Documents/link_LPA_Stateme
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'))
 
-WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish LPA Statements Hearing - Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish LPA Statements - Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeWindowIndex(1)
 

@@ -115,7 +115,7 @@ WebUI.click(findTestObject('Complete Questionaire/input_No_NotificationsActions'
 
 WebUI.click(findTestObject('Complete Questionaire/button_Notifications_Next'))
 
-WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'), 5)
+WebUI.waitForElementPresent(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'), 10)
 
 try {
     WebUI.click(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'))
@@ -123,9 +123,9 @@ try {
 catch (Exception ex) {
     WebUI.refresh()
 
-    WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'), 10)
-
-    WebUI.click(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'))
+    WebUI.waitForElementPresent(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'), 10)
+	
+	WebUI.doubleClick(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'))
 } 
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/message_Confirmation'), 5)

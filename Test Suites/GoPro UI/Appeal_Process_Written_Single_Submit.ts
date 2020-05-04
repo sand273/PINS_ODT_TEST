@@ -128,7 +128,7 @@
       <guid>1c2c7fe9-6a0e-4a77-9987-9cc627416ff5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/GoPro UI/Event Date/Assign Date</testCaseId>
+      <testCaseId>Test Cases/GoPro UI/Event Date/Assign Date - Publish</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>6c513cab-ffaa-426c-8f1d-e125a59300d9</guid>

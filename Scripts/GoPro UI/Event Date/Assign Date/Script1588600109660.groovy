@@ -61,8 +61,6 @@ WebUI.delay(1, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(1)
-
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Decision_Pending'), 'defaultSelected', 
     'true', 5)
 
@@ -74,25 +72,23 @@ WebUI.delay(1)
 
 WebUI.refresh()
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'), 5)
-
 WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/button_External_Documents'), 5)
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/input_Search'), 20)
 
-WebUI.click(findTestObject('GoPro UI/Case Documents/button_External_Documents'))
+WebUI.click(findTestObject('GoPro UI/Case Summary/input_Search'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/check_External_Documents'), 5)
+WebUI.sendKeys(findTestObject('GoPro UI/Case Summary/input_Search'), testData.getValue(1, 13))
 
-WebUI.click(findTestObject('GoPro UI/Case Documents/check_External_Documents'))
+WebUI.click(findTestObject('GoPro UI/Case Summary/button_Search'))
 
-WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/link_Appeal_Decision'), 20)
+if (WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), 5) == false) {
+    CustomKeywords.'custom.WriteExcel.waitForObject'(150, 'GoPro UI/Case Documents/link_LPA_Statement', 'GoPro UI/Case Summary/button_Search')
+}
 
-WebUI.scrollToPosition(9999999, 9999999)
+WebUI.verifyElementText(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), testData.getValue(1, 13))
 
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Documents/link_Appeal_Decision'), 5)
-
-WebUI.click(findTestObject('GoPro UI/Case Documents/link_Appeal_Decision'))
+WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'))
 
 WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/status_Appeal_InDraft'), 5)
 
@@ -109,12 +105,3 @@ WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 WebUI.closeWindowIndex(1)
 
 WebUI.closeBrowser()
-
-WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish Decision - Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.closeBrowser()
-

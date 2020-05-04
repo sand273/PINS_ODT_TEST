@@ -7,15 +7,13 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class,'tab-pane ng-scope active')]//li[10]//button[1]</value>
+         <value>//div[@class='col-sm-3']//button[@id='actionmenu.publishFinalComments']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
