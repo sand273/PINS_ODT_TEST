@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='question-2']</value>
+         <value>//input[@value='Neither']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
