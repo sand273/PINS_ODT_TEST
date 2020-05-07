@@ -3,17 +3,11 @@
    <description></description>
    <name>button_Bulk_Upload_Next</name>
    <tag></tag>
-   <elementGuidId>be4f1c50-27c5-4e47-8e8a-e7a27e5356e6</elementGuidId>
+   <elementGuidId>69eaffff-b4b9-4fd5-b471-39ab8b980b04</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[13]//div[1]//div[1]//div[2]//a[1]</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-      </entry>
-      <entry>
-         <key>CSS</key>
+         <value>//div[@id='form-page-page12']/div/div/div[2]/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -26,7 +20,7 @@
       <value>a</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
@@ -54,7 +48,7 @@
       <value>govuk-button</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
@@ -68,4 +62,46 @@
       <type>Main</type>
       <value>id(&quot;form-page-page12&quot;)/div[@class=&quot;form-pager-navigation&quot;]/div[@class=&quot;govuk-grid-row&quot;]/div[@class=&quot;govuk-grid-column-one-half app-nav-next&quot;]/a[@class=&quot;govuk-button&quot;]</value>
    </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='form-page-page12']/div/div/div[2]/a</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='File size'])[1]/following::a[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Confirmation'])[2]/preceding::a[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='I have included special category information'])[1]/preceding::a[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>(//a[contains(@href, 'javascript:;')])[65]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[13]/div/div/div[2]/a</value>
+   </webElementXpaths>
 </WebElementEntity>

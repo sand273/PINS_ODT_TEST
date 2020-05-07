@@ -77,13 +77,13 @@ WebUI.click(findTestObject('Complete Questionaire/input_Yes_ConditionsObligation
 
 WebUI.click(findTestObject('Complete Questionaire/button_Conditions_Next_HAS'))
 
-WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Conservative_Next_Page'), 5)
+WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Conditions_Next_Page'), 5)
 
 WebUI.click(findTestObject('Complete Questionaire/input_Yes_ConservationSite'))
 
-WebUI.click(findTestObject('Complete Questionaire/button_Conservative_Next_Page'))
+WebUI.click(findTestObject('Complete Questionaire/button_Conditions_Next_Page'))
 
-WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Monuments_Next_Page'), 5)
+WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Conservative_Next_Page'), 5)
 
 WebUI.click(findTestObject('Complete Questionaire/input_Yes_BuildingAffects'))
 
@@ -95,7 +95,7 @@ WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Screeni
 
 WebUI.click(findTestObject('Complete Questionaire/input_Yes_ScreeningOpinion'))
 
-WebUI.click(findTestObject('Complete Questionaire/button_Screening_Next_Page'))
+WebUI.click(findTestObject('Complete Questionaire/button_Monuments_Next_Page'))
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/message_Upload_Planning'), 5)
 
@@ -105,27 +105,27 @@ WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('e
 
 WebUI.delay(3)
 
-WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Upload_File_Next'), 5)
+WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Screening_Next_Page'), 5)
 
-WebUI.click(findTestObject('Complete Questionaire/button_Upload_File_Next'))
+WebUI.click(findTestObject('Complete Questionaire/button_Screening_Next_Page'))
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/input_No_NotificationsActions'), 10)
 
 WebUI.click(findTestObject('Complete Questionaire/input_No_NotificationsActions'))
 
-WebUI.click(findTestObject('Complete Questionaire/button_Notifications_Next'))
+WebUI.click(findTestObject('Complete Questionaire/button_Upload_File_Next'))
 
-WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'), 5)
+WebUI.waitForElementClickable(findTestObject('null'), 5)
 
 try {
-    WebUI.click(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'))
+    WebUI.click(findTestObject('null'))
 }
 catch (Exception ex) {
     WebUI.refresh()
 
-    WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'), 10)
+    WebUI.waitForElementClickable(findTestObject('null'), 10)
 
-    WebUI.click(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'))
+    WebUI.click(findTestObject('null'))
 } 
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/message_Confirmation'), 5)

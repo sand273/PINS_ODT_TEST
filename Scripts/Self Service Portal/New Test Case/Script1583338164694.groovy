@@ -15,18 +15,13 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://pins-test.gopro.net/selfservice/web/portal/application.html?id=79C9336D490075B5000001711B25F449#section-Additional.Plans')
+WebUI.navigateToUrl('https://pins-test.gopro.net/selfservice/web/portal/application.html?id=32105D3E7B0B797D00000171E442A002')
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'))
 
-WebUI.click(findTestObject('Additional Plans/button_Add_Plan_Doc'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('Additional Plans/button_Add_Plan_Doc'))
-
-WebUI.click(findTestObject('null'))
+WebUI.closeBrowser()
 
