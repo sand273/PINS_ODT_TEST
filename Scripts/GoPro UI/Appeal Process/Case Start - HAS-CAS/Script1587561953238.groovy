@@ -59,17 +59,14 @@ WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHand
 
 WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(1)
-
 try {
     WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Validation_Required'), 'defaultSelected', 
         'true', 5)
 }
 catch (Exception ex) {
     if (WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Status_Ready_Programming'), 'defaultSelected', 
-        'true', 5) == true) 
-	{
-        continue res; //goto label res
+        'true', 5) == true) {
+        res: continue //goto label res
     }
 } 
 
