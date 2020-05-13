@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Appeal_Process_Auto-Validate_Multi_Submit</name>
+   <name>Appeal_Process_Written_Decision-Review-Multi_Submit</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -9,11 +9,11 @@
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
-   <testSuiteGuid>f3d24332-75ce-4b80-a65a-7e920c9e23a9</testSuiteGuid>
+   <testSuiteGuid>db1a0409-c5a8-41da-b95f-5a8a31c06040</testSuiteGuid>
    <testCaseLink>
-      <guid>d08e0239-dc16-42b7-82fd-0c4125986b9d</guid>
+      <guid>ad604da8-3c7f-4366-9fa4-f062a40638ab</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/GoPro UI/Integration Test/Integration Test_Full-Submit - Written - Auto-Validate</testCaseId>
+      <testCaseId>Test Cases/GoPro UI/Integration Test/Integration Test_Full-Submit - Written - Decision - Review</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

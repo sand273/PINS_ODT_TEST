@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteCollectionEntity>
    <description></description>
-   <name>Written-Representation-Auto-Validate</name>
+   <name>Written-Representation-Decision-Scenario2</name>
    <tag></tag>
    <executionMode>SEQUENTIAL</executionMode>
    <maxConcurrentInstances>8</maxConcurrentInstances>
@@ -13,7 +13,7 @@
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Self Service Portal/MVP Appeal/Appeal_Form_Eligibility_Checker_Scenario_1 - Auto-Validate</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Self Service Portal/MVP Appeal/Appeal_Form_Eligibility_Checker_Scenario_1</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -31,7 +31,7 @@
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/GoPro UI/Appeal_Process_Written_Auto-Validate_Multi_Submit</testSuiteEntity>
+         <testSuiteEntity>Test Suites/GoPro UI/Appeal_Process_Written_Decision-Review-Multi_Submit</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>
