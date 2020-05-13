@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Logout</name>
+   <name>Publish Questionaire - Auto-Validate</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>79d68028-d6f8-4ca1-9bfb-aed7bf82c829</testCaseGuid>
+   <testCaseGuid>b67c1490-38b3-4622-b896-005764b13a94</testCaseGuid>
 </TestCaseEntity>

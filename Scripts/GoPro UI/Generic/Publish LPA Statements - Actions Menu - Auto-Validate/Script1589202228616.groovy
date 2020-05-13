@@ -12,14 +12,19 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Actions Menu/menu_Actions_Holdings'), 5)
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Actions Menu/menu_Actions_Show_Details'), 10)
 
-WebUI.click(findTestObject('GoPro UI/Actions Menu/menu_Actions_Holdings'))
+WebUI.click(findTestObject('GoPro UI/Actions Menu/menu_Actions_Show_Details'))
 
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Actions Menu/link_Logout'), 2)
+WebUI.waitForElementPresent(findTestObject('GoPro UI/Actions Menu/link_Publish_LPA_Statements_Auto'), 10)
 
-WebUI.click(findTestObject('GoPro UI/Actions Menu/link_Logout'))
+WebUI.click(findTestObject('GoPro UI/Actions Menu/link_Publish_LPA_Statements_Auto'))
 
-WebUI.closeBrowser()
+WebUI.waitForElementPresent(findTestObject('GoPro UI/Actions Menu/message_Publish_LPA_Statements'), 10)
+
+WebUI.click(findTestObject('GoPro UI/Programming/button_Publish'))
 

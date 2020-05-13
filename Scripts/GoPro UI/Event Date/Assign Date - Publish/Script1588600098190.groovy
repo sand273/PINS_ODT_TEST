@@ -36,6 +36,8 @@ WebUI.verifyElementVisible(findTestObject('GoPro UI/Programming/dropdown_Event')
 
 WebUI.verifyElementText(findTestObject('GoPro UI/Programming/dropdown_Event'), verData.getValue(1, 4))
 
+WebUI.selectOptionByValue(findTestObject('GoPro UI/Programming/dropdown_Event'), 'USV', false)
+
 WebUI.setText(findTestObject('GoPro UI/Programming/date_Event'), eventDate.format('dd/MM/yyyy').toString())
 
 WebUI.scrollToElement(findTestObject('GoPro UI/Case Summary/button_Save'), 3)
@@ -78,7 +80,7 @@ WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/input_Search
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/input_Search'))
 
-WebUI.sendKeys(findTestObject('GoPro UI/Case Summary/input_Search'), testData.getValue(1, 13))
+WebUI.sendKeys(findTestObject('GoPro UI/Case Summary/input_Search'), verData.getValue(1, 13))
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/button_Search'))
 
@@ -86,7 +88,7 @@ if (WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_LPA
     CustomKeywords.'custom.WriteExcel.waitForObject'(150, 'GoPro UI/Case Documents/link_LPA_Statement', 'GoPro UI/Case Summary/button_Search')
 }
 
-WebUI.verifyElementText(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), testData.getValue(1, 13))
+WebUI.verifyElementText(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), verData.getValue(1, 13))
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'))
 

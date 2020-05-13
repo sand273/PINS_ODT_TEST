@@ -12,19 +12,19 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Actions Menu/menu_Actions_Icon'), 10)
 
-WebUI.waitForElementVisible(findTestObject('Other Appeal Information/link_Other_Appeal_Information'), 5)
+WebUI.click(findTestObject('GoPro UI/Actions Menu/menu_Actions_Icon'))
 
-WebUI.click(findTestObject('Other Appeal Information/link_Other_Appeal_Information'))
+WebUI.waitForElementPresent(findTestObject('GoPro UI/Actions Menu/link_Publish_LPA_Question'), 10)
 
-WebUI.waitForElementVisible(findTestObject('Other Appeal Information/message_Upload_documents'), 5)
+WebUI.click(findTestObject('GoPro UI/Actions Menu/link_Publish_LPA_Question'))
 
-WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
+WebUI.waitForElementPresent(findTestObject('GoPro UI/Actions Menu/message_Publish_Questionaire'), 10)
 
-WebUI.waitForElementVisible(findTestObject('Other Appeal Information/status_Complete_Other_Information'), 10)
-
-WebUI.verifyElementText(findTestObject('Other Appeal Information/status_Complete_Other_Information'), 'COMPLETED')
+WebUI.click(findTestObject('GoPro UI/Programming/button_Publish'))
 

@@ -140,7 +140,7 @@
       <guid>446f6a05-a0e4-46f2-a2a8-aa297850994c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Other Relevant Appeal Information (AP Data)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About the Appeal/Other Relevant Appeal Information (Scenario 3)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>91efdf24-a119-4d8c-95b8-58134be24c86</guid>

@@ -36,6 +36,8 @@ WebUI.verifyElementVisible(findTestObject('GoPro UI/Programming/dropdown_Event')
 
 WebUI.verifyElementText(findTestObject('GoPro UI/Programming/dropdown_Event'), verData.getValue(1, 4))
 
+WebUI.selectOptionByValue(findTestObject('GoPro UI/Programming/dropdown_Event'), 'USV', false)
+
 WebUI.setText(findTestObject('GoPro UI/Programming/date_Event'), eventDate.format('dd/MM/yyyy').toString())
 
 WebUI.scrollToElement(findTestObject('GoPro UI/Case Summary/button_Save'), 3)

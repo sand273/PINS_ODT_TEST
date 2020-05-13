@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Logout</name>
+   <name>Publish LPA Statements - Actions Menu - Auto-Validate</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>79d68028-d6f8-4ca1-9bfb-aed7bf82c829</testCaseGuid>
+   <testCaseGuid>02ac5cc3-62c0-4e13-9c3e-32b5f35d132d</testCaseGuid>
 </TestCaseEntity>
