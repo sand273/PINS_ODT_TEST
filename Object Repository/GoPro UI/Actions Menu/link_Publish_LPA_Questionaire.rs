@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='col-sm-3']//button[@id='actionmenu.publishLpaQuestionnaire']</value>
+         <value>//div[contains(@class,'col-sm-4')]//button[@id='actionmenu.publishLpaQuestionnaire']</value>
       </entry>
       <entry>
          <key>BASIC</key>
