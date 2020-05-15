@@ -42,6 +42,8 @@ if (WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_LPA
 
 WebUI.verifyElementText(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), testData.getValue(1, 5))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'))
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/status_InReview'), 5)
