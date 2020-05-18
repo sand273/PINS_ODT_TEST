@@ -30,3 +30,9 @@ WebUI.waitForElementVisible(findTestObject('GoPro UI/My cases/link_My events_loc
 
 WebUI.verifyElementVisible(findTestObject('GoPro UI/My cases/link_My events_location_arrow'))
 
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Cases/link_Show_Calendars'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Cases/menu_Actions_Hamburger'))
+
+WebUI.closeBrowser()
+
