@@ -28,6 +28,8 @@ WebUI.click(findTestObject('GoPro UI/My cases/link_Holding_List'))
 
 WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/input_Search'), 5)
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'))
 
 String[] ref = GlobalVariable.ApplicationRef.split('/')
