@@ -19,7 +19,7 @@ def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 WebUI.waitForElementVisible(findTestObject('Appeal planning decision/a_Start now'), 2)
 
 while(WebUI.verifyElementVisible(findTestObject('Appeal planning decision/a_Start now'), FailureHandling.OPTIONAL)){
-	WebUI.click(findTestObject('Appeal planning decision/a_Start now'))
+	WebUI.click(findTestObject('Appeal planning decision/a_Start now'), FailureHandling.OPTIONAL)
 }
 
 WebUI.waitForElementVisible(findTestObject('Appeal planning decision/end_User_Question'), 2)
