@@ -34,5 +34,15 @@ WebUI.verifyElementVisible(findTestObject('GoPro UI/Cases/link_Show_Calendars'))
 
 WebUI.verifyElementVisible(findTestObject('GoPro UI/Cases/menu_Actions_Hamburger'))
 
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Cases/button_Creation_Date_Filter'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Cases/button_Assigned_Officer_Inspector_Filter'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Cases/button_Appeal_Type_Filter'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Cases/button_Case_Status_Filter'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Cases/button_Site_Postcode_Filter'))
+
 WebUI.closeBrowser()
 
