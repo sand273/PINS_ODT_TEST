@@ -20,9 +20,24 @@ WebUI.waitForElementClickable(findTestObject('GoPro UI/Actions Menu/menu_Actions
 
 WebUI.click(findTestObject('GoPro UI/Actions Menu/menu_Actions_Show_Details'))
 
-WebUI.waitForElementPresent(findTestObject('GoPro UI/Actions Menu/link_Publish_LPA_Statements_Auto'), 10)
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Actions Menu/link_Publish_LPA_Statements_Auto'), 10)
 
-WebUI.click(findTestObject('GoPro UI/Actions Menu/link_Publish_LPA_Statements_Auto'))
+
+try {
+	WebUI.click(findTestObject('GoPro UI/Actions Menu/link_Publish_LPA_Statements_Auto'))
+}
+catch (Exception ex) {
+	WebUI.refresh()
+
+	WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
+
+	WebUI.click(findTestObject('GoPro UI/Actions Menu/menu_Actions_Show_Details'))
+
+	WebUI.waitForElementClickable(findTestObject('GoPro UI/Actions Menu/link_Publish_LPA_Statements_Auto'), 10)
+
+	WebUI.click(findTestObject('GoPro UI/Actions Menu/link_Publish_LPA_Statements_Auto'))
+}
+
 
 WebUI.waitForElementPresent(findTestObject('GoPro UI/Actions Menu/message_Publish_LPA_Statements'), 10)
 
