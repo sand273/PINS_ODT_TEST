@@ -80,6 +80,10 @@ WebUI.refresh()
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Publish_LPA_Statement'), 'defaultSelected', 
     'true', 10)
 
+WebUI.refresh()
+
+WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Summary/label_Processing'), 10)
+
 WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/input_Search'))

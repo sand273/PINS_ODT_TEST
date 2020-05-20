@@ -51,3 +51,6 @@ if (WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_LPA
 
 WebUI.verifyElementText(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), testData.getValue(1, 11))
 
+WebUI.closeWindowIndex(1)
+
+WebUI.closeBrowser()
