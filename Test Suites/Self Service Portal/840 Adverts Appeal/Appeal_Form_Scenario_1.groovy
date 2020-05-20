@@ -16,6 +16,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.util.KeywordUtil
 
 import internal.GlobalVariable as GlobalVariable
 
@@ -47,9 +48,12 @@ def tearDown() {
 /**
  * Run before each test case starts.
  */
-@SetupTestCase(skipped = true) // Please change skipped to be false to activate this method.
+@SetupTestCase(skipped = false) // Please change skipped to be false to activate this method.
 def setupTestCase() {
 	// Put your code here.
+	if(GlobalVariable.TestCaseStatus=='FAILED' || GlobalVariable.TestCaseStatus=='ERROR'){
+		KeywordUtil.markFailedAndStop('ERROR: The previous test fail')
+			}
 }
 
 /**
