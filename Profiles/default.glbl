@@ -21,7 +21,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'W/4008159'</initValue>
+      <initValue>'W/4008512'</initValue>
       <name>ApplicationRef</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -38,5 +38,10 @@
       <description></description>
       <initValue>''</initValue>
       <name>planOption</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>TestCaseStatus</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

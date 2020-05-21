@@ -16,13 +16,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Actions Menu/menu_Actions_View_Details'), 10)
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Actions Menu/menu_Actions_Show_Details'), 10)
 
-WebUI.click(findTestObject('GoPro UI/Actions Menu/menu_Actions_View_Details'))
+WebUI.click(findTestObject('GoPro UI/Actions Menu/menu_Actions_Show_Details'))
 
-WebUI.waitForElementPresent(findTestObject('GoPro UI/Actions Menu/link_Publish_LPA_Statements'), 10)
+WebUI.waitForElementPresent(findTestObject('GoPro UI/Actions Menu/link_Publish_LPA_Statement_Hearing'), 10)
 
-WebUI.click(findTestObject('GoPro UI/Actions Menu/link_Publish_LPA_Statements'))
+WebUI.click(findTestObject('GoPro UI/Actions Menu/link_Publish_LPA_Statement_Hearing'))
 
 WebUI.waitForElementPresent(findTestObject('GoPro UI/Actions Menu/message_Publish_LPA_Statements'), 10)
 

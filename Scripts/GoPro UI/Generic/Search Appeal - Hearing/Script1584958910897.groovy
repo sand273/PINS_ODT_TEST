@@ -36,6 +36,8 @@ String[] ref = GlobalVariable.ApplicationRef.split('/')
 
 WebUI.sendKeys(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'), ref[1])
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Search'))
 
 WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/list_Case_Ref_Hearing'), 20)
