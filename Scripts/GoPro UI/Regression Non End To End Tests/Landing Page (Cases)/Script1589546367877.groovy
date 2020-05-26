@@ -28,6 +28,10 @@ WebUI.click(findTestObject('GoPro UI/Navigation/link_Cases'))
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/My cases/link_My events_location_arrow'), 20)
 
+WebUI.click(findTestObject('GoPro UI/Cases/select_First_Case'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Cases/view_Case_Details'))
+
 WebUI.verifyElementVisible(findTestObject('GoPro UI/My cases/link_My events_location_arrow'))
 
 WebUI.verifyElementVisible(findTestObject('GoPro UI/Cases/link_Show_Calendars'))
@@ -43,6 +47,8 @@ WebUI.verifyElementVisible(findTestObject('GoPro UI/Cases/button_Appeal_Type_Fil
 WebUI.verifyElementVisible(findTestObject('GoPro UI/Cases/button_Case_Status_Filter'))
 
 WebUI.verifyElementVisible(findTestObject('GoPro UI/Cases/button_Site_Postcode_Filter'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Summary/input_Search'))
 
 WebUI.closeBrowser()
 
