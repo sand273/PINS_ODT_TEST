@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[contains(text(),'Publish LPA Statement and IP Comments')]</value>
+         <value>//div[contains(@class,'col-sm-3')]//span[contains(@class,'ng-binding')][contains(text(),'Publish LPA Statement and IP Comments')]</value>
       </entry>
       <entry>
          <key>BASIC</key>

@@ -43,6 +43,8 @@ WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Searc
 WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/list_Case_Ref_Hearing'), 20)
 
 try {
+	WebUI.click(findTestObject('GoPro UI/Case Summary/list_Case_Ref_Hearing'))
+	
     WebUI.doubleClick(findTestObject('GoPro UI/Case Summary/list_Case_Ref_Hearing'))
 }
 catch (Exception ex) {
@@ -54,10 +56,16 @@ catch (Exception ex) {
 
     WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/list_Case_Ref_Hearing'), 20)
 
+	WebUI.click(findTestObject('GoPro UI/Case Summary/list_Case_Ref_Hearing'))
+	
     WebUI.doubleClick(findTestObject('GoPro UI/Case Summary/list_Case_Ref_Hearing'))
 } 
 
+WebUI.delay(1)
+
 WebUI.switchToWindowIndex(1)
+
+WebUI.delay(1)
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/panel_Left_Processing_Timeline'), 10)
 
