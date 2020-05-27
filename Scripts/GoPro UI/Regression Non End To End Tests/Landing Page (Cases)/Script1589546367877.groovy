@@ -50,5 +50,41 @@ WebUI.verifyElementVisible(findTestObject('GoPro UI/Cases/button_Site_Postcode_F
 
 WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Summary/input_Search'))
 
+WebUI.click(findTestObject('GoPro UI/Cases/menu_Actions_Hamburger'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Actions Menu/button_Find_and_Open'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Actions Menu/button_History'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Actions Menu/button_Download_Documents'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Actions Menu/button_Create_Case'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Actions Menu/button_Create_Individual'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Actions Menu/button_Create_Company'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Actions Menu/button_Refresh'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Actions Menu/button_Save_Filter'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Actions Menu/button_Manage_Filters'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Actions Menu/button_Export'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Actions Menu/input_Creation_Date'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Actions Menu/input_Subject'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Actions Menu/input_Case_Type'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Actions Menu/button_About_GoPro'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Actions Menu/button_Take_Tour'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Actions Menu/button_Profile'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Actions Menu/button_Logout'))
+
 WebUI.closeBrowser()
 
