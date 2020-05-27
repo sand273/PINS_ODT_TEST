@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Integration Test_Full-Submit - Written - Decision - Held</name>
+   <name>Case Start - Validate-External</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>a8c53a30-a928-44b5-bae4-1a68375c8947</testCaseGuid>
+   <testCaseGuid>e7503a5c-55eb-43c6-989b-578508be6b9e</testCaseGuid>
 </TestCaseEntity>

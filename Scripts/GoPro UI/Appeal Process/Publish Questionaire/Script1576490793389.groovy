@@ -47,6 +47,10 @@ catch (Exception ex)
 	WebUI.click(findTestObject('GoPro UI/Case Summary/button_Save'))
 }
 
+WebUI.refresh()
+
+WebUI.waitForElementHasAttribute(findTestObject('GoPro UI/Case Summary/date_LPA_Questionaire_Publish'), 'value', 5)
+
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_LPA_Questionaire_Publish'), 'value', todaysDate, 
     1)
 

@@ -34,4 +34,9 @@
       <initValue>''</initValue>
       <name>TestCaseStatus</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>planOption</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

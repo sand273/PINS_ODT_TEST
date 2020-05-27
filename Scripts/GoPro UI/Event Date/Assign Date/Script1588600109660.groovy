@@ -83,7 +83,7 @@ WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/input_Search
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/input_Search'))
 
-WebUI.sendKeys(findTestObject('GoPro UI/Case Summary/input_Search'), testData.getValue(1, 13))
+WebUI.sendKeys(findTestObject('GoPro UI/Case Summary/input_Search'), verData.getValue(1, 13))
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/button_Search'))
 

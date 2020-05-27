@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_Publish_LPA_Statements</name>
+   <name>button_Internal_Review</name>
    <tag></tag>
-   <elementGuidId>e08668dd-6643-4e66-8e8a-24f63e494e62</elementGuidId>
+   <elementGuidId>83181c52-7380-49e8-a841-e314ad99a38d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[contains(@class,'col-sm-3')]//span[contains(@class,'ng-binding')][contains(text(),'Publish LPA Statement and IP Comments')]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//button[@id='internalReviewBtn']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

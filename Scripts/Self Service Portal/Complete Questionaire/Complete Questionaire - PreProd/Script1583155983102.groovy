@@ -103,19 +103,33 @@ WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('e
 
 WebUI.delay(3)
 
-WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Upload_File_Next'), 5)
+WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Upload_File_Next'), 5)
 
 WebUI.click(findTestObject('Complete Questionaire/button_Upload_File_Next'))
 
-WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Notifications_Next'), 5)
+WebUI.waitForElementVisible(findTestObject('Complete Questionaire/input_No_NotificationsActions'), 10)
 
-WebUI.click(findTestObject('Complete Questionaire/input_No_Notifications'))
+WebUI.click(findTestObject('Complete Questionaire/input_No_NotificationsActions'))
 
 WebUI.click(findTestObject('Complete Questionaire/button_Notifications_Next'))
 
-WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Upload_Next_Page'), 5)
+WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'), 10)
 
-WebUI.click(findTestObject('Complete Questionaire/button_Upload_Next_Page'))
+try {
+	WebUI.delay(1)
+    WebUI.click(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'))
+}
+catch (Exception ex) {
+    WebUI.refresh()
+	
+	WebUI.acceptAlert()
+	
+	WebUI.switchToDefaultContent()
+
+    WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'), 20)
+
+    WebUI.click(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'))
+} 
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/message_Confirmation'), 5)
 
@@ -133,7 +147,7 @@ WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Submi
 
 WebUI.click(findTestObject('Complete Questionaire/button_Submit_Final'))
 
-WebUI.waitForElementVisible(findTestObject('Complete Questionaire/title_Questionaire_Received'), 5)
+WebUI.waitForElementVisible(findTestObject('Complete Questionaire/title_Questionaire_Received'), 10)
 
 WebUI.verifyElementText(findTestObject('Complete Questionaire/title_Questionaire_Received'), verData.getValue(1, 5))
 

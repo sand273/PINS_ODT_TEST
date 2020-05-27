@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_Publish_LPA_Statements</name>
+   <name>dropdown_Validation_External</name>
    <tag></tag>
-   <elementGuidId>e08668dd-6643-4e66-8e8a-24f63e494e62</elementGuidId>
+   <elementGuidId>d5fb03f3-7c14-4362-9918-8617d1845179</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[contains(@class,'col-sm-3')]//span[contains(@class,'ng-binding')][contains(text(),'Publish LPA Statement and IP Comments')]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//option[contains(text(),'Validation In Review - External')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
