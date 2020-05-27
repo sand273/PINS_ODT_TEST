@@ -32,6 +32,18 @@ WebUI.click(findTestObject('GoPro UI/Cases/select_First_Case'))
 
 WebUI.verifyElementVisible(findTestObject('GoPro UI/Cases/view_Case_Details'))
 
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Details/label_Assigned_To'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Details/label_LPA_Name'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Details/label_Appellant'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Details/label_Appeal_Type'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Details/label_Reason_For_Refusal'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Details/label_Original_Development_Description'))
+
 WebUI.verifyElementVisible(findTestObject('GoPro UI/My cases/link_My events_location_arrow'))
 
 WebUI.verifyElementVisible(findTestObject('GoPro UI/Cases/link_Show_Calendars'))
