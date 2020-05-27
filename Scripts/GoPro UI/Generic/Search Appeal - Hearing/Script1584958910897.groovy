@@ -13,6 +13,9 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 def UIData = TestDataFactory.findTestData('Data Files/GoPro_UI_Verification')
 
@@ -43,8 +46,8 @@ WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Searc
 WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/list_Case_Ref_Hearing'), 20)
 
 try {
-	WebUI.click(findTestObject('GoPro UI/Case Summary/list_Case_Ref_Hearing'))
-	
+    WebUI.click(findTestObject('GoPro UI/Case Summary/list_Case_Ref_Hearing'))
+
     WebUI.doubleClick(findTestObject('GoPro UI/Case Summary/list_Case_Ref_Hearing'))
 }
 catch (Exception ex) {
@@ -56,18 +59,18 @@ catch (Exception ex) {
 
     WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/list_Case_Ref_Hearing'), 20)
 
-	WebUI.click(findTestObject('GoPro UI/Case Summary/list_Case_Ref_Hearing'))
-	
+    WebUI.click(findTestObject('GoPro UI/Case Summary/list_Case_Ref_Hearing'))
+
     WebUI.doubleClick(findTestObject('GoPro UI/Case Summary/list_Case_Ref_Hearing'))
 } 
-
-WebUI.delay(1)
 
 WebUI.switchToWindowIndex(1)
 
 WebUI.delay(1)
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/panel_Left_Processing_Timeline'), 10)
+
+WebUI.delay(1)
 
 WebUI.verifyElementText(findTestObject('GoPro UI/Case Summary/panel_Left_Processing_Timeline'), UIData.getValue(1, 1))
 
