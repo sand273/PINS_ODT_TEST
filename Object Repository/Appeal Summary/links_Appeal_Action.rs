@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[@class='govuk-width-container']/main[@class='govuk-main-wrapper']/div[@class='govuk-grid-row']/div[@class='govuk-grid-column-one-third pins-sidebar-right']/div[4]</value>
+         <value>//body/div[@class='govuk-width-container']/main[@class='govuk-main-wrapper']/div[@class='govuk-grid-row']/div[@class='govuk-grid-column-one-third pins-sidebar-right']/div[3]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
