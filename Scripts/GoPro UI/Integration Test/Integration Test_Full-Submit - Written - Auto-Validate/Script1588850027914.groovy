@@ -35,8 +35,6 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++)
 
     WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Verify Publish Questionaire'), [:], FailureHandling.STOP_ON_FAILURE)
 	
-	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
-
     WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Publish Questionaire - Auto-Validate'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('Self Service Portal/LPA Statement/Submit Statement'), [:], FailureHandling.STOP_ON_FAILURE)
