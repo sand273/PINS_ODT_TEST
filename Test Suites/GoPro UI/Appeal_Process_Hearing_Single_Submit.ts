@@ -11,18 +11,6 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>e284a8e9-18d1-418b-9dc0-53ec7cf9e68c</testSuiteGuid>
    <testCaseLink>
-      <guid>aa0ae59b-59be-4bd0-9b71-4f03c0948699</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/GoPro UI/Appeal Process/Case Start - Hearing</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>961af669-3408-42e6-90ea-a92c9a9810a7</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/GoPro UI/Appeal Process/Verify Timeline - Hearing</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>8d8ff628-4847-4052-89c3-51b4c75b99ac</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -39,18 +27,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/GoPro UI/Generic/Add wait</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>8d136cac-604a-40fc-ba39-e347503fe0d1</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/GoPro UI/Appeal Process/Verify Publish Questionaire - Hearing</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>9931a66e-2805-4a48-b8dc-37f22a6e49ca</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/GoPro UI/Appeal Process/Publish Questionaire - Hearing</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>049e67e7-617e-4700-b540-84baa395a56a</guid>
@@ -83,46 +59,16 @@
       <testCaseId>Test Cases/GoPro UI/Generic/Add wait</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>dad45a13-388b-48e0-b1ab-c7287d64e03f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/GoPro UI/LPA Statement/LPA Statement - Hearing</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>921cfbd6-726f-42ac-b0c4-85812c7a8b2e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/GoPro UI/Generic/Add wait</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>22ab08e8-435c-4847-b52f-2800691c6c6b</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/GoPro UI/Final Comments/Verify Comments - Hearing</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>61851dde-d647-492e-83d4-0a98a0f1d3c1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/GoPro UI/Generic/Add wait</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>cc0e9e59-cc68-40cc-a8e2-308391bcf47d</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/GoPro UI/Final Comments/Verify Event Status - Hearing</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>1c2c7fe9-6a0e-4a77-9987-9cc627416ff5</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/GoPro UI/Event Date/Assign Date - Hearing</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>e162ee4d-1c3d-4e73-b10b-5bb9f47cdc4d</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/GoPro UI/Decision Issued/Verify Decision Issued - Hearing</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>bea5af93-2e18-449b-ac77-c112738a64c2</guid>

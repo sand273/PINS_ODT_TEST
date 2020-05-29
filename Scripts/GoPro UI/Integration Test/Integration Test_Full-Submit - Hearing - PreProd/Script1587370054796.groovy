@@ -21,9 +21,9 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++)
 {
     GlobalVariable.ApplicationRef = values[iRow].toString()
 
-    WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Case Start - Hearing'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Verify Timeline - Hearing'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('Self Service Portal/Appeal Started/Verify Appeal Started'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -31,9 +31,9 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++)
 
 	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Verify Publish Questionaire - Hearing'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Publish Questionaire - Hearing'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('Self Service Portal/LPA Statement/Submit Statement - PreProd'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -45,19 +45,19 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++)
 
 	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('GoPro UI/LPA Statement/LPA Statement - Hearing'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.STOP_ON_FAILURE)
 
 	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('GoPro UI/Final Comments/Verify Comments - Hearing'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('GoPro UI/Final Comments/Verify Event Status - Hearing'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('GoPro UI/Event Date/Assign Date - Hearing'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.STOP_ON_FAILURE)
 	
-	WebUI.callTestCase(findTestCase('GoPro UI/Decision Issued/Verify Decision Issued - Hearing'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('Self Service Portal/Decision Issued/Verify Decision Issued - PreProd'), [:], FailureHandling.STOP_ON_FAILURE)
 }

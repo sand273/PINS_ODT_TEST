@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify Publish Questionaire - Hearing</name>
+   <name>Case Start - Hearing - Validate-Internal</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>dd5633a9-ac27-4ebe-be1e-5dc83349b015</testCaseGuid>
+   <testCaseGuid>4b51a84f-eb5f-4042-80cf-5c7d4b39a2fe</testCaseGuid>
 </TestCaseEntity>

@@ -21,7 +21,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'W/4008854'</initValue>
+      <initValue>'W/4009244'</initValue>
       <name>ApplicationRef</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -43,5 +43,10 @@
       <description></description>
       <initValue>''</initValue>
       <name>TestCaseStatus</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Written'</initValue>
+      <name>caseType</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

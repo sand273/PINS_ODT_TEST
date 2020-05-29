@@ -66,7 +66,7 @@ try {
 catch (Exception ex) {
     if (WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Status_Ready_Programming'), 'defaultSelected', 
         'true', 5) == true) {
-        continue res; //goto label res
+        res: continue //goto label res
     }
 } 
 
@@ -83,6 +83,13 @@ WebUI.click(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'), Failure
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/dropdown_Validation_InProgress'), 5)
 
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Validation_InProgress'), 'defaultSelected', 
+    'true', 5)
+
+WebUI.click(findTestObject('GoPro UI/Case Summary/button_Internal_Review'))
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/dropdown_Validation_Internal'), 10)
+
+WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Validation_Internal'), 'defaultSelected', 
     'true', 5)
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/icon_Validate_Case'))
@@ -154,7 +161,7 @@ WebUI.click(findTestObject('GoPro UI/Case Summary/button_Start_Case'))
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/message_Start_Case_Publish'), 10)
 
-WebUI.verifyElementText(findTestObject('GoPro UI/Case Summary/message_Start_Case_Publish'), verData.getValue(1, 12))
+WebUI.verifyElementText(findTestObject('GoPro UI/Case Summary/message_Start_Case_Publish'), siteData.getValue(2, 1))
 
 WebUI.click(findTestObject('GoPro UI/Programming/button_Publish'))
 

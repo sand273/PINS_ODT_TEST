@@ -49,6 +49,11 @@ public class GlobalVariable {
      */
     public static Object TestCaseStatus
      
+    /**
+     * <p></p>
+     */
+    public static Object caseType
+     
 
     static {
         try {
@@ -64,6 +69,7 @@ public class GlobalVariable {
             AdminUrl = selectedVariables['AdminUrl']
             planOption = selectedVariables['planOption']
             TestCaseStatus = selectedVariables['TestCaseStatus']
+            caseType = selectedVariables['caseType']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)
