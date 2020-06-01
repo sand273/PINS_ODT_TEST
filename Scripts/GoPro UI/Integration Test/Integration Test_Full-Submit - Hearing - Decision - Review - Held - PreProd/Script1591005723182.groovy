@@ -13,6 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+
 GlobalVariable.caseType = 'Hearing'
 
 String[] values = new String[10]
@@ -23,7 +24,7 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++)
 {
     GlobalVariable.ApplicationRef = values[iRow].toString()
 
-    WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Case Start'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Case Start - Validate-External'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Verify Timeline'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -57,7 +58,9 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++)
 
     WebUI.callTestCase(findTestCase('GoPro UI/Final Comments/Verify Event Status'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('GoPro UI/Event Date/Assign Date - Publish'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('GoPro UI/Event Date/Assign Date'), [:], FailureHandling.STOP_ON_FAILURE)
+	
+	WebUI.callTestCase(findTestCase('GoPro UI/Decision-Review-Held/Decision-Review-Held-Publish'), [:], FailureHandling.STOP_ON_FAILURE)
 	
 	WebUI.callTestCase(findTestCase('GoPro UI/Decision Issued/Verify Decision Issued'), [:], FailureHandling.STOP_ON_FAILURE)
 

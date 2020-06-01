@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Case Start - Hearing - Validate-Internal</name>
+   <name>Integration Test_Full-Submit - Hearing - Decision - Review</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>4b51a84f-eb5f-4042-80cf-5c7d4b39a2fe</testCaseGuid>
+   <testCaseGuid>4749a673-807a-42e8-a95c-0110bd09113e</testCaseGuid>
 </TestCaseEntity>
