@@ -11,15 +11,9 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>f097c601-61fd-43ed-b609-f4db24ce919b</testSuiteGuid>
    <testCaseLink>
-      <guid>f55ed368-79a0-4ca0-8a0c-d4f96f7339b8</guid>
+      <guid>e35e4abd-826a-46bd-a06e-1d9c966be7af</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/GoPro UI/Regression Non End To End Tests/Landing Page (Cases)</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>8874c448-8c26-429c-a582-995268f36616</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/GoPro UI/Regression Non End To End Tests/Landing Page (Holding List)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/Regression Non End To End Tests/Question 4 Additional Questions Test</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
