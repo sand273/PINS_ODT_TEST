@@ -80,7 +80,7 @@ WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/input_Search
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/input_Search'))
 
-WebUI.sendKeys(findTestObject('GoPro UI/Case Summary/input_Search'), verData.getValue(1, 13))
+WebUI.sendKeys(findTestObject('GoPro UI/Case Summary/input_Search'), verData.getValue(1, 14))
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/button_Search'))
 
@@ -88,7 +88,7 @@ if (WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_LPA
     CustomKeywords.'custom.WriteExcel.waitForObject'(150, 'GoPro UI/Case Documents/link_LPA_Statement', 'GoPro UI/Case Summary/button_Search')
 }
 
-WebUI.verifyElementText(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), verData.getValue(1, 13))
+WebUI.verifyElementText(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), verData.getValue(1, 14))
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'))
 

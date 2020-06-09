@@ -28,7 +28,12 @@ else
 {
 	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
 }
+
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'), 5)
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/input_Search'), 10)
 
 WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish LPA Questionaire - Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)
 
