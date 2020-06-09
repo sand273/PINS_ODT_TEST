@@ -24,7 +24,11 @@ WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureH
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'), 5)
 
-WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish LPA Questionaire - Actions Menu -Auto-Validate'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/input_Search'), 10)
+
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish LPA Questionaire - Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_folder_LPA_Questionaire'), 20)
 
@@ -36,16 +40,16 @@ WebUI.refresh()
 
 WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-try
-{
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Open_for_LPA'), 'defaultSelected', 'true', 
-    5)
+try {
+    WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Open_for_LPA'), 'defaultSelected', 
+        'true', 5)
 }
-catch (Exception ex)
-{
-	WebUI.selectOptionByValue(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'), 'A26CF54F-19EB-45A7-BCE3-F9DBAE8A075E', true)
-	WebUI.click(findTestObject('GoPro UI/Case Summary/button_Save'))
-}
+catch (Exception ex) {
+    WebUI.selectOptionByValue(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'), 'A26CF54F-19EB-45A7-BCE3-F9DBAE8A075E', 
+        true)
+
+    WebUI.click(findTestObject('GoPro UI/Case Summary/button_Save'))
+} 
 
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_LPA_Questionaire_Publish'), 'value', todaysDate, 
     1)

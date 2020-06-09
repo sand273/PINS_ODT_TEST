@@ -94,7 +94,9 @@ WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
-WebUI.click(findTestObject('GoPro UI/Case Summary/input_Search'))
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/input_Search'), 10)
+
+/*WebUI.click(findTestObject('GoPro UI/Case Summary/input_Search'))
 
 WebUI.sendKeys(findTestObject('GoPro UI/Case Summary/input_Search'), testData.getValue(1, 5))
 
@@ -124,11 +126,11 @@ catch (Exception ex)
 	WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), 10)
 	
 	WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'))
-}
+}*/
 
 WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish LPA Statements - Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.refresh()
+/*WebUI.refresh()
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
@@ -206,7 +208,9 @@ catch (Exception ex)
 	WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'))
 }
 
-WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish LPA Statements - Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish LPA Statements - Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)*/
+
+WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Summary/label_Processing'), 10)
 
 WebUI.closeWindowIndex(1)
 
