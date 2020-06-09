@@ -41,12 +41,6 @@
       <testCaseId>Test Cases/GoPro UI/Generic/Add wait</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>3ad9b33f-6dd2-4add-9134-f3f529da5b86</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/GoPro UI/IP Comments/IP Comments - Hearing</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>c06e0c00-9a8c-4ac6-9413-00b3e546b433</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
