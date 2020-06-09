@@ -79,6 +79,12 @@ WebUI.verifyElementText(findTestObject('Planning Application details/options_Que
 
 WebUI.uncheck(findTestObject('Planning Application details/check_General_Industry'))
 
+WebUI.check(findTestObject('Planning Application details/check_Householder'))
+
+WebUI.verifyElementNotPresent(findTestObject('Planning Application details/options_Question_4_Hidden_Options'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.uncheck(findTestObject('Planning Application details/check_Householder'))
+
 WebUI.check(findTestObject('Planning Application details/check_Incineration'))
 
 WebUI.verifyElementText(findTestObject('Planning Application details/question_Incinerated_Per_Year'), verData.getValue(1, 
@@ -95,7 +101,7 @@ WebUI.verifyElementText(findTestObject('Planning Application details/question_Sc
     FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Planning Application details/options_Question_4_Hidden_Options'), verData.getValue(
-	1, 161), FailureHandling.CONTINUE_ON_FAILURE)
+        1, 161), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.uncheck(findTestObject('Planning Application details/check_Industrial_and_community'))
 
@@ -105,7 +111,7 @@ WebUI.verifyElementText(findTestObject('Planning Application details/question_Mi
         152), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Planning Application details/options_Question_4_Hidden_Options'), verData.getValue(
-	1, 163), FailureHandling.CONTINUE_ON_FAILURE)
+        1, 163), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.uncheck(findTestObject('Planning Application details/check_Minerals'))
 
@@ -115,7 +121,7 @@ WebUI.verifyElementText(findTestObject('Planning Application details/question_Wa
     FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Planning Application details/options_Question_4_Hidden_Options'), verData.getValue(
-	1, 163), FailureHandling.CONTINUE_ON_FAILURE)
+        1, 163), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.uncheck(findTestObject('Planning Application details/check_Waste'))
 
@@ -124,7 +130,7 @@ WebUI.check(findTestObject('Planning Application details/check_Offices'))
 WebUI.verifyElementText(findTestObject('Planning Application details/question_Hectares'), verData.getValue(1, 154), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Planning Application details/options_Question_4_Hidden_Options'), verData.getValue(
-	1, 161), FailureHandling.CONTINUE_ON_FAILURE)
+        1, 161), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.uncheck(findTestObject('Planning Application details/check_Offices'))
 
@@ -134,7 +140,7 @@ WebUI.verifyElementText(findTestObject('Planning Application details/question_Re
     FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Planning Application details/options_Question_4_Hidden_Options'), verData.getValue(
-	1, 164), FailureHandling.CONTINUE_ON_FAILURE)
+        1, 164), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.uncheck(findTestObject('Planning Application details/check_Renewable_Energy'))
 
@@ -144,13 +150,13 @@ WebUI.verifyElementText(findTestObject('Planning Application details/question_Ho
         156), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Planning Application details/options_Question_4_Hidden_Options'), verData.getValue(
-	1, 160), FailureHandling.CONTINUE_ON_FAILURE)
+        1, 160), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Planning Application details/question_House_in_Multpile_Occupation'), verData.getValue(
         1, 157), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Planning Application details/options_Question_4_Hidden_second_Options'), verData.getValue(
-	1, 160), FailureHandling.CONTINUE_ON_FAILURE)
+        1, 160), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.uncheck(findTestObject('Planning Application details/check_Residential_Dwellings'))
 
@@ -160,7 +166,7 @@ WebUI.verifyElementText(findTestObject('Planning Application details/question_Sc
     FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Planning Application details/options_Question_4_Hidden_Options'), verData.getValue(
-	1, 161), FailureHandling.CONTINUE_ON_FAILURE)
+        1, 161), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.uncheck(findTestObject('Planning Application details/check_Retail'))
 
@@ -170,7 +176,7 @@ WebUI.verifyElementText(findTestObject('Planning Application details/question_Ta
     FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Planning Application details/options_Question_4_Hidden_Options'), verData.getValue(
-	1, 165), FailureHandling.CONTINUE_ON_FAILURE)
+        1, 165), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.uncheck(findTestObject('Planning Application details/check_Telecommunications'))
 
@@ -180,9 +186,15 @@ WebUI.verifyElementText(findTestObject('Planning Application details/question_Tr
     FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Planning Application details/options_Question_4_Hidden_Options'), verData.getValue(
-	1, 166), FailureHandling.CONTINUE_ON_FAILURE)
+        1, 166), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.uncheck(findTestObject('Planning Application details/check_Travellers'))
+
+WebUI.check(findTestObject('Planning Application details/check_Other_Developments'))
+
+WebUI.verifyElementNotPresent(findTestObject('Planning Application details/options_Question_4_Hidden_Options'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.uncheck(findTestObject('Planning Application details/check_Other_Developments'))
 
 WebUI.closeBrowser()
 
