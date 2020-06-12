@@ -16,6 +16,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+String[] values = new String[20]
+
+CustomKeywords.'custom.WriteExcel.readValues'(GlobalVariable.UploadFilePath + '\\AppealNumbers.xlsx', 'Appeals', values)
+
+GlobalVariable.ApplicationRef = (values[1]).toString()
+
 WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
@@ -26,7 +32,21 @@ WebUI.waitForElementVisible(findTestObject('GoPro UI/Navigation/link_Cases'), 20
 
 WebUI.click(findTestObject('GoPro UI/Navigation/link_Cases'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/My cases/link_My events_location_arrow'), 20)
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/input_Search'), 5)
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'))
+
+String[] ref = GlobalVariable.ApplicationRef.split('/')
+
+WebUI.sendKeys(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'), ref[1])
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Search'))
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Cases/select_First_Case'), 20)
 
 WebUI.click(findTestObject('GoPro UI/Cases/select_First_Case'))
 
