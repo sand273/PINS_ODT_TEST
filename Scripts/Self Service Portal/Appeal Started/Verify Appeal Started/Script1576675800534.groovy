@@ -38,5 +38,13 @@ WebUI.verifyElementText(findTestObject('Final Comments/status_Final_Comments'), 
 
 WebUI.verifyElementText(findTestObject('Final Comments/date_Appeal_Started'), todaysDate)
 
+WebUI.verifyElementText(findTestObject('Submit Statement/title_Appeal_Reference'), GlobalVariable.ApplicationRef)
+
+WebUI.verifyElementText(findTestObject('Submit Statement/text_Case_Number'), GlobalVariable.ApplicationRef)
+
+WebUI.verifyElementVisible(findTestObject('Submit Statement/text_Written_Rep'))
+
+WebUI.verifyElementVisible(findTestObject('Submit Statement/status_Appeal_Started'))
+
 WebUI.closeBrowser()
 

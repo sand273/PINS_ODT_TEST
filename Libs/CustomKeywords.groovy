@@ -43,3 +43,11 @@ def static "custom.WriteExcel.waitForObject"(
          , 	object
          , 	clickObj)
 }
+
+def static "custom.VerifyTable.verifyValues"(
+    	String tableObj	
+     , 	String expTable	) {
+    (new custom.VerifyTable()).verifyValues(
+        	tableObj
+         , 	expTable)
+}

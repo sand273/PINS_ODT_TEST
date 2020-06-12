@@ -17,6 +17,12 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 String queRefMessage
 
+Date today = new Date()
+
+String todaysDate = today.format('dd.MM.yyyy')
+
+String expTableAppellant = todaysDate + ',LPA Statement,' + todaysDate + ',Sandeep Ramchandani Interested Party Correspondence,' + todaysDate + ',Complete_Statement,' + todaysDate + ',LPA Questionnaire,' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Start Notice Appellant (Written Reps),' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Upload_Document,' + todaysDate + ',Appeal a planning decision'
+
 def testData = TestDataFactory.findTestData('Data Files/GoPro_UI_Verification')
 
 def verData = TestDataFactory.findTestData('Data Files/Complete_Questionaire')
@@ -32,6 +38,16 @@ WebUI.verifyElementText(findTestObject('Final Comments/status_Final_Comments'), 
 WebUI.verifyElementVisible(findTestObject('Final Comments/message_Final_Comments'))
 
 WebUI.verifyElementVisible(findTestObject('Final Comments/status_Days_Left'))
+
+WebUI.verifyElementText(findTestObject('Submit Statement/text_Case_Number'), GlobalVariable.ApplicationRef)
+
+WebUI.verifyElementVisible(findTestObject('Submit Statement/text_Written_Rep'))
+
+WebUI.verifyElementVisible(findTestObject('Submit Statement/status_Appeal_Started'))
+
+WebUI.verifyElementText(findTestObject('Submit Statement/text_Appellant_Name'), verData.getValue(1, 16))
+
+CustomKeywords.'custom.VerifyTable.verifyValues'('Complete Questionaire/table_Documents', expTableAppellant)
 
 WebUI.click(findTestObject('Final Comments/button_Make_Final_Comment'))
 
