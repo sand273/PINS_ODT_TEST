@@ -38,7 +38,7 @@
       <guid>e39f9fa8-09e9-4d97-9b33-6a3230eecb41</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Self Service Portal/About the Site/Site Details (Scenario 1 - 3567)</testCaseId>
+      <testCaseId>Test Cases/Self Service Portal/About the Site/Site Details</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>feac7b3a-6662-4ceb-a86d-0b8bfa8ca706</guid>
