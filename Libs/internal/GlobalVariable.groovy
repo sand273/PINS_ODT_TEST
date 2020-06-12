@@ -54,6 +54,11 @@ public class GlobalVariable {
      */
     public static Object caseType
      
+    /**
+     * <p></p>
+     */
+    public static Object callTest
+     
 
     static {
         try {
@@ -70,6 +75,7 @@ public class GlobalVariable {
             planOption = selectedVariables['planOption']
             TestCaseStatus = selectedVariables['TestCaseStatus']
             caseType = selectedVariables['caseType']
+            callTest = selectedVariables['callTest']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

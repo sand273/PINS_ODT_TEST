@@ -15,6 +15,8 @@ import internal.GlobalVariable as GlobalVariable
 
 String[] values = new String[20]
 
+GlobalVariable.callTest == 'Auto-Validate'
+
 CustomKeywords.'custom.WriteExcel.readValues'(GlobalVariable.UploadFilePath + '\\AppealNumbers.xlsx', 'Appeals', values)
 
 for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++) 
@@ -37,8 +39,10 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++)
 	
     WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Publish Questionaire - Auto-Validate'), [:], FailureHandling.STOP_ON_FAILURE)
 
+	WebUI.callTestCase(findTestCase('Self Service Portal/LPA Statement/Verify Statement Appellant'), [:], FailureHandling.STOP_ON_FAILURE)
+	
     WebUI.callTestCase(findTestCase('Self Service Portal/LPA Statement/Submit Statement'), [:], FailureHandling.STOP_ON_FAILURE)
-
+	
 	//WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Portal_Run_GoPro_DataStore'), [:], FailureHandling.STOP_ON_FAILURE)
 	
 	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -59,6 +63,8 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++)
 
     WebUI.callTestCase(findTestCase('GoPro UI/Final Comments/Verify Comments'), [:], FailureHandling.STOP_ON_FAILURE)
 
+	WebUI.callTestCase(findTestCase('Self Service Portal/Final Comments/Verify Comments LPA'), [:], FailureHandling.STOP_ON_FAILURE)
+	
     WebUI.callTestCase(findTestCase('Self Service Portal/Final Comments/Final Comments'), [:], FailureHandling.STOP_ON_FAILURE)
 
 	//WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Portal_Run_GoPro_DataStore'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -66,8 +72,12 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++)
 	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('GoPro UI/Final Comments/Submit Comments'), [:], FailureHandling.STOP_ON_FAILURE)
-
-    WebUI.callTestCase(findTestCase('GoPro UI/Final Comments/Verify Event Status'), [:], FailureHandling.STOP_ON_FAILURE)
+	
+	WebUI.callTestCase(findTestCase('GoPro UI/Events/Verify Events Appellant'), [:], FailureHandling.STOP_ON_FAILURE)
+	
+	WebUI.callTestCase(findTestCase('GoPro UI/Events/Verify Events LPA'), [:], FailureHandling.STOP_ON_FAILURE)
+	
+	WebUI.callTestCase(findTestCase('GoPro UI/Final Comments/Verify Event Status'), [:], FailureHandling.STOP_ON_FAILURE)
 
 	WebUI.callTestCase(findTestCase('GoPro UI/Event Date/Assign Date'), [:], FailureHandling.STOP_ON_FAILURE)
 	
@@ -76,4 +86,6 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++)
 	WebUI.callTestCase(findTestCase('GoPro UI/Decision Issued/Verify Decision Issued'), [:], FailureHandling.STOP_ON_FAILURE)
 	
     WebUI.callTestCase(findTestCase('Self Service Portal/Decision Issued/Verify Decision Issued'), [:], FailureHandling.STOP_ON_FAILURE)
+	
+	WebUI.callTestCase(findTestCase('Self Service Portal/Decision Issued/Verify Decision Appellant'), [:], FailureHandling.STOP_ON_FAILURE)
 }

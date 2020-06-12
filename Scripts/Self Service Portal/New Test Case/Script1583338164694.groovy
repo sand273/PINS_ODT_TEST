@@ -17,11 +17,28 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
-WebUI.openBrowser('')
+Date today = new Date()
 
-WebUI.navigateToUrl('https://pins-test.gopro.net/selfservice/web/portal/application.html?id=32105D3E7B0B797D00000171E442A002')
+String todaysDate = today.format('dd.MM.yyyy')
 
-WebUI.click(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'))
+//String[] expVal = new String[20]
+//W/4009642
 
-WebUI.closeBrowser()
+String expTableLPA = todaysDate + ',Start Notice LPA (Written Reps),' + todaysDate + ',Upload_Pdf,' + todaysDate +  ',Upload_Pdf,' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Upload_Document,' + todaysDate + ',Appeal a planning decision'
+
+//String[] testVal = GlobalVariable.expTableList.split(',')
+
+
+String expTableAppellant = todaysDate + ',LPA Questionnaire,' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Start Notice Appellant (Written Reps),' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Upload_Document,' + todaysDate + ',Appeal a planning decision'
+
+// Appellant Login
+WebUI.callTestCase(findTestCase('Self Service Portal/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
+
+// LPA Login
+//WebUI.callTestCase(findTestCase('Self Service Portal/Login/LPA User'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
+
+CustomKeywords.'custom.VerifyTable.verifyValues'('Complete Questionaire/table_Documents', expTableAppellant)
+
 
