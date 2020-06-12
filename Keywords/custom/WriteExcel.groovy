@@ -102,6 +102,7 @@ public class WriteExcel {
 				WebUI.takeScreenshot()
 				break
 			}
+
 			WebUI.waitForElementVisible(findTestObject(object), 20)
 			WebUI.click(findTestObject(clickObj))
 			WebUI.delay(1)
