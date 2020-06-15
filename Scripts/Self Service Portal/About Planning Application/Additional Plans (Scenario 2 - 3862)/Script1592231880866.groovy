@@ -35,7 +35,47 @@ WebUI.verifyElementText(findTestObject('Additional Plans/list_Help_File_Formats'
 
 WebUI.click(findTestObject('Additional Plans/question_Non_Determination_LPA_Plans'))
 
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForElementClickable(findTestObject('Additional Plans/button_Add_Plan_Doc'), 5)
+
+WebUI.click(findTestObject('Additional Plans/button_Add_Plan_Doc'))
+
+WebUI.waitForElementVisible(findTestObject('Additional Plans/button_Select_File2'), 5)
+
+WebUI.click(findTestObject('Additional Plans/button_Select_File2'))
+
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForElementClickable(findTestObject('Additional Plans/button_Add_Plan_Doc'), 5)
+
+WebUI.click(findTestObject('Additional Plans/button_Add_Plan_Doc'))
+
+WebUI.waitForElementVisible(findTestObject('Additional Plans/button_Select_File3'), 5)
+
+WebUI.click(findTestObject('Additional Plans/button_Select_File3'))
+
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Tiff_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForElementClickable(findTestObject('Additional Plans/button_Add_Plan_Doc'), 5)
+
+WebUI.click(findTestObject('Additional Plans/button_Add_Plan_Doc'))
+
+WebUI.waitForElementVisible(findTestObject('Additional Plans/button_Select_File4'), 5)
+
+WebUI.click(findTestObject('Additional Plans/button_Select_File4'))
+
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Jpeg_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForElementClickable(findTestObject('Additional Plans/button_Add_Plan_Doc'), 5)
+
+WebUI.click(findTestObject('Additional Plans/button_Add_Plan_Doc'))
+
+WebUI.waitForElementVisible(findTestObject('Additional Plans/button_Select_File5'), 5)
+
+WebUI.click(findTestObject('Additional Plans/button_Select_File5'))
+
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'PNG_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementClickable(findTestObject('Planning Application details/button_Save_Continue'), 5)
 
