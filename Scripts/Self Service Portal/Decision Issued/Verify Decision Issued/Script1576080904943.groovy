@@ -14,13 +14,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
+String expTableLPA
+
 Date today = new Date()
 
 String todaysDate = today.format('dd.MM.yyyy')
 
-String expTableLPA = todaysDate + ',Appeal Decision,'+ todaysDate + ',Final Comments,' + todaysDate + ',Test_Final_Document,' + todaysDate + ',LPA Statement,' + todaysDate + ',Sandeep Ramchandani Interested Party Correspondence,' +
-todaysDate + ',Complete_Statement,' + todaysDate + ',Start Notice LPA (Written Reps),' + todaysDate + ',Upload_Pdf,' +
-todaysDate + ',Upload_Pdf,' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Upload_Document,' + todaysDate + ',Appeal a planning decision'
+if (GlobalVariable.callTest == 'Auto-Validate')
+{
+ expTableLPA = todaysDate + ',Appeal Decision,'+ todaysDate + ',Final Comments,' + todaysDate + ',Test_Final_Document,' + todaysDate + ',LPA Statement,' + todaysDate + ',Sandeep Ramchandani Interested Party Correspondence,' +
+ 			todaysDate + ',Complete_Statement,' + todaysDate + ',Start Notice LPA (Written Reps),' + todaysDate + ',Upload_Pdf,' +
+			todaysDate + ',Upload_Pdf,' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Upload_Document,' + todaysDate + ',Appeal a planning decision'
+}
 
 def verData = TestDataFactory.findTestData('Data Files/Complete_Questionaire')
 
@@ -44,7 +49,14 @@ WebUI.verifyElementVisible(findTestObject('Submit Statement/text_Written_Rep'))
 
 WebUI.verifyElementText(findTestObject('Submit Statement/text_Appellant_Name'), verData.getValue(1, 16))
 
-CustomKeywords.'custom.VerifyTable.verifyValues'('Complete Questionaire/table_Documents', expTableLPA)
+if (GlobalVariable.callTest == 'Auto-Validate')
+{
+	CustomKeywords.'custom.VerifyTable.verifyValues'('Complete Questionaire/table_Documents', expTableLPA)
+}
+else if (GlobalVariable.callTest == 'Written')
+{
+	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '43')
+}
 
 WebUI.waitForElementVisible(findTestObject('Final Comments/date_Decision_Issued'), 5)
 

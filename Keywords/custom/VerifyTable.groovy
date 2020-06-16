@@ -51,4 +51,22 @@ public class VerifyTable {
 			KeywordUtil.logInfo("Exception encountered in Custom Keyword verifyValues")
 		}
 	}
+
+
+	@Keyword
+	public void verifyTableCount(String tableObj, String expCount) {
+
+		String rowCount
+
+		WebUI.waitForElementVisible(findTestObject(tableObj), 10)
+
+		rowCount = WebUI.getAttribute(findTestObject(tableObj),'childElementCount').toString()
+		
+		if (expCount == rowCount) {
+			KeywordUtil.markPassed("Table rows count match: " + expCount.toString())
+		}
+		else {
+			KeywordUtil.markFailed("Table rows count mismtach: " + "Actual: " + rowCount.toString() + " Expected: " + expCount.toString())
+		}
+	}
 }
