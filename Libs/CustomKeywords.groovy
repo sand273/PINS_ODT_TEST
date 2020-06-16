@@ -51,3 +51,11 @@ def static "custom.VerifyTable.verifyValues"(
         	tableObj
          , 	expTable)
 }
+
+def static "custom.VerifyTable.verifyTableCount"(
+    	String tableObj	
+     , 	String expCount	) {
+    (new custom.VerifyTable()).verifyTableCount(
+        	tableObj
+         , 	expCount)
+}

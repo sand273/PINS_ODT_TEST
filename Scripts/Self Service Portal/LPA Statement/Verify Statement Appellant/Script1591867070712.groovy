@@ -22,13 +22,7 @@ Date today = new Date()
 String todaysDate = today.format('dd.MM.yyyy')
 String expTableAppellant
 
-if (GlobalVariable.callTest == 'Written')
-{
-	expTableAppellant = todaysDate + ',LPA Questionnaire,' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Start Notice Appellant (Written Reps),' + todaysDate + ',Upload_Pdf,' + todaysDate +
-	',Upload_PNG,' + todaysDate + ',Upload_Document,' + todaysDate + ',Upload_Jpeg,' + todaysDate + ',Upload_Tiff,' + todaysDate + ',Upload_Tiff,' + todaysDate + ',Upload_Jpeg,' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Upload_PNG,' + todaysDate + ',Upload_Document,' + todaysDate + ',Upload_Tiff,' + todaysDate + ',Upload_Document,' +  todaysDate + ',Upload_Pdf,' + todaysDate + ',Upload_PNG,' + todaysDate + ',Upload_Jpeg,' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Upload_Document,' + todaysDate + ',Upload_Document,' + todaysDate + ',Upload_Jpeg,'+ todaysDate + ',Upload_PNG,' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Upload_Tiff,' + todaysDate + ',Upload_Document,' + todaysDate + ',Upload_PNG,' + todaysDate + ',Upload_Jpeg,' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Upload_Tiff,' + todaysDate + ',Upload_Tiff,' + todaysDate + ',Upload_Jpeg,'+ todaysDate + ',Upload_Document,'+ todaysDate + ',Upload_PNG,'+ todaysDate + ',Upload_Pdf,' + todaysDate + ',Upload_Pdf,'+ todaysDate + ',Upload_Pdf,'+ todaysDate + ',Upload_Document,'+ ',Appeal a planning decision'
-
-}
-else if (GlobalVariable.callTest == 'Auto-Validate')
+if (GlobalVariable.callTest == 'Auto-Validate')
 {
 
 	expTableAppellant = todaysDate + ',LPA Questionnaire,' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Start Notice Appellant (Written Reps),' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Upload_Document,' + todaysDate + ',Appeal a planning decision'
@@ -62,7 +56,15 @@ WebUI.verifyElementVisible(findTestObject('Submit Statement/status_Appeal_Starte
 
 WebUI.verifyElementText(findTestObject('Submit Statement/text_Appellant_Name'), verData.getValue(1, 16))
 
-CustomKeywords.'custom.VerifyTable.verifyValues'('Complete Questionaire/table_Documents', expTableAppellant)
+if (GlobalVariable.callTest == 'Auto-Validate')
+{
+	CustomKeywords.'custom.VerifyTable.verifyValues'('Complete Questionaire/table_Documents', expTableAppellant)
+	
+}
+else if (GlobalVariable.callTest == 'Written')
+{
+	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '39')
+}
 
-//WebUI.closeBrowser()
+WebUI.closeBrowser()
 

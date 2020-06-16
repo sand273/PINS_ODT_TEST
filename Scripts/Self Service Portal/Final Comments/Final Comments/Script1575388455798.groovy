@@ -47,7 +47,14 @@ WebUI.verifyElementVisible(findTestObject('Submit Statement/status_Appeal_Starte
 
 WebUI.verifyElementText(findTestObject('Submit Statement/text_Appellant_Name'), verData.getValue(1, 16))
 
-CustomKeywords.'custom.VerifyTable.verifyValues'('Complete Questionaire/table_Documents', expTableAppellant)
+if (GlobalVariable.callTest == 'Auto-Validate')
+{
+	CustomKeywords.'custom.VerifyTable.verifyValues'('Complete Questionaire/table_Documents', expTableAppellant)
+}
+else if (GlobalVariable.callTest == 'Auto-Validate')
+{
+	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '40')
+}
 
 WebUI.click(findTestObject('Final Comments/button_Make_Final_Comment'))
 

@@ -73,9 +73,9 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++)
 
     WebUI.callTestCase(findTestCase('GoPro UI/Final Comments/Submit Comments'), [:], FailureHandling.STOP_ON_FAILURE)
 
-	WebUI.callTestCase(findTestCase('GoPro UI/Events/Verify Events Appellant'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Self Service Portal/Events/Verify Events Appellant'), [:], FailureHandling.STOP_ON_FAILURE)
 	
-	WebUI.callTestCase(findTestCase('GoPro UI/Events/Verify Events LPA'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Self Service Portal/Events/Verify Events LPA'), [:], FailureHandling.STOP_ON_FAILURE)
 	
     WebUI.callTestCase(findTestCase('GoPro UI/Final Comments/Verify Event Status'), [:], FailureHandling.STOP_ON_FAILURE)
 
