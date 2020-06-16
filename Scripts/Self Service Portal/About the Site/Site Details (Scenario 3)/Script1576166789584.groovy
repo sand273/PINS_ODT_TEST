@@ -43,9 +43,11 @@ WebUI.setText(findTestObject('Site Details/field_Grid_Reference'), testData.getV
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Site Details/question_Green_Belt'), 5)
+WebUI.waitForElementVisible(findTestObject('Site Details/message_Green_Belt'), 5)
 
-WebUI.click(findTestObject('Site Details/option_Green_Belt_No'))
+WebUI.verifyElementText(findTestObject('Site Details/message_Green_Belt'), verData.getValue(1, 146))
+
+WebUI.click(findTestObject('Site Details/option_Green_Belt_Yes'))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 

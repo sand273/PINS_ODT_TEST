@@ -209,6 +209,24 @@
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Permitted_Development_Rights_Household_Application_Yes_12_Weeks_Less_3567</testCaseId>
    </testCaseLink>
    <testCaseLink>
+      <guid>2a70420f-ce23-4d21-a325-d777cbd52c77</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Local_Authority_No_Listed_Building_Consent_8_Weeks_More_6_Months_Less_LPA_No_3862</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b7748751-f824-4690-aa8a-095d5eee08c7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Local_Authority_No_Listed_Building_Consent_8_Weeks_More_6_Months_Less_LPA_Yes_3862</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cd4d5656-cf3c-4b09-ba91-e5568e849e58</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Eligible_Local_Authority_No_Listed_Building_Consent_8_Weeks_More_6_Months_More_LPA_Yes_6_Months_Less_3862</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>f8946e90-8032-40da-a311-5361db4b2aee</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -507,5 +525,23 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Permitted_Development_Rights_Household_Application_Yes_12_Weeks_More</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5cae5a80-6b33-4be2-8cb9-bcbf17a5c427</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Local_Authority_No_Listed_Building_Consent_8_Weeks_Less</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bd01b74c-dfad-42d4-842f-8afd8fcb4a34</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Local_Authority_No_Listed_Building_Consent_8_Weeks_More_6_Months_More_LPA_No</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>545c0f7e-32b7-4d32-a35f-aa79ed32c484</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Self Service Portal/Eligibility Checker/Not_Eligible_Local_Authority_No_Listed_Building_Consent_8_Weeks_More_6_Months_More_LPA_Yes_6_Months_More</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
