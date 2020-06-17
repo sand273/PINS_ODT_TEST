@@ -50,7 +50,14 @@ WebUI.verifyElementText(findTestObject('Submit Statement/title_Appeal_Reference'
 
 WebUI.verifyElementText(findTestObject('Submit Statement/text_Case_Number'), GlobalVariable.ApplicationRef)
 
-WebUI.verifyElementVisible(findTestObject('Submit Statement/text_Written_Rep'))
+if (GlobalVariable.caseType == 'Written')
+{
+	WebUI.verifyElementVisible(findTestObject('Submit Statement/text_Written_Rep'))
+}
+else if (GlobalVariable.callTest == 'Hearing')
+{
+	WebUI.verifyElementVisible(findTestObject('Submit Statement/text_Hearing'))
+}
 
 WebUI.verifyElementVisible(findTestObject('Submit Statement/status_Appeal_Started'))
 
@@ -64,6 +71,11 @@ else if (GlobalVariable.callTest == 'Written')
 {
 	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '45')
 }
+else if (GlobalVariable.callTest == 'Hearing')
+{
+	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '25')
+}
+
 
 WebUI.closeBrowser()
 
