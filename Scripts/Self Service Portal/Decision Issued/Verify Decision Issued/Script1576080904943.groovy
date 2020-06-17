@@ -13,6 +13,9 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.configuration.RunConfiguration as RC
+
+String executionProfile = RC.getExecutionProfile()
 
 String expTableLPA
 
@@ -29,7 +32,14 @@ if (GlobalVariable.callTest == 'Auto-Validate')
 
 def verData = TestDataFactory.findTestData('Data Files/Complete_Questionaire')
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Login/LPA User'), [:], FailureHandling.STOP_ON_FAILURE)
+if (executionProfile == 'pre-prod')
+{
+	WebUI.callTestCase(findTestCase('Self Service Portal/Login/LPA User-Pre-prod'), [:], FailureHandling.STOP_ON_FAILURE)
+}
+else if (executionProfile == 'default')
+{
+	WebUI.callTestCase(findTestCase('Self Service Portal/Login/LPA User'), [:], FailureHandling.STOP_ON_FAILURE)
+}
 
 WebUI.click(findTestObject('Complete Questionaire/link_Search'))
 
