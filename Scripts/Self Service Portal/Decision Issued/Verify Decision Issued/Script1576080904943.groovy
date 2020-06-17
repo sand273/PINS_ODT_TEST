@@ -45,7 +45,14 @@ WebUI.waitForElementVisible(findTestObject('Final Comments/status_Decision_Issue
 
 WebUI.verifyElementText(findTestObject('Submit Statement/text_Case_Number'), GlobalVariable.ApplicationRef)
 
-WebUI.verifyElementVisible(findTestObject('Submit Statement/text_Written_Rep'))
+if (GlobalVariable.caseType == 'Written')
+{
+	WebUI.verifyElementVisible(findTestObject('Submit Statement/text_Written_Rep'))
+}
+else if (GlobalVariable.callTest == 'Hearing')
+{
+	WebUI.verifyElementVisible(findTestObject('Submit Statement/text_Hearing'))
+}
 
 WebUI.verifyElementText(findTestObject('Submit Statement/text_Appellant_Name'), verData.getValue(1, 16))
 
@@ -56,6 +63,10 @@ if (GlobalVariable.callTest == 'Auto-Validate')
 else if (GlobalVariable.callTest == 'Written')
 {
 	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '43')
+}
+else if (GlobalVariable.callTest == 'Hearing')
+{
+	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '23')
 }
 
 WebUI.waitForElementVisible(findTestObject('Final Comments/date_Decision_Issued'), 5)

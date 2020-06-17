@@ -42,7 +42,14 @@ WebUI.verifyElementText(findTestObject('Submit Statement/title_Appeal_Reference'
 
 WebUI.verifyElementText(findTestObject('Submit Statement/text_Case_Number'), GlobalVariable.ApplicationRef)
 
-WebUI.verifyElementVisible(findTestObject('Submit Statement/text_Written_Rep'))
+if (GlobalVariable.caseType == 'Hearing')
+{
+	WebUI.verifyElementVisible(findTestObject('Submit Statement/text_Hearing'))
+}
+else if (GlobalVariable.caseType == 'Written')
+{
+	WebUI.verifyElementVisible(findTestObject('Submit Statement/text_Written_Rep'))
+}
 
 WebUI.verifyElementVisible(findTestObject('Submit Statement/status_Appeal_Started'))
 

@@ -26,7 +26,14 @@ use(groovy.time.TimeCategory, {
 
 WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
+if (GlobalVariable.caseType == 'Hearing')
+{
+	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal - Hearing'), [:], FailureHandling.STOP_ON_FAILURE)
+}
+else
+{
+	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
+}
 
 WebUI.click(findTestObject('GoPro UI/Programming/link_Programming'))
 
@@ -110,7 +117,14 @@ WebUI.closeBrowser()
 
 WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
+if (GlobalVariable.caseType == 'Hearing')
+{
+	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal - Hearing'), [:], FailureHandling.STOP_ON_FAILURE)
+}
+else
+{
+	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
+}
 
 WebUI.callTestCase(findTestCase('GoPro UI/Generic/Publish Decision - Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)
 
