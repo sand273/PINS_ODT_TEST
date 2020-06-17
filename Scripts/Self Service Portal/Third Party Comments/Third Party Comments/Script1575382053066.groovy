@@ -14,6 +14,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.configuration.RunConfiguration as RC
+
+String executionProfile = RC.getExecutionProfile()
 
 String queRefMessage
 
@@ -21,7 +24,15 @@ def verData = TestDataFactory.findTestData('Data Files/Complete_Questionaire')
 
 def testData = TestDataFactory.findTestData('Data Files/GoPro_UI_Verification')
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Login/Third party'), [:], FailureHandling.STOP_ON_FAILURE)
+
+if (executionProfile == 'pre-prod')
+{
+	WebUI.callTestCase(findTestCase('Self Service Portal/Login/Third party-Pre-prod'), [:], FailureHandling.STOP_ON_FAILURE)
+}
+else if (executionProfile == 'default')
+{
+	WebUI.callTestCase(findTestCase('Self Service Portal/Login/Third party'), [:], FailureHandling.STOP_ON_FAILURE)
+}
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
 

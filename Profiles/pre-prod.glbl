@@ -44,4 +44,9 @@
       <initValue>'Written'</initValue>
       <name>caseType</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Written'</initValue>
+      <name>callType</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
