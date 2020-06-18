@@ -17,7 +17,7 @@ String[] values = new String[20]
 
 GlobalVariable.caseType = 'Written'
 
-GlobalVariable.callTest == 'Written'
+GlobalVariable.callTest = 'Written'
 
 CustomKeywords.'custom.WriteExcel.readValues'(GlobalVariable.UploadFilePath + '\\AppealNumbers.xlsx', 'Appeals', values)
 

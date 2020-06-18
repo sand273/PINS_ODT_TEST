@@ -16,7 +16,7 @@ import internal.GlobalVariable as GlobalVariable
 
 GlobalVariable.caseType = 'Hearing'
 
-GlobalVariable.callTest == 'Hearing'
+GlobalVariable.callTest = 'Hearing'
 
 String[] values = new String[10]
 
