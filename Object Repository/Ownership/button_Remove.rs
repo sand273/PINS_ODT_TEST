@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[10]//div[1]//div[1]//div[1]//a[1]</value>
+         <value>//fieldset[@id='section-Ownership']//div[10]//div[1]//div[1]//div[1]//a[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
