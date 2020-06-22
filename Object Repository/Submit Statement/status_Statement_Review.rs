@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Make_Statement</name>
+   <name>status_Statement_Review</name>
    <tag></tag>
-   <elementGuidId>0366f4c8-1340-4ca1-afec-027de2db8aea</elementGuidId>
+   <elementGuidId>9cb0a3ff-b6d5-4fdd-a291-f12e62ccf2c2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[contains(text(),'Make a statement')]</value>
+         <value>//strong[contains(text(),'Statements in Review')]</value>
       </entry>
       <entry>
          <key>BASIC</key>

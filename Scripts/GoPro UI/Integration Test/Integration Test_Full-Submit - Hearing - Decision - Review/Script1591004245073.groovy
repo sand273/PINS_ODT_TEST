@@ -32,6 +32,8 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++)
 
     WebUI.callTestCase(findTestCase('Self Service Portal/Appeal Started/Verify Appeal Started'), [:], FailureHandling.STOP_ON_FAILURE)
 
+	WebUI.callTestCase(findTestCase('GoPro UI/Questionnaire/Questionnaire Overdue'), [:], FailureHandling.STOP_ON_FAILURE)
+	
     WebUI.callTestCase(findTestCase('Self Service Portal/Complete Questionaire/Complete Questionaire'), [:], FailureHandling.STOP_ON_FAILURE)
 
 	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)

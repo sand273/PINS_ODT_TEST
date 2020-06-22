@@ -17,6 +17,8 @@ GlobalVariable.caseType = 'Written'
 
 GlobalVariable.callTest = 'Written'
 
+GlobalVariable.caseSubType = 'Review-Held'
+
 String[] values = new String[20]
 
 CustomKeywords.'custom.WriteExcel.readValues'(GlobalVariable.UploadFilePath + '\\AppealNumbers.xlsx', 'Appeals', values)
@@ -31,17 +33,7 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++)
 
     WebUI.callTestCase(findTestCase('Self Service Portal/Appeal Started/Verify Appeal Started'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('Self Service Portal/Complete Questionaire/Complete Questionaire'), [:], FailureHandling.STOP_ON_FAILURE)
-
-	//WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Portal_Run_GoPro_DataStore'), [:], FailureHandling.STOP_ON_FAILURE)
-	
-	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
-
-    WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Verify Publish Questionaire'), [:], FailureHandling.STOP_ON_FAILURE)
-
-    WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Publish Questionaire'), [:], FailureHandling.STOP_ON_FAILURE)
-
-	WebUI.callTestCase(findTestCase('Self Service Portal/LPA Statement/Verify Statement Appellant'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('GoPro UI/Questionnaire/Questionnaire Overdue - Publish'), [:], FailureHandling.STOP_ON_FAILURE)
 	
     WebUI.callTestCase(findTestCase('Self Service Portal/LPA Statement/Submit Statement'), [:], FailureHandling.STOP_ON_FAILURE)
 

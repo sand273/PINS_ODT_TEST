@@ -50,7 +50,14 @@ WebUI.waitForElementVisible(findTestObject('Submit Statement/label_Match_Found')
 
 WebUI.click(findTestObject('Complete Questionaire/link_Appeal_Ref'))
 
-WebUI.waitForElementVisible(findTestObject('Submit Statement/message_Appeal_Status'), 5)
+if (GlobalVariable.caseSubType == 'Review-Held')
+{
+	WebUI.waitForElementVisible(findTestObject('Submit Statement/status_Statement_Review'), 5)
+}
+else
+{
+	WebUI.waitForElementVisible(findTestObject('Submit Statement/message_Appeal_Status'), 5)
+}
 
 WebUI.verifyElementText(findTestObject('Submit Statement/title_Appeal_Reference'), GlobalVariable.ApplicationRef)
 

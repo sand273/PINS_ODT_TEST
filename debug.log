@@ -5985,3 +5985,6 @@
 [0617/121552.096:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
 [0617/121552.097:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
 [0617/121552.098:ERROR:exception_snapshot_win.cc(98)] thread ID 9212 not found in process
+[0619/144155.165:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0619/144155.167:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0619/144155.167:ERROR:exception_snapshot_win.cc(98)] thread ID 15904 not found in process
