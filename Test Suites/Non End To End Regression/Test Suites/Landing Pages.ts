@@ -28,4 +28,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/GoPro UI/Regression Non End To End Tests/Landing Page (National List)</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>73d15794-00f1-4f22-afc8-84371d4e9b83</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/GoPro UI/Regression Non End To End Tests/Landing Page (My Cases (Case Officer))</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
