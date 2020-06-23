@@ -22,4 +22,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/GoPro UI/Regression Non End To End Tests/Landing Page (Holding List)</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>49bf2dc5-82fa-46dd-b91f-d0e1d91d0c24</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/GoPro UI/Regression Non End To End Tests/Landing Page (National List)</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

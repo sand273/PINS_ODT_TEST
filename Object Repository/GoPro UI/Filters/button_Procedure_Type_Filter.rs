@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_Holding_List</name>
+   <name>button_Procedure_Type_Filter</name>
    <tag></tag>
-   <elementGuidId>fdad8795-3173-43cd-8c7c-cc3732f65278</elementGuidId>
+   <elementGuidId>44d9d38a-3c29-4684-b618-5bdab46fa5d8</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//a[contains(text(),'Holding List')]</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='filterBtn_procedureType']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

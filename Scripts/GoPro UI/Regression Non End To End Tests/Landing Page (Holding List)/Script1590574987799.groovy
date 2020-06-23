@@ -28,9 +28,9 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('GoPro UI/My cases/link_My events_location_arrow'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Holding List/link_Holding_List'), 20)
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Navigation/link_Holding_List'), 20)
 
-WebUI.click(findTestObject('GoPro UI/Holding List/link_Holding_List'))
+WebUI.click(findTestObject('GoPro UI/Navigation/link_Holding_List'))
 
 WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/input_Search'), 5)
 
@@ -70,13 +70,13 @@ WebUI.verifyElementVisible(findTestObject('GoPro UI/Cases/link_Show_Calendars'))
 
 WebUI.verifyElementVisible(findTestObject('GoPro UI/Cases/menu_Actions_Hamburger'))
 
-WebUI.verifyElementVisible(findTestObject('GoPro UI/Holding List/button_LPA_Name_Filter'))
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Filters/button_LPA_Name_Filter'))
 
-WebUI.verifyElementVisible(findTestObject('GoPro UI/Holding List/button_Case_Status_Filter'))
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Filters/button_Case_Status_Holding_List_Filter'))
 
-WebUI.verifyElementVisible(findTestObject('GoPro UI/Cases/button_Assigned_Officer_Inspector_Filter'))
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Filters/button_Assigned_Officer_Inspector_Filter'))
 
-WebUI.verifyElementVisible(findTestObject('GoPro UI/Cases/button_Creation_Date_Filter'))
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Filters/button_Creation_Date_Filter'))
 
 WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Summary/input_Search'))
 
