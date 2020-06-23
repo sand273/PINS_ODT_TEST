@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Appeal_Type_Filter</name>
+   <name>button_Case_Specialism_Filter</name>
    <tag></tag>
-   <elementGuidId>7355fe6f-22b4-402b-a3c5-ac742ec7b912</elementGuidId>
+   <elementGuidId>12b6e7d7-2230-4946-84e9-65767d6c721d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='filterBtn_casecattype']</value>
+         <value>//button[@id='filterBtn_caseSpecialism']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
