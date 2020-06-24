@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Creation_Date_Filter</name>
+   <name>link_Holding_List</name>
    <tag></tag>
-   <elementGuidId>af1d1883-cd46-4457-86ad-687edfe8be7d</elementGuidId>
+   <elementGuidId>fdad8795-3173-43cd-8c7c-cc3732f65278</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='filterBtn_created']</value>
+         <value>//a[contains(text(),'Holding List')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

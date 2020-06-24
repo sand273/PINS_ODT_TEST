@@ -48,6 +48,46 @@ WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Searc
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Cases/select_First_Case'), 20)
 
+WebUI.doubleClick(findTestObject('GoPro UI/Cases/select_First_Case'))
+
+WebUI.switchToWindowIndex(1)
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/input_Case Officer'), 20)
+
+WebUI.clearText(findTestObject('GoPro UI/Case Summary/input_Case Officer'))
+
+WebUI.setText(findTestObject('GoPro UI/Case Summary/input_Case Officer'), 'Autotest_1')
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/dropdown_Case_Officer'), 20)
+
+WebUI.click(findTestObject('GoPro UI/Case Summary/dropdown_Case_Officer'))
+
+WebUI.click(findTestObject('GoPro UI/Case Summary/button_Save'))
+
+WebUI.closeWindowIndex(1)
+
+WebUI.switchToWindowIndex(0)
+
+WebUI.click(findTestObject('GoPro UI/My cases/link_My events_location_arrow'))
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Navigation/link_My_Cases'), 20)
+
+WebUI.click(findTestObject('GoPro UI/Navigation/link_My_Cases'))
+
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/input_Search'), 5)
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'))
+
+WebUI.sendKeys(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'), ref[1])
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Search'))
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Cases/select_First_Case'), 20)
+
 WebUI.click(findTestObject('GoPro UI/Cases/select_First_Case'))
 
 WebUI.verifyElementVisible(findTestObject('GoPro UI/Cases/view_Case_Details'))
@@ -70,15 +110,17 @@ WebUI.verifyElementVisible(findTestObject('GoPro UI/Cases/link_Show_Calendars'))
 
 WebUI.verifyElementVisible(findTestObject('GoPro UI/Cases/menu_Actions_Hamburger'))
 
-WebUI.verifyElementVisible(findTestObject('GoPro UI/Filters/button_Creation_Date_Filter'))
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Filters/button_Case_Status_My_Cases_Filter'))
 
-WebUI.verifyElementVisible(findTestObject('GoPro UI/Filters/button_Assigned_Officer_Inspector_Filter'))
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Filters/button_Due_Date_Filter'))
 
-WebUI.verifyElementVisible(findTestObject('GoPro UI/Filters/button_Appeal_Type_Filter'))
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Filters/button_Event_Date_Filter'))
 
-WebUI.verifyElementVisible(findTestObject('GoPro UI/Filters/button_Case_Status_Filter'))
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Filters/button_Inspector_Filter'))
 
-WebUI.verifyElementVisible(findTestObject('GoPro UI/Filters/button_Site_Postcode_Filter'))
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Filters/button_Procedure_Type_Filter'))
+
+WebUI.verifyElementVisible(findTestObject('GoPro UI/Filters/button_LPA_Name_Filter'))
 
 WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Summary/input_Search'))
 
