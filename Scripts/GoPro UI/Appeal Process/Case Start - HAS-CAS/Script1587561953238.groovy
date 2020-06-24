@@ -66,7 +66,7 @@ try {
 catch (Exception ex) {
     if (WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Status_Ready_Programming'), 'defaultSelected', 
         'true', 5) == true) {
-        res: continue //goto label res
+        continue res; //goto label res
     }
 } 
 

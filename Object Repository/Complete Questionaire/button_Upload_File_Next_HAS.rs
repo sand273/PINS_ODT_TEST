@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Monuments_Next_Page</name>
+   <name>button_Upload_File_Next_HAS</name>
    <tag></tag>
-   <elementGuidId>9ef67d33-f5f7-45e7-a019-d15cad086f21</elementGuidId>
+   <elementGuidId>b7ebcf39-7f77-447a-a83f-53667f4df2ae</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='form-page-page8']//a[@class='govuk-button'][contains(text(),'Next page')]</value>
+         <value>//div[@id='form-page-page11']//a[@class='govuk-button'][contains(text(),'Next page')]</value>
       </entry>
       <entry>
          <key>BASIC</key>

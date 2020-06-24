@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Monuments_Next_Page</name>
+   <name>button_Screening_Next_HAS</name>
    <tag></tag>
-   <elementGuidId>9ef67d33-f5f7-45e7-a019-d15cad086f21</elementGuidId>
+   <elementGuidId>1ba51894-756f-45cd-83af-2018b81e12d9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

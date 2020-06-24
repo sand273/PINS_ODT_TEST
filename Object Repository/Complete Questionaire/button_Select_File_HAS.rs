@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Monuments_Next_Page</name>
+   <name>button_Select_File_HAS</name>
    <tag></tag>
-   <elementGuidId>9ef67d33-f5f7-45e7-a019-d15cad086f21</elementGuidId>
+   <elementGuidId>9a8f57c8-b9e9-4b77-802a-db004770e661</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='form-page-page8']//a[@class='govuk-button'][contains(text(),'Next page')]</value>
+         <value>/html[1]/body[1]/div[1]/main[1]/div[2]/div[2]/form[1]/div[1]/div[12]/fieldset[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -16,14 +16,41 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.configuration.RunConfiguration as RC
+
+String executionProfile = RC.getExecutionProfile()
 
 String queRefMessage
 
 def verData = TestDataFactory.findTestData('Data Files/Complete_Questionaire')
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Login/LPA User'), [:], FailureHandling.STOP_ON_FAILURE)
+if (executionProfile == 'pre-prod')
+{
+	WebUI.callTestCase(findTestCase('Self Service Portal/Login/LPA User-Pre-prod'), [:], FailureHandling.STOP_ON_FAILURE)
+}
+else if (executionProfile == 'default')
+{
+	WebUI.callTestCase(findTestCase('Self Service Portal/Login/LPA User'), [:], FailureHandling.STOP_ON_FAILURE)
+}
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('Submit Statement/title_Appeal_Reference'), GlobalVariable.ApplicationRef)
+
+WebUI.verifyElementText(findTestObject('Submit Statement/text_Case_Number'), GlobalVariable.ApplicationRef)
+
+if (GlobalVariable.caseType == 'Written')
+{
+	WebUI.verifyElementVisible(findTestObject('Submit Statement/text_Written_Rep'))
+}
+else if (GlobalVariable.callTest == 'Hearing')
+{
+	WebUI.verifyElementVisible(findTestObject('Submit Statement/text_Hearing'))
+}
+
+WebUI.verifyElementVisible(findTestObject('Submit Statement/status_Appeal_Started'))
+
+WebUI.verifyElementText(findTestObject('Submit Statement/text_Appellant_Name'), verData.getValue(1, 16))
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Complete questionnaire'), 5)
 
@@ -63,12 +90,6 @@ WebUI.click(findTestObject('Complete Questionaire/input_Yes_EmergingPolicies'))
 
 WebUI.click(findTestObject('Complete Questionaire/button_Emerging_Next_page'))
 
-not_run: WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_FiveYear_Next_page'), 5)
-
-not_run: WebUI.click(findTestObject('Complete Questionaire/input_Yes_FiveHousing'))
-
-not_run: WebUI.click(findTestObject('Complete Questionaire/button_FiveYear_Next_page'))
-
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Conditions_Next_HAS'), 5)
 
 WebUI.click(findTestObject('Complete Questionaire/input_Yes_ConditionsSuggestions'))
@@ -89,13 +110,13 @@ WebUI.click(findTestObject('Complete Questionaire/input_Yes_BuildingAffects'))
 
 WebUI.click(findTestObject('Complete Questionaire/input_Yes_BuildingAffectScheduleMonument'))
 
-WebUI.click(findTestObject('Complete Questionaire/button_Monuments_Next_Page'))
+WebUI.click(findTestObject('Complete Questionaire/button_Monuments_Next_HAS'))
 
-WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Screening_Next_Page'), 5)
+WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Screening_Next_HAS'), 5)
 
 WebUI.click(findTestObject('Complete Questionaire/input_Yes_ScreeningOpinion'))
 
-WebUI.click(findTestObject('Complete Questionaire/button_Monuments_Next_Page'))
+WebUI.click(findTestObject('Complete Questionaire/button_Screening_Next_HAS'))
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/message_Upload_Planning'), 5)
 
@@ -103,11 +124,9 @@ WebUI.click(findTestObject('Complete Questionaire/button_Select_File'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(3)
+WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Planning_Next_Page'), 5)
 
-WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Screening_Next_Page'), 5)
-
-WebUI.click(findTestObject('Complete Questionaire/button_Screening_Next_Page'))
+WebUI.click(findTestObject('Complete Questionaire/button_Planning_Next_Page'))
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/input_No_NotificationsActions'), 10)
 
@@ -115,17 +134,27 @@ WebUI.click(findTestObject('Complete Questionaire/input_No_NotificationsActions'
 
 WebUI.click(findTestObject('Complete Questionaire/button_Upload_File_Next'))
 
-WebUI.waitForElementClickable(findTestObject('null'), 5)
+WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Upload_File_Next_HAS'), 5)
+
+WebUI.click(findTestObject('Complete Questionaire/button_Select_File_HAS'))
+
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Upload_File_Next_HAS'), 5)
+
+WebUI.click(findTestObject('Complete Questionaire/button_Upload_File_Next_HAS'))
+
+WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'), 5)
 
 try {
-    WebUI.click(findTestObject('null'))
+    WebUI.click(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'))
 }
 catch (Exception ex) {
     WebUI.refresh()
 
-    WebUI.waitForElementClickable(findTestObject('null'), 10)
+    WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'), 10)
 
-    WebUI.click(findTestObject('null'))
+    WebUI.click(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'))
 } 
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/message_Confirmation'), 5)
