@@ -16,9 +16,13 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-
 import com.kms.katalon.core.configuration.RunConfiguration as RC
 
-String executionProfile = RC.getExecutionProfile()
+WebUI.openBrowser('')
 
-println(executionProfile)
+WebUI.navigateToUrl('https://pins-test.gopro.net/ui/#!/view/allcases')
+
+WebUI.click(findTestObject('null'))
+
+WebUI.closeBrowser()
+

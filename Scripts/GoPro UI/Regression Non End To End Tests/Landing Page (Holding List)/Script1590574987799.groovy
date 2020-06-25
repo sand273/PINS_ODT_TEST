@@ -16,7 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-String[] values = new String[20]
+String[] values = new String[]
 
 CustomKeywords.'custom.WriteExcel.readValues'(GlobalVariable.UploadFilePath + '\\AppealNumbers.xlsx', 'Appeals', values)
 
@@ -26,7 +26,7 @@ WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHand
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('GoPro UI/My cases/link_My events_location_arrow'))
+WebUI.click(findTestObject('GoPro UI/My cases/link_My_Events'))
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Navigation/link_Holding_List'), 20)
 
@@ -64,7 +64,7 @@ WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Details/label_Reason_Fo
 
 WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Details/label_Original_Development_Description'))
 
-WebUI.verifyElementVisible(findTestObject('GoPro UI/My cases/link_My events_location_arrow'))
+WebUI.verifyElementVisible(findTestObject('null'))
 
 WebUI.verifyElementVisible(findTestObject('GoPro UI/Cases/link_Show_Calendars'))
 

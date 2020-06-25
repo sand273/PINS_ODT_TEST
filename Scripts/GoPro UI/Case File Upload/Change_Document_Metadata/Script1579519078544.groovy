@@ -30,7 +30,7 @@ WebDriver driver = DriverFactory.getWebDriver()
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('GoPro UI/My cases/link_My events_location_arrow'))
+WebUI.click(findTestObject('GoPro UI/My cases/link_My_Events'))
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Navigation/link_Cases'), 20)
 

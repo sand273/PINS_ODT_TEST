@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Select_File_HAS</name>
+   <name>button_Bulk_Upload_Next_HAS</name>
    <tag></tag>
-   <elementGuidId>9a8f57c8-b9e9-4b77-802a-db004770e661</elementGuidId>
+   <elementGuidId>682642ca-38fb-4539-a053-33a5bbf70a5c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//label[contains(text(),'Upload the plans upon which the decision was made')]</value>
+         <value>//div[@id='form-page-page12']//a[@class='govuk-button'][contains(text(),'Next page')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CSS</key>
          <value></value>
       </entry>
    </selectorCollection>

@@ -24,13 +24,10 @@ String queRefMessage
 
 def verData = TestDataFactory.findTestData('Data Files/Complete_Questionaire')
 
-if (executionProfile == 'pre-prod')
-{
-	WebUI.callTestCase(findTestCase('Self Service Portal/Login/LPA User-Pre-prod'), [:], FailureHandling.STOP_ON_FAILURE)
-}
-else if (executionProfile == 'default')
-{
-	WebUI.callTestCase(findTestCase('Self Service Portal/Login/LPA User'), [:], FailureHandling.STOP_ON_FAILURE)
+if (executionProfile == 'pre-prod') {
+    WebUI.callTestCase(findTestCase('Self Service Portal/Login/LPA User-Pre-prod'), [:], FailureHandling.STOP_ON_FAILURE)
+} else if (executionProfile == 'default') {
+    WebUI.callTestCase(findTestCase('Self Service Portal/Login/LPA User'), [:], FailureHandling.STOP_ON_FAILURE)
 }
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -39,13 +36,10 @@ WebUI.verifyElementText(findTestObject('Submit Statement/title_Appeal_Reference'
 
 WebUI.verifyElementText(findTestObject('Submit Statement/text_Case_Number'), GlobalVariable.ApplicationRef)
 
-if (GlobalVariable.caseType == 'Written')
-{
-	WebUI.verifyElementVisible(findTestObject('Submit Statement/text_Written_Rep'))
-}
-else if (GlobalVariable.callTest == 'Hearing')
-{
-	WebUI.verifyElementVisible(findTestObject('Submit Statement/text_Hearing'))
+if (GlobalVariable.caseType == 'Written') {
+    WebUI.verifyElementVisible(findTestObject('Submit Statement/text_Written_Rep'))
+} else if (GlobalVariable.callTest == 'Hearing') {
+    WebUI.verifyElementVisible(findTestObject('Submit Statement/text_Hearing'))
 }
 
 WebUI.verifyElementVisible(findTestObject('Submit Statement/status_Appeal_Started'))
@@ -144,17 +138,17 @@ WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Uploa
 
 WebUI.click(findTestObject('Complete Questionaire/button_Upload_File_Next_HAS'))
 
-WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'), 5)
+WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Bulk_Upload_Next_HAS'), 5)
 
 try {
-    WebUI.click(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'))
+    WebUI.click(findTestObject('Complete Questionaire/button_Bulk_Upload_Next_HAS'))
 }
 catch (Exception ex) {
     WebUI.refresh()
 
-    WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'), 10)
+    WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Bulk_Upload_Next_HAS'), 10)
 
-    WebUI.click(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'))
+    WebUI.click(findTestObject('Complete Questionaire/button_Bulk_Upload_Next_HAS'))
 } 
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/message_Confirmation'), 5)

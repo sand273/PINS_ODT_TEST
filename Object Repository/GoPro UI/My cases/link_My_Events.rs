@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_My events_location_arrow</name>
+   <name>link_My_Events</name>
    <tag></tag>
-   <elementGuidId>d4ca696e-5143-48c4-ae2c-1e2deba38e2d</elementGuidId>
+   <elementGuidId>46b7039e-6698-455a-b368-0af07ade4355</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[@id='viewlista']/i</value>
+         <value>//a[@id='caseworkerviewsa']/i</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -38,42 +38,14 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;viewlista&quot;)/i[@class=&quot;fal fa-location-arrow caseviewsicon&quot;]</value>
+      <value>id(&quot;caseworkerviewsa&quot;)/i[@class=&quot;fal fa-location-arrow caseviewsicon&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//a[@id='viewlista']/i</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='My events'])[1]/following::i[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tasks and events'])[2]/following::i[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Show views'])[1]/preceding::i[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Show views'])[2]/preceding::i[1]</value>
+      <value>//a[@id='caseworkerviewsa']/i</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

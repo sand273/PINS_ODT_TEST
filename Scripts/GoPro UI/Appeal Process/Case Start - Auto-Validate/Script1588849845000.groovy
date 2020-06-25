@@ -63,8 +63,6 @@ WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/select_Abeyanc
 
 WebUI.delay(1)
 
-//WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/input_Case Officer'), 'value', 'Autotest_1', 2)
-
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Status_Ready_Programming'), 'defaultSelected', 
     'true', 5)
 

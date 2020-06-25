@@ -6001,3 +6001,14 @@
 [0623/161423.977:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
 [0623/161551.576:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
 [0623/161749.114:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0624/103010.775:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0624/103010.776:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0624/103010.776:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0624/103010.776:ERROR:exception_snapshot_win.cc(98)] thread ID 7900 not found in process
+[0624/160723.689:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0624/160858.248:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0624/161040.809:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0624/161229.320:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0624/161423.384:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0624/161550.975:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0624/161748.507:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
