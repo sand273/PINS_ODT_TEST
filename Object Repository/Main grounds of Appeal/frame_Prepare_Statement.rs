@@ -9,10 +9,14 @@
          <key>BASIC</key>
       </entry>
       <entry>
+         <key>XPATH</key>
+         <value>//fieldset[@id='section-Grounds.Appeal']//div[2]//div[1]//details[1]//div[1]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>div.govuk-width-container main.govuk-main-wrapper div.govuk-grid-row div.govuk-grid-column-full form.form-horizontal:nth-child(2) div.webform.appform.form-gopro.form-gopro-horizontal:nth-child(1) div.form-page:nth-child(5) fieldset.govuk-fieldset.pins-single-section:nth-child(1) div.control-group.govuk-form-group:nth-child(3) div.controls details.govuk-details.govuk-hint:nth-child(5) > div.govuk-details__text</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>
