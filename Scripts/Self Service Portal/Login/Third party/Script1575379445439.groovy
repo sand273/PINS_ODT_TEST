@@ -44,7 +44,7 @@ WebUI.setEncryptedText(findTestObject('Frontpage/input_Password'), 'KT8JOVzAIqlD
 
 WebUI.click(findTestObject('Frontpage/button_Login'))
 
-WebUI.waitForElementVisible(findTestObject('User Landing/message_Welcome'), 10)
+WebUI.waitForElementVisible(findTestObject('User Landing/message_Welcome'), 20)
 
 WebUI.verifyElementText(findTestObject('User Landing/message_Welcome'), verData.getValue(1, 18))
 

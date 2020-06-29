@@ -156,9 +156,14 @@ WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Tar
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/button_Start_Case'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/message_Start_Case_Publish'), 10)
-
-WebUI.verifyElementText(findTestObject('GoPro UI/Case Summary/message_Start_Case_Publish'), siteData.getValue(2, 1))
+if (GlobalVariable.caseType == 'Hearing')
+{
+	WebUI.verifyElementText(findTestObject('GoPro UI/Case Summary/message_Start_Case_Publish'), verData.getValue(1, 12))
+}
+else if (GlobalVariable.caseType == 'Written')
+{
+	WebUI.verifyElementText(findTestObject('GoPro UI/Case Summary/message_Start_Case_Publish'), siteData.getValue(2, 1))
+}
 
 WebUI.click(findTestObject('GoPro UI/Programming/button_Publish'))
 

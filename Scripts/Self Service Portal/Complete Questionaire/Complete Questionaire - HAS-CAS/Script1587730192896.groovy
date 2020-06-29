@@ -138,7 +138,7 @@ WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Uploa
 
 WebUI.click(findTestObject('Complete Questionaire/button_Upload_File_Next_HAS'))
 
-WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Bulk_Upload_Next_HAS'), 5)
+WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Bulk_Upload_Next_HAS'), 5)
 
 try {
     WebUI.click(findTestObject('Complete Questionaire/button_Bulk_Upload_Next_HAS'))
