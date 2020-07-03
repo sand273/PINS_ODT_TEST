@@ -26,7 +26,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'W/4001917'</initValue>
+      <initValue>'W/4003606'</initValue>
       <name>ApplicationRef</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -41,12 +41,17 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Written'</initValue>
+      <initValue>'Hearing'</initValue>
       <name>caseType</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Written'</initValue>
-      <name>callType</name>
+      <initValue>'Hearing'</initValue>
+      <name>callTest</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>caseSubType</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
