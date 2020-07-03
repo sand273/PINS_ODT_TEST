@@ -15,6 +15,9 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.configuration.RunConfiguration as RC
+
+String executionProfile = RC.getExecutionProfile()
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
@@ -45,7 +48,14 @@ WebUI.waitForElementVisible(findTestObject('Planning Application details/questio
 
 WebUI.verifyElementText(findTestObject('Planning Application details/question_LPA_Submit'), verData.getValue(1, 25))
 
-WebUI.selectOptionByValue(findTestObject('Planning Application details/dropdown_LPA_Select'), 'C3810', true)
+if (executionProfile == 'default')
+{
+	WebUI.selectOptionByValue(findTestObject('Planning Application details/dropdown_LPA_Select'), 'C3810', true)
+}
+else if (executionProfile == 'pre-prod')
+{
+	WebUI.selectOptionByValue(findTestObject('Planning Application details/dropdown_LPA_Select'), 'Q9999', true)
+}
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
