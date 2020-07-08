@@ -100,6 +100,8 @@ for (def index : (i..rowsOnSpreadsheet)) {
 
     WebUI.setText(findTestObject('Auto Programming/input_Grade'), testData.getValue('Grade', i))
 
+    WebUI.setText(findTestObject('Auto Programming/input_Precluded_LPA'), testData.getValue('Precluded_LPA', i))
+
     WebUI.click(findTestObject('Auto Programming/button_Save_And_Close'))
 
     i++
