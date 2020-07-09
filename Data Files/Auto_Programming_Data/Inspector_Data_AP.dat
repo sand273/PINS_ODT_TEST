@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>c9d5e001-784f-4685-968c-fffcc50c534d</dataFileGUID>
-   <dataSourceUrl>C:\Katalon\Data-Files\Inspector Data for Autoprogramming.xlsx</dataSourceUrl>
+   <dataSourceUrl>C:\Katalon\Data-Files\Auto Programming\Inspector Data for Autoprogramming134.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>
