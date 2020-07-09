@@ -17,6 +17,9 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.configuration.RunConfiguration as RC
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 String executionProfile = RC.getExecutionProfile()
 
@@ -47,17 +50,16 @@ WebUI.setText(findTestObject('Planning Application details/text_Name_Application
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
+WebUI.delay(1)
+
 WebUI.waitForElementVisible(findTestObject('Planning Application details/question_LPA_Submit'), 20)
 
 WebUI.verifyElementText(findTestObject('Planning Application details/question_LPA_Submit'), verData.getValue(1, 25))
 
-if (executionProfile == 'default')
-{
-	WebUI.selectOptionByValue(findTestObject('Planning Application details/dropdown_LPA_Select'), 'C3810', true)
-}
-else if (executionProfile == 'pre-prod')
-{
-	WebUI.selectOptionByValue(findTestObject('Planning Application details/dropdown_LPA_Select'), 'Q9999', true)
+if (executionProfile == 'default') {
+    WebUI.selectOptionByValue(findTestObject('Planning Application details/dropdown_LPA_Select'), 'C3810', true)
+} else if (executionProfile == 'pre-prod') {
+    WebUI.selectOptionByValue(findTestObject('Planning Application details/dropdown_LPA_Select'), 'Q9999', true)
 }
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
