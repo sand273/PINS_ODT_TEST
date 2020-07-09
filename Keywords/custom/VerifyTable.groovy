@@ -19,7 +19,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.util.KeywordUtil
-
 import internal.GlobalVariable
 
 public class VerifyTable {
@@ -61,7 +60,7 @@ public class VerifyTable {
 		WebUI.waitForElementVisible(findTestObject(tableObj), 10)
 
 		rowCount = WebUI.getAttribute(findTestObject(tableObj),'childElementCount').toString()
-		
+
 		if (expCount == rowCount) {
 			KeywordUtil.markPassed("Table rows count match: " + expCount.toString())
 		}
