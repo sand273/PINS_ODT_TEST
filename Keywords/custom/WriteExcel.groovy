@@ -25,12 +25,17 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.List
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.poi.xssf.usermodel.XSSFRow;
+
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
 
 public class WriteExcel {
 
@@ -107,5 +112,17 @@ public class WriteExcel {
 			WebUI.click(findTestObject(clickObj))
 			WebUI.delay(1)
 		}
+	}
+	
+	@Keyword
+	public List<String> readFileInList(String fileName) {
+		List<String> lines = Collections.emptyList();
+		try {
+			lines = Files.readAllLines(Paths.get(fileName), Charset.defaultCharset());
+		}
+		catch (IOException e) {
+			e.printStackTrace();
+		}
+		return lines;
 	}
 }

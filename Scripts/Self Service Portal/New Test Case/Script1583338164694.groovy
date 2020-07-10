@@ -28,56 +28,33 @@ def verData = TestDataFactory.findTestData('Data Files/DRDS_Case_Details')
 int iCount
 int iVal
 
-String fileName = 'C:\\Katalon\\Test_Case123.txt'
+String[] cmdArray = new String[3];
 
+cmdArray[0] = GlobalVariable.UploadFilePath + "DRDS_Appeal_Decision"
+cmdArray[1] = "3001234"
+cmdArray[2] = "New_Test"
 
-public List<String> readFileInList(String fileName) {
-		List<String> lines = Collections.emptyList();
-		try {
-			lines = Files.readAllLines(Paths.get(fileName), Charset.defaultCharset());
-			//lines = Files.readAllLines(Paths.get(fileName), StandardCharsets.ISO_8859_1);
-		}
-		catch (IOException e) {
-			e.printStackTrace();
-		}
-		return lines;
-	}
+Runtime.runtime.exec(cmdArray)
 
-	
-	/*public static void testCharset(String fileName) {
-		SortedMap<String, Charset> charsets = Charset.availableCharsets();
-		for (String k : charsets.keySet()) {
-			int line = 0;
-			boolean success = true;
-			try (BufferedReader b = Files.newBufferedReader(Paths.get(fileName), charsets.get(k))) {
-				while (b.ready()) {
-					b.readLine();
-					line++;
-				}
-			} catch (IOException e) {
-				success = false;
-				System.out.println(k+" failed on line "+line);
-			}
-			if (success)
-				System.out.println("*************************  Successs "+k);
-		}
-	}*/
-	
-	String newCase = readFileInList(fileName).toString()
+String fileName = 'C:\\Katalon\\New_Test.txt'
 
-	String[] baseVal = newCase.split(',')
+WebUI.delay(40)
+
+String newCase = CustomKeywords.'custom.WriteExcel.readFileInList'(fileName)
+
+String[] baseVal = newCase.split(',')
 		
 	try {
 		for (iVal=1; iVal<=12; iVal++)
 		{
-			for(iCount = 1; iCount<=baseVal.size(); iCount++) {
+			for(iCount = 1; iCount<baseVal.size(); iCount++) {
 				if (verData.getValue(iVal, 1).trim() == baseVal[iCount].trim()) {
 					KeywordUtil.markPassed("Verification match: " + baseVal[iCount].toString())
 					break;
 				}
-				else if (iCount == baseVal.size())
+				else if ((baseVal.size()-iCount) == 1)
 				{
-					KeywordUtil.markFailed("Verification Failed: " + "Actual: " + baseVal[iCount].trim() + " Expected: " + verData.getValue(iVal, 1).trim())
+					KeywordUtil.markFailed("Verification Failed: " + "Value mismatch: " + verData.getValue(iVal, 1).trim())
 				}
 			}
 		}	
