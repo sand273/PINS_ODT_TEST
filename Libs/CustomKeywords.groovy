@@ -16,6 +16,20 @@ def static "custom.WriteExcel.enterValues"(
          , 	sheetName)
 }
 
+def static "custom.WriteExcel.APData"(
+    	String value	
+     , 	String fileName	
+     , 	String sheetName	
+     , 	int rowNum	
+     , 	int cellNum	) {
+    (new custom.WriteExcel()).APData(
+        	value
+         , 	fileName
+         , 	sheetName
+         , 	rowNum
+         , 	cellNum)
+}
+
 def static "custom.WriteExcel.readValues"(
     	String fileName	
      , 	String sheetName	
