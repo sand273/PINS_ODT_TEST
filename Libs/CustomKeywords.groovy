@@ -44,6 +44,12 @@ def static "custom.WriteExcel.waitForObject"(
          , 	clickObj)
 }
 
+def static "custom.WriteExcel.readFileInList"(
+    	String fileName	) {
+    (new custom.WriteExcel()).readFileInList(
+        	fileName)
+}
+
 def static "custom.VerifyTable.verifyValues"(
     	String tableObj	
      , 	String expTable	) {
