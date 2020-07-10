@@ -42,6 +42,8 @@ WebUI.verifyElementText(findTestObject('Planning Application details/question_Na
 
 WebUI.setText(findTestObject('Planning Application details/text_Name_Application'), testData.getValue(1, 1))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Planning Application details/question_LPA_Submit'), 10)
