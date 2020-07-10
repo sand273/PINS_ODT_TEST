@@ -17,12 +17,73 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.configuration.RunConfiguration as RC
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
-WebUI.openBrowser('')
+def verData = TestDataFactory.findTestData('Data Files/DRDS_Case_Details')
 
-WebUI.navigateToUrl('https://pins-test.gopro.net/ui/#!/view/allcases')
+int iCount
+int iVal
 
-WebUI.click(findTestObject('null'))
+String fileName = 'C:\\Katalon\\Test_Case123.txt'
 
-WebUI.closeBrowser()
 
+public List<String> readFileInList(String fileName) {
+		List<String> lines = Collections.emptyList();
+		try {
+			lines = Files.readAllLines(Paths.get(fileName), Charset.defaultCharset());
+			//lines = Files.readAllLines(Paths.get(fileName), StandardCharsets.ISO_8859_1);
+		}
+		catch (IOException e) {
+			e.printStackTrace();
+		}
+		return lines;
+	}
+
+	
+	/*public static void testCharset(String fileName) {
+		SortedMap<String, Charset> charsets = Charset.availableCharsets();
+		for (String k : charsets.keySet()) {
+			int line = 0;
+			boolean success = true;
+			try (BufferedReader b = Files.newBufferedReader(Paths.get(fileName), charsets.get(k))) {
+				while (b.ready()) {
+					b.readLine();
+					line++;
+				}
+			} catch (IOException e) {
+				success = false;
+				System.out.println(k+" failed on line "+line);
+			}
+			if (success)
+				System.out.println("*************************  Successs "+k);
+		}
+	}*/
+	
+	String newCase = readFileInList(fileName).toString()
+
+	String[] baseVal = newCase.split(',')
+		
+	try {
+		for (iVal=1; iVal<=12; iVal++)
+		{
+			for(iCount = 1; iCount<=baseVal.size(); iCount++) {
+				if (verData.getValue(iVal, 1).trim() == baseVal[iCount].trim()) {
+					KeywordUtil.markPassed("Verification match: " + baseVal[iCount].toString())
+					break;
+				}
+				else if (iCount == baseVal.size())
+				{
+					KeywordUtil.markFailed("Verification Failed: " + "Actual: " + baseVal[iCount].trim() + " Expected: " + verData.getValue(iVal, 1).trim())
+				}
+			}
+		}	
+	}
+	catch (Exception ex) {
+		KeywordUtil.logInfo("Exception encountered in Custom Keyword")
+	}
+	
+	
