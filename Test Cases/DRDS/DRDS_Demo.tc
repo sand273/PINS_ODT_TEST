@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>New Test Case</name>
+   <name>DRDS_Demo</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>c7a4d952-5cbf-4eda-8da3-088332a1b72a</testCaseGuid>

@@ -28,33 +28,32 @@ def verData = TestDataFactory.findTestData('Data Files/DRDS_Case_Details')
 int iCount
 int iVal
 
-String[] cmdArray = new String[3];
+String[] cmdArray = new String[2];
 
 cmdArray[0] = GlobalVariable.UploadFilePath + "DRDS_Appeal_Decision"
-cmdArray[1] = "3001234"
-cmdArray[2] = "New_Test"
+cmdArray[1] = verData.getValue(1, 1).trim()
 
 Runtime.runtime.exec(cmdArray)
 
-String fileName = 'C:\\Katalon\\New_Test.txt'
+String fileName = 'C:\\Katalon\\' + verData.getValue(1, 1).trim() + '.txt'
 
-WebUI.delay(40)
+WebUI.delay(30)
 
 String newCase = CustomKeywords.'custom.WriteExcel.readFileInList'(fileName)
 
 String[] baseVal = newCase.split(',')
 		
 	try {
-		for (iVal=1; iVal<=12; iVal++)
+		for (iVal=2; iVal<=14; iVal++)
 		{
 			for(iCount = 1; iCount<baseVal.size(); iCount++) {
 				if (verData.getValue(iVal, 1).trim() == baseVal[iCount].trim()) {
-					KeywordUtil.markPassed("Verification match: " + baseVal[iCount].toString())
+					KeywordUtil.markPassed("Verification Match: " + baseVal[iCount].toString())
 					break;
 				}
 				else if ((baseVal.size()-iCount) == 1)
 				{
-					KeywordUtil.markFailed("Verification Failed: " + "Value mismatch: " + verData.getValue(iVal, 1).trim())
+					KeywordUtil.markFailed("Verification Failed " + "Value Mismatch: " + verData.getValue(iVal, 1).trim())
 				}
 			}
 		}	
