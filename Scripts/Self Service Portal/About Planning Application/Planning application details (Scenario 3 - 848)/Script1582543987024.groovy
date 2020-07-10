@@ -45,19 +45,18 @@ WebUI.verifyElementText(findTestObject('Planning Application details/question_Na
 
 WebUI.setText(findTestObject('Planning Application details/text_Name_Application'), testData.getValue(1, 1))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Planning Application details/question_LPA_Submit'), 20)
 
 WebUI.verifyElementText(findTestObject('Planning Application details/question_LPA_Submit'), verData.getValue(1, 25))
 
-if (executionProfile == 'default')
-{
-	WebUI.selectOptionByValue(findTestObject('Planning Application details/dropdown_LPA_Select'), 'C3810', true)
-}
-else if (executionProfile == 'pre-prod')
-{
-	WebUI.selectOptionByValue(findTestObject('Planning Application details/dropdown_LPA_Select'), 'Q9999', true)
+if (executionProfile == 'default') {
+    WebUI.selectOptionByValue(findTestObject('Planning Application details/dropdown_LPA_Select'), 'C3810', true)
+} else if (executionProfile == 'pre-prod') {
+    WebUI.selectOptionByValue(findTestObject('Planning Application details/dropdown_LPA_Select'), 'Q9999', true)
 }
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
