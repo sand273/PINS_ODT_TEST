@@ -115,10 +115,8 @@ for (def index : (i..rowsOnSpreadsheet)) {
 
     testData = TestDataFactory.findTestData('Data Files/User_Profile')
 
-    WebUI.waitForElementVisible(findTestObject('Frontpage/message_User_Name_Entry'), 5)
-
-    WebUI.verifyElementText(findTestObject('Frontpage/message_User_Name_Entry'), verData.getValue(1, 17))
-
+    //WebUI.waitForElementVisible(findTestObject('Frontpage/message_User_Name_Entry'), 5)
+    //WebUI.verifyElementText(findTestObject('Frontpage/message_User_Name_Entry'), verData.getValue(1, 17))
     WebUI.setText(findTestObject('Frontpage/input_UserName'), testData.getValue(10, 1))
 
     WebUI.setEncryptedText(findTestObject('Frontpage/input_Password'), 'KT8JOVzAIqlDwzr433Fv5w==')
@@ -148,7 +146,8 @@ for (def index : (i..rowsOnSpreadsheet)) {
 
     WebUI.waitForElementVisible(findTestObject('Planning Application details/question_Name_Original_Application'), 2)
 
-    WebUI.setText(findTestObject('Planning Application details/text_Name_Application'), 'Bulk_' + testData.getValue(1, 1))
+    WebUI.setText(findTestObject('Planning Application details/text_Name_Application'), (('BAP' + i) + '_') + testData.getValue(
+            1, 1))
 
     WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -160,7 +159,8 @@ for (def index : (i..rowsOnSpreadsheet)) {
 
     WebUI.waitForElementVisible(findTestObject('Planning Application details/question_Application_Ref'), 2)
 
-    WebUI.setText(findTestObject('Planning Application details/text_Application_Ref'), 'Bulk_' + testData.getValue(2, 1))
+    WebUI.setText(findTestObject('Planning Application details/text_Application_Ref'), (('BAP' + i) + '_') + testData.getValue(
+            2, 1))
 
     WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -486,7 +486,8 @@ for (def index : (i..rowsOnSpreadsheet)) {
 
     WebUI.click(findTestObject('Application Technical Reports/link_Technical_Reports'))
 
-    WebUI.waitForElementVisible(findTestObject('Application Technical Reports/message_Technical_Reports', [('index') : 1]), 5)
+    WebUI.waitForElementVisible(findTestObject('Application Technical Reports/message_Technical_Reports', [('index') : 1]), 
+        5)
 
     WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -560,6 +561,9 @@ for (def index : (i..rowsOnSpreadsheet)) {
 
     CustomKeywords.'custom.WriteExcel.enterValues'(GlobalVariable.ApplicationRef, GlobalVariable.UploadFilePath + '\\AppealNumbers.xlsx', 
         'Appeals')
+
+    CustomKeywords.'custom.WriteExcel.APData'(GlobalVariable.ApplicationRef, 'C:\\Katalon\\Data-Files\\Auto Programming\\Case Data for 14 Cases.xlsx', 
+        'Sheet1', i, 1)
 
     WebUI.click(findTestObject('Appeal Received/button_Appeal_Summary'))
 

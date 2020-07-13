@@ -58,6 +58,24 @@ public class WriteExcel {
 	}
 
 	@Keyword
+	public void APData(String value, String fileName, String sheetName, int rowNum, int cellNum) throws IOException {
+		FileInputStream fis = new FileInputStream(fileName);
+		XSSFWorkbook workbook = new XSSFWorkbook(fis);
+
+		XSSFSheet sheet = workbook.getSheet(sheetName);
+		int rowCount = sheet.getLastRowNum()-sheet.getFirstRowNum();
+
+		Row row = sheet.getRow(rowNum);
+		Cell cell = row.createCell(cellNum);
+		cell.setCellType(cell.CELL_TYPE_STRING);
+		cell.setCellValue(value);
+
+		FileOutputStream fos = new FileOutputStream(fileName);
+		workbook.write(fos);
+		fos.close();
+	}
+
+	@Keyword
 	public String readValues(String fileName, String sheetName, String[] values) throws IOException {
 
 		int iRow=0;
@@ -113,7 +131,7 @@ public class WriteExcel {
 			WebUI.delay(1)
 		}
 	}
-	
+
 	@Keyword
 	public List<String> readFileInList(String fileName) {
 		List<String> lines = Collections.emptyList();
