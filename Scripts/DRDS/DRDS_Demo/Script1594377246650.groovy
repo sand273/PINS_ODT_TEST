@@ -22,44 +22,66 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import org.apache.commons.io.FileUtils;
 
 def verData = TestDataFactory.findTestData('Data Files/DRDS_Case_Details')
 
 int iCount
 int iVal
+int iRow
+int iCases
 
+String fileName
+String newCase
 String[] cmdArray = new String[2];
+String[] baseVal
 
+iRow = verData.getRowNumbers()
 cmdArray[0] = GlobalVariable.UploadFilePath + "DRDS_Appeal_Decision"
-cmdArray[1] = verData.getValue(1, 1).trim()
 
-Runtime.runtime.exec(cmdArray)
+String path=GlobalVariable.UploadFilePath + "\\DRDS"
+File directory = new File(path)
 
-String fileName = 'C:\\Katalon\\' + verData.getValue(1, 1).trim() + '.txt'
+FileUtils.cleanDirectory(directory);
 
-WebUI.delay(30)
-
-String newCase = CustomKeywords.'custom.WriteExcel.readFileInList'(fileName)
-
-String[] baseVal = newCase.split(',')
+try
+{
+	for (iCases=1; iCases<=iRow; iCases++) // Iterate all rows from Appeals Excel file
+	{
+		cmdArray[1] = verData.getValue(1, iCases).trim()
 		
-	try {
-		for (iVal=2; iVal<=14; iVal++)
+		WebUI.delay(5)
+		
+		Runtime.runtime.exec(cmdArray)
+
+		fileName = GlobalVariable.UploadFilePath + 'DRDS\\' + verData.getValue(1, iCases).trim() + '.txt'
+
+		WebUI.delay(25)
+
+		newCase = CustomKeywords.'custom.WriteExcel.readFileInList'(fileName)
+
+		baseVal = newCase.split(',')
+		
+		for (iVal=2; iVal<=14; iVal++) // Iterate all columns from Appeals Excel file
 		{
-			for(iCount = 1; iCount<baseVal.size(); iCount++) {
-				if (verData.getValue(iVal, 1).trim() == baseVal[iCount].trim()) {
-					KeywordUtil.markPassed("Verification Match: " + baseVal[iCount].toString())
-					break;
-				}
-				else if ((baseVal.size()-iCount) == 1)
-				{
-					KeywordUtil.markFailed("Verification Failed " + "Value Mismatch: " + verData.getValue(iVal, 1).trim())
-				}
+			if (verData.getValue(iVal, iCases).trim()!='NA')
+			{
+				for(iCount = 1; iCount<baseVal.size(); iCount++) {
+					if (verData.getValue(iVal, iCases).trim() == baseVal[iCount].trim()) {
+						KeywordUtil.markPassed("Verification Match: " + baseVal[iCount].toString())
+						break;
+					}
+					else if ((baseVal.size()-iCount) == 1)
+					{					 
+						KeywordUtil.markFailed("Verification Failed " + "Value Mismatch: " + verData.getValue(iVal, iCases).trim())
+					}
+				}		
 			}
 		}	
 	}
-	catch (Exception ex) {
+}
+catch (Exception ex) {
 		KeywordUtil.logInfo("Exception encountered in Custom Keyword")
-	}
+}
 	
 	
