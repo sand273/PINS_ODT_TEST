@@ -41,8 +41,11 @@ catch (Exception ex) {
     WebUI.click(findTestObject('GoPro UI/Case Summary/button_Save'))
 } 
 
+if (GlobalVariable.callTest != 'Hearing-HAS' || GlobalVariable.callTest != 'Written-HAS')
+{
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Final_Comments_Publish'), 'value', todaysDate, 
     1)
+}
 
 WebUI.closeBrowser()
 

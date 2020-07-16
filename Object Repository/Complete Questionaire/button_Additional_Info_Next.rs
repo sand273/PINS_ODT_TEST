@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Bulk_Upload_Next_HAS</name>
+   <name>button_Additional_Info_Next</name>
    <tag></tag>
-   <elementGuidId>682642ca-38fb-4539-a053-33a5bbf70a5c</elementGuidId>
+   <elementGuidId>8dd4b0e8-56aa-493d-91dd-f5cc7ceb4b2c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='form-page-page12']//a[@class='govuk-button'][contains(text(),'Next page')]</value>
+         <value>//div[@id='form-page-page13']//a[@class='govuk-button'][contains(text(),'Next page')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

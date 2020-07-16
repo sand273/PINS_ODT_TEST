@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Integration Test_Full-Submit - HAS-CAS-Hearing-Decision-Review-Held</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fbc4e1ed-9100-4722-a42c-6bec19f682ce</testCaseGuid>
+</TestCaseEntity>

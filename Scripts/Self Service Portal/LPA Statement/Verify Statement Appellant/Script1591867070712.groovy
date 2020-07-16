@@ -54,7 +54,7 @@ if (GlobalVariable.caseType == 'Written')
 {
 	WebUI.verifyElementVisible(findTestObject('Submit Statement/text_Written_Rep'))
 }
-else if (GlobalVariable.callTest == 'Hearing')
+else if (GlobalVariable.caseType == 'Hearing')
 {
 	WebUI.verifyElementVisible(findTestObject('Submit Statement/text_Hearing'))
 }

@@ -146,10 +146,18 @@ try {
 catch (Exception ex) {
     WebUI.refresh()
 
-    WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Bulk_Upload_Next_HAS'), 10)
+	WebUI.acceptAlert()
+	
+	WebUI.switchToDefaultContent()
+
+    WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Bulk_Upload_Next_HAS'), 20)
 
     WebUI.click(findTestObject('Complete Questionaire/button_Bulk_Upload_Next_HAS'))
 } 
+
+WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Additional_Info_Next'), 5)
+
+WebUI.click(findTestObject('Complete Questionaire/button_Additional_Info_Next'))
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/message_Confirmation'), 5)
 

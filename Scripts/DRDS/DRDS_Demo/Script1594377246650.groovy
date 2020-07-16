@@ -50,15 +50,15 @@ try
 	{
 		cmdArray[1] = verData.getValue(1, iCases).trim()
 		
-		WebUI.delay(5)
+		WebUI.delay(2)
 		
-		Runtime.runtime.exec(cmdArray)
+		Runtime.runtime.exec(cmdArray) //Execute the AutoIT script
 
 		fileName = GlobalVariable.UploadFilePath + 'DRDS\\' + verData.getValue(1, iCases).trim() + '.txt'
+		
+		WebUI.delay(32)
 
-		WebUI.delay(25)
-
-		newCase = CustomKeywords.'custom.WriteExcel.readFileInList'(fileName)
+		newCase = CustomKeywords.'custom.WriteExcel.readFileInList'(fileName) //Read text file contents
 
 		baseVal = newCase.split(',')
 		
@@ -81,7 +81,7 @@ try
 	}
 }
 catch (Exception ex) {
-		KeywordUtil.logInfo("Exception encountered in Custom Keyword")
+		KeywordUtil.logInfo("Exception encountered in DRDS Keyword Test")
 }
 	
 	

@@ -45,18 +45,23 @@ WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Searc
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/text_Row_Total'), 10)
 
-WebUI.verifyElementText(findTestObject('GoPro UI/Case Summary/text_Row_Total'), 'Row total: 1')
+try
+{
+	if (WebUI.verifyElementText(findTestObject('GoPro UI/Case Summary/text_Row_Total'), 'Row total: 1') == false) {
+		WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Search'))
+	}
+}
+catch (Exception ex)
+{
+	WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Search'))
+}
 
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/list_Case_Ref'), 10)
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/list_Case_Ref_Hearing'), 10)
 
 try {
     WebUI.doubleClick(findTestObject('GoPro UI/Case Summary/list_Case_Ref_Hearing'))
 }
 catch (Exception ex) {
-    WebUI.click(findTestObject('GoPro UI/Case Documents/button_Clear_Search'))
-
-    WebUI.sendKeys(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'), ref[1])
-
     WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Search'))
 
     WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/text_Row_Total'), 10)

@@ -78,6 +78,10 @@ else if (GlobalVariable.callTest == 'Hearing')
 {
 	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '23')
 }
+else if (GlobalVariable.callTest == 'Hearing-HAS' || GlobalVariable.callTest == 'Written-HAS')
+{
+	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '11')
+}
 
 WebUI.waitForElementVisible(findTestObject('Final Comments/date_Decision_Issued'), 5)
 
