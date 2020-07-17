@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Complete Questionaire - HAS-CAS</name>
+   <name>Integration Test_Full-Submit - HAS-Auto-Validate</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>4f93ac36-9355-433e-ba80-28186a5cac95</testCaseGuid>
+   <testCaseGuid>10395ff5-bd2d-4eca-a389-e2d2e08512bb</testCaseGuid>
 </TestCaseEntity>
