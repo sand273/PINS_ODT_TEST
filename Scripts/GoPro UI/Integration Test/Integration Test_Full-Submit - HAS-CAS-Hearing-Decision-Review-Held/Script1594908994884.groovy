@@ -25,7 +25,7 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++)
 {
     GlobalVariable.ApplicationRef = values[iRow].toString()
 
-    WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Case Start - HAS-CAS-Hearing-Validate-External'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Case Start - Validate-HAS-CAS-External'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Verify Timeline - HAS-CAS'), [:], FailureHandling.STOP_ON_FAILURE)
 
