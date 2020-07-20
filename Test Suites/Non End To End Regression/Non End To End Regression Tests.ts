@@ -42,5 +42,14 @@
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Non End To End Regression/Test Suites/Question 4 Additional Questions Test</testSuiteEntity>
       </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Non End To End Regression/Test Suites/New User Creation</testSuiteEntity>
+      </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>
