@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>message_Upload_Planning</name>
+   <name>option_Special_Control_No</name>
    <tag></tag>
-   <elementGuidId>3c9d13d3-5e08-4052-ba72-d01630a90153</elementGuidId>
+   <elementGuidId>98be0c59-d2be-4f93-ba5c-29ca713ce396</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//label[contains(text(),&quot;Upload the planning officer's report&quot;)]</value>
+         <value>//input[@id='radio-SpecialControl-2']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

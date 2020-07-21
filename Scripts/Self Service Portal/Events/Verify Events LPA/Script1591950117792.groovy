@@ -90,6 +90,11 @@ else if (GlobalVariable.callTest == 'Hearing-HAS' || GlobalVariable.callTest == 
 {
 	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '10')
 }
+else if (GlobalVariable.callTest == 'Hearing-CAS' || GlobalVariable.callTest == 'Written-CAS')
+{
+	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '11')
+}
+
 
 WebUI.closeBrowser()
 

@@ -15,9 +15,9 @@ import internal.GlobalVariable as GlobalVariable
 
 String[] values = new String[20]
 
-GlobalVariable.caseType = 'Written'
+GlobalVariable.caseType = 'Hearing'
 
-GlobalVariable.callTest = 'Written-HAS'
+GlobalVariable.callTest = 'Hearing-HAS'
 
 CustomKeywords.'custom.WriteExcel.readValues'(GlobalVariable.UploadFilePath + '\\AppealNumbers.xlsx', 'Appeals', values)
 
@@ -31,14 +31,14 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++)
 
     WebUI.callTestCase(findTestCase('Self Service Portal/Appeal Started/Verify Appeal Started'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('Self Service Portal/Complete Questionaire/Complete Questionaire - HAS-CAS'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Self Service Portal/Complete Questionaire/Complete Questionaire - HAS'), [:], FailureHandling.STOP_ON_FAILURE)
 
 	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Verify Publish Questionaire'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Publish Questionaire - Auto-Validate'), [:], FailureHandling.STOP_ON_FAILURE)
-
+    WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Publish Questionaire'), [:], FailureHandling.STOP_ON_FAILURE)
+	
     WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
 
 	WebUI.callTestCase(findTestCase('Self Service Portal/Events/Verify Events Appellant'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -47,10 +47,8 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++)
 	
 	WebUI.callTestCase(findTestCase('GoPro UI/Final Comments/Verify Event Status - Hearing'), [:], FailureHandling.STOP_ON_FAILURE)
 
-	WebUI.callTestCase(findTestCase('GoPro UI/Event Date/Assign Date'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('GoPro UI/Event Date/Assign Date - Publish'), [:], FailureHandling.STOP_ON_FAILURE)
 	
-	WebUI.callTestCase(findTestCase('GoPro UI/Decision-Review-Held/Decision-Held-Publish'), [:], FailureHandling.STOP_ON_FAILURE)
-		
 	WebUI.callTestCase(findTestCase('GoPro UI/Decision Issued/Verify Decision Issued'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('Self Service Portal/Decision Issued/Verify Decision Issued'), [:], FailureHandling.STOP_ON_FAILURE)

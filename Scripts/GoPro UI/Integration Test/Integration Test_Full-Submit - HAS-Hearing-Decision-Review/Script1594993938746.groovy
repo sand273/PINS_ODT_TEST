@@ -25,7 +25,7 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++)
 {
     GlobalVariable.ApplicationRef = values[iRow].toString()
 
-    WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Case Start - Validate-HAS-CAS-External'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Case Start - Validate-HAS-CAS-Internal'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Verify Timeline - HAS-CAS'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -33,13 +33,13 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++)
 
 	WebUI.callTestCase(findTestCase('GoPro UI/Questionnaire/Questionnaire Overdue'), [:], FailureHandling.STOP_ON_FAILURE)
 	
-  // WebUI.callTestCase(findTestCase('Self Service Portal/Complete Questionaire/Complete Questionaire - HAS-CAS'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Self Service Portal/Complete Questionaire/Complete Questionaire - HAS'), [:], FailureHandling.STOP_ON_FAILURE)
 
-  //  WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
 
-  //  WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Verify Publish Questionaire'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Verify Publish Questionaire'), [:], FailureHandling.STOP_ON_FAILURE)
 
-  //  WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Publish Questionaire'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Publish Questionaire'), [:], FailureHandling.STOP_ON_FAILURE)
 	
     WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -51,7 +51,7 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++)
 
 	WebUI.callTestCase(findTestCase('GoPro UI/Event Date/Assign Date'), [:], FailureHandling.STOP_ON_FAILURE)
 	
-	WebUI.callTestCase(findTestCase('GoPro UI/Decision-Review-Held/Decision-Review-Held-Publish'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('GoPro UI/Decision-Review-Held/Decision-Review-Publish'), [:], FailureHandling.STOP_ON_FAILURE)
 		
 	WebUI.callTestCase(findTestCase('GoPro UI/Decision Issued/Verify Decision Issued'), [:], FailureHandling.STOP_ON_FAILURE)
 

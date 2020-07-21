@@ -17,7 +17,7 @@ String[] values = new String[20]
 
 GlobalVariable.caseType = 'Hearing'
 
-GlobalVariable.callTest = 'Hearing-HAS'
+GlobalVariable.callTest = 'Hearing-CAS'
 
 CustomKeywords.'custom.WriteExcel.readValues'(GlobalVariable.UploadFilePath + '\\AppealNumbers.xlsx', 'Appeals', values)
 
@@ -31,7 +31,7 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++)
 
     WebUI.callTestCase(findTestCase('Self Service Portal/Appeal Started/Verify Appeal Started'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('Self Service Portal/Complete Questionaire/Complete Questionaire - HAS-CAS'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Self Service Portal/Complete Questionaire/Complete Questionaire - CAS'), [:], FailureHandling.STOP_ON_FAILURE)
 
 	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
 
