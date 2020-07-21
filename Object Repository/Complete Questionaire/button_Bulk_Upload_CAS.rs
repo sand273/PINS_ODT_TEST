@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>message_Upload_Planning</name>
+   <name>button_Bulk_Upload_CAS</name>
    <tag></tag>
-   <elementGuidId>3c9d13d3-5e08-4052-ba72-d01630a90153</elementGuidId>
+   <elementGuidId>ae62ea7f-3f79-4f3d-a9b3-4cf153575344</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//label[contains(text(),&quot;Upload the planning officer's report&quot;)]</value>
+         <value>//div[@id='form-page-page14']//a[@class='govuk-button'][contains(text(),'Next page')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

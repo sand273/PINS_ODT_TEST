@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Yes_BuildingAffects</name>
+   <name>input_No_ScheduleMonument</name>
    <tag></tag>
-   <elementGuidId>90d4b033-9fed-4dcf-bb72-6f0bb4055116</elementGuidId>
+   <elementGuidId>11bd1bba-bab7-4e39-b56b-78f108734330</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='radio-Building.Affects-2']</value>
+         <value>//input[@id='radio-Building.AffectScheduleMonument-2']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -38,7 +38,7 @@
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>Building.Affects</value>
+      <value>Building.AffectScheduleMonument</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -52,7 +52,7 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>radio-Building.Affects-2</value>
+      <value>radio-Building.AffectScheduleMonument-2</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -66,7 +66,7 @@
       <matchCondition>equals</matchCondition>
       <name>data-show-field-1</name>
       <type>Main</type>
-      <value>Building.AffectsDetails</value>
+      <value>Building.HistoricEngland</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -87,7 +87,7 @@
       <matchCondition>equals</matchCondition>
       <name>data-show-field-2</name>
       <type>Main</type>
-      <value>Building.ScheduleFile</value>
+      <value>Building.AffectScheduleMonumentFile</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -108,7 +108,7 @@
       <matchCondition>equals</matchCondition>
       <name>data-req-field-1</name>
       <type>Main</type>
-      <value>Building.AffectsDetails</value>
+      <value>Building.HistoricEngland</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -129,7 +129,7 @@
       <matchCondition>equals</matchCondition>
       <name>data-req-field-2</name>
       <type>Main</type>
-      <value>Building.ScheduleFile</value>
+      <value>Building.AffectScheduleMonumentFile</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -143,48 +143,20 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;radio-Building.Affects-2&quot;)</value>
+      <value>id(&quot;radio-Building.AffectScheduleMonument-2&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='radio-Building.Affects-2']</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Yes'])[9]/following::input[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Would the proposed development affect the setting of a listed building?'])[1]/following::input[2]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[9]/preceding::input[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Provide details of the listed building, including grade and listing number'])[1]/preceding::input[1]</value>
+      <value>//input[@id='radio-Building.AffectScheduleMonument-2']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[9]/fieldset/div/div/div/div[2]/input</value>
+      <value>//div[4]/div/div/div[2]/input</value>
    </webElementXpaths>
 </WebElementEntity>
