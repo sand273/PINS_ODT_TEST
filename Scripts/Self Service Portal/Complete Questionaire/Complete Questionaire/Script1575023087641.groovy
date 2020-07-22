@@ -128,7 +128,7 @@ WebUI.click(findTestObject('Complete Questionaire/button_Notifications_Next'))
 WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'), 10)
 
 try {
-	WebUI.delay(1)
+	WebUI.delay(3)
     WebUI.click(findTestObject('Complete Questionaire/button_Bulk_Upload_Next'))
 }
 catch (Exception ex) {

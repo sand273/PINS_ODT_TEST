@@ -35,6 +35,8 @@ WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/select_Abeyanc
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/dropdown_Question_Overdue'), 10)
 
+WebUI.delay(2)
+
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Question_Overdue'), 'defaultSelected', 
     'true', 5)
 

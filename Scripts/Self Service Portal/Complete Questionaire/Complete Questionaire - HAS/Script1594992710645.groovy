@@ -141,6 +141,7 @@ WebUI.click(findTestObject('Complete Questionaire/button_Upload_File_Next_HAS'))
 WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Bulk_Upload_Next_HAS'), 5)
 
 try {
+	WebUI.delay(5)
     WebUI.click(findTestObject('Complete Questionaire/button_Bulk_Upload_Next_HAS'))
 }
 catch (Exception ex) {
