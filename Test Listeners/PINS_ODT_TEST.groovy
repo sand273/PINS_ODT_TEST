@@ -30,7 +30,7 @@ class PINS_ODT_TEST {
 	 */
 	@BeforeTestCase
 	def BeforeTestCase(TestCaseContext testCaseContext) {
-		GlobalVariable.UploadFilePath = RC.getProjectDir().replace("/", "\\") + "\\Data Files";
+		GlobalVariable.UploadFilePath = RC.getProjectDir().replace("/", "\\") + "\\Data Files\\";
 	}
 	
 	/**
