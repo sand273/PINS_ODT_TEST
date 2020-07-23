@@ -94,9 +94,9 @@ WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/button_Internal_Review'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/dropdown_Validation_Internal'), 10)
-
 WebUI.delay(2)
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/dropdown_Validation_Internal'), 10)
 
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Validation_Internal'), 'defaultSelected', 
     'true', 5)
