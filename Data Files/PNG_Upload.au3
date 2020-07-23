@@ -1,4 +1,4 @@
 ControlFocus("[CLASS:#32770]","","Edit1")
 Sleep(1000)
-ControlSetText("[CLASS:#32770]","","Edit1","C:\Katalon\Data-Files\Upload_PNG")
+ControlSetText("[CLASS:#32770]","","Edit1",@ScriptDir&"\Upload_PNG")
 ControlClick("[CLASS:#32770]","","Button1")
