@@ -21,8 +21,18 @@ import com.kms.katalon.core.annotation.AfterTestCase
 import com.kms.katalon.core.annotation.AfterTestSuite
 import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.context.TestSuiteContext
+import com.kms.katalon.core.configuration.RunConfiguration as RC
 
 class PINS_ODT_TEST {
+	/**
+	 * Executes before every test case starts.
+	 * @param testCaseContext related information of the executed test case.
+	 */
+	@BeforeTestCase
+	def BeforeTestCase(TestCaseContext testCaseContext) {
+		GlobalVariable.UploadFilePath = RC.getProjectDir().replace("/", "\\") + "\\Data Files";
+	}
+	
 	/**
 	 * Executes after every test case ends.
 	 * @param testCaseContext related information of the executed test case.
