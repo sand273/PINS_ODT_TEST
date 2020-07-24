@@ -6,9 +6,9 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>925831aa-c738-4759-86f8-a5a4bd739c34</dataFileGUID>
-   <dataSourceUrl>C:\Katalon\Data-Files\Complete_Questionaire_Comments.xlsx</dataSourceUrl>
+   <dataSourceUrl>Data Files/Complete_Questionaire_Comments.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
-   <isInternalPath>false</isInternalPath>
+   <isInternalPath>true</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName>Verifications</sheetName>

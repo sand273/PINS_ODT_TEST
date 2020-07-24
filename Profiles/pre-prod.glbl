@@ -16,7 +16,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'C:\\Katalon\\Data-Files\\'</initValue>
+      <initValue>''</initValue>
       <name>UploadFilePath</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
