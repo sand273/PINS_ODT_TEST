@@ -9,6 +9,7 @@
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>f34a1314-8ea8-49bb-9493-328171290bae</testSuiteGuid>
    <testCaseLink>
       <guid>785521a2-e115-4a71-9eab-51a2ed63319a</guid>
