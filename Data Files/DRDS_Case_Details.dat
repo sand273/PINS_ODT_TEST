@@ -6,11 +6,11 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>15239938-d542-44ba-a450-fc5469d9a50d</dataFileGUID>
-   <dataSourceUrl>../../../../Katalon/Data-Files/DRDS_Case_Details.xlsx</dataSourceUrl>
+   <dataSourceUrl>Data Files/DRDS_Case_Details.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
-   <sheetName></sheetName>
+   <sheetName>Sheet1</sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>
