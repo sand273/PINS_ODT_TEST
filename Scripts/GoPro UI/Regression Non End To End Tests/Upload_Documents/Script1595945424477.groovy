@@ -21,7 +21,9 @@ def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 def testData = TestDataFactory.findTestData('Data Files/Eligibility_Data')
 
-String[] cmdArray = new String[1];
+String[] cmdArray = new String[2];
+
+cmdArray[0] = GlobalVariable.UploadFilePath+"\\Test_Uploads.exe"
 
 WebUI.openBrowser('')
 
@@ -180,7 +182,13 @@ WebUI.waitForElementVisible(findTestObject('Planning Application details/message
 
 WebUI.click(findTestObject('Planning Application details/button_Application_Form'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+cmdArray[1] = '1'
+
+WebUI.delay(2)
+
+Runtime.runtime.exec(cmdArray)
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -188,7 +196,13 @@ WebUI.waitForElementVisible(findTestObject('Planning Application details/message
 
 WebUI.click(findTestObject('Planning Application details/button_LPA_Notice'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+cmdArray[1] = '2'
+
+WebUI.delay(2)
+
+Runtime.runtime.exec(cmdArray)
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -246,7 +260,13 @@ WebUI.waitForElementVisible(findTestObject('Plans/message_Plan document'), 5)
 
 WebUI.click(findTestObject('Plans/button_Select_File'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+cmdArray[1] = '3'
+
+WebUI.delay(2)
+
+Runtime.runtime.exec(cmdArray)
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -260,6 +280,16 @@ WebUI.click(findTestObject('Additional Plans/link_Additional_Plans'))
 
 WebUI.waitForElementVisible(findTestObject('Additional Plans/question_LPA_Plans'), 5)
 
+WebUI.click(findTestObject('Additional Plans/question_LPA_Plans'))
+
+cmdArray[1] = '4'
+
+WebUI.delay(2)
+
+Runtime.runtime.exec(cmdArray)
+
+WebUI.delay(2)
+
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Additional Plans/status_Complete_Additional_Plans'), 10)
@@ -271,6 +301,16 @@ WebUI.waitForElementVisible(findTestObject('Relevant Plans/link_Relevant_Plans')
 WebUI.click(findTestObject('Relevant Plans/link_Relevant_Plans'))
 
 WebUI.waitForElementVisible(findTestObject('Relevant Plans/question_Other_Plans'), 5)
+
+WebUI.click(findTestObject('Relevant Plans/message_Relevant_Plans', [('index') : 1]))
+
+cmdArray[1] = '5'
+
+WebUI.delay(2)
+
+Runtime.runtime.exec(cmdArray)
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -284,6 +324,16 @@ WebUI.click(findTestObject('Application Technical Reports/link_Application_Techn
 
 WebUI.waitForElementVisible(findTestObject('Application Technical Reports/question_Technical_Reports'), 5)
 
+WebUI.click(findTestObject('Application Technical Reports/button_Select_File'))
+
+cmdArray[1] = '6'
+
+WebUI.delay(2)
+
+Runtime.runtime.exec(cmdArray)
+
+WebUI.delay(2)
+
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Application Technical Reports/status_Complete_Application_Technical_Reports'), 
@@ -294,6 +344,18 @@ WebUI.verifyElementText(findTestObject('Application Technical Reports/status_Com
 WebUI.waitForElementVisible(findTestObject('Other Submitted Documents/link_Other_Submitted_Documents'), 5)
 
 WebUI.click(findTestObject('Other Submitted Documents/link_Other_Submitted_Documents'))
+
+WebUI.waitForElementVisible(findTestObject('Other Submitted Documents/message_Upload_Other_Submitted_Docs'), 5)
+
+WebUI.click(findTestObject('Other Submitted Documents/button_Select_File'))
+
+cmdArray[1] = '7'
+
+WebUI.delay(2)
+
+Runtime.runtime.exec(cmdArray)
+
+WebUI.delay(2)
 
 WebUI.waitForElementClickable(findTestObject('Planning Application details/button_Save_Continue'), 5)
 
@@ -385,7 +447,13 @@ WebUI.click(findTestObject('Main grounds of Appeal/input_Yes_AppealSpecialCatego
 
 WebUI.click(findTestObject('Main grounds of Appeal/button_Select_File'))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+cmdArray[1] = '8'
+
+WebUI.delay(2)
+
+Runtime.runtime.exec(cmdArray)
+
+WebUI.delay(2)
 
 WebUI.waitForElementClickable(findTestObject('Main grounds of Appeal/input_understand_AppealAgreement'), 5)
 
@@ -402,6 +470,16 @@ WebUI.waitForElementVisible(findTestObject('Supporting Grounds/link_Supporting_G
 WebUI.click(findTestObject('Supporting Grounds/link_Supporting_Grounds'))
 
 WebUI.waitForElementVisible(findTestObject('Supporting Grounds/message_Upload_File'), 5)
+
+WebUI.click(findTestObject('Supporting Grounds/button_Select_File'))
+
+cmdArray[1] = '9'
+
+WebUI.delay(2)
+
+Runtime.runtime.exec(cmdArray)
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -480,6 +558,21 @@ WebUI.click(findTestObject('Application Technical Reports/link_Technical_Reports
 WebUI.waitForElementVisible(findTestObject('Application Technical Reports/message_Technical_Reports', [('index') : 1]), 
     5)
 
+WebUI.click(findTestObject('Application Technical Reports/message_Technical_Reports', [('index') : 1]))
+
+cmdArray[1] = '10'
+
+WebUI.delay(2)
+
+Runtime.runtime.exec(cmdArray)
+
+WebUI.delay(2)
+
+WebUI.waitForElementVisible(findTestObject('Technical Reports Post Decision/dropdown_Select_Report_Type'), 5)
+
+WebUI.selectOptionByValue(findTestObject('Technical Reports Post Decision/dropdown_Select_Report_Type'), 'Other reports',
+	false)
+
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Technical Reports Post Decision/status_Complete_Technical_Reports'), 10)
@@ -491,6 +584,16 @@ WebUI.waitForElementVisible(findTestObject('Other Appeal Information/link_Other_
 WebUI.click(findTestObject('Other Appeal Information/link_Other_Appeal_Information'))
 
 WebUI.waitForElementVisible(findTestObject('Other Appeal Information/message_Upload_documents'), 5)
+
+WebUI.click(findTestObject('Other Appeal Information/button_Select_File'))
+
+cmdArray[1] = '11'
+
+WebUI.delay(2)
+
+Runtime.runtime.exec(cmdArray)
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -559,5 +662,4 @@ WebUI.waitForElementVisible(findTestObject('Appeal Summary/status_Submitted'), 5
 
 WebUI.verifyElementText(findTestObject('Appeal Summary/status_Submitted'), verData.getValue(1, 77))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
-
+//WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
