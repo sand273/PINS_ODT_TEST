@@ -23,7 +23,7 @@ def testData = TestDataFactory.findTestData('Data Files/Eligibility_Data')
 
 String[] cmdArray = new String[2];
 
-cmdArray[0] = GlobalVariable.UploadFilePath+"\\Test_Uploads.exe"
+(cmdArray[0]) = (GlobalVariable.UploadFilePath + '\\Test_Uploads.exe')
 
 WebUI.openBrowser('')
 
@@ -142,7 +142,7 @@ WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Planning Application details/question_Name_Original_Application'), 2)
 
-WebUI.setText(findTestObject('Planning Application details/text_Name_Application'), 'AutoTest_' + testData.getValue(1, 1))
+WebUI.setText(findTestObject('Planning Application details/text_Name_Application'), testData.getValue(1, 1))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -154,7 +154,7 @@ WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Planning Application details/question_Application_Ref'), 2)
 
-WebUI.setText(findTestObject('Planning Application details/text_Application_Ref'), 'AutoTest_' + testData.getValue(2, 1))
+WebUI.setText(findTestObject('Planning Application details/text_Application_Ref'), testData.getValue(2, 1))
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -182,7 +182,7 @@ WebUI.waitForElementVisible(findTestObject('Planning Application details/message
 
 WebUI.click(findTestObject('Planning Application details/button_Application_Form'))
 
-cmdArray[1] = '1'
+(cmdArray[1]) = '1'
 
 WebUI.delay(2)
 
@@ -196,7 +196,7 @@ WebUI.waitForElementVisible(findTestObject('Planning Application details/message
 
 WebUI.click(findTestObject('Planning Application details/button_LPA_Notice'))
 
-cmdArray[1] = '2'
+(cmdArray[1]) = '2'
 
 WebUI.delay(2)
 
@@ -260,7 +260,7 @@ WebUI.waitForElementVisible(findTestObject('Plans/message_Plan document'), 5)
 
 WebUI.click(findTestObject('Plans/button_Select_File'))
 
-cmdArray[1] = '3'
+(cmdArray[1]) = '3'
 
 WebUI.delay(2)
 
@@ -282,7 +282,7 @@ WebUI.waitForElementVisible(findTestObject('Additional Plans/question_LPA_Plans'
 
 WebUI.click(findTestObject('Additional Plans/question_LPA_Plans'))
 
-cmdArray[1] = '4'
+(cmdArray[1]) = '4'
 
 WebUI.delay(2)
 
@@ -304,7 +304,7 @@ WebUI.waitForElementVisible(findTestObject('Relevant Plans/question_Other_Plans'
 
 WebUI.click(findTestObject('Relevant Plans/message_Relevant_Plans', [('index') : 1]))
 
-cmdArray[1] = '5'
+(cmdArray[1]) = '5'
 
 WebUI.delay(2)
 
@@ -326,7 +326,7 @@ WebUI.waitForElementVisible(findTestObject('Application Technical Reports/questi
 
 WebUI.click(findTestObject('Application Technical Reports/button_Select_File'))
 
-cmdArray[1] = '6'
+(cmdArray[1]) = '6'
 
 WebUI.delay(2)
 
@@ -349,7 +349,7 @@ WebUI.waitForElementVisible(findTestObject('Other Submitted Documents/message_Up
 
 WebUI.click(findTestObject('Other Submitted Documents/button_Select_File'))
 
-cmdArray[1] = '7'
+(cmdArray[1]) = '7'
 
 WebUI.delay(2)
 
@@ -447,7 +447,7 @@ WebUI.click(findTestObject('Main grounds of Appeal/input_Yes_AppealSpecialCatego
 
 WebUI.click(findTestObject('Main grounds of Appeal/button_Select_File'))
 
-cmdArray[1] = '8'
+(cmdArray[1]) = '8'
 
 WebUI.delay(2)
 
@@ -473,7 +473,7 @@ WebUI.waitForElementVisible(findTestObject('Supporting Grounds/message_Upload_Fi
 
 WebUI.click(findTestObject('Supporting Grounds/button_Select_File'))
 
-cmdArray[1] = '9'
+(cmdArray[1]) = '9'
 
 WebUI.delay(2)
 
@@ -560,7 +560,7 @@ WebUI.waitForElementVisible(findTestObject('Application Technical Reports/messag
 
 WebUI.click(findTestObject('Application Technical Reports/message_Technical_Reports', [('index') : 1]))
 
-cmdArray[1] = '10'
+(cmdArray[1]) = '10'
 
 WebUI.delay(2)
 
@@ -570,8 +570,8 @@ WebUI.delay(2)
 
 WebUI.waitForElementVisible(findTestObject('Technical Reports Post Decision/dropdown_Select_Report_Type'), 5)
 
-WebUI.selectOptionByValue(findTestObject('Technical Reports Post Decision/dropdown_Select_Report_Type'), 'Other reports',
-	false)
+WebUI.selectOptionByValue(findTestObject('Technical Reports Post Decision/dropdown_Select_Report_Type'), 'Other reports', 
+    false)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -587,7 +587,7 @@ WebUI.waitForElementVisible(findTestObject('Other Appeal Information/message_Upl
 
 WebUI.click(findTestObject('Other Appeal Information/button_Select_File'))
 
-cmdArray[1] = '11'
+(cmdArray[1]) = '11'
 
 WebUI.delay(2)
 
@@ -662,4 +662,9 @@ WebUI.waitForElementVisible(findTestObject('Appeal Summary/status_Submitted'), 5
 
 WebUI.verifyElementText(findTestObject('Appeal Summary/status_Submitted'), verData.getValue(1, 77))
 
-//WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('GoPro UI/Integration Test/Integration Test_Full-Submit - Written'), [:], FailureHandling.STOP_ON_FAILURE)
+
