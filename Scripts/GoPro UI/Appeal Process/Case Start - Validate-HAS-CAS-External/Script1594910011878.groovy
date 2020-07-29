@@ -14,6 +14,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 def verData = TestDataFactory.findTestData('Data Files/GoPro_UI_Verification')
 
@@ -57,13 +60,10 @@ use(groovy.time.TimeCategory, {
 
 WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
-if (GlobalVariable.caseType == 'Hearing')
-{
-	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal - Hearing'), [:], FailureHandling.STOP_ON_FAILURE)
-}
-else
-{
-	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
+if (GlobalVariable.caseType == 'Hearing') {
+    WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal - Hearing'), [:], FailureHandling.STOP_ON_FAILURE)
+} else {
+    WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
 }
 
 try {
@@ -73,7 +73,7 @@ try {
 catch (Exception ex) {
     if (WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Status_Ready_Programming'), 'defaultSelected', 
         'true', 5) == true) {
-         continue res; //goto label res
+        continue res; //goto label res
     }
 } 
 
@@ -94,13 +94,15 @@ WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/button_External_Review'))
 
+WebUI.delay(2)
+
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/dropdown_Validation_External'), 5)
 
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Validation_External'), 'defaultSelected',
-			'true', 5)
+WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Validation_External'), 'defaultSelected', 
+    'true', 5)
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/icon_Validate_Case'))
-	
+
 WebUI.switchToWindowIndex(1)
 
 WebUI.refresh()
@@ -168,13 +170,10 @@ WebUI.click(findTestObject('GoPro UI/Case Summary/button_Start_Case'))
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/message_Start_Case_Publish'), 10)
 
-if (GlobalVariable.caseType == 'Hearing')
-{
-	WebUI.verifyElementText(findTestObject('GoPro UI/Case Summary/message_Start_Case_Publish'), verData.getValue(1, 12))
-}
-else if (GlobalVariable.caseType == 'Written')
-{
-	WebUI.verifyElementText(findTestObject('GoPro UI/Case Summary/message_Start_Case_Publish'), siteData.getValue(2, 1))
+if (GlobalVariable.caseType == 'Hearing') {
+    WebUI.verifyElementText(findTestObject('GoPro UI/Case Summary/message_Start_Case_Publish'), verData.getValue(1, 12))
+} else if (GlobalVariable.caseType == 'Written') {
+    WebUI.verifyElementText(findTestObject('GoPro UI/Case Summary/message_Start_Case_Publish'), siteData.getValue(2, 1))
 }
 
 WebUI.click(findTestObject('GoPro UI/Programming/button_Publish'))

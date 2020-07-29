@@ -69,7 +69,9 @@ catch (Exception ex) {
     WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/list_Case_Ref'), 10)
 
     WebUI.click(findTestObject('GoPro UI/Case Summary/list_Case_Ref'))
-
+	
+	WebUI.delay(2)
+	
     WebUI.doubleClick(findTestObject('GoPro UI/Case Summary/list_Case_Ref'))
 } 
 
