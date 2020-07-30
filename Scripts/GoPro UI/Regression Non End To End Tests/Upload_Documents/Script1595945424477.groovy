@@ -16,12 +16,20 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.configuration.RunConfiguration as RC
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 def testData = TestDataFactory.findTestData('Data Files/Eligibility_Data')
 
-String[] cmdArray = new String[2];
+GlobalVariable.caseType = ''
+
+GlobalVariable.callTest = ''
+
+String[] cmdArray = new String[2]
+
+String[] values = new String[20]
 
 (cmdArray[0]) = (GlobalVariable.UploadFilePath + '\\Test_Uploads.exe')
 
@@ -50,8 +58,6 @@ WebUI.click(findTestObject('Appeal planning decision/input_Planning_Application'
 WebUI.waitForElementClickable(findTestObject('Appeal planning decision/button_Continue'), 1)
 
 WebUI.click(findTestObject('Appeal planning decision/button_Continue'))
-
-WebUI.waitForElementVisible(findTestObject('Appeal planning decision/end_User_Question'), 2)
 
 WebUI.verifyElementText(findTestObject('Appeal planning decision/end_User_Question'), verData.getValue(1, 5))
 
@@ -92,6 +98,8 @@ WebUI.click(findTestObject('Appeal planning decision/button_Continue'))
 WebUI.waitForElementVisible(findTestObject('Appeal planning decision/eligibility_Confirmed'), 2)
 
 WebUI.verifyElementText(findTestObject('Appeal planning decision/eligibility_Confirmed'), verData.getValue(1, 9))
+
+WebUI.waitForElementVisible(findTestObject('Appeal planning decision/end_User_Question'), 2)
 
 WebUI.verifyElementVisible(findTestObject('Appeal planning decision/button_Appeal_Now'))
 
@@ -664,7 +672,61 @@ WebUI.verifyElementText(findTestObject('Appeal Summary/status_Submitted'), verDa
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 
+CustomKeywords.'custom.WriteExcel.readValues'(GlobalVariable.UploadFilePath + '\\AppealNumbers.xlsx', 'Appeals', values)
+
+GlobalVariable.ApplicationRef = (values[1]).toString()
+
 WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('GoPro UI/Integration Test/Integration Test_Full-Submit - Written'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Case Start'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Self Service Portal/Complete Questionaire/Complete Questionaire'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Publish Questionaire'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Self Service Portal/LPA Statement/Submit Statement'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('GoPro UI/IP Comments/IP Comments'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Self Service Portal/Third Party Comments/Third Party Comments'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('GoPro UI/LPA Statement/LPA Statement'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Self Service Portal/Final Comments/Final Comments'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'), 5)
+
+WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
+
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/input_Search'), 10)
+
+def expectedValues = 'Test1,Test2,Test3,Test4,Test5,Test6,Test7,Test8,Test9,Test10,Test11,Final comments,Test_Final_Document,Sandeep Ramchandani Interested Party Correspondence,LPA Statement,Complete_Statement,LPA Questionnaire,Upload_Pdf,Start Notice LPA (Written Reps),Start Notice Appellant (Written Reps),Appeal form'
+
+CustomKeywords.'custom.VerifyTable.verifyContainsText'('GoPro UI/Case Documents/table_Documents', expectedValues)
+
+String[] baseVal = expectedValues.split(',')
+
+def text = WebUI.getText(findTestObject('GoPro UI/Case Documents/Document_Total'))
+
+if (text.contains(baseVal.size().toString())) {
+    KeywordUtil.markPassed('Documents = ' + baseVal.size().toString())
+} else {
+    KeywordUtil.markFailedAndStop((('Documents Actual: ' + text) + ' Expected: ') + baseVal.size().toString())
+}
+
+WebUI.closeBrowser()
 

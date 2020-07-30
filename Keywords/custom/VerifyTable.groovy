@@ -51,6 +51,32 @@ public class VerifyTable {
 		}
 	}
 
+	@Keyword
+	public void verifyContainsText(String object, String expText) {
+
+		String text
+		int iCount
+
+		WebUI.waitForElementVisible(findTestObject(object), 10)
+
+		text = WebUI.getAttribute(findTestObject(object),'innerText')
+
+		String[] baseVal = expText.split(',')
+
+		try {
+			for(iCount = 0; iCount<baseVal.size(); iCount++) {
+				if (text.contains(baseVal[iCount].trim())) {
+					KeywordUtil.markPassed("Text Contains: " + baseVal[iCount].toString())
+				}
+				else {
+					KeywordUtil.markFailed("Text Doesnt Contain: " + baseVal[iCount].toString())
+				}
+			}
+		}
+		catch (Exception ex) {
+			KeywordUtil.logInfo("Exception encountered in Custom Keyword verifyContainsText")
+		}
+	}
 
 	@Keyword
 	public void verifyTableCount(String tableObj, String expCount) {

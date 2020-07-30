@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Document_Total</name>
+   <name>table_Documents</name>
    <tag></tag>
-   <elementGuidId>6c380d6a-6ece-42b8-bb63-95a970922bda</elementGuidId>
+   <elementGuidId>6dadf7f0-96ea-4ddf-8892-0ee765d1ed52</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[@id='viewtotal']</value>
+         <value>//*[@id='documents-l']/div/div[7]/div[2]/gp-view/div[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>
