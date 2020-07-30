@@ -6,6 +6,7 @@
 import java.lang.String
 
 
+
 def static "custom.WriteExcel.enterValues"(
     	String value	
      , 	String fileName	
@@ -15,6 +16,7 @@ def static "custom.WriteExcel.enterValues"(
          , 	fileName
          , 	sheetName)
 }
+
 
 def static "custom.WriteExcel.APData"(
     	String value	
@@ -30,6 +32,7 @@ def static "custom.WriteExcel.APData"(
          , 	cellNum)
 }
 
+
 def static "custom.WriteExcel.readValues"(
     	String fileName	
      , 	String sheetName	
@@ -40,6 +43,7 @@ def static "custom.WriteExcel.readValues"(
          , 	values)
 }
 
+
 def static "custom.WriteExcel.clearValues"(
     	String fileName	
      , 	String sheetName	) {
@@ -47,6 +51,7 @@ def static "custom.WriteExcel.clearValues"(
         	fileName
          , 	sheetName)
 }
+
 
 def static "custom.WriteExcel.waitForObject"(
     	int timeOut	
@@ -58,11 +63,13 @@ def static "custom.WriteExcel.waitForObject"(
          , 	clickObj)
 }
 
+
 def static "custom.WriteExcel.readFileInList"(
     	String fileName	) {
     (new custom.WriteExcel()).readFileInList(
         	fileName)
 }
+
 
 def static "custom.RandomNumberGenerator.randomNumber"(
     	int minimum	
@@ -72,6 +79,7 @@ def static "custom.RandomNumberGenerator.randomNumber"(
          , 	maximum)
 }
 
+
 def static "custom.VerifyTable.verifyValues"(
     	String tableObj	
      , 	String expTable	) {
@@ -79,6 +87,16 @@ def static "custom.VerifyTable.verifyValues"(
         	tableObj
          , 	expTable)
 }
+
+
+def static "custom.VerifyTable.verifyContainsText"(
+    	String object	
+     , 	String expText	) {
+    (new custom.VerifyTable()).verifyContainsText(
+        	object
+         , 	expText)
+}
+
 
 def static "custom.VerifyTable.verifyTableCount"(
     	String tableObj	
