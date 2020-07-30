@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Set Council details in Contacts Section for each case in Picaso</description>
    <name>Set_Local_Council</name>
    <tag></tag>
    <comment></comment>

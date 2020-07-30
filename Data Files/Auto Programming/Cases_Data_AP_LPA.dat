@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>2944394a-9b04-4db5-921d-0783af8d7d28</dataFileGUID>
-   <dataSourceUrl>Data Files/Auto Programming/Case Data for 945 Cases to change LPA_Test.xlsx</dataSourceUrl>
+   <dataSourceUrl>Data Files/Auto Programming/Case Data for 945 Cases to change LPA.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
    <query></query>

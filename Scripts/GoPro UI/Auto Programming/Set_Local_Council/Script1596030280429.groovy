@@ -17,72 +17,100 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
+def rowsOnSpreadsheet = findTestData('Auto Programming/Cases_Data_AP_LPA').getRowNumbers()
+
 def excelData = findTestData('Auto Programming/Cases_Data_AP_LPA')
 
-WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
+def iRow = 1
 
-WebUI.delay(1)
-
-WebUI.click(findTestObject('GoPro UI/My cases/link_My_Events'))
-
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Navigation/link_Cases'), 20)
-
-WebUI.click(findTestObject('GoPro UI/Navigation/link_Cases'))
-
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/input_Search'), 5)
-
-WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'))
-
-WebUI.sendKeys(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'), excelData.getValue('Case Number', 
-        1))
-
-WebUI.delay(1)
-
-WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Search'))
-
-try 
+for (def index : (iRow..rowsOnSpreadsheet))
 {
-	WebUI.waitForElementVisible(findTestObject('GoPro UI/Cases/select_First_Case'), 20)
-}
-catch (Exception ex)
-{
+	WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
+
+	WebUI.delay(1)
+
+	WebUI.click(findTestObject('GoPro UI/My cases/link_My_Events'))
+
+	WebUI.waitForElementVisible(findTestObject('GoPro UI/Navigation/link_Cases'), 20)
+
+	WebUI.click(findTestObject('GoPro UI/Navigation/link_Cases'))
+
+	WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/input_Search'), 5)
+
+	WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'))
+
+	WebUI.sendKeys(findTestObject('Object Repository/GoPro UI/Case Summary/input_Search'), excelData.getValue('Case Number', iRow))
+
+	WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/button_Search'), 10)
+
 	WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Search'))
-	WebUI.waitForElementVisible(findTestObject('GoPro UI/Cases/select_First_Case'), 20)
-}
 
-WebUI.delay(1)
+	try {
+    	if (WebUI.verifyElementText(findTestObject('GoPro UI/Case Summary/text_Row_Total'), 'Row total: 1') == false) {
+			WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Search'))
+		}
+	}
+	catch (Exception ex) {
+    	WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Search'))
+    	WebUI.waitForElementVisible(findTestObject('GoPro UI/Cases/select_First_Case'), 20)
+	} 
 
-WebUI.click(findTestObject('GoPro UI/Cases/select_First_Case'))
+	WebUI.delay(2)
 
-WebUI.delay(2)
+	WebUI.click(findTestObject('GoPro UI/Cases/select_First_Case'))
 
-WebUI.doubleClick(findTestObject('GoPro UI/Cases/select_First_Case'))
+	WebUI.delay(2)
 
-WebUI.switchToWindowIndex(1)
+	WebUI.doubleClick(findTestObject('GoPro UI/Cases/select_First_Case'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/label_Processing'), 10)
+	WebUI.switchToWindowIndex(1)
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/link_Contacts'), 10)
+	WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/label_Processing'), 10)
 
-WebUI.delay(2)
+	WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/link_Contacts'), 10)
 
-WebUI.click(findTestObject('GoPro UI/Case Summary/link_Contacts'))
+	WebUI.delay(2)
 
-WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/button_LPA_Contact'), 10)
+	WebUI.click(findTestObject('GoPro UI/Case Summary/link_Contacts'))
 
-WebUI.click(findTestObject('GoPro UI/Case Summary/button_LPA_Contact'))
+	WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/button_LPA_Contact'), 10)
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/dropdown_LPA_Contact'), 10)
+	WebUI.click(findTestObject('GoPro UI/Case Summary/button_LPA_Contact'))
 
-WebUI.click(findTestObject('GoPro UI/Case Summary/dropdown_LPA_Contact'))
+	WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/dropdown_LPA_Contact'), 10)
 
-WebUI.delay(1)
+	WebUI.click(findTestObject('GoPro UI/Case Summary/dropdown_LPA_Contact'))
 
-WebUI.setText(findTestObject('GoPro UI/Case Summary/input_LPA_Contact'), 'Essex')
+	WebUI.delay(1)
+	
+	println(excelData.getValue('LPA', iRow))
+	
+	WebUI.setText(findTestObject('GoPro UI/Case Summary/input_LPA_Contact'), excelData.getValue('LPA', iRow))
 
-WebUI.delay(1)
+	WebUI.delay(1)
 
-if (WebUI.verifyElementPresent(findTestObject('GoPro UI/Case Summary/dropdown_LPA_Choices'))==true)
-{ 
-	WebUI.click(findTestObject('GoPro UI/Case Summary/dropdown_LPA_Choices'))
+	if (WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/dropdown_LPA_Choices'), 10) == true) {
+		WebUI.click(findTestObject('GoPro UI/Case Summary/dropdown_LPA_Choices'))
+    
+	}
+
+	WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/button_Save_LPA'), 10)
+
+	WebUI.click(findTestObject('GoPro UI/Case Summary/button_Save_LPA'))
+
+	WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/label_Council_Details'), 10)
+	
+	WebUI.delay(3)
+	
+	WebUI.verifyElementText(findTestObject('GoPro UI/Case Summary/label_Council_Details'),excelData.getValue('LPA', iRow))
+	
+	WebUI.click(findTestObject('GoPro UI/Case Summary/button_Save'))
+
+	WebUI.delay(2)
+	
+	WebUI.closeWindowIndex(1)
+
+	WebUI.closeBrowser()
+
+	iRow++
 }

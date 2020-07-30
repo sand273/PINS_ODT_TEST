@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>dropdown_LPA_Choices</name>
+   <name>label_Council_Details</name>
    <tag></tag>
-   <elementGuidId>61ba6803-f42d-4b72-ade5-42d8ed89ec2a</elementGuidId>
+   <elementGuidId>0e37ded1-9a46-4daf-848d-2b090fec9ced</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='ui-select-choices-row-4-0']</value>
+         <value>//div[@class='viewrow ng-scope']//div[@class='rowmain']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

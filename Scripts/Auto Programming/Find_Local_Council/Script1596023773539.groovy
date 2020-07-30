@@ -25,10 +25,8 @@ def excelData = findTestData('Auto Programming/Cases_Data_AP_LPA')
 
 def iRow = 1
 
-
 for (def index : (iRow..rowsOnSpreadsheet)) 
 {
-
 	WebUI.openBrowser('')
 
 	WebUI.navigateToUrl(GlobalVariable.FindCouncil)
@@ -51,7 +49,7 @@ for (def index : (iRow..rowsOnSpreadsheet))
 
 	councilValue = WebUI.getText(findTestObject('Auto Programming/label_Council'))
 
-	CustomKeywords.'custom.WriteExcel.APData'(councilValue, GlobalVariable.UploadFilePath + '\\Auto Programming\\Case Data for 945 Cases to change LPA_Test.xlsx',
+	CustomKeywords.'custom.WriteExcel.APData'(councilValue, GlobalVariable.UploadFilePath + '\\Auto Programming\\Case Data for 945 Cases to change LPA.xlsx',
 		'Sheet1', iRow, 4)
 	
 	WebUI.closeBrowser()
