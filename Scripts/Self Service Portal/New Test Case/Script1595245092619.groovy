@@ -19,11 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://pins-test.gopro.net/selfservice/web/portal/application.html?id=IAD9HF&pid=01C5EE1BB21571A3000001736B6AD466')
-
-WebUI.click(findTestObject('Complete Questionaire/Page_Local planning authority questionnaire/input_No_BuildingAffects'))
-
-WebUI.click(findTestObject('Complete Questionaire/Page_Local planning authority questionnaire/input_No_ScheduleMonument'))
+WebUI.click(findTestObject('GoPro UI/Case Summary/link_Contacts'))
 
 WebUI.closeBrowser()
 

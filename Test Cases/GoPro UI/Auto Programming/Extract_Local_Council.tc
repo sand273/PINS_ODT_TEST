@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Set Council details in Contacts Section for each case in Picaso</description>
+   <name>Extract_Local_Council</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a327bcf6-caa0-4631-a24f-d63f5c73e08c</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Extract Council details using postcodes from Gov Website.</description>
+   <name>Find_Local_Council</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f0051764-8eb3-47dc-9d26-cad095f20ae3</testCaseGuid>
+</TestCaseEntity>

@@ -46,17 +46,22 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Written'</initValue>
+      <initValue>'Hearing'</initValue>
       <name>caseType</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Written-CAS'</initValue>
+      <initValue>'Hearing-CAS'</initValue>
       <name>callTest</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>''</initValue>
       <name>caseSubType</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://www.gov.uk/find-local-council'</initValue>
+      <name>FindCouncil</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
