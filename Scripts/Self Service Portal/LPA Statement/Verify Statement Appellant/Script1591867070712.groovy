@@ -25,7 +25,7 @@ String expTableAppellant
 if (GlobalVariable.callTest == 'Auto-Validate')
 {
 
-	expTableAppellant = todaysDate + ',LPA Questionnaire,' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Start Notice Appellant (Written Reps),' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Upload_Document,' + todaysDate + ',Appeal a planning decision'
+	expTableAppellant =  todaysDate + ',Upload_Pdf,' + todaysDate + ',LPA Questionnaire,' + todaysDate + ',Start Notice Appellant (Written Reps),' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Upload_Document,' + todaysDate + ',Upload_Pdf,' + todaysDate + ',Appeal a planning decision'
 }
 
 def verData = TestDataFactory.findTestData('Data Files/Complete_Questionaire')

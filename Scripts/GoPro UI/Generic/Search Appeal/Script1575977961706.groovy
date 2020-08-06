@@ -38,7 +38,10 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Search'))
 
+WebUI.delay(2)
+
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/text_Row_Total'), 10)
+
 
 try
 {
@@ -55,7 +58,7 @@ WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/list_Case_Re
 
 try {
     WebUI.click(findTestObject('GoPro UI/Case Summary/list_Case_Ref'))
-	WebUI.delay(2)
+	WebUI.delay(1)
     WebUI.doubleClick(findTestObject('GoPro UI/Case Summary/list_Case_Ref'))
 }
 catch (Exception ex) {

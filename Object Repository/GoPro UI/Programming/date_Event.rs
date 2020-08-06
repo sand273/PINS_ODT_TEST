@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='SiteVisitDate']</value>
+         <value>//input[@id='Timeline.SiteVisitDate_event']</value>
       </entry>
       <entry>
          <key>BASIC</key>

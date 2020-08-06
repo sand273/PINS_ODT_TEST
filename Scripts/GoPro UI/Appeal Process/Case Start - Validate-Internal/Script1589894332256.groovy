@@ -14,6 +14,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 def verData = TestDataFactory.findTestData('Data Files/GoPro_UI_Verification')
 
@@ -57,13 +60,10 @@ use(groovy.time.TimeCategory, {
 
 WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
-if (GlobalVariable.caseType == 'Hearing')
-{
-	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal - Hearing'), [:], FailureHandling.STOP_ON_FAILURE)
-}
-else
-{
-	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
+if (GlobalVariable.caseType == 'Hearing') {
+    WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal - Hearing'), [:], FailureHandling.STOP_ON_FAILURE)
+} else {
+    WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
 }
 
 try {
@@ -94,7 +94,7 @@ WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/button_Internal_Review'))
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/dropdown_Validation_Internal'), 10)
+WebUI.delay(2)
 
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Validation_Internal'), 'defaultSelected', 
     'true', 5)

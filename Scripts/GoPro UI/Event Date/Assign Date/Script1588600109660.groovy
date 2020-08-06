@@ -29,13 +29,10 @@ use(groovy.time.TimeCategory, {
 
 WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
-if (GlobalVariable.caseType == 'Hearing')
-{
-	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal - Hearing'), [:], FailureHandling.STOP_ON_FAILURE)
-}
-else
-{
-	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
+if (GlobalVariable.caseType == 'Hearing') {
+    WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal - Hearing'), [:], FailureHandling.STOP_ON_FAILURE)
+} else {
+    WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
 }
 
 WebUI.click(findTestObject('GoPro UI/Programming/link_Programming'))
@@ -48,7 +45,9 @@ WebUI.verifyElementText(findTestObject('GoPro UI/Programming/dropdown_Event'), v
 
 WebUI.selectOptionByValue(findTestObject('GoPro UI/Programming/dropdown_Event'), 'USV', false)
 
-WebUI.setText(findTestObject('GoPro UI/Programming/date_Event'), eventDate.format('dd/MM/yyyy').toString())
+WebUI.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.sendKeys(findTestObject('GoPro UI/Programming/date_Event'), eventDate.format('dd/MM/yyyy').toString())
 
 WebUI.scrollToElement(findTestObject('GoPro UI/Case Summary/button_Save'), 3)
 
@@ -102,7 +101,9 @@ WebUI.verifyElementText(findTestObject('GoPro UI/Case Documents/link_LPA_Stateme
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'))
 
-WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/status_Appeal_InDraft'), 5)
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/status_Appeal_InDraft'), 5)
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/status_Appeal_InDraft'))
 

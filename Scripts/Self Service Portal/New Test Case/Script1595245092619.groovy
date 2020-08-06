@@ -19,7 +19,14 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.click(findTestObject('GoPro UI/Case Summary/link_Contacts'))
+WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/link_Contacts'))
+
+WebUI.closeBrowser()
+
+WebUI.openBrowser('')
+
+WebUI.setText(findTestObject('Object Repository/GoPro UI/Case Summary/Page_D4014503 PLANNING INSPECTORATE TEMPLE _edfe9b/input_Event Date_fldTimelineSiteVisitDate_event'), 
+    '12/09/2020')
 
 WebUI.closeBrowser()
 

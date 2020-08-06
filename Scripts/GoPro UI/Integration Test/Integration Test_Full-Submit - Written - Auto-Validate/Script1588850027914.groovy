@@ -15,6 +15,8 @@ import internal.GlobalVariable as GlobalVariable
 
 String[] values = new String[20]
 
+GlobalVariable.caseType = 'Written'
+
 GlobalVariable.callTest = 'Auto-Validate'
 
 CustomKeywords.'custom.WriteExcel.readValues'(GlobalVariable.UploadFilePath + '\\AppealNumbers.xlsx', 'Appeals', values)
