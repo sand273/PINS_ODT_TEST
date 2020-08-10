@@ -14544,3 +14544,16 @@
 [0806/152240.487:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffe7e1ef978 of 48 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
 [0806/152240.487:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffe7e1f53c0 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
 [0806/152240.489:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0807/101323.176:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0807/110251.823:ERROR:process_reader_win.cc(188)] ResumeThread: The parameter is incorrect. (0x57)
+[0807/110251.825:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0807/110251.825:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0807/110251.832:ERROR:file_io_win.cc(161)] CreateFile C:\Users\AUTOTE~1\AppData\Local\Temp\scoped_dir12432_1581752480\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[0807/110251.832:ERROR:file_io_win.cc(170)] CreateFile C:\Users\AUTOTE~1\AppData\Local\Temp\scoped_dir12432_1581752480\Crashpad\reports\d003cf2a-8eb4-4a13-98aa-52923fee7f38.dmp: The system cannot find the path specified. (0x3)
+[0807/110251.832:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
+[0810/143854.199:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0810/143854.201:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0810/143854.201:ERROR:exception_snapshot_win.cc(98)] thread ID 8872 not found in process
+[0810/145100.110:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0810/145100.111:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0810/145100.111:ERROR:exception_snapshot_win.cc(98)] thread ID 5764 not found in process

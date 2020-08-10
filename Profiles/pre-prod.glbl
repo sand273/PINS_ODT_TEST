@@ -26,7 +26,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'W/4003606'</initValue>
+      <initValue>'W/4003641'</initValue>
       <name>ApplicationRef</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -41,12 +41,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Hearing'</initValue>
+      <initValue>'Written'</initValue>
       <name>caseType</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Hearing'</initValue>
+      <initValue>'Auto-Validate'</initValue>
       <name>callTest</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
