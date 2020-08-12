@@ -27,6 +27,10 @@ GlobalVariable.caseType = ''
 
 GlobalVariable.callTest = ''
 
+String executionProfile = RC.getExecutionProfile()
+
+def expectedValues = ''
+
 String[] cmdArray = new String[2]
 
 String[] values = new String[20]
@@ -129,8 +133,8 @@ WebUI.click(findTestObject('Frontpage/button_Login'))
 
 WebUI.waitForElementVisible(findTestObject('Appeal planning decision/message_Appeal_Planning_Decision'), 5)
 
-WebUI.verifyElementText(findTestObject('Appeal planning decision/message_Appeal_Planning_Decision'), verData.getValue(1, 
-        21))
+WebUI.verifyElementText(findTestObject('Appeal planning decision/message_Appeal_Planning_Decision'), verData.getValue(1,
+		21))
 
 WebUI.waitForElementVisible(findTestObject('Appeal planning decision/message_Check_Progress'), 5)
 
@@ -156,7 +160,11 @@ WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Planning Application details/question_LPA_Submit'), 3)
 
-WebUI.selectOptionByValue(findTestObject('Planning Application details/dropdown_LPA_Select'), 'C3810', true)
+if (executionProfile == 'default') {
+	WebUI.selectOptionByValue(findTestObject('Planning Application details/dropdown_LPA_Select'), 'C3810', true)
+} else if (executionProfile == 'pre-prod') {
+	WebUI.selectOptionByValue(findTestObject('Planning Application details/dropdown_LPA_Select'), 'Q9999', true)
+}
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -344,8 +352,8 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
-WebUI.waitForElementVisible(findTestObject('Application Technical Reports/status_Complete_Application_Technical_Reports'), 
-    10)
+WebUI.waitForElementVisible(findTestObject('Application Technical Reports/status_Complete_Application_Technical_Reports'),
+		10)
 
 WebUI.verifyElementText(findTestObject('Application Technical Reports/status_Complete_Application_Technical_Reports'), 'COMPLETED')
 
@@ -563,8 +571,8 @@ WebUI.waitForElementVisible(findTestObject('Application Technical Reports/link_T
 
 WebUI.click(findTestObject('Application Technical Reports/link_Technical_Reports'))
 
-WebUI.waitForElementVisible(findTestObject('Application Technical Reports/message_Technical_Reports', [('index') : 1]), 
-    5)
+WebUI.waitForElementVisible(findTestObject('Application Technical Reports/message_Technical_Reports', [('index') : 1]),
+5)
 
 WebUI.click(findTestObject('Application Technical Reports/message_Technical_Reports', [('index') : 1]))
 
@@ -578,8 +586,8 @@ WebUI.delay(2)
 
 WebUI.waitForElementVisible(findTestObject('Technical Reports Post Decision/dropdown_Select_Report_Type'), 5)
 
-WebUI.selectOptionByValue(findTestObject('Technical Reports Post Decision/dropdown_Select_Report_Type'), 'Other reports', 
-    false)
+WebUI.selectOptionByValue(findTestObject('Technical Reports Post Decision/dropdown_Select_Report_Type'), 'Other reports',
+		false)
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
@@ -657,8 +665,8 @@ WebUI.refresh()
 
 GlobalVariable.ApplicationRef = WebUI.getText(findTestObject('Appeal Received/label_Appeal_Received'))
 
-CustomKeywords.'custom.WriteExcel.enterValues'(GlobalVariable.ApplicationRef, GlobalVariable.UploadFilePath + '\\AppealNumbers.xlsx', 
-    'Appeals')
+CustomKeywords.'custom.WriteExcel.enterValues'(GlobalVariable.ApplicationRef, GlobalVariable.UploadFilePath + '\\AppealNumbers.xlsx',
+		'Appeals')
 
 WebUI.click(findTestObject('Appeal Received/button_Appeal_Summary'))
 
@@ -714,7 +722,11 @@ WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/input_Search'), 10)
 
-def expectedValues = 'Test1,Test2,Test3,Test4,Test5,Test6,Test7,Test8,Test9,Test10,Test11,Final comments,Test_Final_Document,Sandeep Ramchandani Interested Party Correspondence,LPA Statement,Complete_Statement,LPA Questionnaire,Upload_Pdf,Start Notice LPA (Written Reps),Start Notice Appellant (Written Reps),Appeal form'
+if (executionProfile == 'default') {
+	expectedValues = 'Test1,Test2,Test3,Test4,Test5,Test6,Test7,Test8,Test9,Test10,Test11,Final comments,Test_Final_Document,Sandeep Ramchandani Interested Party Correspondence,LPA Statement,Complete_Statement,LPA Questionnaire,Upload_Pdf,Start Notice LPA (Written Reps),Start Notice Appellant (Written Reps),Appeal form'
+} else if (executionProfile == 'pre-prod') {
+	expectedValues = 'Test1,Test2,Test3,Test4,Test5,Test6,Test7,Test8,Test9,Test10,Test11,Final comments,Test_Final_Document,Santosh PreProd Interested Party Correspondence,LPA Statement,Complete_Statement,LPA Questionnaire,Upload_Pdf,Start Notice LPA (Written Reps),Start Notice Appellant (Written Reps),Appeal form'
+}
 
 CustomKeywords.'custom.VerifyTable.verifyContainsText'('GoPro UI/Case Documents/table_Documents', expectedValues)
 
@@ -723,9 +735,9 @@ String[] baseVal = expectedValues.split(',')
 def text = WebUI.getText(findTestObject('GoPro UI/Case Documents/Document_Total'))
 
 if (text.contains(baseVal.size().toString())) {
-    KeywordUtil.markPassed('Documents = ' + baseVal.size().toString())
+	KeywordUtil.markPassed('Documents = ' + baseVal.size().toString())
 } else {
-    KeywordUtil.markFailedAndStop((('Documents Actual: ' + text) + ' Expected: ') + baseVal.size().toString())
+	KeywordUtil.markFailedAndStop((('Documents Actual: ' + text) + ' Expected: ') + baseVal.size().toString())
 }
 
 WebUI.closeBrowser()
