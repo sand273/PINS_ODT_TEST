@@ -27,6 +27,8 @@ GlobalVariable.caseType = ''
 
 GlobalVariable.callTest = ''
 
+String executionProfile = RC.getExecutionProfile()
+
 String[] cmdArray = new String[2]
 
 String[] values = new String[20]
@@ -156,7 +158,11 @@ WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
 WebUI.waitForElementVisible(findTestObject('Planning Application details/question_LPA_Submit'), 3)
 
-WebUI.selectOptionByValue(findTestObject('Planning Application details/dropdown_LPA_Select'), 'C3810', true)
+if (executionProfile == 'default') {
+    WebUI.selectOptionByValue(findTestObject('Planning Application details/dropdown_LPA_Select'), 'C3810', true)
+} else if (executionProfile == 'pre-prod') {
+    WebUI.selectOptionByValue(findTestObject('Planning Application details/dropdown_LPA_Select'), 'Q9999', true)
+}
 
 WebUI.click(findTestObject('Planning Application details/button_Save_Continue'))
 
