@@ -33,16 +33,19 @@ WebUI.click(findTestObject('GoPro UI/Case Summary/button_Question_Overdue'))
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/dropdown_Question_Overdue'), 10)
 
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Question_Overdue'), 'defaultSelected',
-	'true', 5)
+WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Question_Overdue'), 'defaultSelected', 
+    'true', 5)
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/button_Publish_LPA_Statement'))
 
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/dropdown_Publish_LPA_Statement'), 10)
 
-WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Publish_LPA_Statement'), 'defaultSelected',
-	'true', 5)
+WebUI.delay(2)
+
+WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Publish_LPA_Statement'), 'defaultSelected', 
+    'true', 5)
 
 WebUI.closeWindowIndex(1)
 
 WebUI.closeBrowser()
+

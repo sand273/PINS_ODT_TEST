@@ -22,24 +22,22 @@ def testData = TestDataFactory.findTestData('Data Files/GoPro_UI_Verification')
 
 WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
-if (GlobalVariable.caseType == 'Hearing')
-{
-	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal - Hearing'), [:], FailureHandling.STOP_ON_FAILURE)
-}
-else
-{
-	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
+if (GlobalVariable.caseType == 'Hearing') {
+    WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal - Hearing'), [:], FailureHandling.STOP_ON_FAILURE)
+} else {
+    WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
 }
 
-try
-{
-	WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Open_for_LPA'), 'defaultSelected', 'true', 5)
+try {
+    WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Open_for_LPA'), 'defaultSelected', 
+        'true', 5)
 }
-catch (Exception ex)
-{
-	WebUI.selectOptionByValue(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'), 'A26CF54F-19EB-45A7-BCE3-F9DBAE8A075E', true)
-	WebUI.click(findTestObject('GoPro UI/Case Summary/button_Save'))
-}
+catch (Exception ex) {
+    WebUI.selectOptionByValue(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'), 'A26CF54F-19EB-45A7-BCE3-F9DBAE8A075E', 
+        true)
+
+    WebUI.click(findTestObject('GoPro UI/Case Summary/button_Save'))
+} 
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
@@ -55,9 +53,9 @@ if (WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Documents/link_LPA
     CustomKeywords.'custom.WriteExcel.waitForObject'(180, 'GoPro UI/Case Documents/link_LPA_Statement', 'GoPro UI/Case Summary/button_Search')
 }
 
-WebUI.verifyElementText(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), testData.getValue(1, 5))
+WebUI.delay(2)
 
-WebUI.delay(1)
+WebUI.verifyElementText(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'), testData.getValue(1, 5))
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/link_LPA_Statement'))
 
