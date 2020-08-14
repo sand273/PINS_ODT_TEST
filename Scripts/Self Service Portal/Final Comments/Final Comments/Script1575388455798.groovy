@@ -53,7 +53,7 @@ if (GlobalVariable.callTest == 'Auto-Validate')
 }
 else if (GlobalVariable.callTest == 'Written')
 {
-	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '40')
+	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '42')
 }
 
 WebUI.click(findTestObject('Final Comments/button_Make_Final_Comment'))

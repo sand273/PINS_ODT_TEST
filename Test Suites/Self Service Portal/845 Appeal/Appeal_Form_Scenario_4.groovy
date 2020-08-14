@@ -24,7 +24,6 @@ import com.kms.katalon.core.annotation.SetUp
 import com.kms.katalon.core.annotation.SetupTestCase
 import com.kms.katalon.core.annotation.TearDown
 import com.kms.katalon.core.annotation.TearDownTestCase
-import com.kms.katalon.core.configuration.RunConfiguration as RC
 
 /**
  * Some methods below are samples for using SetUp/TearDown in a test suite.
@@ -36,8 +35,7 @@ import com.kms.katalon.core.configuration.RunConfiguration as RC
 @SetUp(skipped = false) // Please change skipped to be false to activate this method.
 def setUp() {
 	// Put your code here.
-	GlobalVariable.UploadFilePath = RC.getProjectDir().replace("/", "\\") + "\\Data Files\\";
-	//CustomKeywords.'custom.WriteExcel.clearValues'(GlobalVariable.UploadFilePath+"\\AppealNumbers.xlsx", "Appeals")
+	//CustomKeywords.'custom.WriteExcel.clearValues'("C:\\Katalon\\Data-Files\\AppealNumbers.xlsx", "Appeals")
 }
 
 /**

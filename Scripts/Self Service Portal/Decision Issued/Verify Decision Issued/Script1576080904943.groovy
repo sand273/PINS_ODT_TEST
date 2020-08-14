@@ -72,7 +72,7 @@ if (GlobalVariable.callTest == 'Auto-Validate')
 }
 else if (GlobalVariable.callTest == 'Written')
 {
-	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '43')
+	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '42')
 }
 else if (GlobalVariable.callTest == 'Hearing')
 {
