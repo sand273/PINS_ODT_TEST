@@ -16,7 +16,7 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-GlobalVariable.AllocationMatrix = 2
+GlobalVariable.AllocationMatrix = 4
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 

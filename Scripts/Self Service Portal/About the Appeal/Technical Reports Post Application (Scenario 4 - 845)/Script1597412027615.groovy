@@ -16,8 +16,6 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-GlobalVariable.AllocationMatrix = 1
-
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 WebUI.waitForElementVisible(findTestObject('Technical Reports Post Decision/link_Non_Determination_Technical_Reports'), 

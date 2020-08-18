@@ -16,6 +16,8 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
+GlobalVariable.AllocationMatrix = 3
+
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 WebUI.waitForElementVisible(findTestObject('Application Technical Reports/link_Technical_Reports'), 5)
@@ -35,7 +37,7 @@ WebUI.waitForElementClickable(findTestObject('Technical Reports Post Decision/bu
 
 WebUI.waitForElementVisible(findTestObject('Technical Reports Post Decision/dropdown_Select_Report_Type'), 5)
 
-WebUI.selectOptionByValue(findTestObject('Technical Reports Post Decision/dropdown_Select_Report_Type'), 'Shadow Flicker Report', 
+WebUI.selectOptionByValue(findTestObject('Technical Reports Post Decision/dropdown_Select_Report_Type'), 'Air Quality Assessment', 
     false)
 
 WebUI.waitForElementClickable(findTestObject('Planning Application details/button_Save_Continue'), 5)

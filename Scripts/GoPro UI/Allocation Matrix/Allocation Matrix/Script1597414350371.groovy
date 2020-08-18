@@ -83,16 +83,20 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++) {
 	
     WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/field_Score'), 10)
 	
-	if (GlobalVariable.AllocationMatrix == 1 || GlobalVariable.AllocationMatrix == 3)
-	{
-		valueScore = WebUI.getAttribute(findTestObject('Object Repository/GoPro UI/Case Summary/field_Score'), 'value')
-	}
-	else if (GlobalVariable.AllocationMatrix == 2)
+	if (GlobalVariable.AllocationMatrix == 4)
 	{
 		valueScore = WebUI.getAttribute(findTestObject('Object Repository/GoPro UI/Case Summary/field_Score1'), 'value')
 	}
-
+	else
+	{
+		valueScore = WebUI.getAttribute(findTestObject('Object Repository/GoPro UI/Case Summary/field_Score'), 'value')
+	}
+	
 	WebUI.verifyMatch(valueScore, verData.getValue(1, 3), false)
 	
+	WebUI.closeWindowIndex(1)
+	
+	WebUI.closeBrowser()
+		
 }
 
