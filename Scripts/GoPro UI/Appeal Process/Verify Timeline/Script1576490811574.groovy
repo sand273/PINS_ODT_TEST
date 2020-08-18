@@ -56,39 +56,37 @@ use(groovy.time.TimeCategory, {
 
 WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
-if (GlobalVariable.caseType == 'Hearing')
-{
-	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal - Hearing'), [:], FailureHandling.STOP_ON_FAILURE)
-}
-else
-{
-	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
+if (GlobalVariable.caseType == 'Hearing') {
+    WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal - Hearing'), [:], FailureHandling.STOP_ON_FAILURE)
+} else {
+    WebUI.callTestCase(findTestCase('GoPro UI/Generic/Search Appeal'), [:], FailureHandling.STOP_ON_FAILURE)
 }
 
-try
-{
-	if (WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Status_Programmed'), 'defaultSelected', 'true', 5)==true)
-	{
-		WebUI.selectOptionByValue(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'), '702A622C-E990-473D-B462-751ECE315DCF', true)
-		WebUI.click(findTestObject('GoPro UI/Case Summary/button_Save'))
-	}
-}
-catch (Exception ex)
-{
-	WebUI.selectOptionByValue(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'), '702A622C-E990-473D-B462-751ECE315DCF', true)
-	WebUI.click(findTestObject('GoPro UI/Case Summary/button_Save'))
-}
+try {
+    if (WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Status_Programmed'), 'defaultSelected', 
+        'true', 5) == true) {
+        WebUI.selectOptionByValue(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'), '702A622C-E990-473D-B462-751ECE315DCF', 
+            true)
 
+        WebUI.click(findTestObject('GoPro UI/Case Summary/button_Save'))
+    }
+}
+catch (Exception ex) {
+    WebUI.selectOptionByValue(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'), '702A622C-E990-473D-B462-751ECE315DCF', 
+        true)
+
+    WebUI.click(findTestObject('GoPro UI/Case Summary/button_Save'))
+} 
 
 WebUI.switchToWindowIndex(1)
 
 WebUI.refresh()
 
-WebUI.delay(1)
+WebUI.delay(2)
 
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown_Status_Case_Started'), 'defaultSelected', 
     'true', 2)
-	
+
 WebUI.waitForElementHasAttribute(findTestObject('GoPro UI/Case Summary/date_Case_Start'), 'value', 5)
 
 WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/date_Case_Start'), 'value', todaysDate, 1)

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>field_Grade</name>
+   <name>field_Score1</name>
    <tag></tag>
-   <elementGuidId>fe2b2501-d09e-49f1-a081-e303400688b1</elementGuidId>
+   <elementGuidId>47881117-c00b-43fb-b658-b23414de1c05</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='form-group']//select[@class='form-control fields-narrow ng-pristine ng-untouched ng-valid ng-not-empty']</value>
+         <value>//div[9]//input[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

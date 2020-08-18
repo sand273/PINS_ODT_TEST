@@ -64,4 +64,9 @@
       <initValue>'https://www.gov.uk/find-local-council'</initValue>
       <name>FindCouncil</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>3</initValue>
+      <name>AllocationMatrix</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

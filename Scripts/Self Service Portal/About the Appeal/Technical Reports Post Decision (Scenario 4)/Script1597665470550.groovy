@@ -16,22 +16,20 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-GlobalVariable.AllocationMatrix = 1
+GlobalVariable.AllocationMatrix = 2
 
 def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
-WebUI.waitForElementVisible(findTestObject('Technical Reports Post Decision/link_Non_Determination_Technical_Reports'), 
+WebUI.waitForElementVisible(findTestObject('Application Technical Reports/link_Technical_Reports'), 5)
+
+WebUI.click(findTestObject('Application Technical Reports/link_Technical_Reports'))
+
+WebUI.waitForElementVisible(findTestObject('Application Technical Reports/message_Technical_Reports', [('index') : 1]), 
     5)
 
-WebUI.click(findTestObject('Technical Reports Post Decision/link_Non_Determination_Technical_Reports'))
+WebUI.verifyElementText(findTestObject('Application Technical Reports/message_Technical_Reports', [('index') : 1]), verData.getValue(1, 62))
 
-WebUI.waitForElementVisible(findTestObject('Technical Reports Post Decision/message_Non_determination_Technical_Report', [('index') : 1]), 
-    5)
-
-WebUI.verifyElementText(findTestObject('Technical Reports Post Decision/message_Non_determination_Technical_Report', [('index') : 1]), verData.getValue(
-        1, 148))
-
-WebUI.click(findTestObject('Technical Reports Post Decision/message_Non_determination_Technical_Report', [('index') : 1]))
+WebUI.click(findTestObject('Application Technical Reports/message_Technical_Reports', [('index') : 1]))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
@@ -39,7 +37,7 @@ WebUI.waitForElementClickable(findTestObject('Technical Reports Post Decision/bu
 
 WebUI.waitForElementVisible(findTestObject('Technical Reports Post Decision/dropdown_Select_Report_Type'), 5)
 
-WebUI.selectOptionByValue(findTestObject('Technical Reports Post Decision/dropdown_Select_Report_Type'), 'Environmental Statement', 
+WebUI.selectOptionByValue(findTestObject('Technical Reports Post Decision/dropdown_Select_Report_Type'), 'Noise Assessment', 
     false)
 
 WebUI.waitForElementClickable(findTestObject('Planning Application details/button_Save_Continue'), 5)

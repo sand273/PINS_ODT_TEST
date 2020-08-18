@@ -69,6 +69,11 @@ public class GlobalVariable {
      */
     public static Object FindCouncil
      
+    /**
+     * <p></p>
+     */
+    public static Object AllocationMatrix
+     
 
     static {
         try {
@@ -88,6 +93,7 @@ public class GlobalVariable {
             callTest = selectedVariables['callTest']
             caseSubType = selectedVariables['caseSubType']
             FindCouncil = selectedVariables['FindCouncil']
+            AllocationMatrix = selectedVariables['AllocationMatrix']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)
