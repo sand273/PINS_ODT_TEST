@@ -27,7 +27,8 @@ def verData = TestDataFactory.findTestData('Data Files/GoPro_UI_Allocation_Matri
 
 CustomKeywords.'custom.WriteExcel.readValues'(GlobalVariable.UploadFilePath + '\\AppealNumbers.xlsx', 'Appeals', values)
 
-for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++) {
+for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++) 
+{
     WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.delay(1)
@@ -58,7 +59,7 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++) {
     catch (Exception ex) {
         WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Search'))
 
-        WebUI.waitForElementVisible(findTestObject('GoPro UI/Cases/select_First_Case'), 20)
+        WebUI.waitForElementVisible(findTestObject('GoPro UI/Cases/select_First_Case'), 10)
     } 
     
     WebUI.delay(2)
@@ -79,7 +80,7 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++) {
 
     insGrade = WebUI.getAttribute(findTestObject('Object Repository/GoPro UI/Case Summary/field_Grade'), 'value')
 	
-	WebUI.verifyMatch(insGrade, 'string:' + verData.getValue(2, 3), false)
+	WebUI.verifyMatch(insGrade, 'string:' + verData.getValue(2, iRow), false)
 	
     WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/field_Score'), 10)
 	
@@ -92,7 +93,7 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++) {
 		valueScore = WebUI.getAttribute(findTestObject('Object Repository/GoPro UI/Case Summary/field_Score'), 'value')
 	}
 	
-	WebUI.verifyMatch(valueScore, verData.getValue(1, 3), false)
+	WebUI.verifyMatch(valueScore, verData.getValue(1, iRow), false)
 	
 	WebUI.closeWindowIndex(1)
 	
