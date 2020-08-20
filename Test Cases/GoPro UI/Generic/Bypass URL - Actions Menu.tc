@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Bypass URL - Actions Menu</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d3a36d8f-0282-499a-8b08-b65b3333836b</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>cf062782-c893-4140-936c-33ef2587a9b3</id>
+      <masked>false</masked>
+      <name>AppealType</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>446ae292-197c-4a04-9d5e-0ffdc43c9cec</id>
+      <masked>false</masked>
+      <name>writeFlag</name>
+   </variable>
+</TestCaseEntity>

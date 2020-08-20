@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Clearsearch</name>
+   <name>button_Close</name>
    <tag></tag>
-   <elementGuidId>7ea4f20f-db37-4eda-99c7-ec47da39304c</elementGuidId>
+   <elementGuidId>34612faf-7683-47d5-9043-ded7c0b6a7f4</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[contains(text(),'Close')]</value>
+      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//button[@id='btnClearSearch']//span[@class='fal fa-times']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
