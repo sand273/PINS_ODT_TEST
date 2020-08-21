@@ -15,7 +15,7 @@
       <guid>5162fd4b-2289-4b38-ac96-de28d82ce85e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/GoPro UI/Bypass URL/Bypass URL</testCaseId>
+      <testCaseId>Test Cases/GoPro UI/Bypass URL/Bypass URL MVP</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>e856b5e3-1c40-4308-8958-614311ce6554</guid>

@@ -54,4 +54,14 @@
       <initValue>''</initValue>
       <name>caseSubType</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>3</initValue>
+      <name>AllocationMatrix</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>URLCheck</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

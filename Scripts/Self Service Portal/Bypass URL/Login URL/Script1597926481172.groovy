@@ -48,14 +48,18 @@ WebUI.click(findTestObject('Frontpage/button_Login'))
 
 WebUI.waitForElementVisible(findTestObject('Bypass Eligibility Checker/title_Exemption'), 10)
 
-WebUI.verifyElementText(findTestObject('Bypass Eligibility Checker/title_Exemption'),'Exemption validation')
+WebUI.verifyElementText(findTestObject('Bypass Eligibility Checker/title_Exemption'),verData.getValue(1, 170))
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/Bypass Eligibility Checker/label_Status'))
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/Bypass Eligibility Checker/label_Planning'))
 
+if (GlobalVariable.URLCheck == 'HAS')
+{
+	WebUI.verifyElementText(findTestObject('Object Repository/Bypass Eligibility Checker/label_Planning'),verData.getValue(1, 171))
+}
+
 WebUI.verifyElementClickable(findTestObject('Object Repository/Bypass Eligibility Checker/button_Start'))
 
 WebUI.click(findTestObject('Object Repository/Bypass Eligibility Checker/button_Start'))
 
-WebUI.closeBrowser()

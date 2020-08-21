@@ -42,7 +42,7 @@ WebUI.waitForElementVisible(findTestObject('GoPro UI/Case Summary/label_Processi
 
 WebUI.callTestCase(findTestCase('GoPro UI/Generic/Bypass URL - Actions Menu'), [('AppealType') : 'string:100-MVP', ('writeFlag') : 'Y'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('GoPro UI/Generic/Bypass URL - Actions Menu'), [('AppealType') : 'string:848-HAS', ('writeFlag') : 'N'], FailureHandling.STOP_ON_FAILURE)
+GlobalVariable.URLCheck = 'MVP'
 
 WebUI.closeWindowIndex(1)
 
