@@ -23,8 +23,8 @@ def verData = TestDataFactory.findTestData('Data Files/Portal_Verification')
 
 def testData = TestDataFactory.findTestData('Data Files/User_Profile')
 
-CustomKeywords.'custom.WriteExcel.readValues'(GlobalVariable.UploadFilePath + '\\Bypass_Eligibility_Checker.xlsx', 'Bypass_URL', 
-    values)
+CustomKeywords.'custom.WriteExcel.readValues'(GlobalVariable.UploadFilePath + '\\Bypass_Eligibility_Checker.xlsx', 'Bypass_URL',
+	values)
 
 WebUI.openBrowser('')
 
@@ -50,12 +50,12 @@ WebUI.waitForElementVisible(findTestObject('Bypass Eligibility Checker/title_Exe
 
 WebUI.verifyElementText(findTestObject('Bypass Eligibility Checker/title_Exemption'),'Exemption validation')
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/Bypass Eligibility Checker/label_Status'))
+WebUI.verifyElementVisible(findTestObject('Bypass Eligibility Checker/title_Error_Summary'))
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/Bypass Eligibility Checker/label_Planning'))
+WebUI.verifyElementVisible(findTestObject('Bypass Eligibility Checker/message_Error_Details1'))
 
-WebUI.verifyElementClickable(findTestObject('Object Repository/Bypass Eligibility Checker/button_Start'))
+WebUI.verifyElementVisible(findTestObject('Bypass Eligibility Checker/message_Error_Details2'))
 
-WebUI.click(findTestObject('Object Repository/Bypass Eligibility Checker/button_Start'))
+WebUI.verifyElementText(findTestObject('Bypass Eligibility Checker/message_Error_Details2'), verData.getValue(1, 169))
 
 WebUI.closeBrowser()
