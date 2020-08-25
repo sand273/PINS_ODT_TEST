@@ -88,7 +88,10 @@ else if (GlobalVariable.callTest == 'Written-CAS')
 {
 	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '15')
 }
-
+else if (GlobalVariable.callTest == '847')
+{
+	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '47')
+}
 
 WebUI.closeBrowser()
 

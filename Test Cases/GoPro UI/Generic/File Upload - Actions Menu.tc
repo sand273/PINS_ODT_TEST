@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>File Upload - Actions Menu</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>70557780-91cd-44d8-8461-5158bbdee9a7</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ae69ebb5-132e-40cc-8ec7-50d64c9621c5</id>
+      <masked>false</masked>
+      <name>menuOption</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f8674b3c-05e2-4b81-b3b3-9029f2710349</id>
+      <masked>false</masked>
+      <name>templateLetter</name>
+   </variable>
+</TestCaseEntity>

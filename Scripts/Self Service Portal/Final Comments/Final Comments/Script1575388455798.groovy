@@ -37,7 +37,14 @@ WebUI.verifyElementText(findTestObject('Final Comments/status_Final_Comments'), 
 
 WebUI.verifyElementVisible(findTestObject('Final Comments/message_Final_Comments'))
 
-WebUI.verifyElementVisible(findTestObject('Final Comments/status_Days_Left'))
+if (GlobalVariable.callTest == '847')
+{
+	WebUI.verifyElementVisible(findTestObject('Final Comments/status_Days_847_Appeal'))
+}
+else
+{
+	WebUI.verifyElementVisible(findTestObject('Final Comments/status_Days_Left'))
+}
 
 WebUI.verifyElementText(findTestObject('Submit Statement/text_Case_Number'), GlobalVariable.ApplicationRef)
 

@@ -21,7 +21,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'W/4014525'</initValue>
+      <initValue>'W/4014767'</initValue>
       <name>ApplicationRef</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -51,7 +51,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Written'</initValue>
+      <initValue>'847'</initValue>
       <name>callTest</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

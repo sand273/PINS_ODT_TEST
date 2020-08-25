@@ -15,8 +15,6 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.click(findTestObject('GoPro UI/Actions Menu/menu_Actions'))
 
-WebUI.delay(1)
-
 WebUI.waitForElementVisible(findTestObject('GoPro UI/Actions Menu/link_Documents_File'), 5)
 
 WebUI.click(findTestObject('GoPro UI/Actions Menu/link_Documents_File'))
@@ -29,7 +27,11 @@ WebUI.click(findTestObject('GoPro UI/Actions Menu/dropdown_File_Upload_Type'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('GoPro UI/Actions Menu/option_Appeal Decision'))
+WebUI.setText(findTestObject('GoPro UI/Actions Menu/text_Template_Box'), templateLetter)
+
+WebUI.waitForElementVisible(findTestObject(menuOption), 10)
+
+WebUI.click(findTestObject(menuOption))
 
 WebUI.waitForElementClickable(findTestObject('GoPro UI/File Upload PopUp/button_Create'), 10)
 

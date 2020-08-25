@@ -33,8 +33,6 @@ WebUI.verifyElementText(findTestObject('Appeal Summary/label_Appellant_Name'), p
 
 WebUI.verifyElementText(findTestObject('Appeal Summary/label_Application_Ref'), planData.getValue(2, 1))
 
-WebUI.verifyElementText(findTestObject('Appeal Summary/links_Appeal_Action'), verData.getValue(1, 75))
-
 WebUI.verifyElementText(findTestObject('Appeal Summary/links_Appeal_Data'), verData.getValue(1, 76))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Logout'), [:], FailureHandling.STOP_ON_FAILURE)

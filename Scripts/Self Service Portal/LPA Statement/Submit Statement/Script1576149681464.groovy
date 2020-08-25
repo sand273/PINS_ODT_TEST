@@ -88,6 +88,11 @@ else if (GlobalVariable.callTest == 'Hearing')
 {
 	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '19')
 }
+else if (GlobalVariable.callTest == '847')
+{
+	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '40')
+}
+
 
 WebUI.verifyElementVisible(findTestObject('Submit Statement/button_Make_Statement'))
 

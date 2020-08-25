@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>option_Appeal Decision</name>
+   <name>option_Appeal_Decision</name>
    <tag></tag>
    <elementGuidId>d1f10450-4a52-430e-9525-fc7b8b091197</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(text(),'Appeal Decision')]</value>
+         <value>//div[@class='ui-select-choices-row ng-scope active']//span[@class='gpview-highlighted'][contains(text(),'Appeal Decision')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

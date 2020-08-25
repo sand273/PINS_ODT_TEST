@@ -45,7 +45,7 @@ WebUI.verifyElementText(findTestObject('GoPro UI/Programming/dropdown_Event'), v
 
 WebUI.selectOptionByValue(findTestObject('GoPro UI/Programming/dropdown_Event'), 'USV', false)
 
-WebUI.waitForElementVisible(findTestObject('GoPro UI/Programming/date_Event'), 0)
+WebUI.waitForElementVisible(findTestObject('GoPro UI/Programming/date_Event'), 5)
 
 WebUI.setText(findTestObject('GoPro UI/Programming/date_Event'), eventDate.format('dd/MM/yyyy').toString())
 
@@ -77,7 +77,7 @@ WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
-WebUI.callTestCase(findTestCase('GoPro UI/Generic/Appeal Decision - Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/File Upload - Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
 

@@ -13,6 +13,9 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 def verData = TestDataFactory.findTestData('Data Files/GoPro_UI_Verification')
 
