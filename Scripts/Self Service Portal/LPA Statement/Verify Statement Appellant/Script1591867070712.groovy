@@ -75,10 +75,6 @@ else if (GlobalVariable.callTest == 'Hearing')
 {
 	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '21')
 }
-else if (GlobalVariable.callTest == '847')
-{
-	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '42')
-}
 
 WebUI.closeBrowser()
 

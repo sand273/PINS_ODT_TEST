@@ -69,7 +69,7 @@ if (GlobalVariable.callTest == 'Auto-Validate')
 }
 else if (GlobalVariable.callTest == 'Written')
 {
-	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '44')
+	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '45')
 }
 else if (GlobalVariable.callTest == 'Hearing')
 {
@@ -87,7 +87,10 @@ else if (GlobalVariable.callTest == 'Written-CAS')
 {
 	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '16')
 }
-
+else if (GlobalVariable.callTest == '847')
+{
+	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '49')
+}
 
 WebUI.closeBrowser()
 

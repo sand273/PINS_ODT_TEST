@@ -77,7 +77,7 @@ WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
-WebUI.callTestCase(findTestCase('GoPro UI/Generic/File Upload - Actions Menu'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/File Upload - Actions Menu'), [('menuOption'):'GoPro UI/Actions Menu/option_Appeal_Decision', ('templateLetter'): verData.getValue(1, 14)], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
 

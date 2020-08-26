@@ -72,7 +72,7 @@ if (GlobalVariable.callTest == 'Auto-Validate')
 }
 else if (GlobalVariable.callTest == 'Written')
 {
-	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '42')
+	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '43')
 }
 else if (GlobalVariable.callTest == 'Hearing')
 {
@@ -89,6 +89,10 @@ else if (GlobalVariable.callTest == 'Hearing-CAS')
 else if (GlobalVariable.callTest == 'Written-CAS')
 {
 	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '13')
+}
+else if (GlobalVariable.callTest == '847')
+{
+	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '47')
 }
 
 WebUI.waitForElementVisible(findTestObject('Final Comments/date_Decision_Issued'), 5)

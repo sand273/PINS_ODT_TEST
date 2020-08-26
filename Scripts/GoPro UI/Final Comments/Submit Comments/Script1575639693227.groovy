@@ -27,7 +27,7 @@ WebUI.verifyElementAttributeValue(findTestObject('GoPro UI/Case Summary/dropdown
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/tab_Case_Documents'))
 
-WebUI.waitForElementPresent(findTestObject('GoPro UI/Case Documents/link_Folder_Final_Comments'), 20)
+WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/input_Search'), 10)
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/input_Search'))
 

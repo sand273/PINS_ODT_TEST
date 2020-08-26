@@ -116,8 +116,9 @@ WebUI.selectOptionByIndex(findTestObject('GoPro UI/Case Documents/dropdown_Statu
 
 WebUI.click(findTestObject('GoPro UI/Case Documents/button_Primary'))
 
-
 WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/input_Search'), 20)
+
+WebUI.clearText(findTestObject('GoPro UI/Case Summary/input_Search'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/input_Search'))
 
@@ -144,6 +145,8 @@ WebUI.selectOptionByIndex(findTestObject('GoPro UI/Case Documents/dropdown_Statu
 WebUI.click(findTestObject('GoPro UI/Case Documents/button_Primary'))
 
 WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/input_Search'), 20)
+
+WebUI.clearText(findTestObject('GoPro UI/Case Summary/input_Search'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('GoPro UI/Case Summary/input_Search'))
 

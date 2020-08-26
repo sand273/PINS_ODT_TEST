@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/ng-include[contains(@class,'ng-scope')]/ng-view[contains(@class,'ng-scope')]/section[contains(@class,'formsection ng-scope')]/div[contains(@class,'maincontent')]/div[contains(@class,'tab-content')]/div[contains(@class,'ng-scope tab-pane active')]/div[contains(@class,'showDetails')]/div[contains(@class,'ng-scope')]/div[contains(@class,'viewcontent')]/gp-view[contains(@class,'ng-isolate-scope')]/div/div[contains(@class,'gpview-row gpview-rowactive')]/ng-include[contains(@class,'ng-scope')]/div[contains(@class,'gpview-template ng-scope')]/div[1]</value>
+         <value>/html[1]/body[1]/ng-include[1]/ng-view[1]/section[1]/div[2]/div[1]/div[2]/div[1]/div[7]/div[2]/gp-view[1]/div[2]/div[3]/ng-include[1]/div[1]/div[2]/h3[1]/span[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
