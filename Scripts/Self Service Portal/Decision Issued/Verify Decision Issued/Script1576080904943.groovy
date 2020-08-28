@@ -92,7 +92,7 @@ else if (GlobalVariable.callTest == 'Written-CAS')
 }
 else if (GlobalVariable.callTest == '847')
 {
-	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '47')
+	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '48')
 }
 
 WebUI.waitForElementVisible(findTestObject('Final Comments/date_Decision_Issued'), 5)
