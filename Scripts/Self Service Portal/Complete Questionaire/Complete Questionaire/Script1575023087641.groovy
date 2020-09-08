@@ -145,6 +145,8 @@ catch (Exception ex) {
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/message_Confirmation'), 5)
 
+WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Submit_Confirmation'),5)
+
 WebUI.click(findTestObject('Complete Questionaire/button_Submit_Confirmation'))
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/message_Check_Answers'), 5)

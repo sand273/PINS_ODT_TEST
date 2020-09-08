@@ -88,4 +88,5 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++)
     WebUI.callTestCase(findTestCase('Self Service Portal/Decision Issued/Verify Decision Issued'), [:], FailureHandling.STOP_ON_FAILURE)
 	
 	WebUI.callTestCase(findTestCase('Self Service Portal/Decision Issued/Verify Decision Appellant'), [:], FailureHandling.STOP_ON_FAILURE)
+	
 }
