@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>question_Appeal_Procedure</name>
+   <name>button_Upload_Letter_Copy</name>
    <tag></tag>
-   <elementGuidId>a0e6078e-2444-4355-9534-f2bec332eaf8</elementGuidId>
+   <elementGuidId>51e992f0-bcb1-488e-b31e-1508673291e7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//label[contains(text(),'Can the Inspector see the relevant parts of the ap')]</value>
+         <value>//label[contains(text(),'Upload a copy of the letter with which you notifie')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

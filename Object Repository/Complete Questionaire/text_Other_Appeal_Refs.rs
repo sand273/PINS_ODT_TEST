@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>question_Appeal_Procedure</name>
+   <name>text_Other_Appeal_Refs</name>
    <tag></tag>
-   <elementGuidId>a0e6078e-2444-4355-9534-f2bec332eaf8</elementGuidId>
+   <elementGuidId>b78e6ca0-f7ce-43b8-902a-7eb5e8237e77</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//label[contains(text(),'Can the Inspector see the relevant parts of the ap')]</value>
+         <value>//textarea[@id='Other.AppealReferences']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

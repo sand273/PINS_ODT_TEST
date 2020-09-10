@@ -19552,3 +19552,4 @@
 [0902/195444.472:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
 [0902/195640.798:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
 [0902/195835.109:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0909/162037.774:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports

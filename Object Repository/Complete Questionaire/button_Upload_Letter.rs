@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>question_Appeal_Procedure</name>
+   <name>button_Upload_Letter</name>
    <tag></tag>
-   <elementGuidId>a0e6078e-2444-4355-9534-f2bec332eaf8</elementGuidId>
+   <elementGuidId>c6804ca4-1f8f-4ae6-86ad-0bdf023b50c6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//label[contains(text(),'Can the Inspector see the relevant parts of the ap')]</value>
+         <value>//label[contains(text(),'Upload the letter')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

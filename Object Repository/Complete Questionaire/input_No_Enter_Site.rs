@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>question_Appeal_Procedure</name>
+   <name>input_No_Enter_Site</name>
    <tag></tag>
-   <elementGuidId>a0e6078e-2444-4355-9534-f2bec332eaf8</elementGuidId>
+   <elementGuidId>155e7362-45bc-4a9e-8bdc-ddbe30935fe1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//label[contains(text(),'Can the Inspector see the relevant parts of the ap')]</value>
+         <value>//input[@id='radio-Enter.Site-2']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

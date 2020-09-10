@@ -17,6 +17,7 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import com.kms.katalon.core.configuration.RunConfiguration as RC
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
 String executionProfile = RC.getExecutionProfile()
 
@@ -64,53 +65,39 @@ WebUI.verifyElementText(findTestObject('Complete Questionaire/list_Appeal_Sectio
 
 WebUI.click(findTestObject('Complete Questionaire/input_Yes_Option'))
 
+WebUI.click(findTestObject('Complete Questionaire/input_Yes_Other_Appeals'))
+
+WebUI.setText(findTestObject('Complete Questionaire/text_Other_Appeal_Refs'), 'AutoTest')
+
 WebUI.click(findTestObject('Complete Questionaire/button_Next_Page'))
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/question_Appeal_Procedure'), 5)
 
-WebUI.click(findTestObject('Complete Questionaire/input_Yes_Appeal_Procedure'))
+WebUI.click(findTestObject('Complete Questionaire/input_No_Public_Visible'))
+
+WebUI.click(findTestObject('Complete Questionaire/input_No_Enter_Site'))
+
+WebUI.click(findTestObject('Complete Questionaire/input_No_Neighbour_Land'))
 
 WebUI.click(findTestObject('Complete Questionaire/button_AppealProc_Next_page'))
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/question_Upload_Policies'), 5)
 
-WebUI.verifyElementText(findTestObject('Complete Questionaire/question_Upload_Policies'), verData.getValue(1, 4))
+WebUI.click(findTestObject('Complete Questionaire/input_Yes_ConservationSite'))
 
 WebUI.click(findTestObject('Complete Questionaire/button_LocalPolicy_Next_page'))
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Emerging_Next_page'), 5)
 
-WebUI.click(findTestObject('Complete Questionaire/input_Yes_EmergingPolicies'))
+WebUI.click(findTestObject('Complete Questionaire/input_Yes_BuildingAffects'))
 
 WebUI.click(findTestObject('Complete Questionaire/button_Emerging_Next_page'))
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Conditions_Next_HAS'), 5)
 
-WebUI.click(findTestObject('Complete Questionaire/input_Yes_ConditionsSuggestions'))
-
-WebUI.click(findTestObject('Complete Questionaire/input_Yes_ConditionsObligation'))
-
 WebUI.click(findTestObject('Complete Questionaire/button_Conditions_Next_HAS'))
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Conditions_Next_Page'), 5)
-
-WebUI.click(findTestObject('Complete Questionaire/input_Yes_ConservationSite'))
-
-WebUI.click(findTestObject('Complete Questionaire/button_Conditions_Next_Page'))
-
-WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Conservative_Next_Page'), 5)
-
-WebUI.click(findTestObject('Complete Questionaire/input_Yes_BuildingAffects'))
-
-WebUI.click(findTestObject('Complete Questionaire/input_Yes_BuildingAffectScheduleMonument'))
-
-WebUI.click(findTestObject('Complete Questionaire/button_Monuments_Next_HAS'))
-
-WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Screening_Next_HAS'), 5)
-
-WebUI.click(findTestObject('Complete Questionaire/input_Yes_ScreeningOpinion'))
-
-WebUI.click(findTestObject('Complete Questionaire/button_Screening_Next_HAS'))
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/message_Upload_Planning'), 5)
 
@@ -118,38 +105,37 @@ WebUI.click(findTestObject('Complete Questionaire/button_Select_File'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Planning_Next_Page'), 5)
+WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Conditions_Next_Page'), 5)
 
-WebUI.click(findTestObject('Complete Questionaire/button_Planning_Next_Page'))
+WebUI.click(findTestObject('Complete Questionaire/button_Conditions_Next_Page'))
 
-WebUI.waitForElementVisible(findTestObject('Complete Questionaire/input_No_NotificationsActions'), 10)
+WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Upload_Letter'), 10)
 
-WebUI.click(findTestObject('Complete Questionaire/input_No_NotificationsActions'))
-
-WebUI.click(findTestObject('Complete Questionaire/button_Upload_File_Next'))
-
-WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Upload_File_Next_HAS'), 5)
-
-WebUI.click(findTestObject('Complete Questionaire/button_Select_File_HAS'))
+WebUI.click(findTestObject('Complete Questionaire/button_Upload_Letter'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Upload_File_Next_HAS'), 5)
+WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Upload_Letter_Copy'), 5)
 
-WebUI.click(findTestObject('Complete Questionaire/button_Upload_File_Next_HAS'))
+WebUI.click(findTestObject('Complete Questionaire/button_Upload_Letter_Copy'))
 
-WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Bulk_Upload_Next_HAS'), 5)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Conservative_Next_Page'), 5)
+
+WebUI.click(findTestObject('Complete Questionaire/button_Conservative_Next_Page'))
 
 try {
-	WebUI.delay(5)
+    WebUI.delay(5)
+
     WebUI.click(findTestObject('Complete Questionaire/button_Bulk_Upload_Next_HAS'))
 }
 catch (Exception ex) {
     WebUI.refresh()
 
-	WebUI.acceptAlert()
-	
-	WebUI.switchToDefaultContent()
+    WebUI.acceptAlert()
+
+    WebUI.switchToDefaultContent()
 
     WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Bulk_Upload_Next_HAS'), 20)
 
