@@ -25,6 +25,7 @@ String queRefMessage
 
 def verData = TestDataFactory.findTestData('Data Files/Complete_Questionaire')
 
+
 if (executionProfile == 'pre-prod') {
     WebUI.callTestCase(findTestCase('Self Service Portal/Login/LPA User-Pre-prod'), [:], FailureHandling.STOP_ON_FAILURE)
 } else if (executionProfile == 'default') {
@@ -93,15 +94,15 @@ WebUI.click(findTestObject('Complete Questionaire/input_Yes_BuildingAffects'))
 
 WebUI.click(findTestObject('Complete Questionaire/button_Emerging_Next_page'))
 
-WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Conditions_Next_HAS'), 5)
+WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Conditions_Next_HAS'), 5)
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Complete Questionaire/button_Conditions_Next_HAS'))
 
-WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Conditions_Next_Page'), 5)
+WebUI.waitForElementVisible(findTestObject('Complete Questionaire/message_Upload_Planning - HAS'), 5)
 
-WebUI.waitForElementVisible(findTestObject('Complete Questionaire/message_Upload_Planning'), 5)
-
-WebUI.click(findTestObject('Complete Questionaire/button_Select_File'))
+WebUI.click(findTestObject('Complete Questionaire/message_Upload_Planning - HAS'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Pdf_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
@@ -128,7 +129,7 @@ WebUI.click(findTestObject('Complete Questionaire/button_Conservative_Next_Page'
 try {
     WebUI.delay(5)
 
-    WebUI.click(findTestObject('Complete Questionaire/button_Bulk_Upload_Next_HAS'))
+    WebUI.click(findTestObject('Complete Questionaire/button_Screening_Next_HAS'))
 }
 catch (Exception ex) {
     WebUI.refresh()
@@ -137,14 +138,29 @@ catch (Exception ex) {
 
     WebUI.switchToDefaultContent()
 
-    WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Bulk_Upload_Next_HAS'), 20)
+    WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Screening_Next_HAS'), 20)
 
-    WebUI.click(findTestObject('Complete Questionaire/button_Bulk_Upload_Next_HAS'))
+    WebUI.click(findTestObject('Complete Questionaire/button_Screening_Next_HAS'))
 } 
 
-WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Additional_Info_Next'), 5)
+WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Screening_Next_Page'), 5)
 
-WebUI.click(findTestObject('Complete Questionaire/button_Additional_Info_Next'))
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Complete Questionaire/button_Screening_Next_Page'))
+
+
+WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Upload_File_Next'), 5)
+
+WebUI.click(findTestObject('Complete Questionaire/input_Yes_ConditionsSuggestions'))
+
+WebUI.click(findTestObject('Complete Questionaire/button_Upload_File_Next'))
+
+WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Notifications_Next'), 5)
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Complete Questionaire/button_Notifications_Next'))
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/message_Confirmation'), 5)
 
