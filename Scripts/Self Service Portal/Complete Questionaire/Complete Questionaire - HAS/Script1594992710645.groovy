@@ -25,7 +25,6 @@ String queRefMessage
 
 def verData = TestDataFactory.findTestData('Data Files/Complete_Questionaire')
 
-
 if (executionProfile == 'pre-prod') {
     WebUI.callTestCase(findTestCase('Self Service Portal/Login/LPA User-Pre-prod'), [:], FailureHandling.STOP_ON_FAILURE)
 } else if (executionProfile == 'default') {
@@ -149,10 +148,9 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Complete Questionaire/button_Screening_Next_Page'))
 
-
 WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Upload_File_Next'), 5)
 
-WebUI.click(findTestObject('Complete Questionaire/input_Yes_ConditionsSuggestions'))
+WebUI.click(findTestObject('Complete Questionaire/input_No_ConditionsSuggestions'))
 
 WebUI.click(findTestObject('Complete Questionaire/button_Upload_File_Next'))
 
