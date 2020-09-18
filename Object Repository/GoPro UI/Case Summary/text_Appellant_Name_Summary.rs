@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>question_Appeal_Procedure</name>
+   <name>text_Appellant_Name_Summary</name>
    <tag></tag>
-   <elementGuidId>a0e6078e-2444-4355-9534-f2bec332eaf8</elementGuidId>
+   <elementGuidId>0f9ad3a1-91dc-40d7-b943-eee70077e5e4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//label[contains(text(),'Do you agree with this choice of procedure?')]</value>
+         <value>//span[@class='gpline ng-binding']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

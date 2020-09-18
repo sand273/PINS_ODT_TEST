@@ -75,7 +75,7 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++)
 	
 	//WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Portal_Run_GoPro_DataStore'), [:], FailureHandling.STOP_ON_FAILURE)
 	
-	/*WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('GoPro UI/Final Comments/Submit Comments'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -92,5 +92,4 @@ for (int iRow = 1; iRow <= GlobalVariable.driverCount; iRow++)
     WebUI.callTestCase(findTestCase('Self Service Portal/Decision Issued/Verify Decision Issued'), [:], FailureHandling.STOP_ON_FAILURE)
 	
 	WebUI.callTestCase(findTestCase('Self Service Portal/Decision Issued/Verify Decision Appellant'), [:], FailureHandling.STOP_ON_FAILURE)
-	*/
 }

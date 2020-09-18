@@ -78,7 +78,7 @@ WebUI.verifyElementText(findTestObject('Submit Statement/text_Appellant_Name'), 
 
 if (GlobalVariable.callTest == 'Auto-Validate')
 {
-	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '8')
+	CustomKeywords.'custom.VerifyTable.verifyTableCount'('Complete Questionaire/table_Documents', '6')
 }
 else if (GlobalVariable.callTest == 'Written')
 {

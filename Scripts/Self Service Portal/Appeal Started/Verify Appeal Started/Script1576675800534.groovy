@@ -20,6 +20,8 @@ String todaysDate = today.format('EEEE dd MMMMMMMM yyyy')
 
 def testData = TestDataFactory.findTestData('Data Files/GoPro_UI_Verification')
 
+def verData = TestDataFactory.findTestData('Data Files/Complete_Questionaire')
+
 WebUI.callTestCase(findTestCase('Self Service Portal/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Complete Questionaire/link_Search'))
@@ -39,6 +41,8 @@ WebUI.verifyElementText(findTestObject('Final Comments/status_Final_Comments'), 
 WebUI.verifyElementText(findTestObject('Final Comments/date_Appeal_Started'), todaysDate)
 
 WebUI.verifyElementText(findTestObject('Submit Statement/title_Appeal_Reference'), GlobalVariable.ApplicationRef)
+
+WebUI.verifyElementText(findTestObject('Submit Statement/text_Appellant_Name'), verData.getValue(1, 16))
 
 WebUI.verifyElementText(findTestObject('Submit Statement/text_Case_Number'), GlobalVariable.ApplicationRef)
 

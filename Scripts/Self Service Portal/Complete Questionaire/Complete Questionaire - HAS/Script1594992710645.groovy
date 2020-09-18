@@ -150,13 +150,15 @@ WebUI.click(findTestObject('Complete Questionaire/button_Screening_Next_Page'))
 
 WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Upload_File_Next'), 5)
 
+WebUI.delay(2)
+
 WebUI.click(findTestObject('Complete Questionaire/input_No_ConditionsSuggestions'))
 
 WebUI.click(findTestObject('Complete Questionaire/button_Upload_File_Next'))
 
 WebUI.waitForElementVisible(findTestObject('Complete Questionaire/button_Notifications_Next'), 5)
 
-WebUI.delay(2)
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Complete Questionaire/button_Notifications_Next'))
 

@@ -19,6 +19,8 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 def UIData = TestDataFactory.findTestData('Data Files/GoPro_UI_Verification')
 
+def verData = TestDataFactory.findTestData('Data Files/User_Profile')
+
 WebUI.click(findTestObject('GoPro UI/My cases/link_My_Events'))
 
 WebUI.delay(1)
@@ -61,8 +63,13 @@ catch (Exception ex)
 WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/list_Case_Ref_Hearing'), 10)
 
 try {
-	WebUI.delay(2)
-    WebUI.doubleClick(findTestObject('GoPro UI/Case Summary/list_Case_Ref_Hearing'))
+	WebUI.click(findTestObject('GoPro UI/Case Summary/list_Case_Ref_Hearing'))
+	
+	WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Summary/text_Appellant_Name'))
+	
+	WebUI.delay(1)
+	
+	WebUI.doubleClick(findTestObject('GoPro UI/Case Summary/list_Case_Ref_Hearing'))
 }
 catch (Exception ex) {
     WebUI.click(findTestObject('Object Repository/GoPro UI/Case Summary/button_Search'))
@@ -71,9 +78,11 @@ catch (Exception ex) {
 
     WebUI.verifyElementText(findTestObject('GoPro UI/Case Summary/text_Row_Total'), 'Row total: 1')
 
-    WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/list_Case_Ref'), 10)
+    WebUI.waitForElementClickable(findTestObject('GoPro UI/Case Summary/list_Case_Ref_Hearing'), 10)
 
     WebUI.click(findTestObject('GoPro UI/Case Summary/list_Case_Ref_Hearing'))
+	
+	WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Summary/text_Appellant_Name'))
 	
 	WebUI.delay(2)
 	
@@ -92,3 +101,6 @@ WebUI.verifyElementText(findTestObject('GoPro UI/Case Summary/panel_Left_Process
 
 WebUI.verifyElementVisible(findTestObject('GoPro UI/Case Summary/select_AbeyanceCase'))
 
+String appellantName = verData.getValue(1,1) + " " + verData.getValue(2,1)
+
+WebUI.verifyElementText(findTestObject('GoPro UI/Case Summary/text_Appellant_Name_Summary'),appellantName)
