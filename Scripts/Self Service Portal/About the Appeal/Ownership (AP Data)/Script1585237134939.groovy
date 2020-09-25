@@ -31,4 +31,3 @@ WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Agricultural Holdin
 WebUI.waitForElementVisible(findTestObject('Ownership/status_Complete_Ownership'), 10)
 
 WebUI.verifyElementText(findTestObject('Ownership/status_Complete_Ownership'), 'COMPLETED')
-

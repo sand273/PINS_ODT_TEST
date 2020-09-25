@@ -55,5 +55,4 @@ for (def index : (iRow..rowsOnSpreadsheet))
 	WebUI.closeBrowser()
 
 	iRow++
-
 }

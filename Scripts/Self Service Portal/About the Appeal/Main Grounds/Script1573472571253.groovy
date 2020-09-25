@@ -38,8 +38,7 @@ WebUI.click(findTestObject('Main grounds of Appeal/input_Yes_AppealSpecialCatego
 
 WebUI.verifyElementText(findTestObject('Main grounds of Appeal/frame_Grounds_of_Appeal'), verData.getValue(1, 50))
 
-WebUI.verifyElementText(findTestObject('Main grounds of Appeal/message_ submit_grounds_of_appeal'), verData.getValue(1, 
-        49))
+WebUI.verifyElementText(findTestObject('Main grounds of Appeal/message_ submit_grounds_of_appeal'), verData.getValue(1, 49))
 
 WebUI.waitForElementClickable(findTestObject('Main grounds of Appeal/button_Select_File'), 5)
 

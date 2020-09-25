@@ -69,7 +69,6 @@ else if (GlobalVariable.callTest == 'Hearing')
 	WebUI.verifyElementVisible(findTestObject('Submit Statement/text_Hearing'))
 }
 
-
 WebUI.verifyElementVisible(findTestObject('Submit Statement/status_Appeal_Started'))
 
 WebUI.verifyElementText(findTestObject('Submit Statement/text_Appellant_Name'), verData.getValue(1, 16))
