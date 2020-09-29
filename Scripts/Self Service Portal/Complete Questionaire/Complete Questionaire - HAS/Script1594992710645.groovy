@@ -71,7 +71,7 @@ WebUI.setText(findTestObject('Complete Questionaire/text_Other_Appeal_Refs'), 'A
 
 WebUI.click(findTestObject('Complete Questionaire/button_Next_Page'))
 
-WebUI.waitForElementVisible(findTestObject('Complete Questionaire/question_Appeal_Procedure'), 5)
+WebUI.waitForElementVisible(findTestObject('Complete Questionaire/question_Public_Land'), 5)
 
 WebUI.click(findTestObject('Complete Questionaire/input_No_Public_Visible'))
 
@@ -115,32 +115,28 @@ WebUI.click(findTestObject('Complete Questionaire/button_Upload_Letter'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Upload_Letter_Copy'), 5)
+WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Conservative_Next_Page'), 5)
+
+WebUI.click(findTestObject('Complete Questionaire/button_Conservative_Next_Page'))
+
+WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Notification_Next'), 20)
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Complete Questionaire/button_Upload_Letter_Copy'))
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Upload File'), [('exeFileName') : 'Doc_Upload.exe'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Conservative_Next_Page'), 5)
+WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Notification_Next'), 20)
 
-WebUI.click(findTestObject('Complete Questionaire/button_Conservative_Next_Page'))
+WebUI.click(findTestObject('Complete Questionaire/button_Notification_Next'))
 
-try {
-    WebUI.delay(5)
+WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Screening_Next_HAS'), 5)
 
-    WebUI.click(findTestObject('Complete Questionaire/button_Screening_Next_HAS'))
-}
-catch (Exception ex) {
-    WebUI.refresh()
+WebUI.delay(2)
 
-    WebUI.acceptAlert()
+WebUI.click(findTestObject('Complete Questionaire/button_Screening_Next_HAS'))
 
-    WebUI.switchToDefaultContent()
-
-    WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Screening_Next_HAS'), 20)
-
-    WebUI.click(findTestObject('Complete Questionaire/button_Screening_Next_HAS'))
-} 
 
 WebUI.waitForElementClickable(findTestObject('Complete Questionaire/button_Screening_Next_Page'), 5)
 
