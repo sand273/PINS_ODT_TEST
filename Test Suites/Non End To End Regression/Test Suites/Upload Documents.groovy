@@ -36,7 +36,7 @@ import com.kms.katalon.core.configuration.RunConfiguration as RC
 def setUp() {
 	// Put your code here.
 	GlobalVariable.UploadFilePath = (RC.getProjectDir().replace('/', '\\') + '\\Data Files\\')
-	CustomKeywords.'custom.WriteExcel.clearValues'(GlobalVariable.UploadFilePath + '\\AppealNumbers.xlsx', 'Appeals')
+	//CustomKeywords.'custom.WriteExcel.clearValues'(GlobalVariable.UploadFilePath + '\\AppealNumbers.xlsx', 'Appeals')
 }
 
 /**
