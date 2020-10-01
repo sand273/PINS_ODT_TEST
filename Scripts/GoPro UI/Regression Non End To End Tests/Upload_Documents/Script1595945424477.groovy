@@ -37,7 +37,7 @@ String[] values = new String[20]
 
 (cmdArray[0]) = (GlobalVariable.UploadFilePath + '\\Test_Uploads.exe')
 
-WebUI.openBrowser('')
+/*WebUI.openBrowser('')
 
 WebUI.deleteAllCookies()
 
@@ -678,13 +678,13 @@ WebUI.waitForElementVisible(findTestObject('Appeal Summary/status_Submitted'), 5
 
 WebUI.verifyElementText(findTestObject('Appeal Summary/status_Submitted'), verData.getValue(1, 77))
 
-WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Self Service Portal/Generic/Logout'), [:], FailureHandling.STOP_ON_FAILURE)*/
 
 CustomKeywords.'custom.WriteExcel.readValues'(GlobalVariable.UploadFilePath + '\\AppealNumbers.xlsx', 'Appeals', values)
 
 GlobalVariable.ApplicationRef = (values[1]).toString()
 
-WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
+/*WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('GoPro UI/Appeal Process/Case Start'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -710,7 +710,7 @@ WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandli
 
 WebUI.callTestCase(findTestCase('Self Service Portal/Final Comments/Final Comments'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('GoPro UI/Generic/Add wait'), [:], FailureHandling.STOP_ON_FAILURE)*/
 
 WebUI.callTestCase(findTestCase('GoPro UI/Login/Case Officer'), [:], FailureHandling.STOP_ON_FAILURE)
 
